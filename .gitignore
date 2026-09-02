@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+*.local
+.vite/
+
+# seeded design-canvas output — rebuilt from the .dc.html artboards
+worauf-design.html

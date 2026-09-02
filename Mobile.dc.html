@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&family=Fira+Sans:wght@400;500&family=Fira+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+  <style>
+    :root{
+      --paper:#EEEFEA; --card:#FFFFFF; --ink:#16191C; --ink2:#5A6169;
+      --rule:#D6D9D2; --akk:#1F3FCB; --dat:#B26205; --gen:#A81E63;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Fira Sans","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;}
+    a{color:var(--akk);text-decoration:none;} a:hover{color:#16309E;}
+    .app{position:relative;width:390px;height:844px;overflow:hidden;background:var(--paper);
+      display:flex;flex-direction:column;}
+
+    .hdr{height:56px;flex-shrink:0;background:var(--card);border-bottom:1px solid var(--rule);
+      display:flex;align-items:center;gap:12px;padding:0 16px;}
+    .mark{font-family:"Fira Sans Condensed",Arial,sans-serif;font-weight:700;font-size:21px;letter-spacing:-0.01em;}
+    .icon{width:20px;height:20px;stroke:var(--ink2);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+    .lang{display:flex;border:1px solid var(--rule);}
+    .lang span{font-family:"Fira Mono",monospace;font-size:11px;letter-spacing:.06em;padding:6px 10px;color:var(--ink2);}
+    .lang span.on{background:var(--ink);color:var(--paper);}
+
+    .srow{flex-shrink:0;background:var(--card);padding:0 16px 12px;}
+    .search{display:flex;align-items:center;gap:9px;height:44px;padding:0 12px;
+      background:var(--paper);border:1px solid var(--rule);color:var(--ink2);font-size:15px;}
+
+    /* два столбца-барабана: остаются рядом, ограничены по числу строк — как в tja */
+    .reels{flex-shrink:0;background:var(--card);border-bottom:1px solid var(--rule);
+      padding:8px 16px 14px;display:grid;grid-template-columns:218px 124px;gap:10px;}
+    .reel{min-width:0;}
+    .rlab{display:flex;align-items:baseline;justify-content:space-between;height:24px;
+      font-family:"Fira Sans Condensed",Arial,sans-serif;font-size:10px;font-weight:600;
+      letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);}
+    .rlab b{font-family:"Fira Mono",monospace;font-weight:400;font-size:10px;letter-spacing:0;}
+    .rows{position:relative;height:220px;border:1px solid var(--rule);overflow:hidden;}
+    .r{height:44px;display:flex;align-items:center;justify-content:space-between;
+      padding:0 10px 0 12px;font-family:"Fira Sans Condensed",Arial,sans-serif;
+      font-weight:500;font-size:17px;line-height:1;}
+    .r.sel{background:var(--ink);color:var(--paper);}
+    .r.dim{color:#AEB4AC;}
+    .sup{font-family:"Fira Mono",monospace;font-size:10px;vertical-align:super;}
+    .cnt{font-family:"Fira Mono",monospace;font-size:11px;color:var(--ink2);font-weight:400;}
+    .ftop{position:absolute;left:0;right:0;top:0;height:18px;pointer-events:none;
+      background:linear-gradient(to top,rgba(255,255,255,0),#FFFFFF);}
+    .fbot{position:absolute;left:0;right:0;bottom:0;height:18px;pointer-events:none;
+      background:linear-gradient(to bottom,rgba(255,255,255,0),#FFFFFF);}
+
+    .detail{flex-grow:1;overflow:hidden;padding:14px 16px;}
+    .card{background:var(--card);border:1px solid var(--rule);padding:14px 16px;}
+    .lock{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+    .lock .l{font-family:"Fira Sans Condensed",Arial,sans-serif;font-weight:600;font-size:22px;letter-spacing:-0.01em;}
+    .lock .t{font-family:"Fira Mono",monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;flex-shrink:0;}
+    .cs{font-family:"Fira Mono",monospace;font-size:11px;vertical-align:super;}
+    .gloss{font-size:16px;margin-top:8px;}
+    .note{font-size:12.5px;color:var(--ink2);margin-top:3px;line-height:1.35;}
+    .ex{font-family:"Source Serif 4",Georgia,serif;font-size:17px;margin-top:11px;line-height:1.35;}
+    .exru{font-size:12.5px;color:var(--ink2);margin-top:3px;}
+    .chips{display:flex;gap:6px;margin-top:11px;}
+    .chip{font-family:"Fira Mono",monospace;font-size:10.5px;color:var(--ink2);border:1px solid var(--rule);padding:3px 7px;}
+
+    .clab{font-family:"Fira Sans Condensed",Arial,sans-serif;font-size:10px;font-weight:600;
+      letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);margin:16px 0 6px;}
+    .alt{display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;
+      background:var(--card);border:1px solid var(--rule);margin-bottom:6px;}
+    .alt .neq{font-family:"Fira Mono",monospace;font-size:14px;color:var(--ink2);}
+    .alt .ap{font-family:"Fira Sans Condensed",Arial,sans-serif;font-weight:600;font-size:17px;}
+    .alt .ag{font-size:13px;color:var(--ink2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+    .tabs{flex-shrink:0;height:56px;background:var(--card);border-top:1px solid var(--rule);display:flex;}
+    .tab{flex-grow:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+      font-family:"Fira Sans Condensed",Arial,sans-serif;font-size:12px;color:var(--ink2);}
+    .tab.on{color:var(--ink);font-weight:600;}
+  </style>
+</helmet>
+
+<div class="app">
+
+  <div class="hdr">
+    <div class="mark"><span style="color:#1F3FCB">wo</span><span>rauf?</span></div>
+    <div style="flex-grow:1"></div>
+    <div class="lang"><span>RU</span><span class="on">EN</span></div>
+    <svg class="icon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"></path></svg>
+  </div>
+
+  <div class="srow">
+    <div class="search">
+      <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>
+      <span>Word, preposition or meaning</span>
+    </div>
+  </div>
+
+  <div class="reels">
+
+    <div class="reel">
+      <div class="rlab"><span>Words · über</span><b>21</b></div>
+      <div class="rows">
+        <div class="r">nachdenken</div>
+        <div class="r">reden</div>
+        <div class="r sel">sprechen<span class="cnt" style="color:#EEEFEA">3</span></div>
+        <div class="r">staunen</div>
+        <div class="r">streiten</div>
+        <div class="ftop"></div>
+        <div class="fbot"></div>
+      </div>
+    </div>
+
+    <div class="reel">
+      <div class="rlab"><span>Prepositions</span><b>16</b></div>
+      <div class="rows">
+        <div class="r dim">auf<span class="cnt">30</span></div>
+        <div class="r dim">an<span class="cnt">25</span></div>
+        <div class="r sel">über<span class="sup">4</span></div>
+        <div class="r" style="color:#B26205">mit<span class="sup">3</span></div>
+        <div class="r dim">für<span class="cnt">15</span></div>
+        <div class="ftop"></div>
+        <div class="fbot"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="detail">
+
+    <div class="card">
+      <div class="lock">
+        <div class="l">sprechen <span style="color:#1F3FCB">über</span><span class="cs" style="color:#1F3FCB">4</span></div>
+        <div class="t" style="color:#1F3FCB">Akkusativ · 4. Fall</div>
+      </div>
+      <div class="gloss">to talk about sth. — to discuss</div>
+      <div class="note">the topic, at length and in substance</div>
+      <div class="ex">Wir sprechen <span style="color:#1F3FCB;font-weight:600">über den</span> Film.</div>
+      <div class="exru">We are discussing the film.</div>
+      <div class="chips"><span class="chip">worüber?</span><span class="chip">darüber</span><span class="chip">darüber, dass …</span></div>
+    </div>
+
+    <div class="clab">Same word, different preposition</div>
+
+    <div class="alt">
+      <span class="neq">≠</span>
+      <span class="ap" style="color:#B26205">mit<span class="sup">3</span></span>
+      <span class="ag">to speak with sb.</span>
+    </div>
+    <div class="alt">
+      <span class="neq">≠</span>
+      <span class="ap" style="color:#B26205">von<span class="sup">3</span></span>
+      <span class="ag">to mention in passing</span>
+    </div>
+
+  </div>
+
+  <div class="tabs">
+    <div class="tab on">
+      <svg class="icon" viewBox="0 0 24 24" style="stroke:#16191C;width:19px;height:19px"><path d="M4 5h7v14H4zM13 5h7v14h-7z"></path></svg>
+      Browse
+    </div>
+    <div class="tab">
+      <svg class="icon" viewBox="0 0 24 24" style="width:19px;height:19px"><path d="M5 12l4.5 4.5L19 7"></path></svg>
+      Practice
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
