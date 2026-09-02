@@ -5,15 +5,11 @@ on:
     branches: [main, mvp]
   pull_request:
   workflow_dispatch:
+  # Called by deploy.yml so a tag cannot ship something the checks never saw.
+  workflow_call:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   check:
@@ -28,26 +24,12 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run test:run
-      # basePath is only needed while the site lives on github.io. Buying the domain
-      # (STACK §11) removes it, and with it a whole class of path bugs.
+
+      # The build stays a check even though nothing here deploys it: `next dev` no longer
+      # carries `output: 'export'` (ADR 0001), so this is the only place that catches a
+      # feature the static export cannot do. Deployment is Cloudflare's job (ADR 0004).
       - run: npm run build
         env:
-          # hreflang and canonical are built explicitly from these two (src/site/urls.ts):
-          # Next does not apply basePath to alternates metadata. Buying the domain means
-          # changing these two lines and nothing else.
-          NEXT_PUBLIC_BASE_PATH: /worauf
-          NEXT_PUBLIC_SITE_ORIGIN: https://maratkuzakhmetov.github.io
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-  deploy:
-    needs: check
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          # Everything that changes on deploy day. Unset builds fall back to a .invalid
+          # host, so nothing ships a plausible-but-wrong canonical.
+          NEXT_PUBLIC_SITE_ORIGIN: ${{ vars.SITE_ORIGIN }}

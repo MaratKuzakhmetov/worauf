@@ -1,0 +1,33 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    tags:
+      - 'production-*'
+
+permissions:
+  contents: read
+
+jobs:
+  # The tag is a deliberate act, but it is not proof: run the same checks first.
+  # A bad deploy here does not just break a page, it teaches wrong German.
+  check:
+    uses: ./.github/workflows/ci.yml
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify that the deploy hook secret exists
+        run: |
+          if [ -z "${{ secrets.CF_DEPLOY_HOOK_URL }}" ]; then
+            echo "::error::Secret CF_DEPLOY_HOOK_URL is not set"
+            exit 1
+          fi
+          echo "Deploy hook secret is present"
+
+      - name: Trigger Cloudflare Pages deploy
+        # -f so a non-2xx from the hook fails the step instead of reporting success.
+        run: |
+          curl -fsS -X POST "${{ secrets.CF_DEPLOY_HOOK_URL }}"
+          echo "Deploy hook triggered for ${GITHUB_REF_NAME}"

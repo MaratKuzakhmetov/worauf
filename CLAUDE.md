@@ -48,7 +48,7 @@ Locked in `docs/research/STACK.md`. Do not propose alternatives without a critic
 | Tests | Vitest 4 + React Testing Library 16 + jsdom 30; Playwright for 3–5 E2E |
 | Lint/format | ESLint 10 flat + typescript-eslint 8 + Prettier 3 |
 | Runtime | Node 22 (`.nvmrc`). Node 20 reached end of life in April 2026, and jsdom 30 needs 22 anyway |
-| Hosting | GitHub Pages + GitHub Actions |
+| Hosting | Cloudflare Pages, on a subdomain, served from the root — no basePath. Deployment is triggered by a `production-*` tag, never by a merge (`docs/adr/0004-hosting-on-cloudflare.md`) |
 
 **Never used here:**
 - Tailwind, any CSS framework, CSS-in-JS, any UI kit

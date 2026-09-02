@@ -9,14 +9,23 @@ import type { Locale } from '@/shared/i18n';
  * hreflang must be fully qualified: Google ignores relative alternates.
  */
 
-const DEFAULT_ORIGIN = 'https://maratkuzakhmetov.github.io';
+/**
+ * The site will live on a subdomain, served from its root — so there is no basePath, and
+ * the origin is the single thing that changes on deploy day.
+ *
+ * The fallback deliberately uses the reserved `.invalid` TLD: it can never resolve, so a
+ * build that forgot NEXT_PUBLIC_SITE_ORIGIN produces canonical and hreflang that are
+ * obviously broken rather than quietly pointing at the wrong host. Wrong-but-plausible is
+ * the failure mode that survives for months.
+ */
+const UNSET_ORIGIN = 'https://worauf.invalid';
 
 export type SiteConfig = { origin: string; basePath: string };
 
 export function siteConfig(): SiteConfig {
   // Direct member access, not a computed key — Next inlines these at build time.
   return {
-    origin: process.env.NEXT_PUBLIC_SITE_ORIGIN ?? DEFAULT_ORIGIN,
+    origin: process.env.NEXT_PUBLIC_SITE_ORIGIN ?? UNSET_ORIGIN,
     basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? '',
   };
 }
