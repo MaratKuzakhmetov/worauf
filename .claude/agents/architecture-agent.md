@@ -24,7 +24,7 @@ Standing constraints:
 - Specify the build pipeline: authoring files → validation → compiled runtime artifacts → bundle
 - Own the routing contract recorded in `docs/adr/0002-url-and-slug-scheme.md`: `/[lang]/[word]/[prep]/`, one folding variant for URLs, collision suffixes frozen in the record. Specify what an unknown path does (soft reset with a hint, never a bare 404) and how route params drive selection without unmounting the browser held in the layout
 - Specify how SRS state survives a dataset change: added patterns, removed patterns, a corrected case on an existing `id`
-- Specify the module boundaries and the folder structure, and what is forbidden from importing what
+- Own the Feature-Sliced Design boundaries (`docs/adr/0003-feature-sliced-design.md`): which layer a new slice belongs on, when `entities` earns its first slice, and when the import rule is worth enforcing with a linter rather than review
 - Decide what is computed at build time versus at load time versus per interaction, with a stated reason for each
 - Identify risks and specify their mitigations before they are hit
 

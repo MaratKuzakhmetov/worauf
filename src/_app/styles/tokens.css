@@ -1,0 +1,68 @@
+/*
+ * Design tokens — docs/DESIGN.md §3.
+ * Rule: colour means case, and nothing else. Selection and focus are ink/paper
+ * inversion, never a fourth colour. Do not add a colour here without changing that doc.
+ */
+
+:root {
+  color-scheme: light;
+
+  --paper: #eeefea;
+  --card: #ffffff;
+  --ink: #16191c;
+  --ink-2: #5a6169;
+  --rule: #d6d9d2;
+
+  --akk: #1f3fcb;
+  --dat: #b26205;
+  --gen: #a81e63;
+
+  --step-0: 0.75rem;
+  --step-1: 0.8125rem;
+  --step-2: 0.9375rem;
+  --step-3: 1.0625rem;
+  --step-4: 1.375rem;
+  --step-5: 1.875rem;
+  --step-6: 2.75rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.875rem;
+  --space-4: 1.25rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+
+  --header-height: 4rem;
+  --row-height: 2.125rem;
+  --touch-target: 2.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --paper: #131614;
+    --card: #1b1f1d;
+    --ink: #e8eae4;
+    --ink-2: #9aa29b;
+    --rule: #2c322e;
+
+    --akk: #7c93ff;
+    --dat: #e9a13b;
+    --gen: #f06ba8;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --paper: #131614;
+  --card: #1b1f1d;
+  --ink: #e8eae4;
+  --ink-2: #9aa29b;
+  --rule: #2c322e;
+
+  --akk: #7c93ff;
+  --dat: #e9a13b;
+  --gen: #f06ba8;
+}

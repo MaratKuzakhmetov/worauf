@@ -1,0 +1,15 @@
+.mark {
+  font-family: var(--font-cond), 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: var(--step-4);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.large {
+  font-size: var(--step-6);
+}
+
+.wo {
+  color: var(--akk);
+}

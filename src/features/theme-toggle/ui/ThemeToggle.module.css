@@ -1,0 +1,22 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  cursor: pointer;
+}
+
+.icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: var(--ink-2);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.toggle:hover .icon {
+  stroke: var(--ink);
+}

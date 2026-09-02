@@ -20,7 +20,7 @@ The stack is locked (`docs/research/STACK.md`, decision table):
 | Role | Choice |
 |---|---|
 | Framework | Next.js 16, **App Router**, `output: 'export'` (static). See `docs/adr/0001-nextjs-app-router.md` |
-| UI | React 19 + TypeScript 7, `strict` + `noUncheckedIndexedAccess` |
+| UI | React 19 + TypeScript 6 (not 7 — `typescript-eslint` does not accept 7 yet), `strict` + `noUncheckedIndexedAccess` |
 | Styling | CSS Modules. No Tailwind, no CSS-in-JS, no UI kit |
 | State | Zustand 5 — and only if it carries ≥3 slices; otherwise `useReducer` + `useMemo` |
 | Routing | App Router file routes: `/[lang]/[word]/[prep]/`. No query-param state, no router library |
@@ -48,6 +48,7 @@ Standing implementation rules:
 - Implement the trainer's item rendering and the distractor selection specified by `didactics-agent`
 - Write unit tests alongside the code for anything with logic (`testing-agent` owns the strategy and the invariant suite)
 - Keep components small, one responsibility per file, tests co-located
+- Respect the Feature-Sliced Design layout (`docs/adr/0003-feature-sliced-design.md`): a layer imports only from layers strictly below it, a slice is entered only through its `index.ts`, and a Next route file contains a re-export and nothing else. If a component seems to need an import from above, the composition is wrong — move the piece down or lift the wiring up, do not reach sideways
 
 ## Allowed Actions
 

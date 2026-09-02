@@ -1,9 +1,11 @@
 node_modules/
-dist/
+.next/
+out/
 coverage/
 .DS_Store
 *.local
-.vite/
+next-env.d.ts
+*.tsbuildinfo
 
 # seeded design-canvas output — rebuilt from the .dc.html artboards
 worauf-design.html

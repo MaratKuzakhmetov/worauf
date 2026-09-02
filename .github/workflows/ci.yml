@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main, mvp]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run test:run
+      # basePath is only needed while the site lives on github.io. Buying the domain
+      # (STACK §11) removes it, and with it a whole class of path bugs.
+      - run: npm run build
+        env:
+          # hreflang and canonical are built explicitly from these two (src/site/urls.ts):
+          # Next does not apply basePath to alternates metadata. Buying the domain means
+          # changing these two lines and nothing else.
+          NEXT_PUBLIC_BASE_PATH: /worauf
+          NEXT_PUBLIC_SITE_ORIGIN: https://maratkuzakhmetov.github.io
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

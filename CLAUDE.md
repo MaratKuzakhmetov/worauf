@@ -38,7 +38,7 @@ Locked in `docs/research/STACK.md`. Do not propose alternatives without a critic
 | Role | Technology |
 |---|---|
 | Framework | **Next.js 16 with the App Router**, `output: 'export'` (static) — see `docs/adr/0001-nextjs-app-router.md` |
-| UI | React 19 + TypeScript 7 (`strict`, `noUncheckedIndexedAccess`) |
+| UI | React 19 + TypeScript 6 (`strict`, `noUncheckedIndexedAccess`) — **not** 7: `typescript-eslint` 8.69, the latest, peer-requires `typescript <6.1.0` |
 | Styling | CSS Modules only |
 | State | Zustand 5 — only if it carries ≥3 slices; otherwise `useReducer` |
 | Routing | App Router file routes: `/[lang]/[word]/[prep]/` — scheme frozen in `docs/adr/0002-url-and-slug-scheme.md`. No query-param state, no router library |
@@ -47,6 +47,7 @@ Locked in `docs/research/STACK.md`. Do not propose alternatives without a critic
 | Data authoring | YAML per headword initial, validated by Zod at build time |
 | Tests | Vitest 4 + React Testing Library 16 + jsdom 30; Playwright for 3–5 E2E |
 | Lint/format | ESLint 10 flat + typescript-eslint 8 + Prettier 3 |
+| Runtime | Node 22 (`.nvmrc`). Node 20 reached end of life in April 2026, and jsdom 30 needs 22 anyway |
 | Hosting | GitHub Pages + GitHub Actions |
 
 **Never used here:**
@@ -103,7 +104,25 @@ Props interfaces named `{ComponentName}Props`.
 **Every colour comes from a token.** A literal hex in a component is a bug. The three case colours
 are reserved for case; selection and focus are ink/paper inversion, never a fourth colour.
 
-**Files** — domain-first: `src/browse/`, `src/search/`, `src/trainer/`, `src/data/`.
+**Files — Feature-Sliced Design** (`docs/adr/0003-feature-sliced-design.md`). Next routes live in
+the **root** `app/` and contain re-exports only; every line of application code lives in `src/`.
+FSD's `app` and `pages` layers are renamed `_app` and `_pages` to avoid colliding with Next's
+routing directory.
+
+```
+app/[lang]/…            routing only — one re-export per file
+src/_app/               root layout, fonts, global styles and tokens
+src/_pages/<slice>/     a page as a composition of widgets
+src/widgets/<slice>/    composite UI blocks
+src/features/<slice>/   one user action each
+src/entities/<slice>/   business entities — appears in Phase 1, not before
+src/shared/             i18n, lib, ui — reusable, owns nothing domain-specific
+```
+
+A layer may import only from layers **strictly below** it. Inside a slice, segments are
+`ui / model / api / lib / config`, and only `index.ts` is public — never deep-import past it.
+The rule is enforced by review for now; a linter for it is a dependency, so it needs approval.
+
 Build-time tooling in `tools/`, never shipped. Tests co-located. No `utils.ts` catch-alls.
 
 **Comments** — only where the *why* is non-obvious. Never comment the *what*.
@@ -181,7 +200,20 @@ worauf/
 │       └── STACK.md             ← stack evaluation and the locked decision table
 ├── .claude/agents/              ← subagent definitions
 ├── *.dc.html + canvas.json      ← design canvas artboards
+├── app/[lang]/                  ← Next routing, re-exports only
+├── src/                         ← Feature-Sliced Design layers
+│   ├── _app/  _pages/  widgets/  features/  shared/
+│   └── entities/                (Phase 1)
 ├── data/de/{a..z}.yaml          (not yet created)
-├── tools/                       (not yet created)
-└── src/                         (not yet created)
+└── tools/                       (not yet created)
 ```
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
