@@ -69,3 +69,25 @@
     justify-content: space-between;
   }
 }
+
+/* Announced, never drawn: the pane headings already carry these counts for the eye. */
+.live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.keys {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .keys {
+    display: inline;
+  }
+}

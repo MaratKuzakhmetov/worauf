@@ -28,7 +28,7 @@ export function PrepositionList({ lang, counts, word, selectedPrep }: Props) {
         <b>{available ? available.size : prepositions.length}</b>
       </h2>
 
-      <ol className={styles.rows}>
+      <ol className={styles.rows} data-pane="prepositions" lang="de">
         {prepositions.map(({ key }) => {
           const slug = prepositionSlug(key);
           const pattern = word?.patterns.find((p) => p.prep === key);
@@ -46,6 +46,7 @@ export function PrepositionList({ lang, counts, word, selectedPrep }: Props) {
                 className={[styles.row, dimmed ? styles.dim : '', selected ? styles.on : '']
                   .filter(Boolean)
                   .join(' ')}
+                data-row=""
                 data-prep={key}
                 aria-disabled={dimmed ? 'true' : undefined}
                 aria-current={selected ? 'page' : undefined}

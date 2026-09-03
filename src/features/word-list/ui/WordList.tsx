@@ -36,13 +36,14 @@ export function WordList({ lang, words, selectedWord, selectedPrep }: Props) {
         <b>{selectedPrep ? `${matches} / ${words.length}` : words.length}</b>
       </h2>
 
-      <ol className={styles.rows}>
+      <ol className={styles.rows} data-pane="words" lang="de">
         {words.map((word) => {
           /*
-           * Nothing is ever removed from this list. Position is what makes a list learnable:
-           * once `warten` sits where it sits, it stays there, and the reader learns the shape
-           * of the alphabet rather than re-reading a list that reshuffles under them. What a
-           * selection changes is what is LIT, never what is present.
+           * Nothing is ever removed from this list — not by a selection and not by a
+           * search, which answers in its own dropdown instead. Position is what makes a
+           * list learnable: once `warten` sits where it sits, it stays there, and the eye
+           * learns the shape of the alphabet rather than re-reading a list that reshuffles.
+           * What a selection changes is what is LIT, never what is present.
            */
           const forPrep = selectedPrep
             ? word.patterns.find((p) => p.prep === selectedPrep)
@@ -59,8 +60,13 @@ export function WordList({ lang, words, selectedWord, selectedPrep }: Props) {
               <Link
                 href={target}
                 ref={word.slug === selectedWord ? selectedRow : undefined}
+                data-row=""
                 data-word={word.slug}
-                className={[styles.row, muted ? styles.muted : '', word.slug === selectedWord ? styles.on : '']
+                className={[
+                  styles.row,
+                  muted ? styles.muted : '',
+                  word.slug === selectedWord ? styles.on : '',
+                ]
                   .filter(Boolean)
                   .join(' ')}
                 aria-current={word.slug === selectedWord ? 'page' : undefined}

@@ -1,6 +1,6 @@
 import { daForm, woForm } from '@/entities/preposition';
 import type { Locale } from '@/shared/i18n';
-import { caseLabel, caseNumber } from '../model/selectors';
+import { caseLabel, caseNumber, patternHeadword } from '../model/selectors';
 import type { Rektion } from '../model/schema';
 import styles from './PatternCard.module.css';
 
@@ -31,16 +31,12 @@ export function PatternCard({
 }) {
   const tone = CASE_CLASS[pattern.case];
   const [example] = pattern.examples;
-  const reflexive = pattern.reflexive ? 'sich ' : '';
-  const article = pattern.article ? `${pattern.article} ` : '';
 
   return (
     <article className={compact ? `${styles.card} ${styles.compact}` : styles.card}>
       <div className={styles.lockup}>
         <span className={styles.head}>
-          {article}
-          {reflexive}
-          {pattern.lemma} <span className={tone}>{pattern.prep}</span>
+          {patternHeadword(pattern)} <span className={tone}>{pattern.prep}</span>
         </span>
         <span className={`${styles.kase} ${tone}`}>
           {caseLabel(pattern.case)} · {caseNumber(pattern.case)}. Fall

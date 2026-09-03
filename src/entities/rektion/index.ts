@@ -10,7 +10,7 @@ export type {
   Example,
 } from './model/schema';
 export { rektionen } from './model/dataset.generated';
-export { caseNumber, caseTag, caseLabel, findRektion } from './model/selectors';
+export { caseNumber, caseTag, caseLabel, findRektion, patternHeadword } from './model/selectors';
 export {
   words,
   findWord,

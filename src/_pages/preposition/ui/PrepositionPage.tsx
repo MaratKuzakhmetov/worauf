@@ -40,7 +40,7 @@ export function PrepositionPage({
         <section key={kase} className={styles.group}>
           <h2 className={`${styles.groupHead} ${CASE_CLASS[kase]}`}>
             {preposition.key} <span className={styles.tag}>{caseTag(kase)}</span> ·{' '}
-            {caseLabel(kase)} · {items.length} {t.patterns}
+            {caseLabel(kase)} · {t.patterns(items.length)}
           </h2>
           <ul className={styles.list}>
             {items.map(({ word, pattern }) => (

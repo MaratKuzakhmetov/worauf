@@ -1,9 +1,10 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-4);
-  height: var(--header-height);
-  padding: 0 var(--space-4);
+  gap: var(--space-3);
+  min-height: var(--header-height);
+  padding: var(--space-2) var(--space-4);
   background: var(--card);
   border-bottom: 1px solid var(--rule);
 }
@@ -13,6 +14,23 @@
   align-items: center;
 }
 
+.search {
+  display: flex;
+  flex: 1 1 12rem;
+}
+
 .spacer {
   flex-grow: 1;
+}
+
+/* Under 700px the search takes its own line rather than squeezing the wordmark out. */
+@media (max-width: 699px) {
+  .search {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .spacer {
+    order: 0;
+  }
 }

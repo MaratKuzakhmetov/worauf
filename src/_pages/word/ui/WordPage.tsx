@@ -10,7 +10,7 @@ export function WordPage({ word, lang }: { word: WordEntry; lang: Locale }) {
     <div className={styles.wrap}>
       <h1 className={styles.title}>{headword(word)}</h1>
       <p className={styles.meta}>
-        {t.pos[word.pos]} · {word.patterns.length} {t.patterns}
+        {t.pos[word.pos]} · {t.patterns(word.patterns.length)}
       </p>
 
       <div className={styles.cards}>

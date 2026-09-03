@@ -35,3 +35,10 @@ export function caseLabel(value: GrammaticalCase): string {
 export function findRektion(id: string): Rektion | undefined {
   return rektionen.find((r) => r.id === id);
 }
+
+/** `die Angst`, `sich freuen`, `warten` — for one pattern, whose reflexivity is its own. */
+export function patternHeadword(pattern: Rektion): string {
+  const article = pattern.article ? `${pattern.article} ` : '';
+  const reflexive = pattern.reflexive ? 'sich ' : '';
+  return `${article}${reflexive}${pattern.lemma}`;
+}

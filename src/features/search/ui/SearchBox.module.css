@@ -1,0 +1,190 @@
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  max-width: 26rem;
+}
+
+/* Visually hidden, still read aloud: the placeholder is a hint, not a label. */
+.label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.input {
+  width: 100%;
+  height: 2.25rem;
+  padding: 0 2rem 0 0.75rem;
+  font: inherit;
+  font-size: var(--step-2);
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  appearance: none;
+}
+
+.input::placeholder {
+  color: var(--ink-2);
+}
+
+.input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.hint,
+.clear {
+  position: absolute;
+  right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-family: var(--font-mono), monospace;
+  font-size: var(--step-0);
+  color: var(--ink-2);
+}
+
+.hint {
+  border: 1px solid var(--rule);
+}
+
+.clear {
+  cursor: pointer;
+  font-size: var(--step-3);
+  line-height: 1;
+}
+
+.clear:hover {
+  color: var(--ink);
+}
+
+/*
+ * The answer sits over the page rather than inside it: the two panes underneath are a
+ * reference the reader is holding their place in, and pushing them down to make room
+ * would cost that place for the length of one query.
+ */
+.panel {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: 24rem;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--card);
+  border: 1px solid var(--ink);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.result + .result {
+  border-top: 1px solid var(--rule);
+}
+
+.hit {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: 0.4375rem 0.75rem;
+}
+
+/* Highlight is ink/paper inversion — colour belongs to case (docs/DESIGN.md §3). */
+.active .hit {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.lemma {
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 500;
+  font-size: var(--step-3);
+  white-space: nowrap;
+}
+
+.tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.gloss {
+  font-size: var(--step-1);
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.active .gloss,
+.active .akk,
+.active .dat,
+.active .gen {
+  color: inherit;
+}
+
+.akk { color: var(--akk); }
+.dat { color: var(--dat); }
+.gen { color: var(--gen); }
+
+.absent {
+  padding: var(--space-3) 0.75rem;
+}
+
+.absentLine {
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+.suggest {
+  margin: var(--space-2) 0 0;
+  font-size: var(--step-1);
+  color: var(--ink-2);
+}
+
+.suggestion {
+  cursor: pointer;
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 500;
+  font-size: var(--step-2);
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+}
+
+.suggestion:hover {
+  border-bottom-color: currentColor;
+}
+
+@media (max-width: 699px) {
+  .box {
+    max-width: none;
+  }
+}
+
+/*
+ * Said out loud rather than implied: the reader typed one thing and is being shown
+ * another, and a list that quietly answers a different question is worse than no list.
+ */
+.approx {
+  padding: 0.4375rem 0.75rem;
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-size: var(--step-0);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
