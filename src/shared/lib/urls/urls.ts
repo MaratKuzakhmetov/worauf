@@ -46,3 +46,20 @@ export function localeUrl(lang: Locale, config: SiteConfig = siteConfig()): stri
   const { origin } = normalize(config);
   return `${origin}${localePath(lang, config)}`;
 }
+
+/** Absolute URL for an arbitrary in-app path, for canonical and hreflang on every page. */
+export function absoluteUrl(path: string, config: SiteConfig = siteConfig()): string {
+  const { origin, basePath } = normalize(config);
+  return `${origin}${basePath}${path}`;
+}
+
+/**
+ * The same page in the other locale. Only the first segment changes — switching language
+ * must not drop the reader back to the start page, and the hreflang pair has to point at
+ * the counterpart of the page they are actually on.
+ */
+export function swapLocale(pathname: string, target: Locale): string {
+  const segments = pathname.split('/');
+  segments[1] = target;
+  return segments.join('/');
+}

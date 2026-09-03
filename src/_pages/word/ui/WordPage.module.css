@@ -1,0 +1,19 @@
+.wrap { padding: 1.5rem 1.5rem 2.5rem; max-width: 46rem; }
+.title {
+  margin: 0;
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 600;
+  font-size: var(--step-5);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.meta { margin: 0.3rem 0 1rem; font-size: var(--step-1); color: var(--ink-2); }
+.cards { display: flex; flex-direction: column; gap: 0.875rem; }
+.tried {
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ink);
+  font-size: var(--step-2);
+}

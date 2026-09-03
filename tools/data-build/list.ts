@@ -1,4 +1,4 @@
-import { caseNumber } from '@/entities/rektion';
+import { caseNumber } from '@/entities/rektion/model/selectors';
 import { compile } from './compile';
 import { loadAuthoredFiles } from './load';
 

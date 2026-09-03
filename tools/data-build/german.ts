@@ -1,4 +1,4 @@
-import type { GrammaticalCase } from '@/entities/rektion';
+import type { GrammaticalCase } from '@/entities/rektion/model/schema';
 
 /**
  * The determiner right after the preposition is where the case becomes visible, so it is

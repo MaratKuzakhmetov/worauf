@@ -2,10 +2,17 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { isPreposition } from '@/entities/preposition';
+import { RESERVED_SEGMENTS } from '@/shared/config';
 import { isValidSlug } from '@/shared/lib/slug';
 import { compile } from './compile';
 import { checkCaseAgreement, findPreposition, mentionsLemma } from './german';
 import { DATA_DIR, loadAuthoredFiles, topLevelKeys } from './load';
+
+/*
+ * Tools import the entity's model directly rather than through its public index. `tools/`
+ * runs in Node and sits outside the FSD graph, and the public index now re-exports a React
+ * component with a CSS module, which a Node loader cannot read.
+ */
 
 /**
  * The dataset is the product: a wrong case teaches a wrong fact, and no component test
@@ -44,6 +51,18 @@ describe('slugs (ADR 0002)', () => {
     for (const r of rektionen) {
       expect(isValidSlug(r.slug.word), `${r.lemma}: ${r.slug.word}`).toBe(true);
       expect(isValidSlug(r.slug.prep), `${r.lemma}: ${r.slug.prep}`).toBe(true);
+    }
+  });
+
+  it('never collide with a reserved route segment', () => {
+    // `/[lang]/p/[prep]/` shares its namespace with the word slugs. A word folding to `p`
+    // would be unreachable, and the failure would look like a routing bug rather than a
+    // data one.
+    for (const r of rektionen) {
+      expect(
+        (RESERVED_SEGMENTS as readonly string[]).includes(r.slug.word),
+        `${r.lemma} folds to the reserved segment "${r.slug.word}"`,
+      ).toBe(false);
     }
   });
 

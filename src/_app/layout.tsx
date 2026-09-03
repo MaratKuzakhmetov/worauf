@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ThemeBootScript } from '@/features/theme-toggle';
+import { RektionBrowser } from '@/widgets/rektion-browser';
 import { isLocale, locales, strings } from '@/shared/i18n';
-import { localeUrl } from '@/shared/lib/urls';
+import { alternatesFor } from '@/shared/lib/urls';
 import { fontVariables } from './fonts';
 import './styles/tokens.css';
 import './styles/global.css';
@@ -25,14 +26,9 @@ export async function generateMetadata({
   return {
     title: t.title,
     description: t.description,
-    alternates: {
-      canonical: localeUrl(lang),
-      languages: {
-        en: localeUrl('en'),
-        ru: localeUrl('ru'),
-        'x-default': localeUrl('en'),
-      },
-    },
+    // Only the default for pages that do not set their own; every route below overrides it
+    // with its own path, because hreflang is a claim about a specific URL.
+    alternates: alternatesFor(`/${lang}/`),
   };
 }
 
@@ -50,7 +46,7 @@ export default async function LocaleLayout({
     <html lang={lang} className={fontVariables} suppressHydrationWarning>
       <body>
         <ThemeBootScript />
-        {children}
+        <RektionBrowser lang={lang}>{children}</RektionBrowser>
       </body>
     </html>
   );

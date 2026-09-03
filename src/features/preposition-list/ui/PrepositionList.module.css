@@ -1,0 +1,99 @@
+.pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--card);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  height: 2.5rem;
+  margin: 0;
+  padding: 0 0.875rem 0 1rem;
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-size: var(--step-0);
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.head b {
+  font-family: var(--font-mono), monospace;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.rows {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.125rem;
+  padding: 0 0.875rem 0 1rem;
+  line-height: 1;
+}
+
+.row:hover {
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+
+/*
+ * Dimming by colour, not opacity: opacity drags the contrast of the text below what an
+ * A2 reader can comfortably parse, and the row is still a working link.
+ */
+.dim .prep,
+.dim .count {
+  color: color-mix(in srgb, var(--ink-2) 45%, var(--card));
+}
+
+.on,
+.on:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.prep {
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.akk { color: var(--akk); }
+.dat { color: var(--dat); }
+.gen { color: var(--gen); }
+
+.on .akk,
+.on .dat,
+.on .gen,
+.on .prep,
+.on .count {
+  color: inherit;
+}
+
+.count {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--step-0);
+  color: var(--ink-2);
+}

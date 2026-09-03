@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'yaml';
-import { authoredFile, type AuthoredFile } from '@/entities/rektion';
+import { authoredFile, type AuthoredFile } from '@/entities/rektion/model/schema';
 
 export const DATA_DIR = join(process.cwd(), 'data', 'de');
 

@@ -1,0 +1,128 @@
+.pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--card);
+  border-right: 1px solid var(--rule);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  height: 2.5rem;
+  margin: 0;
+  padding: 0 0.875rem 0 1rem;
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-size: var(--step-0);
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.head b {
+  font-family: var(--font-mono), monospace;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/*
+ * Muting by colour, not opacity: opacity drags the text below the contrast an A2 reader
+ * can parse, and these rows stay perfectly clickable.
+ */
+.muted .word,
+.muted .gov,
+.muted .badge {
+  color: color-mix(in srgb, var(--ink-2) 45%, var(--card));
+}
+
+.muted .akk,
+.muted .dat,
+.muted .gen {
+  color: color-mix(in srgb, var(--ink-2) 45%, var(--card));
+}
+
+.rows {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  height: 2.125rem;
+  padding: 0 0.875rem 0 1rem;
+  line-height: 1;
+}
+
+.row:hover {
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+
+/* Selection is ink/paper inversion — colour belongs to case (docs/DESIGN.md §3). */
+.on,
+.on:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.word {
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gov {
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.on .gov {
+  color: inherit;
+}
+
+.tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-left: 0.25rem;
+}
+
+.akk { color: var(--akk); }
+.dat { color: var(--dat); }
+.gen { color: var(--gen); }
+
+.on .akk,
+.on .dat,
+.on .gen {
+  color: inherit;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.0625rem;
+  height: 1.0625rem;
+  flex-shrink: 0;
+  border: 1px solid currentColor;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.625rem;
+  opacity: 0.8;
+}

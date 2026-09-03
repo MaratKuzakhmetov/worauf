@@ -123,7 +123,7 @@ A layer may import only from layers **strictly below** it. Inside a slice, segme
 `ui / model / api / lib / config`, and only `index.ts` is public — never deep-import past it.
 The rule is enforced by review for now; a linter for it is a dependency, so it needs approval.
 
-Build-time tooling in `tools/`, never shipped. Tests co-located. No `utils.ts` catch-alls.
+Build-time tooling in `tools/` runs in Node, sits **outside** the FSD graph, and imports entity *models* directly rather than through a slice's public index — the index re-exports React components with CSS modules, which a Node loader cannot read. It is never shipped. Tests co-located. No `utils.ts` catch-alls.
 
 **Comments** — only where the *why* is non-obvious. Never comment the *what*.
 
