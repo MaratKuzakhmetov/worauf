@@ -34,3 +34,22 @@
     order: 0;
   }
 }
+
+.modes {
+  display: flex;
+  border: 1px solid var(--rule);
+}
+
+.mode {
+  padding: 0.4375rem 0.875rem;
+  font-family: var(--font-cond), Arial, sans-serif;
+  font-weight: 500;
+  font-size: var(--step-1);
+  color: var(--ink-2);
+}
+
+/* Selection is ink/paper inversion, like every other selected thing (docs/DESIGN.md §3). */
+.on {
+  background: var(--ink);
+  color: var(--paper);
+}

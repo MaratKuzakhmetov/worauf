@@ -17,7 +17,8 @@
     "lint": "eslint .",
     "format": "prettier --write src",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "trainer:coverage": "tsx tools/trainer-coverage.ts"
   },
   "dependencies": {
     "next": "^16.3.4",

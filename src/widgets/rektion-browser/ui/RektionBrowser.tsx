@@ -69,7 +69,7 @@ export function RektionBrowser({ lang, children }: { lang: Locale; children: Rea
 
   return (
     <div className={styles.shell}>
-      <AppHeader lang={lang} query={query} onQuery={setQuery} searchRef={searchRef} />
+      <AppHeader lang={lang} search={{ value: query, onQuery: setQuery, inputRef: searchRef }} />
 
       <div className={styles.body}>
         <div className={styles.reels}>

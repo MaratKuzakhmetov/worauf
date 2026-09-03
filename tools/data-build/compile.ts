@@ -1,5 +1,5 @@
 import { prepositionSlug } from '@/entities/preposition';
-import type { AuthoredEntry, AuthoredPattern, Rektion } from '@/entities/rektion/model/schema';
+import type { AuthoredEntry, AuthoredPattern, Rektion } from '@/entities/rektion/model';
 import { foldForSlug } from '@/shared/lib/slug';
 
 export type CompileInput = { readonly lemma: string; readonly entry: AuthoredEntry };

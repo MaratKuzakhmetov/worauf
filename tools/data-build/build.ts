@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { z } from 'zod';
-import { authoredFile } from '@/entities/rektion/model/schema';
+import { authoredFile } from '@/entities/rektion/model';
 import { compile } from './compile';
 import { loadAuthoredFiles } from './load';
 

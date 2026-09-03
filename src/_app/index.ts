@@ -1,1 +1,6 @@
-export { default as LocaleLayout, generateStaticParams, generateMetadata } from './layout';
+export {
+  default as LocaleLayout,
+  BrowseLayout,
+  generateStaticParams,
+  generateMetadata,
+} from './layout';

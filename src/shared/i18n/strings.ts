@@ -37,6 +37,27 @@ export type Strings = {
   readonly wordsFound: (shown: number, total: number) => string;
   readonly prepositionsAvailable: (shown: number, total: number) => string;
   readonly keyboardHint: string;
+  readonly practiceIntro: string;
+  readonly startSession: string;
+  readonly finishSession: string;
+  readonly next: string;
+  readonly why: string;
+  readonly yourAnswer: string;
+  readonly correctAnswer: string;
+  readonly openInBrowser: string;
+  readonly sessionOver: string;
+  readonly again: string;
+  readonly reviewMissed: string;
+  readonly trainerKeys: string;
+  readonly distractorNote: string;
+  readonly kind: {
+    readonly article: string;
+    readonly preposition: string;
+    readonly case: string;
+  };
+  readonly whyWechsel: (lemma: string, prep: string, kase: string) => string;
+  readonly whyFixed: (prep: string, kase: string) => string;
+  readonly scoreLine: (right: number, total: number) => string;
   readonly pos: { readonly verb: string; readonly adj: string; readonly noun: string };
 };
 
@@ -73,6 +94,30 @@ export const strings: Record<Locale, Strings> = {
     wordsFound: (shown, total) => `${shown} of ${total} words`,
     prepositionsAvailable: (shown, total) => `${shown} of ${total} prepositions available`,
     keyboardHint: '/ search · ↑↓←→ move · Space random · Esc clear',
+    practiceIntro:
+      'Twelve items. Every wrong option is one you could plausibly have picked — most of them are the same preposition in another case.',
+    startSession: 'Start',
+    finishSession: 'Finish',
+    next: 'Next',
+    why: 'Why',
+    yourAnswer: 'your answer',
+    correctAnswer: 'correct',
+    openInBrowser: 'Open in the browser',
+    sessionOver: 'Session over',
+    again: 'Again',
+    reviewMissed: 'Missed',
+    trainerKeys: '1–4 choose · Enter next · Esc finish',
+    distractorNote: 'Wrong options lead with the same preposition in a different case',
+    kind: {
+      article: 'Preposition and article',
+      preposition: 'Which preposition?',
+      case: 'Which case?',
+    },
+    whyWechsel: (lemma, prep, kase) =>
+      `${lemma} ${prep} is always ${kase}. The wo → Dativ / wohin → Akkusativ rule works for places, but a prepositional object is not a place: the case belongs to the pattern. You have to know it, not derive it.`,
+    whyFixed: (prep, kase) =>
+      `${prep} always takes ${kase}, wherever it appears — the case is not the hard part here, the preposition is.`,
+    scoreLine: (right, total) => `${right} of ${total} right`,
     pos: { verb: 'verb', adj: 'adjective', noun: 'noun' },
   },
   ru: {
@@ -108,6 +153,30 @@ export const strings: Record<Locale, Strings> = {
     wordsFound: (shown, total) => `найдено ${shown} ${pluralRu(shown, 'слово', 'слова', 'слов')} из ${total}`,
     prepositionsAvailable: (shown, total) => `доступно ${shown} ${pluralRu(shown, 'предлог', 'предлога', 'предлогов')} из ${total}`,
     keyboardHint: '/ поиск · ↑↓←→ переход · Пробел случайная · Esc сброс',
+    practiceIntro:
+      'Двенадцать заданий. Каждый неверный вариант — тот, который можно было выбрать всерьёз: чаще всего это тот же предлог в другом падеже.',
+    startSession: 'Начать',
+    finishSession: 'Закончить',
+    next: 'Дальше',
+    why: 'Почему',
+    yourAnswer: 'ваш ответ',
+    correctAnswer: 'верно',
+    openInBrowser: 'Открыть в справочнике',
+    sessionOver: 'Сессия закончена',
+    again: 'Ещё раз',
+    reviewMissed: 'С ошибкой',
+    trainerKeys: '1–4 выбор · Enter дальше · Esc закончить',
+    distractorNote: 'Неверные варианты начинаются с того же предлога в другом падеже',
+    kind: {
+      article: 'Предлог и артикль',
+      preposition: 'Какой предлог?',
+      case: 'Какой падеж?',
+    },
+    whyWechsel: (lemma, prep, kase) =>
+      `${lemma} ${prep} — всегда ${kase}. Правило «wo → Dativ / wohin → Akkusativ» работает для места, но предложное дополнение — не место: падеж принадлежит связке. Его надо знать, а не выводить.`,
+    whyFixed: (prep, kase) =>
+      `${prep} везде требует ${kase} — падеж здесь не самое трудное, трудное здесь предлог.`,
+    scoreLine: (right, total) => `${right} из ${total} верно`,
     pos: { verb: 'глагол', adj: 'прилагательное', noun: 'существительное' },
   },
 };
