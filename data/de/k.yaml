@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+kämpfen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "бороться за что-л. — ради цели"
+        en: "to fight for sth. — for a cause"
+      senseNote:
+        ru: "ради чего борешься — цель, которую защищаешь"
+        en: "the cause you are fighting for"
+      examples:
+        - de: "Sie kämpfen für den Frieden."
+          ru: "Они борются за мир."
+          en: "They are fighting for peace."
+      sources:
+        - "seed"
+    - prep: "gegen"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "бороться против кого-л. / чего-л."
+        en: "to fight against sb. / sth."
+      senseNote:
+        ru: "против чего борешься — противник"
+        en: "what you are fighting against — the opponent"
+      examples:
+        - de: "Wir kämpfen gegen den Klimawandel."
+          ru: "Мы боремся с изменением климата."
+          en: "We are fighting against climate change."
+      sources:
+        - "seed"
+    - prep: "um"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "бороться за что-л. — чтобы получить"
+        en: "to fight for sth. — to obtain it"
+      senseNote:
+        ru: "чтобы заполучить — приз, место, жизнь; für защищает, um добывает"
+        en: "to win it — a prize, a place, a life; für defends, um obtains"
+      examples:
+        - de: "Er kämpft um den ersten Platz."
+          ru: "Он борется за первое место."
+          en: "He is fighting for first place."
+      sources:
+        - "seed"
+
+klagen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "жаловаться на что-л. — о недомогании"
+        en: "to complain of sth. — of an ailment"
+      examples:
+        - de: "Sie klagt über die Kopfschmerzen."
+          ru: "Она жалуется на головную боль."
+          en: "She complains of the headache."
+      sources:
+        - "prototype"
+
+konzentrieren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "сосредотачиваться на чём-л."
+        en: "to concentrate on sth."
+      examples:
+        - de: "Konzentrier dich auf den Text!"
+          ru: "Сосредоточься на тексте!"
+          en: "Concentrate on the text!"
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Kritik:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "критика чего-л."
+        en: "criticism of sth."
+      examples:
+        - de: "Die Kritik an dem Plan war hart."
+          ru: "Критика плана была жёсткой."
+          en: "The criticism of the plan was harsh."
+      sources:
+        - "prototype"
+
+kümmern:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "заботиться о ком-л. / чём-л., заниматься чем-л."
+        en: "to take care of sb. / sth."
+      examples:
+        - de: "Sie kümmert sich um den Garten."
+          ru: "Она занимается садом."
+          en: "She takes care of the garden."
+      sources:
+        - "seed"
+      reflexive: "akk"

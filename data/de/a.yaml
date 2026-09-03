@@ -1,0 +1,260 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+abfinden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "смириться с чем-л."
+        en: "to come to terms with sth."
+      examples:
+        - de: "Er findet sich mit der Situation ab."
+          ru: "Он смиряется с ситуацией."
+          en: "He is coming to terms with the situation."
+      sources:
+        - "prototype"
+
+abhängen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "зависеть от кого-л. / чего-л."
+        en: "to depend on sb. / sth."
+      examples:
+        - de: "Das hängt vom Wetter ab."
+          ru: "Это зависит от погоды."
+          en: "That depends on the weather."
+      sources:
+        - "seed"
+
+abhängig:
+  pos: "adj"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "зависимый от кого-л. / чего-л."
+        en: "dependent on sb. / sth."
+      examples:
+        - de: "Er ist von seinen Eltern abhängig."
+          ru: "Он зависит от родителей."
+          en: "He is dependent on his parents."
+      sources:
+        - "prototype"
+
+achten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "обращать внимание на что-л., следить за чем-л."
+        en: "to pay attention to sth."
+      examples:
+        - de: "Achte auf den Verkehr!"
+          ru: "Следи за движением!"
+          en: "Pay attention to the traffic!"
+      sources:
+        - "seed"
+
+anfangen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "начинать с чего-л."
+        en: "to start with sth."
+      examples:
+        - de: "Wir fangen mit dem ersten Kapitel an."
+          ru: "Мы начинаем с первой главы."
+          en: "We are starting with the first chapter."
+      sources:
+        - "seed"
+
+Angst:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "страх за кого-л. / что-л."
+        en: "fear for sb. / sth."
+      senseNote:
+        ru: "боишься за кого-то другого — не он опасен, ему грозит опасность"
+        en: "you fear for someone else — they are not the danger, they are in it"
+      examples:
+        - de: "Er hat Angst um seinen Bruder."
+          ru: "Он боится за своего брата."
+          en: "He fears for his brother."
+      sources:
+        - "seed"
+    - prep: "vor"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "страх перед кем-л. / чем-л."
+        en: "fear of sb. / sth."
+      senseNote:
+        ru: "боишься самого предмета — того, что может причинить вред"
+        en: "you fear the thing itself — what might harm you"
+      examples:
+        - de: "Sie hat Angst vor dem Hund."
+          ru: "Она боится собаки."
+          en: "She is afraid of the dog."
+      sources:
+        - "seed"
+
+Angst haben:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "бояться кого-л. / чего-л."
+        en: "to be afraid of sb. / sth."
+      examples:
+        - de: "Ich habe Angst vor der Prüfung."
+          ru: "Я боюсь экзамена."
+          en: "I am afraid of the exam."
+          lemmaForm: "habe"
+      sources:
+        - "prototype"
+
+ankommen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "зависеть от чего-л. — es kommt an"
+        en: "to come down to sth. — es kommt an"
+      examples:
+        - de: "Es kommt auf das Wetter an."
+          ru: "Всё зависит от погоды."
+          en: "It all comes down to the weather."
+      sources:
+        - "prototype"
+
+Antwort:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "ответ на что-л."
+        en: "answer to sth."
+      examples:
+        - de: "Die Antwort auf diese Frage ist einfach."
+          ru: "Ответ на этот вопрос простой."
+          en: "The answer to this question is simple."
+      sources:
+        - "prototype"
+
+antworten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "отвечать на что-л."
+        en: "to answer sth."
+      examples:
+        - de: "Er antwortet auf meinen Brief."
+          ru: "Он отвечает на моё письмо."
+          en: "He is answering my letter."
+      sources:
+        - "seed"
+
+arbeiten:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "работать над чем-л."
+        en: "to work on sth."
+      examples:
+        - de: "Sie arbeitet an einem neuen Projekt."
+          ru: "Она работает над новым проектом."
+          en: "She is working on a new project."
+      sources:
+        - "seed"
+
+ärgern:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "злиться, досадовать на что-л. / кого-л."
+        en: "to be annoyed about sth. / sb."
+      examples:
+        - de: "Ich ärgere mich über den Fehler."
+          ru: "Я досадую на эту ошибку."
+          en: "I am annoyed about the mistake."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+aufhören:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "прекращать что-л."
+        en: "to stop doing sth."
+      examples:
+        - de: "Hör mit dem Lärm auf!"
+          ru: "Прекрати шуметь!"
+          en: "Stop that noise!"
+      sources:
+        - "seed"
+
+aufpassen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "присматривать за кем-л. / чем-л."
+        en: "to look after sb. / sth."
+      examples:
+        - de: "Kannst du auf den Hund aufpassen?"
+          ru: "Можешь присмотреть за собакой?"
+          en: "Can you look after the dog?"
+      sources:
+        - "seed"
+
+aufregen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "волноваться, кипятиться из-за чего-л."
+        en: "to get worked up about sth."
+      examples:
+        - de: "Er regt sich über den Stau auf."
+          ru: "Он кипятится из-за пробки."
+          en: "He is getting worked up about the traffic jam."
+      sources:
+        - "seed"
+      reflexive: "akk"

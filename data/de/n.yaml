@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+nachdenken:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "размышлять о чём-л."
+        en: "to think sth. over"
+      examples:
+        - de: "Ich denke über den Vorschlag nach."
+          ru: "Я размышляю над этим предложением."
+          en: "I am thinking the proposal over."
+      clause:
+        dass: false
+        zuInf: false
+        indirect: true
+      sources:
+        - "seed"
+
+neigen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "быть склонным к чему-л."
+        en: "to tend towards sth."
+      examples:
+        - de: "Er neigt zu einer Übertreibung."
+          ru: "Он склонен к преувеличению."
+          en: "He tends towards exaggeration."
+      sources:
+        - "prototype"

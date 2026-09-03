@@ -1,0 +1,289 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+verabschieden:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "прощаться с кем-л."
+        en: "to say goodbye to sb."
+      examples:
+        - de: "Ich verabschiede mich von den Gästen."
+          ru: "Я прощаюсь с гостями."
+          en: "I am saying goodbye to the guests."
+      sources:
+        - "prototype"
+
+verantwortlich:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "ответственный за что-л."
+        en: "responsible for sth."
+      examples:
+        - de: "Er ist für das Projekt verantwortlich."
+          ru: "Он отвечает за проект."
+          en: "He is responsible for the project."
+      sources:
+        - "prototype"
+
+Verantwortung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "ответственность за что-л."
+        en: "responsibility for sth."
+      examples:
+        - de: "Er übernimmt die Verantwortung für den Fehler."
+          ru: "Он берёт на себя ответственность за ошибку."
+          en: "He takes responsibility for the mistake."
+      sources:
+        - "prototype"
+
+verfügen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "располагать чем-л."
+        en: "to have sth. at one's disposal"
+      examples:
+        - de: "Er verfügt über die nötige Erfahrung."
+          ru: "Он располагает нужным опытом."
+          en: "He has the necessary experience at his disposal."
+      sources:
+        - "prototype"
+
+vergleichen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "сравнивать с чем-л."
+        en: "to compare with sth."
+      examples:
+        - de: "Vergleiche den Text mit dem Original."
+          ru: "Сравни текст с оригиналом."
+          en: "Compare the text with the original."
+      sources:
+        - "prototype"
+
+Verhältnis:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "отношение к кому-л."
+        en: "relationship to sb."
+      examples:
+        - de: "Sein Verhältnis zu den Kollegen ist gut."
+          ru: "Его отношения с коллегами хорошие."
+          en: "His relationship to his colleagues is good."
+      sources:
+        - "prototype"
+
+verheiratet:
+  pos: "adj"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "женатый на ком-л. / замужем за кем-л."
+        en: "married to sb."
+      examples:
+        - de: "Sie ist mit einem Arzt verheiratet."
+          ru: "Она замужем за врачом."
+          en: "She is married to a doctor."
+      sources:
+        - "prototype"
+
+verlassen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "полагаться на кого-л. / что-л."
+        en: "to rely on sb. / sth."
+      examples:
+        - de: "Ich verlasse mich auf dich."
+          ru: "Я на тебя полагаюсь."
+          en: "I am relying on you."
+      clause:
+        dass: true
+        zuInf: false
+        indirect: false
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+verlieben:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "влюбляться в кого-л."
+        en: "to fall in love with sb."
+      examples:
+        - de: "Er hat sich in sie verliebt."
+          ru: "Он влюбился в неё."
+          en: "He fell in love with her."
+      sources:
+        - "prototype"
+
+verliebt:
+  pos: "adj"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "влюблённый в кого-л."
+        en: "in love with sb."
+      examples:
+        - de: "Sie ist in ihn verliebt."
+          ru: "Она влюблена в него."
+          en: "She is in love with him."
+      sources:
+        - "prototype"
+
+verstecken:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "прятаться от кого-л. / чего-л."
+        en: "to hide from sb. / sth."
+      examples:
+        - de: "Das Kind versteckt sich vor dem Hund."
+          ru: "Ребёнок прячется от собаки."
+          en: "The child is hiding from the dog."
+      sources:
+        - "prototype"
+
+verstehen:
+  pos: "verb"
+  patterns:
+    - prep: "unter"
+      case: "dat"
+      gloss:
+        ru: "понимать под чем-л."
+        en: "to understand by sth."
+      examples:
+        - de: "Was verstehst du unter der Freiheit?"
+          ru: "Что ты понимаешь под свободой?"
+          en: "What do you understand by freedom?"
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "что подразумеваешь под словом — толкование"
+        en: "what you take a word to mean — an interpretation"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "разбираться в чём-л."
+        en: "to know about sth."
+      examples:
+        - de: "Er versteht viel von der Musik."
+          ru: "Он много понимает в музыке."
+          en: "He knows a lot about music."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "в чём разбираешься — область знания"
+        en: "what you know about — a field of knowledge"
+
+verstoßen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "нарушать что-л."
+        en: "to violate sth."
+      examples:
+        - de: "Das verstößt gegen die Regeln."
+          ru: "Это нарушает правила."
+          en: "That violates the rules."
+      sources:
+        - "prototype"
+
+vertrauen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B2"
+      gloss:
+        ru: "доверять чему-л., полагаться на что-л."
+        en: "to trust in sth."
+      examples:
+        - de: "Sie vertraut auf ihr Glück."
+          ru: "Она полагается на свою удачу."
+          en: "She trusts in her luck."
+      sources:
+        - "seed"
+
+verzichten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "отказываться от чего-л."
+        en: "to do without sth."
+      examples:
+        - de: "Er verzichtet auf den Nachtisch."
+          ru: "Он отказывается от десерта."
+          en: "He is doing without dessert."
+      sources:
+        - "seed"
+
+vorbereiten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "готовиться к чему-л."
+        en: "to prepare for sth."
+      examples:
+        - de: "Sie bereitet sich auf die Prüfung vor."
+          ru: "Она готовится к экзамену."
+          en: "She is preparing for the exam."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Vorbereitung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "подготовка к чему-л."
+        en: "preparation for sth."
+      examples:
+        - de: "Die Vorbereitung auf die Prüfung dauert lange."
+          ru: "Подготовка к экзамену идёт долго."
+          en: "The preparation for the exam takes a long time."
+      sources:
+        - "prototype"

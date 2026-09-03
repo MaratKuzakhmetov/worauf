@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+Meinung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "мнение о ком-л. / чём-л."
+        en: "opinion about sb. / sth."
+      examples:
+        - de: "Wie ist deine Meinung über den Film?"
+          ru: "Какое у тебя мнение о фильме?"
+          en: "What is your opinion about the film?"
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "мнение о предмете или человеке вообще"
+        en: "an opinion about a subject or a person in general"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "мнение по поводу чего-л."
+        en: "opinion on sth."
+      examples:
+        - de: "Was ist Ihre Meinung zu diesem Plan?"
+          ru: "Каково ваше мнение об этом плане?"
+          en: "What is your opinion on this plan?"
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "мнение по конкретному вопросу, вынесенному на обсуждение"
+        en: "an opinion on a specific matter that is up for discussion"

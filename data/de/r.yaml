@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+reagieren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "реагировать на что-л."
+        en: "to react to sth."
+      examples:
+        - de: "Er reagiert auf den Vorwurf."
+          ru: "Он реагирует на упрёк."
+          en: "He reacts to the accusation."
+      sources:
+        - "seed"
+
+rechnen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "рассчитывать на что-л., ожидать чего-л."
+        en: "to reckon with sth."
+      examples:
+        - de: "Wir rechnen mit dem Schlimmsten."
+          ru: "Мы рассчитываем на худшее."
+          en: "We are reckoning with the worst."
+      clause:
+        dass: true
+        zuInf: false
+        indirect: false
+      sources:
+        - "seed"
+
+Recht:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B2"
+      gloss:
+        ru: "право на что-л."
+        en: "right to sth."
+      examples:
+        - de: "Jeder hat ein Recht auf den eigenen Namen."
+          ru: "У каждого есть право на собственное имя."
+          en: "Everyone has a right to their own name."
+      sources:
+        - "seed"
+
+reich:
+  pos: "adj"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "богатый чем-л."
+        en: "rich in sth."
+      examples:
+        - de: "Das Land ist reich an dem Rohstoff."
+          ru: "Страна богата этим сырьём."
+          en: "The country is rich in that raw material."
+      sources:
+        - "prototype"
+
+riechen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "пахнуть чем-л."
+        en: "to smell of sth."
+      examples:
+        - de: "Es riecht nach dem Kaffee aus der Küche."
+          ru: "Пахнет кофе из кухни."
+          en: "It smells of the coffee from the kitchen."
+      sources:
+        - "prototype"

@@ -1,0 +1,130 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+lachen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "смеяться над чем-л. / кем-л."
+        en: "to laugh at sth. / sb."
+      examples:
+        - de: "Alle lachen über den Witz."
+          ru: "Все смеются над шуткой."
+          en: "Everyone laughs at the joke."
+      sources:
+        - "seed"
+
+leben:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "жить ради чего-л."
+        en: "to live for sth."
+      examples:
+        - de: "Sie lebt für ihre Musik."
+          ru: "Она живёт ради своей музыки."
+          en: "She lives for her music."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "ради чего живёшь — смысл"
+        en: "what you live for — the purpose"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "жить на какие-л. средства"
+        en: "to live on sth."
+      examples:
+        - de: "Sie lebt von ihrer Rente."
+          ru: "Она живёт на пенсию."
+          en: "She lives on her pension."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "на что живёшь — средства"
+        en: "what you live on — the means"
+
+leiden:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "страдать чем-л. — болезнью"
+        en: "to suffer from sth. — an illness"
+      senseNote:
+        ru: "причина внутри самого человека — болезнь, которой он болен"
+        en: "the cause is inside the person — the illness they have"
+      examples:
+        - de: "Er leidet an einer seltenen Krankheit."
+          ru: "Он страдает редкой болезнью."
+          en: "He suffers from a rare disease."
+      sources:
+        - "seed"
+    - prep: "unter"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "страдать от чего-л. — от внешних условий"
+        en: "to suffer from sth. — from conditions"
+      senseNote:
+        ru: "причина снаружи — шум, жара, начальник; an болеют, unter терпят"
+        en: "the cause is outside — noise, heat, a boss; an is an illness, unter is a burden"
+      examples:
+        - de: "Sie leidet unter dem Lärm."
+          ru: "Она страдает от шума."
+          en: "She suffers from the noise."
+      sources:
+        - "seed"
+
+Liebe:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "любовь к кому-л. / чему-л."
+        en: "love of sb. / sth."
+      examples:
+        - de: "Die Liebe zu der Musik verbindet uns."
+          ru: "Любовь к музыке нас объединяет."
+          en: "The love of music unites us."
+      sources:
+        - "prototype"
+
+liegen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "быть причиной чего-л. — es liegt an"
+        en: "to be down to sth. — es liegt an"
+      examples:
+        - de: "Das liegt an dem Wetter."
+          ru: "Дело в погоде."
+          en: "That is down to the weather."
+      sources:
+        - "prototype"
+
+Lust:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "желание чего-л."
+        en: "desire for sth."
+      examples:
+        - de: "Ich habe Lust auf einen Kaffee."
+          ru: "Мне хочется кофе."
+          en: "I have a desire for a coffee."
+      sources:
+        - "prototype"

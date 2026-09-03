@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+Teilnahme:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "участие в чём-л."
+        en: "participation in sth."
+      examples:
+        - de: "Die Teilnahme an dem Seminar ist kostenlos."
+          ru: "Участие в семинаре бесплатное."
+          en: "Participation in the seminar is free."
+      sources:
+        - "prototype"
+
+teilnehmen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "участвовать в чём-л."
+        en: "to take part in sth."
+      examples:
+        - de: "Er nimmt an dem Wettbewerb teil."
+          ru: "Он участвует в конкурсе."
+          en: "He is taking part in the competition."
+      sources:
+        - "seed"
+
+telefonieren:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "говорить по телефону с кем-л."
+        en: "to speak on the phone with sb."
+      examples:
+        - de: "Sie telefoniert mit ihrem Vater."
+          ru: "Она говорит по телефону с отцом."
+          en: "She is on the phone with her father."
+      sources:
+        - "seed"
+
+träumen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "мечтать о чём-л., видеть во сне что-л."
+        en: "to dream of sth."
+      examples:
+        - de: "Er träumt von einem eigenen Haus."
+          ru: "Он мечтает о собственном доме."
+          en: "He dreams of a house of his own."
+      sources:
+        - "seed"
+
+traurig:
+  pos: "adj"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "опечаленный чем-л."
+        en: "sad about sth."
+      examples:
+        - de: "Er ist traurig über den Verlust."
+          ru: "Он опечален потерей."
+          en: "He is sad about the loss."
+      sources:
+        - "prototype"
+
+treffen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "встречаться с кем-л."
+        en: "to meet with sb."
+      examples:
+        - de: "Ich treffe mich mit den Freunden."
+          ru: "Я встречаюсь с друзьями."
+          en: "I am meeting with the friends."
+      sources:
+        - "prototype"
+
+typisch:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "типичный для кого-л. / чего-л."
+        en: "typical of sb. / sth."
+      examples:
+        - de: "Das ist typisch für ihn."
+          ru: "Это типично для него."
+          en: "That is typical of him."
+      sources:
+        - "prototype"

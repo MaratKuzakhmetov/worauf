@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+gehören:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "относиться к чему-л., быть частью чего-л."
+        en: "to belong to sth."
+      examples:
+        - de: "Das gehört zu den Grundregeln."
+          ru: "Это относится к основным правилам."
+          en: "That is one of the basic rules."
+      sources:
+        - "seed"
+
+geraten:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "попадать во что-л."
+        en: "to get into sth."
+      examples:
+        - de: "Wir sind in einen Stau geraten."
+          ru: "Мы попали в пробку."
+          en: "We got into a traffic jam."
+      sources:
+        - "prototype"
+
+gespannt:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "сгорающий от любопытства насчёт чего-л."
+        en: "eager to see sth."
+      examples:
+        - de: "Ich bin gespannt auf den Film."
+          ru: "Мне не терпится увидеть фильм."
+          en: "I am eager to see the film."
+      sources:
+        - "seed"
+
+gewöhnen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "привыкать к чему-л."
+        en: "to get used to sth."
+      examples:
+        - de: "Ich habe mich an das Klima gewöhnt."
+          ru: "Я привык к климату."
+          en: "I have got used to the climate."
+      sources:
+        - "prototype"
+
+glauben:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "верить в кого-л. / что-л."
+        en: "to believe in sb. / sth."
+      examples:
+        - de: "Sie glaubt an den Erfolg."
+          ru: "Она верит в успех."
+          en: "She believes in success."
+      sources:
+        - "seed"
+
+glücklich:
+  pos: "adj"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "счастливый от чего-л."
+        en: "happy about sth."
+      examples:
+        - de: "Wir sind glücklich über die Nachricht."
+          ru: "Мы счастливы от этой новости."
+          en: "We are happy about the news."
+      sources:
+        - "prototype"
+
+gratulieren:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "поздравлять с чем-л."
+        en: "to congratulate on sth."
+      examples:
+        - de: "Ich gratuliere dir zum Geburtstag."
+          ru: "Поздравляю тебя с днём рождения."
+          en: "I congratulate you on your birthday."
+      sources:
+        - "prototype"
+
+Grund:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "причина чего-л."
+        en: "reason for sth."
+      examples:
+        - de: "Der Grund für die Verspätung ist unklar."
+          ru: "Причина опоздания неясна."
+          en: "The reason for the delay is unclear."
+      sources:
+        - "prototype"

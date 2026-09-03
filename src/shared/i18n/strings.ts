@@ -9,9 +9,6 @@ export type Strings = {
   readonly toLightTheme: string;
   readonly toDarkTheme: string;
   readonly languageLabel: string;
-  readonly specimenGloss: string;
-  readonly specimenExample: string;
-  readonly caseAkkusativ: string;
 };
 
 export const strings: Record<Locale, Strings> = {
@@ -25,9 +22,6 @@ export const strings: Record<Locale, Strings> = {
     toLightTheme: 'Switch to light theme',
     toDarkTheme: 'Switch to dark theme',
     languageLabel: 'Language',
-    specimenGloss: 'to wait for sb. / sth.',
-    specimenExample: 'I am waiting for the bus.',
-    caseAkkusativ: 'Akkusativ',
   },
   ru: {
     title: 'worauf — немецкие глаголы, прилагательные и существительные с предлогами',
@@ -39,8 +33,5 @@ export const strings: Record<Locale, Strings> = {
     toLightTheme: 'Переключить на светлую тему',
     toDarkTheme: 'Переключить на тёмную тему',
     languageLabel: 'Язык',
-    specimenGloss: 'ждать кого-л. / что-л.',
-    specimenExample: 'Я жду автобус.',
-    caseAkkusativ: 'Akkusativ',
   },
 };

@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+passen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "подходить к чему-л."
+        en: "to go with sth."
+      examples:
+        - de: "Die Schuhe passen zu dem Kleid."
+          ru: "Туфли подходят к платью."
+          en: "The shoes go with the dress."
+      sources:
+        - "prototype"
+
+profitieren:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "извлекать пользу из чего-л."
+        en: "to benefit from sth."
+      examples:
+        - de: "Wir profitieren von der Erfahrung."
+          ru: "Мы извлекаем пользу из опыта."
+          en: "We benefit from the experience."
+      sources:
+        - "prototype"
+
+protestieren:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "протестовать против чего-л."
+        en: "to protest against sth."
+      examples:
+        - de: "Sie protestieren gegen den Bau."
+          ru: "Они протестуют против стройки."
+          en: "They are protesting against the construction."
+      sources:
+        - "seed"

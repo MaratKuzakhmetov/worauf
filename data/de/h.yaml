@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+halten:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "считать кого-л. кем-л."
+        en: "to consider sb. sth."
+      examples:
+        - de: "Ich halte ihn für einen Fachmann."
+          ru: "Я считаю его специалистом."
+          en: "I consider him an expert."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "кем или чем считаешь — приписываешь свойство"
+        en: "what you take sb. to be — you ascribe a quality"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "быть какого-л. мнения о чём-л."
+        en: "to think sth. of sth."
+      examples:
+        - de: "Was hältst du von diesem Film?"
+          ru: "Что ты думаешь об этом фильме?"
+          en: "What do you think of this film?"
+          lemmaForm: hältst
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "какого ты мнения — оцениваешь целиком"
+        en: "what you think of sb. or sth. — you judge it as a whole"
+
+handeln:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "речь идёт о чём-л."
+        en: "to be a matter of sth."
+      examples:
+        - de: "Es handelt sich um einen Irrtum."
+          ru: "Речь идёт об ошибке."
+          en: "It is a matter of a mistake."
+      sources:
+        - "prototype"
+
+helfen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "помогать в чём-л."
+        en: "to help with sth."
+      examples:
+        - de: "Kannst du mir bei den Hausaufgaben helfen?"
+          ru: "Можешь помочь мне с домашним заданием?"
+          en: "Can you help me with the homework?"
+      sources:
+        - "prototype"
+
+hinweisen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "указывать на что-л."
+        en: "to point out sth."
+      examples:
+        - de: "Er weist auf das Problem hin."
+          ru: "Он указывает на проблему."
+          en: "He points out the problem."
+      sources:
+        - "prototype"
+
+hoffen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "надеяться на что-л."
+        en: "to hope for sth."
+      examples:
+        - de: "Wir hoffen auf einen guten Ausgang."
+          ru: "Мы надеемся на хороший исход."
+          en: "We are hoping for a good outcome."
+      clause:
+        dass: true
+        zuInf: true
+        indirect: false
+      sources:
+        - "seed"
+
+Hoffnung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "надежда на что-л."
+        en: "hope for sth."
+      examples:
+        - de: "Die Hoffnung auf den Frieden bleibt."
+          ru: "Надежда на мир остаётся."
+          en: "The hope for peace remains."
+      sources:
+        - "prototype"

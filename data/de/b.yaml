@@ -1,0 +1,473 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+basieren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "базироваться на чём-л."
+        en: "to be based on sth."
+      examples:
+        - de: "Die Theorie basiert auf einem Irrtum."
+          ru: "Теория базируется на заблуждении."
+          en: "The theory is based on a fallacy."
+      sources:
+        - "prototype"
+
+bedanken:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "благодарить кого-л."
+        en: "to thank sb."
+      examples:
+        - de: "Ich bedanke mich bei dem Kollegen."
+          ru: "Я благодарю коллегу."
+          en: "I am thanking the colleague."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "кого благодаришь — адресат"
+        en: "whom you thank — the addressee"
+    - prep: "für"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "благодарить за что-л."
+        en: "to thank for sth."
+      examples:
+        - de: "Ich bedanke mich für den Tipp."
+          ru: "Благодарю за совет."
+          en: "Thank you for the tip."
+      sources:
+        - "seed"
+      reflexive: "akk"
+      senseNote:
+        ru: "за что благодаришь — повод. Оба вместе: Ich bedanke mich bei dir für die Hilfe"
+        en: "what you thank for — the reason. Both at once: Ich bedanke mich bei dir für die Hilfe"
+
+beginnen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "начинать с чего-л."
+        en: "to begin with sth."
+      examples:
+        - de: "Der Kurs beginnt mit einem Test."
+          ru: "Курс начинается с теста."
+          en: "The course begins with a test."
+      sources:
+        - "seed"
+
+beitragen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "способствовать чему-л."
+        en: "to contribute to sth."
+      examples:
+        - de: "Das trägt zum Erfolg bei."
+          ru: "Это способствует успеху."
+          en: "That contributes to the success."
+      sources:
+        - "prototype"
+
+bekannt:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "известный чем-л."
+        en: "known for sth."
+      examples:
+        - de: "Die Stadt ist bekannt für ihren Dom."
+          ru: "Город известен своим собором."
+          en: "The city is known for its cathedral."
+      sources:
+        - "prototype"
+
+beklagen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "жаловаться кому-л."
+        en: "to complain to sb."
+      senseNote:
+        ru: "кому жалуешься — адресат, а не предмет"
+        en: "whom you complain to — the addressee, not the subject"
+      examples:
+        - de: "Er beklagt sich bei dem Chef."
+          ru: "Он жалуется начальнику."
+          en: "He complains to the boss."
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "über"
+      case: "akk"
+      level: "B2"
+      gloss:
+        ru: "жаловаться на что-л."
+        en: "to complain about sth."
+      senseNote:
+        ru: "на что жалуешься — предмет жалобы"
+        en: "what you complain about — the subject of the complaint"
+      examples:
+        - de: "Sie beklagt sich über den Lärm."
+          ru: "Она жалуется на шум."
+          en: "She complains about the noise."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+beneiden:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "завидовать кому-л. в чём-л."
+        en: "to envy sb. sth."
+      examples:
+        - de: "Ich beneide dich um deine Ruhe."
+          ru: "Я завидую твоему спокойствию."
+          en: "I envy you your calm."
+      sources:
+        - "prototype"
+
+bereit:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "готовый к чему-л. — подготовленный"
+        en: "ready for sth. — prepared"
+      examples:
+        - de: "Ich bin bereit für die Prüfung."
+          ru: "Я готов к экзамену."
+          en: "I am ready for the exam."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "подготовлен к событию — к экзамену, к поездке"
+        en: "prepared for an event — an exam, a trip"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "готовый пойти на что-л."
+        en: "willing to do sth."
+      examples:
+        - de: "Ich bin zu einem Kompromiss bereit."
+          ru: "Я готов на компромисс."
+          en: "I am willing to make a compromise."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "согласен совершить действие — готов на это пойти"
+        en: "willing to take an action — prepared to go that far"
+
+berichten:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "сообщать, рассказывать о чём-л. — подробно"
+        en: "to report on sth. — at length"
+      senseNote:
+        ru: "развёрнутый рассказ по существу темы"
+        en: "a full account of the topic"
+      examples:
+        - de: "Die Zeitung berichtet über den Prozess."
+          ru: "Газета сообщает о процессе."
+          en: "The newspaper reports on the trial."
+      sources:
+        - "seed"
+    - prep: "von"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "упоминать о чём-л. вскользь"
+        en: "to mention sth. in passing"
+      senseNote:
+        ru: "беглое упоминание, а не разбор темы"
+        en: "a passing mention rather than a treatment of the topic"
+      examples:
+        - de: "Er berichtet von seiner Reise."
+          ru: "Он рассказывает о своей поездке."
+          en: "He tells us about his trip."
+      sources:
+        - "seed"
+
+beruhen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "основываться на чём-л."
+        en: "to rest on sth."
+      examples:
+        - de: "Das beruht auf einem Missverständnis."
+          ru: "Это основано на недоразумении."
+          en: "That rests on a misunderstanding."
+      sources:
+        - "prototype"
+
+beschäftigen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "заниматься чем-л."
+        en: "to occupy oneself with sth."
+      examples:
+        - de: "Er beschäftigt sich mit der Geschichte."
+          ru: "Он занимается историей."
+          en: "He occupies himself with history."
+      sources:
+        - "prototype"
+
+beschweren:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "жаловаться кому-л."
+        en: "to complain to sb."
+      examples:
+        - de: "Er beschwert sich bei dem Chef."
+          ru: "Он жалуется начальнику."
+          en: "He complains to the boss."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "кому жалуешься — адресат"
+        en: "whom you complain to — the addressee"
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "жаловаться на что-л."
+        en: "to complain about sth."
+      examples:
+        - de: "Sie beschwert sich über den Service."
+          ru: "Она жалуется на обслуживание."
+          en: "She complains about the service."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "на что жалуешься — предмет жалобы"
+        en: "what you complain about — the subject of the complaint"
+
+bestehen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "настаивать на чём-л."
+        en: "to insist on sth."
+      senseNote:
+        ru: "auf здесь всегда Dativ — правило wo / wohin к предложному объекту не применяется"
+        en: "auf is Dativ here — the wo / wohin rule does not reach a prepositional object"
+      examples:
+        - de: "Er besteht auf seinem Recht."
+          ru: "Он настаивает на своём праве."
+          en: "He insists on his right."
+      clause:
+        dass: true
+        zuInf: true
+        indirect: false
+      sources:
+        - "seed"
+    - prep: "aus"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "состоять из чего-л."
+        en: "to consist of sth."
+      senseNote:
+        ru: "о составе — из каких частей собрано целое"
+        en: "about composition — which parts the whole is made of"
+      examples:
+        - de: "Das Team besteht aus fünf Leuten."
+          ru: "Команда состоит из пяти человек."
+          en: "The team consists of five people."
+      sources:
+        - "seed"
+    - prep: "in"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "заключаться в чём-л."
+        en: "to lie in sth."
+      senseNote:
+        ru: "о сути — в чём состоит проблема, задача, различие"
+        en: "about essence — what the problem or difference consists in"
+      examples:
+        - de: "Die Schwierigkeit besteht in den Kosten."
+          ru: "Трудность заключается в расходах."
+          en: "The difficulty lies in the costs."
+      clause:
+        dass: true
+        zuInf: false
+        indirect: false
+      sources:
+        - "seed"
+
+beteiligen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "участвовать в чём-л."
+        en: "to take part in sth."
+      examples:
+        - de: "Viele beteiligen sich an der Diskussion."
+          ru: "Многие участвуют в обсуждении."
+          en: "Many take part in the discussion."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+bewerben:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "подавать заявку куда-л."
+        en: "to apply to sb."
+      senseNote:
+        ru: "куда подаёшь — фирма, а не должность"
+        en: "where you are applying — the company, not the position"
+      examples:
+        - de: "Er bewirbt sich bei einer Bank."
+          ru: "Он подаёт заявку в банк."
+          en: "He is applying to a bank."
+          lemmaForm: "bewirbt"
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "um"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "подавать заявку на что-л., претендовать на что-л."
+        en: "to apply for sth."
+      senseNote:
+        ru: "на что претендуешь — должность, место, стипендия"
+        en: "what you are applying for — the position itself"
+      examples:
+        - de: "Sie bewirbt sich um den Job."
+          ru: "Она претендует на эту работу."
+          en: "She is applying for the job."
+          lemmaForm: "bewirbt"
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+beziehen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "ссылаться на что-л."
+        en: "to refer to sth."
+      examples:
+        - de: "Ich beziehe mich auf Ihr Schreiben."
+          ru: "Я ссылаюсь на Ваше письмо."
+          en: "I am referring to your letter."
+      sources:
+        - "prototype"
+
+Bitte:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "просьба о чём-л."
+        en: "request for sth."
+      examples:
+        - de: "Er hat eine Bitte um einen Rat."
+          ru: "У него просьба о совете."
+          en: "He has a request for advice."
+      sources:
+        - "prototype"
+
+bitten:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "просить о чём-л."
+        en: "to ask for sth."
+      examples:
+        - de: "Er bittet um einen Rat."
+          ru: "Он просит совета."
+          en: "He is asking for advice."
+      clause:
+        dass: true
+        zuInf: true
+        indirect: false
+      sources:
+        - "seed"
+
+bleiben:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "оставаться при чём-л."
+        en: "to stick to sth."
+      examples:
+        - de: "Ich bleibe bei meiner Meinung."
+          ru: "Я остаюсь при своём мнении."
+          en: "I am sticking to my opinion."
+      sources:
+        - "prototype"
+
+böse:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "сердитый на кого-л."
+        en: "angry with sb."
+      examples:
+        - de: "Sie ist böse auf ihren Bruder."
+          ru: "Она сердита на брата."
+          en: "She is angry with her brother."
+      sources:
+        - "prototype"

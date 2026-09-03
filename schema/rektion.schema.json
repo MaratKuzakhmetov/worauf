@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "propertyNames": {
+    "type": "string",
+    "minLength": 1
+  },
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "pos": {
+        "type": "string",
+        "enum": [
+          "verb",
+          "adj",
+          "noun"
+        ]
+      },
+      "article": {
+        "type": "string",
+        "enum": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "slugSuffix": {
+        "type": "integer",
+        "minimum": 2,
+        "maximum": 9007199254740991
+      },
+      "patterns": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "prep": {
+              "type": "string",
+              "enum": [
+                "auf",
+                "an",
+                "über",
+                "mit",
+                "für",
+                "von",
+                "zu",
+                "in",
+                "um",
+                "nach",
+                "aus",
+                "bei",
+                "vor",
+                "gegen",
+                "unter",
+                "zwischen"
+              ]
+            },
+            "case": {
+              "type": "string",
+              "enum": [
+                "akk",
+                "dat",
+                "gen"
+              ]
+            },
+            "reflexive": {
+              "type": "string",
+              "enum": [
+                "akk",
+                "dat"
+              ]
+            },
+            "gloss": {
+              "type": "object",
+              "properties": {
+                "ru": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "ru",
+                "en"
+              ],
+              "additionalProperties": false
+            },
+            "senseNote": {
+              "type": "object",
+              "properties": {
+                "ru": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "ru",
+                "en"
+              ],
+              "additionalProperties": false
+            },
+            "examples": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "de": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "ru": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "lemmaForm": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "de",
+                  "ru",
+                  "en"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "clause": {
+              "type": "object",
+              "properties": {
+                "dass": {
+                  "type": "boolean"
+                },
+                "zuInf": {
+                  "type": "boolean"
+                },
+                "indirect": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "dass",
+                "zuInf",
+                "indirect"
+              ],
+              "additionalProperties": false
+            },
+            "level": {
+              "type": "string",
+              "enum": [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "slugSuffix": {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "prep",
+            "case",
+            "gloss",
+            "examples"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "pos",
+      "patterns"
+    ],
+    "additionalProperties": false
+  }
+}

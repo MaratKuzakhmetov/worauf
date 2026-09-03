@@ -204,9 +204,20 @@ worauf/
 ├── src/                         ← Feature-Sliced Design layers
 │   ├── _app/  _pages/  widgets/  features/  shared/
 │   └── entities/                (Phase 1)
-├── data/de/{a..z}.yaml          (not yet created)
-└── tools/                       (not yet created)
+├── data/de/{a..z}.yaml          ← authored by hand, keyed by lemma
+├── schema/rektion.schema.json   ← generated from Zod, drives editor autocomplete
+└── tools/data-build/            ← YAML → runtime dataset, plus the invariant suite
 ```
+
+## Working with the dataset
+
+`npm run build:data` compiles `data/de/*.yaml` into `src/entities/rektion/model/dataset.generated.ts`
+and regenerates the JSON Schema. Both outputs are **committed**: the diff of the compiled
+dataset is where a changed slug becomes visible, and a changed slug is the one edit this
+project cannot undo. `npm run data:check` fails if they drift, and runs in CI.
+
+The build never invents a slug. On a collision it stops and asks for a frozen `slugSuffix`,
+because an automatic suffix would depend on file order and silently re-point old links.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

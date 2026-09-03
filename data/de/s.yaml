@@ -1,0 +1,393 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+schmecken:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "иметь вкус чего-л."
+        en: "to taste of sth."
+      examples:
+        - de: "Das schmeckt nach der Zitrone im Kuchen."
+          ru: "На вкус как лимон в пироге."
+          en: "That tastes of the lemon in the cake."
+      sources:
+        - "prototype"
+
+schreiben:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "писать кому-л."
+        en: "to write to sb."
+      senseNote:
+        ru: "адресат письма — тот же предлог an, но Akkusativ"
+        en: "the addressee of a letter — the same an, but Akkusativ"
+      examples:
+        - de: "Ich schreibe an meinen Bruder."
+          ru: "Я пишу брату."
+          en: "I am writing to my brother."
+      sources:
+        - "seed"
+    - prep: "an"
+      case: "dat"
+      level: "B2"
+      slugSuffix: 2
+      gloss:
+        ru: "работать над чем-л. — над текстом"
+        en: "to be working on sth. — a text"
+      senseNote:
+        ru: "не адресат, а предмет работы — тот же предлог an, но Dativ. Различает только падеж"
+        en: "not an addressee but the work in progress — the same an, but Dativ. Only the case tells them apart"
+      examples:
+        - de: "Er schreibt an seinem Roman."
+          ru: "Он работает над своим романом."
+          en: "He is working on his novel."
+      sources:
+        - "seed"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "писать о чём-л."
+        en: "to write about sth."
+      examples:
+        - de: "Sie schreibt über die Geschichte der Stadt."
+          ru: "Она пишет об истории города."
+          en: "She writes about the history of the city."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "о чём пишешь — тема текста. an + Akk это кому, an + Dat это над чем работаешь"
+        en: "what you write about — the subject. an + Akk is the addressee, an + Dat is the work in progress"
+
+schuld:
+  pos: "adj"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "виноватый в чём-л."
+        en: "to blame for sth."
+      examples:
+        - de: "Wer ist schuld an dem Unfall?"
+          ru: "Кто виноват в аварии?"
+          en: "Who is to blame for the accident?"
+      sources:
+        - "prototype"
+
+schützen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "защищать от чего-л."
+        en: "to protect from sth."
+      examples:
+        - de: "Die Creme schützt vor der Sonne."
+          ru: "Крем защищает от солнца."
+          en: "The cream protects from the sun."
+      sources:
+        - "prototype"
+
+sehnen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "тосковать по кому-л. / чему-л."
+        en: "to long for sb. / sth."
+      examples:
+        - de: "Sie sehnt sich nach dem Meer."
+          ru: "Она тоскует по морю."
+          en: "She longs for the sea."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Sehnsucht:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "тоска по кому-л. / чему-л."
+        en: "longing for sb. / sth."
+      examples:
+        - de: "Er hat Sehnsucht nach seiner Heimat."
+          ru: "Он тоскует по родине."
+          en: "He has a longing for his homeland."
+      sources:
+        - "prototype"
+
+Sorge:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "тревога о ком-л. / чём-л."
+        en: "worry about sb. / sth."
+      examples:
+        - de: "Die Sorge um die Kinder wächst."
+          ru: "Тревога о детях растёт."
+          en: "The worry about the children is growing."
+      sources:
+        - "prototype"
+
+sorgen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "заботиться о ком-л. / чём-л., обеспечивать что-л."
+        en: "to see to sth. / provide for sb."
+      examples:
+        - de: "Er sorgt für den Nachtisch."
+          ru: "Он берёт на себя десерт."
+          en: "He is seeing to the dessert."
+      sources:
+        - "seed"
+      senseNote:
+        ru: "обеспечивать, брать на себя — забота как действие"
+        en: "to provide, to see to it — care as an action"
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "беспокоиться о ком-л."
+        en: "to worry about sb."
+      examples:
+        - de: "Ich sorge mich um dich."
+          ru: "Я беспокоюсь о тебе."
+          en: "I worry about you."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "тревожиться — чувство, а не действие, и глагол здесь возвратный"
+        en: "to be anxious — a feeling, not an action, and here the verb is reflexive"
+
+sprechen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "говорить с кем-л."
+        en: "to speak with sb."
+      senseNote:
+        ru: "партнёр по разговору — с кем, а не о чём"
+        en: "the person you speak with — who, not what about"
+      examples:
+        - de: "Ich spreche mit dem Lehrer."
+          ru: "Я говорю с учителем."
+          en: "I am speaking with the teacher."
+      sources:
+        - "seed"
+    - prep: "über"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "говорить о чём-л. — обсуждать предметно"
+        en: "to talk about sth. — to discuss it properly"
+      senseNote:
+        ru: "тема разговора, развёрнуто и по существу"
+        en: "the topic of the conversation, at length and in substance"
+      examples:
+        - de: "Wir sprechen über den Film."
+          ru: "Мы обсуждаем фильм."
+          en: "We are discussing the film."
+      clause:
+        dass: true
+        zuInf: false
+        indirect: false
+      sources:
+        - "seed"
+    - prep: "von"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "упоминать о ком-л. / чём-л. вскользь"
+        en: "to mention sb. / sth. in passing"
+      senseNote:
+        ru: "мимолётное упоминание, а не обсуждение — вот чем отличается от über"
+        en: "a passing mention, not a discussion — that is what separates it from über"
+      examples:
+        - de: "Er sprach von seinem Bruder."
+          ru: "Он упомянул о своём брате."
+          en: "He mentioned his brother."
+          lemmaForm: "sprach"
+      sources:
+        - "seed"
+
+stammen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "происходить из чего-л."
+        en: "to come from sth."
+      examples:
+        - de: "Sie stammt aus der Türkei."
+          ru: "Она родом из Турции."
+          en: "She comes from Turkey."
+      sources:
+        - "prototype"
+
+staunen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "удивляться чему-л."
+        en: "to marvel at sth."
+      examples:
+        - de: "Die Kinder staunen über den Zauberer."
+          ru: "Дети удивляются фокуснику."
+          en: "The children marvel at the magician."
+      sources:
+        - "seed"
+
+sterben:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "умирать от чего-л."
+        en: "to die of sth."
+      examples:
+        - de: "Er starb an einem Herzinfarkt."
+          ru: "Он умер от инфаркта."
+          en: "He died of a heart attack."
+          lemmaForm: "starb"
+      sources:
+        - "seed"
+
+stolz:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "гордый чем-л. / кем-л."
+        en: "proud of sth. / sb."
+      examples:
+        - de: "Sie ist stolz auf ihren Sohn."
+          ru: "Она гордится сыном."
+          en: "She is proud of her son."
+      sources:
+        - "seed"
+
+streben:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "стремиться к чему-л."
+        en: "to strive for sth."
+      examples:
+        - de: "Er strebt nach der Wahrheit."
+          ru: "Он стремится к истине."
+          en: "He strives for the truth."
+      sources:
+        - "prototype"
+
+streiten:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "спорить, ссориться с кем-л."
+        en: "to quarrel with sb."
+      senseNote:
+        ru: "с кем спор — противник, а не предмет"
+        en: "whom you are arguing with — the other party, not the subject"
+      examples:
+        - de: "Er streitet sich mit dem Nachbarn."
+          ru: "Он ссорится с соседом."
+          en: "He is quarrelling with the neighbour."
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "über"
+      case: "akk"
+      level: "B2"
+      gloss:
+        ru: "спорить о чём-л."
+        en: "to argue about sth."
+      senseNote:
+        ru: "о чём спор — предмет разногласия"
+        en: "what the argument is about — the point at issue"
+      examples:
+        - de: "Sie streiten sich über den Preis."
+          ru: "Они спорят о цене."
+          en: "They are arguing about the price."
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "спорить из-за чего-л."
+        en: "to quarrel over sth."
+      examples:
+        - de: "Die Kinder streiten sich um das Spielzeug."
+          ru: "Дети спорят из-за игрушки."
+          en: "The children are quarrelling over the toy."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "из-за чего ссора — то, что делят. über — тема, о которой спорят"
+        en: "what the quarrel is over — the thing being fought for. über is the topic argued about"
+
+Suche:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "поиск чего-л."
+        en: "search for sth."
+      examples:
+        - de: "Die Suche nach der Wahrheit dauert an."
+          ru: "Поиск истины продолжается."
+          en: "The search for the truth goes on."
+      sources:
+        - "prototype"
+
+suchen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "искать что-л."
+        en: "to search for sth."
+      examples:
+        - de: "Ich suche nach einer Lösung."
+          ru: "Я ищу решение."
+          en: "I am searching for a solution."
+      sources:
+        - "prototype"

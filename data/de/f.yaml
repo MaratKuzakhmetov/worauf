@@ -1,0 +1,248 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+fähig:
+  pos: "adj"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "способный на что-л."
+        en: "capable of sth."
+      examples:
+        - de: "Er ist zu einer solchen Tat fähig."
+          ru: "Он способен на такой поступок."
+          en: "He is capable of such an act."
+      sources:
+        - "prototype"
+
+fehlen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "не хватать чего-л. — es fehlt an"
+        en: "to be lacking — es fehlt an"
+      examples:
+        - de: "Es fehlt an dem nötigen Geld."
+          ru: "Не хватает нужных денег."
+          en: "The necessary money is lacking."
+      sources:
+        - "prototype"
+
+fertig:
+  pos: "adj"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "закончивший с чем-л."
+        en: "finished with sth."
+      examples:
+        - de: "Bist du mit der Arbeit fertig?"
+          ru: "Ты закончил работу?"
+          en: "Are you finished with the work?"
+      sources:
+        - "prototype"
+
+fliehen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "бежать от чего-л."
+        en: "to flee from sth."
+      examples:
+        - de: "Sie fliehen vor dem Krieg."
+          ru: "Они бегут от войны."
+          en: "They are fleeing from the war."
+      sources:
+        - "prototype"
+
+folgen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "следовать из чего-л."
+        en: "to follow from sth."
+      examples:
+        - de: "Was folgt aus diesem Ergebnis?"
+          ru: "Что следует из этого результата?"
+          en: "What follows from this result?"
+      sources:
+        - "prototype"
+
+Frage:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "вопрос о чём-л."
+        en: "question about sth."
+      examples:
+        - de: "Die Frage nach dem Sinn bleibt offen."
+          ru: "Вопрос о смысле остаётся открытым."
+          en: "The question about meaning remains open."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "о чём вопрос — та вещь, которую хотят узнать"
+        en: "what the question is about — the thing you want to find out"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "вопрос по поводу чего-л."
+        en: "question regarding sth."
+      examples:
+        - de: "Haben Sie Fragen zu dem Thema?"
+          ru: "У вас есть вопросы по теме?"
+          en: "Do you have questions regarding the topic?"
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "по какой теме вопрос — привязка к тому, что уже обсуждают"
+        en: "which topic the question attaches to — something already on the table"
+
+fragen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "спрашивать о ком-л. / чём-л."
+        en: "to ask after sb. / sth."
+      examples:
+        - de: "Er fragt nach dem Weg."
+          ru: "Он спрашивает дорогу."
+          en: "He asks the way."
+      sources:
+        - "seed"
+
+Freude:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "радость от занятия чем-л."
+        en: "enjoyment of sth."
+      examples:
+        - de: "Er hat Freude an der Arbeit."
+          ru: "Ему в радость работа."
+          en: "He takes enjoyment in his work."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "удовольствие от занятия — длится, пока длится само дело"
+        en: "enjoyment of an activity — it lasts as long as the activity does"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "радость по поводу чего-л."
+        en: "joy about sth."
+      examples:
+        - de: "Die Freude über den Sieg war groß."
+          ru: "Радость от победы была большой."
+          en: "The joy about the victory was great."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "радость по поводу события, которое уже случилось"
+        en: "joy about an event that has already happened"
+
+freuen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "предвкушать что-л., радоваться предстоящему"
+        en: "to look forward to sth."
+      senseNote:
+        ru: "событие ещё впереди — это предвкушение"
+        en: "the event is still ahead — anticipation"
+      examples:
+        - de: "Ich freue mich auf den Urlaub."
+          ru: "Я предвкушаю отпуск."
+          en: "I am looking forward to the holiday."
+      clause:
+        dass: true
+        zuInf: true
+        indirect: false
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "über"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "радоваться тому, что уже случилось"
+        en: "to be glad about sth. that has happened"
+      senseNote:
+        ru: "событие уже произошло — тот же падеж, другое время события"
+        en: "the event has already happened — same case, different moment"
+      examples:
+        - de: "Sie freut sich über das Geschenk."
+          ru: "Она рада подарку."
+          en: "She is glad about the present."
+      clause:
+        dass: true
+        zuInf: false
+        indirect: false
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+freundlich:
+  pos: "adj"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "приветливый с кем-л."
+        en: "friendly towards sb."
+      examples:
+        - de: "Sei freundlich zu den Gästen!"
+          ru: "Будь приветлив с гостями!"
+          en: "Be friendly towards the guests!"
+      sources:
+        - "prototype"
+
+führen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "приводить к чему-л."
+        en: "to lead to sth."
+      examples:
+        - de: "Das führt zu einem Konflikt."
+          ru: "Это приводит к конфликту."
+          en: "That leads to a conflict."
+      sources:
+        - "prototype"
+
+fürchten:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "бояться чего-л."
+        en: "to be afraid of sth."
+      examples:
+        - de: "Er fürchtet sich vor der Dunkelheit."
+          ru: "Он боится темноты."
+          en: "He is afraid of the dark."
+      sources:
+        - "prototype"

@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+dankbar:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "благодарный за что-л."
+        en: "grateful for sth."
+      examples:
+        - de: "Ich bin dir dankbar für die Hilfe."
+          ru: "Я тебе благодарен за помощь."
+          en: "I am grateful to you for the help."
+      sources:
+        - "prototype"
+
+danken:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "благодарить за что-л."
+        en: "to thank for sth."
+      examples:
+        - de: "Ich danke dir für den Brief."
+          ru: "Спасибо тебе за письмо."
+          en: "Thank you for the letter."
+      sources:
+        - "seed"
+
+denken:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "думать о ком-л. / чём-л. — держать в мыслях"
+        en: "to think of sb. / sth. — keep in mind"
+      senseNote:
+        ru: "держишь в мыслях, вспоминаешь, не забываешь — мнения тут нет"
+        en: "keeping something in mind or remembering it — no opinion involved"
+      examples:
+        - de: "Ich denke oft an meinen Großvater."
+          ru: "Я часто думаю о дедушке."
+          en: "I often think of my grandfather."
+      clause:
+        dass: true
+        zuInf: true
+        indirect: false
+      sources:
+        - "seed"
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "думать о чём-л. — иметь мнение"
+        en: "to think about sth. — have an opinion"
+      senseNote:
+        ru: "имеешь мнение, оцениваешь — вопрос «как ты к этому относишься»"
+        en: "holding an opinion — the question is what you make of it"
+      examples:
+        - de: "Wie denkst du über den Vorschlag?"
+          ru: "Что ты думаешь об этом предложении?"
+          en: "What do you think about the proposal?"
+      sources:
+        - "seed"
+
+diskutieren:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "обсуждать с кем-л."
+        en: "to discuss with sb."
+      examples:
+        - de: "Ich diskutiere mit den Kollegen."
+          ru: "Я обсуждаю с коллегами."
+          en: "I am discussing it with the colleagues."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "с кем обсуждаешь — собеседник"
+        en: "whom you discuss with — the other party"
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "обсуждать что-л."
+        en: "to discuss sth."
+      examples:
+        - de: "Wir diskutieren über den Plan."
+          ru: "Мы обсуждаем план."
+          en: "We are discussing the plan."
+      sources:
+        - "seed"
+      senseNote:
+        ru: "что обсуждаешь — тема"
+        en: "what you discuss — the topic"

@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+überzeugen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "убеждать кого-л. в чём-л."
+        en: "to convince sb. of sth."
+      examples:
+        - de: "Er überzeugt mich von seiner Idee."
+          ru: "Он убеждает меня в своей идее."
+          en: "He convinces me of his idea."
+      sources:
+        - "prototype"
+
+überzeugt:
+  pos: "adj"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "убеждённый в чём-л."
+        en: "convinced of sth."
+      examples:
+        - de: "Ich bin von der Idee überzeugt."
+          ru: "Я убеждён в этой идее."
+          en: "I am convinced of the idea."
+      sources:
+        - "prototype"
+
+unterhalten:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "беседовать с кем-л."
+        en: "to converse with sb."
+      senseNote:
+        ru: "с кем беседа — собеседник, а не тема"
+        en: "whom you are talking with — the other person, not the topic"
+      examples:
+        - de: "Sie unterhält sich mit dem Gast."
+          ru: "Она беседует с гостем."
+          en: "She is talking with the guest."
+          lemmaForm: "unterhält"
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "беседовать о чём-л."
+        en: "to converse about sth."
+      senseNote:
+        ru: "о чём беседа — тема"
+        en: "what the conversation is about — the topic"
+      examples:
+        - de: "Wir unterhalten uns über den Urlaub."
+          ru: "Мы беседуем об отпуске."
+          en: "We are talking about the holiday."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Unterschied:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "zwischen"
+      case: "dat"
+      gloss:
+        ru: "разница между кем-л. / чем-л."
+        en: "difference between sb. / sth."
+      examples:
+        - de: "Der Unterschied zwischen den beiden ist klein."
+          ru: "Разница между ними невелика."
+          en: "The difference between the two is small."
+      sources:
+        - "prototype"

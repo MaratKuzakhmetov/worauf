@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+informieren:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "узнавать у кого-л."
+        en: "to get information from sb."
+      examples:
+        - de: "Informieren Sie sich bei der Botschaft."
+          ru: "Узнайте в посольстве."
+          en: "Get information from the embassy."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "у кого узнаёшь — источник"
+        en: "whom you get the information from — the source"
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "узнавать информацию о чём-л."
+        en: "to find out about sth."
+      examples:
+        - de: "Informieren Sie sich über die Preise."
+          ru: "Узнайте о ценах."
+          en: "Find out about the prices."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "о чём узнаёшь — предмет"
+        en: "what you find out about — the subject"
+
+Interesse:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "интерес к чему-л."
+        en: "interest in sth."
+      examples:
+        - de: "Sie hat großes Interesse an der Kunst."
+          ru: "У неё большой интерес к искусству."
+          en: "She has a great interest in art."
+      sources:
+        - "prototype"
+
+interessieren:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "интересоваться чем-л."
+        en: "to be interested in sth."
+      examples:
+        - de: "Er interessiert sich für den Sport."
+          ru: "Он интересуется спортом."
+          en: "He is interested in sport."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+interessiert:
+  pos: "adj"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "B1"
+      gloss:
+        ru: "заинтересованный в чём-л."
+        en: "interested in sth."
+      examples:
+        - de: "Sie ist an dem Angebot interessiert."
+          ru: "Она заинтересована в этом предложении."
+          en: "She is interested in the offer."
+      sources:
+        - "seed"
+
+irren:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "ошибаться в ком-л. / чём-л."
+        en: "to be mistaken about sb. / sth."
+      examples:
+        - de: "Ich habe mich in ihm geirrt."
+          ru: "Я в нём ошибся."
+          en: "I was mistaken about him."
+      sources:
+        - "prototype"

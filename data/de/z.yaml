@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+zufrieden:
+  pos: "adj"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "довольный чем-л."
+        en: "satisfied with sth."
+      examples:
+        - de: "Er ist mit dem Ergebnis zufrieden."
+          ru: "Он доволен результатом."
+          en: "He is satisfied with the result."
+      sources:
+        - "seed"
+
+Zweifel:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "сомнение в чём-л."
+        en: "doubt about sth."
+      examples:
+        - de: "Ich habe Zweifel an dieser Zahl."
+          ru: "У меня есть сомнения в этой цифре."
+          en: "I have doubts about this figure."
+      sources:
+        - "prototype"
+
+zweifeln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "сомневаться в чём-л."
+        en: "to doubt sth."
+      examples:
+        - de: "Sie zweifelt an dem Plan."
+          ru: "Она сомневается в этом плане."
+          en: "She doubts the plan."
+      sources:
+        - "seed"
+
+zwingen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "принуждать к чему-л."
+        en: "to force into sth."
+      examples:
+        - de: "Niemand zwingt dich zu dieser Arbeit."
+          ru: "Никто не принуждает тебя к этой работе."
+          en: "Nobody is forcing you into this work."
+      sources:
+        - "prototype"

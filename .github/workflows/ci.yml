@@ -23,6 +23,11 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+
+      # The dataset is the product, so it is checked like code: the compiled artifact is
+      # committed, and this fails if it drifts from the YAML it was built from.
+      - run: npm run data:check
+
       - run: npm run test:run
 
       # The build stays a check even though nothing here deploys it: `next dev` no longer

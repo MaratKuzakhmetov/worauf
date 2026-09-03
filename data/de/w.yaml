@@ -1,0 +1,152 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+warnen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "предупреждать о чём-л."
+        en: "to warn of sth."
+      examples:
+        - de: "Die Polizei warnt vor den Betrügern."
+          ru: "Полиция предупреждает о мошенниках."
+          en: "The police warn of the fraudsters."
+      sources:
+        - "prototype"
+
+warten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      level: "A1"
+      gloss:
+        ru: "ждать кого-л. / что-л."
+        en: "to wait for sb. / sth."
+      examples:
+        - de: "Ich warte auf den Bus."
+          ru: "Я жду автобус."
+          en: "I am waiting for the bus."
+      clause:
+        dass: true
+        zuInf: false
+        indirect: false
+      sources:
+        - "seed"
+
+wehren:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "защищаться от чего-л."
+        en: "to defend oneself against sth."
+      examples:
+        - de: "Er wehrt sich gegen die Vorwürfe."
+          ru: "Он защищается от обвинений."
+          en: "He defends himself against the accusations."
+      sources:
+        - "prototype"
+
+wenden:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      level: "B2"
+      gloss:
+        ru: "обращаться к кому-л."
+        en: "to turn to sb."
+      examples:
+        - de: "Wenden Sie sich an den Kollegen."
+          ru: "Обратитесь к коллеге."
+          en: "Please turn to my colleague."
+      sources:
+        - "seed"
+      reflexive: "akk"
+      senseNote:
+        ru: "к кому обращаешься — адресат"
+        en: "whom you turn to — the addressee"
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "выступать против чего-л."
+        en: "to come out against sth."
+      examples:
+        - de: "Er wendet sich gegen den Vorschlag."
+          ru: "Он выступает против предложения."
+          en: "He comes out against the proposal."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "против чего выступаешь — то, что отвергаешь"
+        en: "what you come out against — what you reject"
+
+wundern:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "удивляться чему-л."
+        en: "to be surprised at sth."
+      examples:
+        - de: "Ich wundere mich über den Preis."
+          ru: "Я удивляюсь цене."
+          en: "I am surprised at the price."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Wunsch:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "желание чего-л."
+        en: "wish for sth."
+      examples:
+        - de: "Der Wunsch nach der Sicherheit ist stark."
+          ru: "Желание безопасности сильно."
+          en: "The wish for security is strong."
+      sources:
+        - "prototype"
+
+wütend:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "в ярости на кого-л."
+        en: "furious with sb."
+      examples:
+        - de: "Ich war wütend auf meinen Bruder."
+          ru: "Я был в ярости на брата."
+          en: "I was furious with my brother."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "злишься на человека"
+        en: "furious at a person"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "в ярости из-за чего-л."
+        en: "furious about sth."
+      examples:
+        - de: "Sie war wütend über die Entscheidung."
+          ru: "Она была в ярости из-за решения."
+          en: "She was furious about the decision."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "злишься из-за события или решения. Так же ведут себя böse и sich ärgern"
+        en: "furious about an event or a decision. böse and sich ärgern behave the same way"

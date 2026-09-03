@@ -1,0 +1,386 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+eifersüchtig:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "ревнующий к кому-л."
+        en: "jealous of sb."
+      examples:
+        - de: "Er ist eifersüchtig auf ihren Kollegen."
+          ru: "Он ревнует её к коллеге."
+          en: "He is jealous of her colleague."
+      sources:
+        - "prototype"
+
+eignen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      level: "B2"
+      gloss:
+        ru: "годиться для чего-л."
+        en: "to be suitable for sth."
+      examples:
+        - de: "Das Buch eignet sich für den Unterricht."
+          ru: "Книга подходит для урока."
+          en: "The book is suitable for the lesson."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Einfluss:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "влияние на что-л."
+        en: "influence on sth."
+      examples:
+        - de: "Das hat großen Einfluss auf die Preise."
+          ru: "Это сильно влияет на цены."
+          en: "That has a great influence on the prices."
+      sources:
+        - "prototype"
+
+einladen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "приглашать на что-л."
+        en: "to invite to sth."
+      examples:
+        - de: "Ich lade dich zum Essen ein."
+          ru: "Я приглашаю тебя на ужин."
+          en: "I am inviting you to dinner."
+      sources:
+        - "prototype"
+
+Einladung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "приглашение на что-л."
+        en: "invitation to sth."
+      examples:
+        - de: "Danke für die Einladung zu der Feier."
+          ru: "Спасибо за приглашение на праздник."
+          en: "Thank you for the invitation to the party."
+      sources:
+        - "prototype"
+
+einmischen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "вмешиваться во что-л."
+        en: "to interfere in sth."
+      examples:
+        - de: "Misch dich nicht in meine Sachen ein!"
+          ru: "Не лезь в мои дела!"
+          en: "Do not interfere in my affairs!"
+      sources:
+        - "prototype"
+
+einsetzen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "выступать за что-л."
+        en: "to stand up for sth."
+      examples:
+        - de: "Sie setzt sich für den Umweltschutz ein."
+          ru: "Она выступает за охрану природы."
+          en: "She stands up for environmental protection."
+      sources:
+        - "prototype"
+
+einverstanden:
+  pos: "adj"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "согласный с чем-л."
+        en: "in agreement with sth."
+      examples:
+        - de: "Ich bin mit dem Plan einverstanden."
+          ru: "Я согласен с планом."
+          en: "I am in agreement with the plan."
+      sources:
+        - "prototype"
+
+ekeln:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "испытывать отвращение к чему-л."
+        en: "to be disgusted by sth."
+      examples:
+        - de: "Ich ekle mich vor der Spinne."
+          ru: "Мне противен паук."
+          en: "I am disgusted by the spider."
+          lemmaForm: "ekle"
+      sources:
+        - "prototype"
+
+entscheiden:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "решиться на что-л., выбрать что-л."
+        en: "to decide on sth."
+      senseNote:
+        ru: "что выбрал — сторона, на которую встал"
+        en: "what you chose — the side you came down on"
+      examples:
+        - de: "Sie entscheidet sich für den blauen Mantel."
+          ru: "Она выбирает синее пальто."
+          en: "She decides on the blue coat."
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "gegen"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "решить отказаться от чего-л."
+        en: "to decide against sth."
+      senseNote:
+        ru: "от чего отказался — симметричная пара к für"
+        en: "what you rejected — the mirror image of für"
+      examples:
+        - de: "Er entscheidet sich gegen den Umzug."
+          ru: "Он решает не переезжать."
+          en: "He decides against moving."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+entschließen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "решаться на что-л."
+        en: "to resolve on sth."
+      examples:
+        - de: "Er entschließt sich zu einem Umzug."
+          ru: "Он решается на переезд."
+          en: "He resolves on a move."
+      sources:
+        - "prototype"
+
+entschuldigen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "извиняться перед кем-л."
+        en: "to apologise to sb."
+      senseNote:
+        ru: "перед кем извиняешься — адресат, а не проступок"
+        en: "whom you are apologising to — the addressee, not the offence"
+      examples:
+        - de: "Sie entschuldigt sich bei dem Lehrer."
+          ru: "Она извиняется перед учителем."
+          en: "She apologises to the teacher."
+      sources:
+        - "seed"
+      reflexive: "akk"
+    - prep: "für"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "извиняться за что-л."
+        en: "to apologise for sth."
+      senseNote:
+        ru: "за что извиняешься — проступок"
+        en: "what you are apologising for — the offence"
+      examples:
+        - de: "Er entschuldigt sich für den Fehler."
+          ru: "Он извиняется за ошибку."
+          en: "He apologises for the mistake."
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+ergeben:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "вытекать из чего-л."
+        en: "to follow from sth."
+      examples:
+        - de: "Das ergibt sich aus dem Vertrag."
+          ru: "Это вытекает из договора."
+          en: "That follows from the contract."
+          lemmaForm: ergibt
+      sources:
+        - "prototype"
+
+erholen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "восстанавливаться после чего-л."
+        en: "to recover from sth."
+      examples:
+        - de: "Er erholt sich von der Krankheit."
+          ru: "Он восстанавливается после болезни."
+          en: "He is recovering from the illness."
+      sources:
+        - "prototype"
+
+erinnern:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      level: "A2"
+      gloss:
+        ru: "помнить о ком-л. / чём-л., вспоминать"
+        en: "to remember sb. / sth."
+      examples:
+        - de: "Ich erinnere mich an den Tag."
+          ru: "Я помню тот день."
+          en: "I remember that day."
+      clause:
+        dass: true
+        zuInf: true
+        indirect: false
+      sources:
+        - "seed"
+      reflexive: "akk"
+
+Erinnerung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "воспоминание о чём-л."
+        en: "memory of sth."
+      examples:
+        - de: "Die Erinnerung an diesen Tag bleibt."
+          ru: "Воспоминание об этом дне останется."
+          en: "The memory of that day remains."
+      sources:
+        - "prototype"
+
+erkennen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "узнавать по чему-л."
+        en: "to recognise by sth."
+      examples:
+        - de: "Ich erkenne ihn an der Stimme."
+          ru: "Я узнаю его по голосу."
+          en: "I recognise him by his voice."
+      sources:
+        - "prototype"
+
+erkundigen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "справляться у кого-л."
+        en: "to enquire of sb."
+      examples:
+        - de: "Erkundige dich bei der Auskunft."
+          ru: "Справься в справочной."
+          en: "Enquire at the information desk."
+      sources:
+        - "prototype"
+      senseNote:
+        ru: "у кого справляешься — источник сведений"
+        en: "whom you enquire of — the source"
+    - prep: "nach"
+      case: "dat"
+      level: "B2"
+      gloss:
+        ru: "справляться, осведомляться о чём-л."
+        en: "to enquire about sth."
+      examples:
+        - de: "Er erkundigt sich nach dem Preis."
+          ru: "Он справляется о цене."
+          en: "He enquires about the price."
+      sources:
+        - "seed"
+      reflexive: "akk"
+      senseNote:
+        ru: "о чём справляешься — предмет вопроса"
+        en: "what you enquire about — the subject"
+
+erzählen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      level: "B1"
+      gloss:
+        ru: "рассказывать о чём-л. — обстоятельно"
+        en: "to tell about sth. — at length"
+      senseNote:
+        ru: "развёрнутый рассказ по теме, а не упоминание"
+        en: "a full account of the topic rather than a mention"
+      examples:
+        - de: "Er erzählt über den Krieg."
+          ru: "Он обстоятельно рассказывает о войне."
+          en: "He gives an account of the war."
+      sources:
+        - "seed"
+    - prep: "von"
+      case: "dat"
+      level: "A2"
+      gloss:
+        ru: "рассказывать о чём-л. — вскользь"
+        en: "to tell about sth. — in passing"
+      senseNote:
+        ru: "беглое упоминание в разговоре"
+        en: "a passing mention in conversation"
+      examples:
+        - de: "Sie erzählt von ihrem Urlaub."
+          ru: "Она рассказывает о своём отпуске."
+          en: "She tells us about her holiday."
+      sources:
+        - "seed"
