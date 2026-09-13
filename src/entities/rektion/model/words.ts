@@ -10,7 +10,10 @@ import type { PartOfSpeech, Rektion } from './schema';
 export type WordEntry = {
   readonly slug: string;
   readonly lemma: string;
+  /** The primary form's part of speech — chosen by `FORM_ORDER`, never by dataset order. */
   readonly pos: PartOfSpeech;
+  /** Every part of speech sharing this slug, in `FORM_ORDER`. One element for all but a few. */
+  readonly forms: readonly PartOfSpeech[];
   readonly article?: 'der' | 'die' | 'das';
   /** True only when EVERY pattern is reflexive: `sorgen für` is plain, `sich sorgen um` is not. */
   readonly alwaysReflexive: boolean;
@@ -20,24 +23,51 @@ export type WordEntry = {
 
 const collator = new Intl.Collator('de', { sensitivity: 'base' });
 
+/**
+ * Which form leads when one slug carries several, and the order they are listed in.
+ * Fixed and explicit on purpose: reading the primary form off `patterns[0]` would hand the
+ * decision to YAML file order, so the page title could change because a pattern moved.
+ */
+const FORM_ORDER: readonly PartOfSpeech[] = ['verb', 'noun', 'adj'];
+
 function build(): WordEntry[] {
+  /*
+   * Grouped by the word slug ALONE, because the slug is the page: `/[lang]/[word]/` can
+   * answer for exactly one word. Grouping per (slug, pos) made two entries for `vertrauen`
+   * — the verb and the noun `Vertrauen` fold to the same slug — and `bySlug` below then
+   * silently kept whichever came last, leaving the other reachable in no way at all while
+   * it still rendered a row and a link. One slug, one entry, every pattern shown (ADR 0002).
+   */
   const grouped = new Map<string, Rektion[]>();
   for (const r of rektionen) {
-    const key = `${r.slug.word}|${r.pos}`;
-    grouped.set(key, [...(grouped.get(key) ?? []), r]);
+    grouped.set(r.slug.word, [...(grouped.get(r.slug.word) ?? []), r]);
   }
 
   const entries: WordEntry[] = [];
-  for (const patterns of grouped.values()) {
-    const first = patterns[0];
-    if (!first) continue;
-    const sorted = [...patterns].sort((a, b) => collator.compare(a.prep, b.prep));
+  for (const [slug, patterns] of grouped) {
+    const forms = FORM_ORDER.filter((pos) => patterns.some((p) => p.pos === pos));
+    const primaryPos = forms[0];
+    if (primaryPos === undefined) continue;
+
+    // The headword shown for the group is the primary form's, so the fields that build it
+    // are read from that form's patterns — `sich` and the article belong to a form, not to
+    // the slug. A noun's `das` must not end up on a verb's title.
+    const primary = patterns.filter((p) => p.pos === primaryPos);
+    const first = primary[0];
+    if (first === undefined) continue;
+
+    const sorted = [...patterns].sort(
+      (a, b) =>
+        FORM_ORDER.indexOf(a.pos) - FORM_ORDER.indexOf(b.pos) || collator.compare(a.prep, b.prep),
+    );
+
     entries.push({
-      slug: first.slug.word,
+      slug,
       lemma: first.lemma,
-      pos: first.pos,
+      pos: primaryPos,
+      forms,
       ...(first.article ? { article: first.article } : {}),
-      alwaysReflexive: patterns.every((p) => p.reflexive !== undefined),
+      alwaysReflexive: primary.every((p) => p.reflexive !== undefined),
       patterns: sorted,
       prepositions: sorted.map((p) => p.prep),
     });

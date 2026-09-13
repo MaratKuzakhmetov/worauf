@@ -3,7 +3,65 @@
 
 import type { Rektion } from './schema';
 
+/** Content hash of the array below — see ADR 0005. */
+export const datasetVersion = '664dc6be93a4';
+
 export const rektionen: readonly Rektion[] = [
+  {
+    "id": "abfaerben-auf-akk",
+    "slug": {
+      "word": "abfaerben",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "abfärben",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "линять, пачкая что-л. цветом (о ткани)",
+      "en": "to bleed color onto sth. (of fabric)"
+    },
+    "examples": [
+      {
+        "de": "Der blaue Pyjama färbt beim Waschen auf die andere Wäsche ab.",
+        "ru": "Синяя пижама при стирке линяет на остальное бельё.",
+        "en": "The blue pajamas bleed color onto the other laundry when washed."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abfahren-auf-akk",
+    "slug": {
+      "word": "abfahren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "abfahren",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "быть без ума от кого-л. / чего-л. (разг.)",
+      "en": "to be crazy about sb. / sth. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Er fährt total auf diese Band ab.",
+        "ru": "Он без ума от этой группы.",
+        "en": "He is totally into this band.",
+        "lemmaForm": "fährt"
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
   {
     "id": "abfinden-mit-dat",
     "slug": {
@@ -28,6 +86,32 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "abgleiten-von-dat",
+    "slug": {
+      "word": "abgleiten",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "abgleiten",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "соскальзывать с чего-л.",
+      "en": "to slide off sth."
+    },
+    "examples": [
+      {
+        "de": "Er ließ sich vom Pferd abgleiten.",
+        "ru": "Он соскользнул с лошади.",
+        "en": "He slid off the horse."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -82,6 +166,393 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "abhaengigkeit-von-dat",
+    "slug": {
+      "word": "abhaengigkeit",
+      "prep": "von"
+    },
+    "pos": "noun",
+    "lemma": "Abhängigkeit",
+    "article": "die",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "зависимость от кого-л. / чего-л.",
+      "en": "dependence on sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Seine Abhängigkeit von dieser Person wächst.",
+        "ru": "Его зависимость от этого человека растёт.",
+        "en": "His dependence on this person is growing."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abhaerten-gegen-akk",
+    "slug": {
+      "word": "abhaerten",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "abhärten",
+    "prep": "gegen",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "закаляться против чего-л.",
+      "en": "to harden oneself against sth."
+    },
+    "examples": [
+      {
+        "de": "Er härtet sich gegen Erkältungen ab.",
+        "ru": "Он закаляется против простуд.",
+        "en": "He is hardening himself against colds."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abheben-von-dat",
+    "slug": {
+      "word": "abheben",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "abheben",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "выделяться на фоне чего-л., отличаться от чего-л.",
+      "en": "to stand out from sth., to distinguish oneself from sth."
+    },
+    "examples": [
+      {
+        "de": "Der Roman hebt sich deutlich von anderen Büchern ab.",
+        "ru": "Роман заметно выделяется на фоне других книг.",
+        "en": "The novel clearly stands out from other books."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ableiten-aus-dat",
+    "slug": {
+      "word": "ableiten",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "ableiten",
+    "prep": "aus",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "происходить от чего-л., выводиться из чего-л.",
+      "en": "to be derived from sth."
+    },
+    "examples": [
+      {
+        "de": "Das Wort leitet sich aus dem Griechischen ab.",
+        "ru": "Слово происходит из греческого языка.",
+        "en": "The word derives from Greek."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "abrechnen-mit-dat",
+    "slug": {
+      "word": "abrechnen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "abrechnen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "сводить счёты с кем-л. (перен.)",
+      "en": "to settle scores with sb. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Er rechnet mit seinem ehemaligen Chef ab.",
+        "ru": "Он сводит счёты со своим бывшим начальником.",
+        "en": "He settles scores with his former boss."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abreisen-nach-dat",
+    "slug": {
+      "word": "abreisen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "abreisen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "уезжать, отправляться куда-л.",
+      "en": "to depart for (a destination)"
+    },
+    "examples": [
+      {
+        "de": "Wir reisen in aller Frühe nach München ab.",
+        "ru": "Мы отправляемся в Мюнхен рано утром.",
+        "en": "We depart for Munich very early in the morning."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abschied-von-dat",
+    "slug": {
+      "word": "abschied",
+      "prep": "von"
+    },
+    "pos": "noun",
+    "lemma": "Abschied",
+    "article": "der",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "прощание с кем-л.",
+      "en": "farewell to sb."
+    },
+    "examples": [
+      {
+        "de": "Der Abschied von den Kollegen fiel ihr schwer.",
+        "ru": "Прощание с коллегами далось ей тяжело.",
+        "en": "The farewell to her colleagues was hard for her."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "absehen-auf-akk",
+    "slug": {
+      "word": "absehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "absehen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "иметь виды на кого-л. / что-л. (идиома «es abgesehen haben»)",
+      "en": "to be after sb. / sth. (idiom 'es abgesehen haben')"
+    },
+    "senseNote": {
+      "ru": "фиксированная идиома с «es» — не общая конструкция",
+      "en": "a fixed idiom with 'es' — not a general construction"
+    },
+    "examples": [
+      {
+        "de": "Er hat es auf mein Geld abgesehen.",
+        "ru": "Он имеет виды на мои деньги.",
+        "en": "He is after my money.",
+        "lemmaForm": "abgesehen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "absehen-von-dat",
+    "slug": {
+      "word": "absehen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "absehen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "воздерживаться от чего-л.",
+      "en": "to refrain from sth."
+    },
+    "senseNote": {
+      "ru": "от чего воздерживаешься — сознательный отказ",
+      "en": "what you refrain from — a deliberate decision not to"
+    },
+    "examples": [
+      {
+        "de": "Der Richter sieht von einer Strafe ab.",
+        "ru": "Судья воздерживается от наказания.",
+        "en": "The judge refrains from a punishment.",
+        "lemmaForm": "sieht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abstellen-auf-akk",
+    "slug": {
+      "word": "abstellen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "abstellen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "ориентировать что-л. на что-л. (перен.)",
+      "en": "to align sth. with sth., to gear sth. towards sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Sie stellen die Produktion auf den Publikumsgeschmack ab.",
+        "ru": "Они ориентируют производство на вкус публики.",
+        "en": "They gear production towards the audience's taste."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abstimmen-mit-dat",
+    "slug": {
+      "word": "abstimmen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "abstimmen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "согласовывать (действия) с кем-л.",
+      "en": "to coordinate with sb."
+    },
+    "senseNote": {
+      "ru": "с кем согласовываешь действия — не тема голосования",
+      "en": "whom you coordinate with — not the subject being voted on"
+    },
+    "examples": [
+      {
+        "de": "Wir müssen uns mit den Kollegen abstimmen.",
+        "ru": "Нам нужно согласовать это с коллегами.",
+        "en": "We need to coordinate with our colleagues."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abstimmen-ueber-akk",
+    "slug": {
+      "word": "abstimmen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "abstimmen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "голосовать по чему-л.",
+      "en": "to vote on sth."
+    },
+    "senseNote": {
+      "ru": "о чём голосуют — предмет голосования",
+      "en": "what is being voted on — the subject of the vote"
+    },
+    "examples": [
+      {
+        "de": "Der Ausschuss stimmt über den Antrag ab.",
+        "ru": "Комитет голосует по этому предложению.",
+        "en": "The committee votes on the motion."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abstossen-von-dat",
+    "slug": {
+      "word": "abstossen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "abstoßen",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "отталкиваться от чего-л.",
+      "en": "to push off from sth."
+    },
+    "examples": [
+      {
+        "de": "Er stößt sich mit den Füßen vom Boden ab.",
+        "ru": "Он отталкивается ногами от земли.",
+        "en": "He pushes off from the ground with his feet."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "abzielen-auf-akk",
+    "slug": {
+      "word": "abzielen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "abzielen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "быть направленным на что-л., иметь целью что-л.",
+      "en": "to aim at sth., to be directed at sth."
+    },
+    "examples": [
+      {
+        "de": "Ihre Worte zielen auf das Mitgefühl der Zuhörer ab.",
+        "ru": "Её слова направлены на сочувствие слушателей.",
+        "en": "Her words aim at the audience's compassion."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "achten-auf-akk",
     "slug": {
       "word": "achten",
@@ -105,6 +576,169 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "achtgeben-auf-akk",
+    "slug": {
+      "word": "achtgeben",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "achtgeben",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "обращать внимание на кого-л. / что-л., быть осторожным с чем-л.",
+      "en": "to pay attention to sb. / sth., to watch out for sth."
+    },
+    "examples": [
+      {
+        "de": "Du musst auf deine Gesundheit achtgeben.",
+        "ru": "Ты должен беречь своё здоровье.",
+        "en": "You must watch your health."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "achthaben-auf-akk",
+    "slug": {
+      "word": "achthaben",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "achthaben",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "следить за кем-л. / чем-л., быть внимательным к чему-л.",
+      "en": "to keep an eye on sb. / sth., to pay heed to sth."
+    },
+    "examples": [
+      {
+        "de": "Du musst gut auf den Verkehr achthaben.",
+        "ru": "Ты должен внимательно следить за движением.",
+        "en": "You must keep a close eye on the traffic."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "achtung-vor-dat",
+    "slug": {
+      "word": "achtung",
+      "prep": "vor"
+    },
+    "pos": "noun",
+    "lemma": "Achtung",
+    "article": "die",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "уважение к кому-л. / чему-л.",
+      "en": "respect for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat Achtung vor seinen Eltern.",
+        "ru": "Он уважает своих родителей.",
+        "en": "He has respect for his parents."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aendern-in-akk",
+    "slug": {
+      "word": "aendern",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "ändern",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "менять что-л. на что-л. (заменять одно другим)",
+      "en": "to change sth. into sth. else"
+    },
+    "examples": [
+      {
+        "de": "Er ändert seinen Namen in einen anderen Namen.",
+        "ru": "Он меняет своё имя на другое.",
+        "en": "He is changing his name to a different one."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aerger-mit-dat",
+    "slug": {
+      "word": "aerger",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Ärger",
+    "article": "der",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "неприятности с кем-л. / чем-л.",
+      "en": "trouble with sb. / sth."
+    },
+    "senseNote": {
+      "ru": "с кем/из-за чего неприятности — источник хлопот, а не сама эмоция",
+      "en": "who or what the trouble is with — the source of hassle, not the emotion"
+    },
+    "examples": [
+      {
+        "de": "Ich hatte heute viel Ärger mit den Kunden.",
+        "ru": "У меня сегодня было много неприятностей с клиентами.",
+        "en": "I had a lot of trouble with customers today."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aerger-ueber-akk",
+    "slug": {
+      "word": "aerger",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Ärger",
+    "article": "der",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "злость из-за чего-л., досада на что-л.",
+      "en": "anger about sth., annoyance at sth."
+    },
+    "senseNote": {
+      "ru": "из-за чего злишься — сама эмоция, а не источник неприятностей",
+      "en": "what makes you angry — the emotion itself, not the source of trouble"
+    },
+    "examples": [
+      {
+        "de": "Sein Ärger über die Entscheidung war groß.",
+        "ru": "Его злость из-за этого решения была велика.",
+        "en": "His anger about the decision was great."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -135,6 +769,145 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "allergie-gegen-akk",
+    "slug": {
+      "word": "allergie",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Allergie",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "аллергия на что-л.",
+      "en": "an allergy to sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat eine Allergie gegen Birkenpollen.",
+        "ru": "У неё аллергия на пыльцу берёзы.",
+        "en": "She has an allergy to birch pollen."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "allergisch-gegen-akk",
+    "slug": {
+      "word": "allergisch",
+      "prep": "gegen"
+    },
+    "pos": "adj",
+    "lemma": "allergisch",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "аллергичный на что-л.",
+      "en": "allergic to sth."
+    },
+    "examples": [
+      {
+        "de": "Ich bin allergisch gegen Katzenhaare.",
+        "ru": "У меня аллергия на кошачью шерсть.",
+        "en": "I am allergic to cat hair."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "amuesieren-ueber-akk",
+    "slug": {
+      "word": "amuesieren",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "amüsieren",
+    "prep": "über",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "потешаться над кем-л. / чем-л.",
+      "en": "to be amused by sb. / sth., to make fun of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Leute amüsieren sich über ihn.",
+        "ru": "Люди потешаются над ним.",
+        "en": "People are amused by him."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "anecken-an-dat",
+    "slug": {
+      "word": "anecken",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "anecken",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "задевать, цепляться за что-л. (физически)",
+      "en": "to bump against sth., to scrape against sth. (literally)"
+    },
+    "senseNote": {
+      "ru": "физическое столкновение с препятствием",
+      "en": "a literal physical collision with an obstacle"
+    },
+    "examples": [
+      {
+        "de": "Er eckt mit dem Rad am Bordstein an.",
+        "ru": "Он задевает колесом бордюр.",
+        "en": "He bumps the wheel against the curb."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anecken-bei-dat",
+    "slug": {
+      "word": "anecken",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "anecken",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "вызывать недовольство у кого-л., задевать чьи-л. чувства",
+      "en": "to rub sb. the wrong way, to cause offence with sb."
+    },
+    "senseNote": {
+      "ru": "переносное — портишь отношения с человеком, а не сталкиваешься физически",
+      "en": "figurative — you rub a person the wrong way, not a physical collision"
+    },
+    "examples": [
+      {
+        "de": "Er ist bei seinem Lehrer angeeckt.",
+        "ru": "Он вызвал недовольство своего учителя.",
+        "en": "He rubbed his teacher the wrong way.",
+        "lemmaForm": "angeeckt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "anfangen-mit-dat",
     "slug": {
       "word": "anfangen",
@@ -148,6 +921,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "начинать с чего-л.",
       "en": "to start with sth."
     },
+    "senseNote": {
+      "ru": "с чего начинаешь — первый шаг, а не тема разговора",
+      "en": "what you start with — the first step, not a topic you bring up"
+    },
     "examples": [
       {
         "de": "Wir fangen mit dem ersten Kapitel an.",
@@ -158,6 +935,123 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "anfangen-von-dat",
+    "slug": {
+      "word": "anfangen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "anfangen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "снова заводить разговор о чём-л. (разг.)",
+      "en": "to keep bringing sth. up (colloquial)"
+    },
+    "senseNote": {
+      "ru": "о какой теме заводишь разговор — не первый шаг дела, а навязчивое упоминание",
+      "en": "what topic you keep bringing up — not a first step, a nagging mention"
+    },
+    "examples": [
+      {
+        "de": "Er fängt immer wieder von der Politik an.",
+        "ru": "Он снова и снова заводит разговор о политике.",
+        "en": "He keeps bringing up politics again and again."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "angehen-gegen-akk",
+    "slug": {
+      "word": "angehen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "angehen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "бороться против чего-л., выступать против чего-л.",
+      "en": "to take action against sth., to combat sth."
+    },
+    "senseNote": {
+      "ru": "против чего борешься — то, что хочешь устранить",
+      "en": "what you take action against — what you want to stop"
+    },
+    "examples": [
+      {
+        "de": "Die Stadt geht gegen die Umweltverschmutzung an.",
+        "ru": "Город борется против загрязнения окружающей среды.",
+        "en": "The city is taking action against pollution."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "angehen-um-akk",
+    "slug": {
+      "word": "angehen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "angehen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "обращаться к кому-л. с просьбой о чём-л.",
+      "en": "to approach sb. for sth., to petition sb. for sth."
+    },
+    "senseNote": {
+      "ru": "о чём просишь — предмет просьбы, а не противник",
+      "en": "what you ask for — the thing requested, not an opponent"
+    },
+    "examples": [
+      {
+        "de": "Er geht sie um ein Darlehen an.",
+        "ru": "Он обращается к ней с просьбой о займе.",
+        "en": "He approaches her for a loan."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "angewiesen-auf-akk",
+    "slug": {
+      "word": "angewiesen",
+      "prep": "auf"
+    },
+    "pos": "adj",
+    "lemma": "angewiesen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "зависимый от кого-л. / чего-л. (нуждающийся)",
+      "en": "dependent on sb. / sth., reliant on sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er ist auf seinen Bruder angewiesen.",
+        "ru": "Он зависит от своего брата.",
+        "en": "He is dependent on his brother."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -274,6 +1168,444 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "anlaufen-gegen-akk",
+    "slug": {
+      "word": "anlaufen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "anlaufen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "выступать, действовать против чего-л.",
+      "en": "to campaign against sth., to push back against sth."
+    },
+    "examples": [
+      {
+        "de": "Die Initiative läuft gegen Vorurteile an.",
+        "ru": "Инициатива выступает против предрассудков.",
+        "en": "The initiative is pushing back against prejudice.",
+        "lemmaForm": "läuft"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anlegen-mit-dat",
+    "slug": {
+      "word": "anlegen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "anlegen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "затевать ссору с кем-л.",
+      "en": "to pick a fight with sb."
+    },
+    "examples": [
+      {
+        "de": "Er will sich nicht mit seinem Chef anlegen.",
+        "ru": "Он не хочет затевать ссору со своим начальником.",
+        "en": "He doesn't want to pick a fight with his boss."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anlehnen-an-akk",
+    "slug": {
+      "word": "anlehnen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "anlehnen",
+    "prep": "an",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "прислоняться к чему-л.",
+      "en": "to lean against sth."
+    },
+    "examples": [
+      {
+        "de": "Sie lehnt sich an die Wand an.",
+        "ru": "Она прислоняется к стене.",
+        "en": "She leans against the wall."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anlehnung-an-akk",
+    "slug": {
+      "word": "anlehnung",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Anlehnung",
+    "article": "die",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "по образцу чего-л., ориентируясь на что-л.",
+      "en": "modeled on sth., in line with sth."
+    },
+    "examples": [
+      {
+        "de": "Der Architekt entwarf das Gebäude in Anlehnung an den alten Bahnhof.",
+        "ru": "Архитектор спроектировал здание по образцу старого вокзала.",
+        "en": "The architect designed the building modeled on the old train station."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "anreisen-aus-dat",
+    "slug": {
+      "word": "anreisen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "anreisen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "приезжать откуда-л.",
+      "en": "to arrive from (a place)"
+    },
+    "examples": [
+      {
+        "de": "Sie reisen aus Hamburg an.",
+        "ru": "Они приезжают из Гамбурга.",
+        "en": "They are arriving from Hamburg."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anrennen-gegen-akk",
+    "slug": {
+      "word": "anrennen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "anrennen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "врезаться, наталкиваться на что-л. (с разбегу)",
+      "en": "to run into sth., to crash into sth."
+    },
+    "examples": [
+      {
+        "de": "Er rennt mit dem Ellbogen gegen die Fensterecke an.",
+        "ru": "Он врезается локтем в угол окна.",
+        "en": "He runs his elbow into the corner of the window."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anrufen-um-akk",
+    "slug": {
+      "word": "anrufen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "anrufen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "взывать к кому-л. с просьбой о чём-л. (офиц.)",
+      "en": "to appeal to sb. for sth. (formal)"
+    },
+    "senseNote": {
+      "ru": "не «звонить по телефону» — официальное обращение к инстанции или лицу с просьбой о содействии",
+      "en": "not the everyday 'to phone sb.' — a formal appeal to an authority or person for help"
+    },
+    "examples": [
+      {
+        "de": "Er rief Gott um Gnade an.",
+        "ru": "Он взывал к Богу о милости.",
+        "en": "He appealed to God for mercy.",
+        "lemmaForm": "rief"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ansetzen-auf-akk",
+    "slug": {
+      "word": "ansetzen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "ansetzen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "приставить кого-л. следить, охотиться за кем-л.",
+      "en": "to put sb. onto sb. else (to track or mark them)"
+    },
+    "senseNote": {
+      "ru": "кого приставляют следить — цель слежки",
+      "en": "who someone is assigned to track — the target of the tracking"
+    },
+    "examples": [
+      {
+        "de": "Der Trainer hat gleich zwei Spieler auf den Torjäger angesetzt.",
+        "ru": "Тренер сразу приставил двух игроков к бомбардиру.",
+        "en": "The coach put two players on the top scorer right away.",
+        "lemmaForm": "angesetzt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ansetzen-fuer-akk",
+    "slug": {
+      "word": "ansetzen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "ansetzen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "назначать что-л. на какое-л. время",
+      "en": "to schedule sth. for (a time)"
+    },
+    "senseNote": {
+      "ru": "на какое время назначено мероприятие",
+      "en": "when an event is scheduled for"
+    },
+    "examples": [
+      {
+        "de": "Die Aufführung ist für den 1. Mai angesetzt.",
+        "ru": "Спектакль назначен на 1 мая.",
+        "en": "The performance is scheduled for May 1st.",
+        "lemmaForm": "angesetzt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anspielen-auf-akk",
+    "slug": {
+      "word": "anspielen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "anspielen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "намекать на кого-л. / что-л.",
+      "en": "to allude to sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er spielt auf den Minister an.",
+        "ru": "Он намекает на министра.",
+        "en": "He is alluding to the minister."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ansprechen-auf-akk",
+    "slug": {
+      "word": "ansprechen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "ansprechen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "реагировать на что-л. (о лечении, приборе)",
+      "en": "to respond to sth. (treatment, an instrument)"
+    },
+    "examples": [
+      {
+        "de": "Der Patient spricht auf die Behandlung an.",
+        "ru": "Пациент реагирует на лечение.",
+        "en": "The patient responds to the treatment.",
+        "lemmaForm": "spricht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anspringen-auf-akk",
+    "slug": {
+      "word": "anspringen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "anspringen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "клюнуть на что-л., живо откликнуться на что-л. (разг.)",
+      "en": "to respond positively to sth., to go for sth. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Er springt sofort auf das Angebot an.",
+        "ru": "Он сразу же клюёт на это предложение.",
+        "en": "He immediately goes for the offer."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anstecken-mit-dat",
+    "slug": {
+      "word": "anstecken",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "anstecken",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "заражать кого-л. чем-л.",
+      "en": "to infect sb. with sth."
+    },
+    "examples": [
+      {
+        "de": "Er steckt uns alle mit seiner Erkältung an.",
+        "ru": "Он заражает нас всех своей простудой.",
+        "en": "He infects all of us with his cold."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anstiften-zu-dat",
+    "slug": {
+      "word": "anstiften",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "anstiften",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "подстрекать кого-л. к чему-л.",
+      "en": "to incite sb. to sth."
+    },
+    "examples": [
+      {
+        "de": "Er stiftet die Kinder zum Streich an.",
+        "ru": "Он подстрекает детей к шалости.",
+        "en": "He incites the children to a prank."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anstiftung-zu-dat",
+    "slug": {
+      "word": "anstiftung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Anstiftung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "подстрекательство к чему-л.",
+      "en": "incitement to sth."
+    },
+    "examples": [
+      {
+        "de": "Er wurde wegen Anstiftung zum Mord verurteilt.",
+        "ru": "Его осудили за подстрекательство к убийству.",
+        "en": "He was convicted of incitement to murder."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "anteil-nehmen-an-dat",
+    "slug": {
+      "word": "anteil-nehmen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "Anteil nehmen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "принимать участие в чём-л., проявлять сочувствие к чему-л.",
+      "en": "to take an interest in sth., to show sympathy for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie nimmt Anteil an der Diskussion.",
+        "ru": "Она принимает участие в дискуссии.",
+        "en": "She takes part in the discussion.",
+        "lemmaForm": "nimmt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "antwort-auf-akk",
     "slug": {
       "word": "antwort",
@@ -326,6 +1658,58 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "anwendbar-auf-akk",
+    "slug": {
+      "word": "anwendbar",
+      "prep": "auf"
+    },
+    "pos": "adj",
+    "lemma": "anwendbar",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "применимый к чему-л.",
+      "en": "applicable to sth."
+    },
+    "examples": [
+      {
+        "de": "Die Theorie ist nur bedingt auf die Praxis anwendbar.",
+        "ru": "Теория лишь отчасти применима к практике.",
+        "en": "The theory is only partly applicable to practice."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "anwendung-auf-akk",
+    "slug": {
+      "word": "anwendung",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Anwendung",
+    "article": "die",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "применение к чему-л.",
+      "en": "application to sth."
+    },
+    "examples": [
+      {
+        "de": "Die Anwendung dieser Regel auf den vorliegenden Fall ist umstritten.",
+        "ru": "Применение этого правила к данному случаю спорно.",
+        "en": "Applying this rule to the present case is disputed."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "arbeiten-an-dat",
     "slug": {
       "word": "arbeiten",
@@ -349,6 +1733,165 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "art-von-dat",
+    "slug": {
+      "word": "art",
+      "prep": "von"
+    },
+    "pos": "noun",
+    "lemma": "Art",
+    "article": "die",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "нечто вроде чего-л.",
+      "en": "a kind of sth."
+    },
+    "examples": [
+      {
+        "de": "Das ist eine Art von grobem Schotter.",
+        "ru": "Это что-то вроде грубого щебня.",
+        "en": "That's a kind of coarse gravel."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "arten-nach-dat",
+    "slug": {
+      "word": "arten",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "arten",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть похожим на кого-л. (по характеру, внешности)",
+      "en": "to take after sb."
+    },
+    "examples": [
+      {
+        "de": "Er artet nach seinem Vater.",
+        "ru": "Он пошёл в отца.",
+        "en": "He takes after his father."
+      }
+    ],
+    "tags": [
+      "formal"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "aufbauen-auf-dat",
+    "slug": {
+      "word": "aufbauen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "aufbauen",
+    "prep": "auf",
+    "case": "dat",
+    "gloss": {
+      "ru": "основываться на чём-л., базироваться на чём-л.",
+      "en": "to be based on sth."
+    },
+    "examples": [
+      {
+        "de": "Die Theorie baut auf einer Annahme auf.",
+        "ru": "Теория основывается на одном предположении.",
+        "en": "The theory is based on an assumption."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auffordern-zu-dat",
+    "slug": {
+      "word": "auffordern",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "auffordern",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "призывать кого-л. к чему-л., приглашать кого-л. на что-л.",
+      "en": "to call on sb. to do sth., to invite sb. to sth."
+    },
+    "examples": [
+      {
+        "de": "Der Richter fordert ihn zur Aussage auf.",
+        "ru": "Судья призывает его дать показания.",
+        "en": "The judge calls on him to testify."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aufforderung-zu-dat",
+    "slug": {
+      "word": "aufforderung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Aufforderung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "призыв к чему-л.",
+      "en": "call for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie folgte der Aufforderung zu einem Gespräch.",
+        "ru": "Она откликнулась на призыв к разговору.",
+        "en": "She responded to the call for a conversation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aufgehen-in-dat",
+    "slug": {
+      "word": "aufgehen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "aufgehen",
+    "prep": "in",
+    "case": "dat",
+    "gloss": {
+      "ru": "полностью отдаваться чему-л., растворяться в чём-л. (перен.)",
+      "en": "to be completely absorbed in sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Er geht ganz in seinem Beruf auf.",
+        "ru": "Он полностью отдаётся своей профессии.",
+        "en": "He is completely absorbed in his profession."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -378,6 +1921,112 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "aufkommen-fuer-akk",
+    "slug": {
+      "word": "aufkommen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "aufkommen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "нести ответственность за что-л., покрывать расходы",
+      "en": "to bear/cover the costs of sth., to be liable for sth."
+    },
+    "examples": [
+      {
+        "de": "Die Versicherung kommt für den Schaden auf.",
+        "ru": "Страховая компания покрывает ущерб.",
+        "en": "The insurance covers the damage."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auflehnen-gegen-akk",
+    "slug": {
+      "word": "auflehnen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "auflehnen",
+    "prep": "gegen",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "восставать против кого-л. / чего-л.",
+      "en": "to rebel against sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Sklaven lehnen sich gegen ihren Besitzer auf.",
+        "ru": "Рабы восстают против своего хозяина.",
+        "en": "The slaves rebel against their owner."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auflehnung-gegen-akk",
+    "slug": {
+      "word": "auflehnung",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Auflehnung",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "протест, бунт против кого-л. / чего-л.",
+      "en": "rebellion/defiance against sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Ihre Auflehnung gegen die Behörden blieb nicht ohne Folgen.",
+        "ru": "Их бунт против властей не остался без последствий.",
+        "en": "Their defiance against the authorities did not go without consequences."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aufmerksam-machen-auf-akk",
+    "slug": {
+      "word": "aufmerksam-machen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "aufmerksam machen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "обращать чьё-л. внимание на кого-л. / что-л.",
+      "en": "to draw sb.'s attention to sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie macht ihn auf den Fehler aufmerksam.",
+        "ru": "Она обращает его внимание на ошибку.",
+        "en": "She draws his attention to the mistake.",
+        "lemmaForm": "macht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "aufpassen-auf-akk",
     "slug": {
       "word": "aufpassen",
@@ -401,6 +2050,31 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "aufraeumen-mit-dat",
+    "slug": {
+      "word": "aufraeumen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "aufräumen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "покончить с чем-л., искоренить что-л.",
+      "en": "to put an end to sth., to do away with sth."
+    },
+    "examples": [
+      {
+        "de": "Der Vortrag räumt mit alten Vorurteilen auf.",
+        "ru": "Доклад развенчивает старые предрассудки.",
+        "en": "The talk does away with old prejudices."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -431,6 +2105,594 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "aufrufen-zu-dat",
+    "slug": {
+      "word": "aufrufen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "aufrufen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "призывать к чему-л.",
+      "en": "to call for sth., to call upon people to do sth."
+    },
+    "examples": [
+      {
+        "de": "Die Gewerkschaft ruft zum Streik auf.",
+        "ru": "Профсоюз призывает к забастовке.",
+        "en": "The union calls for a strike."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "aufstacheln-zu-dat",
+    "slug": {
+      "word": "aufstacheln",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "aufstacheln",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "подстрекать к чему-л.",
+      "en": "to incite sb. to sth."
+    },
+    "examples": [
+      {
+        "de": "Er stachelt die Schüler zu größerem Eifer auf.",
+        "ru": "Он подстрекает учеников к большему рвению.",
+        "en": "He incites the students to greater effort."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "aufstehen-gegen-akk",
+    "slug": {
+      "word": "aufstehen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "aufstehen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "восставать против кого-л. / чего-л.",
+      "en": "to rise up against sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Das Volk steht gegen die Unterdrücker auf.",
+        "ru": "Народ восстаёт против угнетателей.",
+        "en": "The people rise up against their oppressors."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ausgehen-von-dat",
+    "slug": {
+      "word": "ausgehen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "ausgehen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "исходить из чего-л., предполагать что-л.",
+      "en": "to assume sth., to proceed from sth."
+    },
+    "examples": [
+      {
+        "de": "Wir gehen von einem guten Ergebnis aus.",
+        "ru": "Мы исходим из хорошего результата.",
+        "en": "We are assuming a good outcome."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auskennen-in-dat",
+    "slug": {
+      "word": "auskennen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "auskennen",
+    "prep": "in",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "ориентироваться в чём-л., хорошо знать что-л.",
+      "en": "to know one's way around sth., to be well versed in sth."
+    },
+    "examples": [
+      {
+        "de": "Ich kenne mich in dieser Stadt gut aus.",
+        "ru": "Я хорошо ориентируюсь в этом городе.",
+        "en": "I know my way around this city well."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auskommen-mit-dat",
+    "slug": {
+      "word": "auskommen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "auskommen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "ладить с кем-л., обходиться чем-л.",
+      "en": "to get along with sb., to get by with sth."
+    },
+    "examples": [
+      {
+        "de": "Ich komme gut mit meinen Kollegen aus.",
+        "ru": "Я хорошо лажу со своими коллегами.",
+        "en": "I get along well with my colleagues."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auskotzen-bei-dat",
+    "slug": {
+      "word": "auskotzen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "auskotzen",
+    "prep": "bei",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "выговориться кому-л. (разг.)",
+      "en": "to vent to sb. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Ich habe mich bei ihm ausgekotzt.",
+        "ru": "Я выговорился ему.",
+        "en": "I vented to him."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auslassen-an-dat",
+    "slug": {
+      "word": "auslassen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "auslassen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "срывать что-л. (гнев) на ком-л.",
+      "en": "to take sth. (anger) out on sb."
+    },
+    "senseNote": {
+      "ru": "на ком срываешь гнев — жертва, а не тема",
+      "en": "who you take your anger out on — the target, not the topic"
+    },
+    "examples": [
+      {
+        "de": "Er lässt seinen Ärger an den Untergebenen aus.",
+        "ru": "Он срывает злость на подчинённых.",
+        "en": "He takes his anger out on his subordinates."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auslassen-ueber-akk",
+    "slug": {
+      "word": "auslassen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "auslassen",
+    "prep": "über",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "подробно высказываться о чём-л.",
+      "en": "to hold forth about sth., to talk at length about sth."
+    },
+    "senseNote": {
+      "ru": "о чём подробно рассуждаешь — тема разговора",
+      "en": "what you talk at length about — the topic"
+    },
+    "examples": [
+      {
+        "de": "Er lässt sich eingehend über ihr Missgeschick aus.",
+        "ru": "Он подробно рассуждает об её неудаче.",
+        "en": "He holds forth at length about her misfortune."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ausmachen-mit-dat",
+    "slug": {
+      "word": "ausmachen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "ausmachen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "договариваться о чём-л. с кем-л.",
+      "en": "to arrange/agree on sth. with sb."
+    },
+    "examples": [
+      {
+        "de": "Wir machen das Treffen mit ihm aus.",
+        "ru": "Мы договариваемся о встрече с ним.",
+        "en": "We are arranging the meeting with him."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ausreichen-fuer-akk",
+    "slug": {
+      "word": "ausreichen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "ausreichen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "хватать на что-л., быть достаточным для чего-л.",
+      "en": "to be sufficient for sth., to be enough for sth."
+    },
+    "examples": [
+      {
+        "de": "Das Geld reicht für den Urlaub nicht aus.",
+        "ru": "Денег не хватает на отпуск.",
+        "en": "The money isn't enough for the vacation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ausruhen-von-dat",
+    "slug": {
+      "word": "ausruhen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "ausruhen",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "отдыхать от чего-л., восстанавливаться после чего-л.",
+      "en": "to rest from sth., to recover from sth."
+    },
+    "examples": [
+      {
+        "de": "Sie ruht sich von den Strapazen der Reise aus.",
+        "ru": "Она отдыхает от тягот поездки.",
+        "en": "She is resting from the hardships of the trip."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ausschliessen-von-dat",
+    "slug": {
+      "word": "ausschliessen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "ausschließen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "исключать кого-л. из чего-л., не допускать к чему-л.",
+      "en": "to exclude sb. from sth."
+    },
+    "examples": [
+      {
+        "de": "Man schloss ihn von einer Feier aus.",
+        "ru": "Его не допустили на праздник.",
+        "en": "They excluded him from a celebration.",
+        "lemmaForm": "schloss"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "aussehen-nach-dat",
+    "slug": {
+      "word": "aussehen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "aussehen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "выглядеть похожим на что-л. (о погоде, ситуации)",
+      "en": "to look like sth. is coming, to seem like sth."
+    },
+    "examples": [
+      {
+        "de": "Es sieht nach Regen aus.",
+        "ru": "Похоже, будет дождь.",
+        "en": "It looks like rain."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "aussoehnen-mit-dat",
+    "slug": {
+      "word": "aussoehnen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "aussöhnen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "мириться с кем-л.",
+      "en": "to reconcile with sb."
+    },
+    "examples": [
+      {
+        "de": "Er söhnt sich endlich mit seinem Bruder aus.",
+        "ru": "Он наконец мирится со своим братом.",
+        "en": "He is finally reconciling with his brother."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "aussprechen-fuer-akk",
+    "slug": {
+      "word": "aussprechen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "aussprechen",
+    "prep": "für",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "высказываться за что-л.",
+      "en": "to speak out in favor of sth."
+    },
+    "examples": [
+      {
+        "de": "Sie spricht sich für die Bewerberin aus.",
+        "ru": "Она высказывается за эту кандидатку.",
+        "en": "She speaks out in favor of the candidate."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "aussteigen-aus-dat",
+    "slug": {
+      "word": "aussteigen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "aussteigen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "выходить из чего-л. (тж. перен. — выходить из проекта, договора)",
+      "en": "to get out of sth. (also fig. — to back out of a project, a contract)"
+    },
+    "examples": [
+      {
+        "de": "Er steigt aus dem Vertrag aus.",
+        "ru": "Он выходит из договора.",
+        "en": "He is backing out of the contract."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "austreten-aus-dat",
+    "slug": {
+      "word": "austreten",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "austreten",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "выходить из чего-л. (организации)",
+      "en": "to withdraw from sth. (an organization)"
+    },
+    "examples": [
+      {
+        "de": "Er tritt aus der Kirche aus.",
+        "ru": "Он выходит из церкви.",
+        "en": "He is leaving the Church.",
+        "lemmaForm": "tritt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auswahl-an-dat",
+    "slug": {
+      "word": "auswahl",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Auswahl",
+    "article": "die",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "выбор, ассортимент чего-л.",
+      "en": "a selection of sth., a range of sth."
+    },
+    "examples": [
+      {
+        "de": "Der Laden hat eine große Auswahl an Büchern.",
+        "ru": "В магазине большой выбор книг.",
+        "en": "The shop has a large selection of books."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ausweichen-auf-akk",
+    "slug": {
+      "word": "ausweichen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "ausweichen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "переходить на что-л. другое (как на альтернативу)",
+      "en": "to switch to sth. else (as an alternative)"
+    },
+    "examples": [
+      {
+        "de": "Der Läufer weicht auf die andere Spur aus.",
+        "ru": "Бегун переходит на другую дорожку.",
+        "en": "The runner switches to the other lane."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "auswirken-auf-akk",
+    "slug": {
+      "word": "auswirken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "auswirken",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "сказываться на чём-л.",
+      "en": "to have an effect on sth., to impact sth."
+    },
+    "examples": [
+      {
+        "de": "Der Streik wirkt sich verhängnisvoll auf die Wirtschaft aus.",
+        "ru": "Забастовка пагубно сказывается на экономике.",
+        "en": "The strike has a disastrous impact on the economy."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "avancieren-zu-dat",
+    "slug": {
+      "word": "avancieren",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "avancieren",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "выдвинуться в кого-л., дослужиться до чего-л.",
+      "en": "to advance to become sth., to be promoted to sth."
+    },
+    "examples": [
+      {
+        "de": "Er avanciert zum besten Spieler der Mannschaft.",
+        "ru": "Он выдвигается в лучшие игроки команды.",
+        "en": "He advances to become the team's best player."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "basieren-auf-dat",
     "slug": {
       "word": "basieren",
@@ -453,6 +2715,58 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "basteln-an-dat",
+    "slug": {
+      "word": "basteln",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "basteln",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "мастерить что-л., трудиться над чем-л.",
+      "en": "to tinker with sth., to work on sth."
+    },
+    "examples": [
+      {
+        "de": "Er bastelt an seinem alten Auto.",
+        "ru": "Он возится со своей старой машиной.",
+        "en": "He is tinkering with his old car."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "bauen-auf-akk",
+    "slug": {
+      "word": "bauen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "bauen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "рассчитывать на кого-л. / что-л.",
+      "en": "to rely on sb. / sth., to count on sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Ich baue auf deinen Rat.",
+        "ru": "Я рассчитываю на твой совет.",
+        "en": "I am counting on your advice."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -517,6 +2831,196 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "beeilen-mit-dat",
+    "slug": {
+      "word": "beeilen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "beeilen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "торопиться с чем-л.",
+      "en": "to hurry with sth., to get a move on with sth."
+    },
+    "examples": [
+      {
+        "de": "Ich beeile mich mit der Abrechnung.",
+        "ru": "Я тороплюсь с отчётом.",
+        "en": "I am hurrying with the invoice."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "befassen-mit-dat",
+    "slug": {
+      "word": "befassen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "befassen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "заниматься чем-л., рассматривать что-л.",
+      "en": "to deal with sth., to occupy oneself with sth."
+    },
+    "examples": [
+      {
+        "de": "Der Ausschuss befasst sich mit diesem Problem.",
+        "ru": "Комиссия занимается этой проблемой.",
+        "en": "The committee is dealing with this problem."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "befinden-ueber-akk",
+    "slug": {
+      "word": "befinden",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "befinden",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "выносить решение о чём-л. (офиц.)",
+      "en": "to rule on sth., to decide on sth. (formal)"
+    },
+    "examples": [
+      {
+        "de": "Über die Zahl der Teilnehmer befindet der Ausschuss.",
+        "ru": "О числе участников решает комитет.",
+        "en": "The committee rules on the number of participants."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "befreunden-mit-dat",
+    "slug": {
+      "word": "befreunden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "befreunden",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "подружиться с кем-л.",
+      "en": "to become friends with sb."
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich mit ihrer Nachbarin befreundet.",
+        "ru": "Она подружилась со своей соседкой.",
+        "en": "She became friends with her neighbor."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "begeistern-fuer-akk",
+    "slug": {
+      "word": "begeistern",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "begeistern",
+    "prep": "für",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "увлекаться чем-л., загораться чем-л.",
+      "en": "to get enthusiastic about sth."
+    },
+    "examples": [
+      {
+        "de": "Sie begeistert sich für die Malerei.",
+        "ru": "Она увлекается живописью.",
+        "en": "She is enthusiastic about painting."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "begeistert-von-dat",
+    "slug": {
+      "word": "begeistert",
+      "prep": "von"
+    },
+    "pos": "adj",
+    "lemma": "begeistert",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "в восторге от кого-л. / чего-л.",
+      "en": "delighted by sb. / sth., impressed by sb. / sth."
+    },
+    "senseNote": {
+      "ru": "восторг от уже случившегося впечатления — не то же самое, что «begeistern für», где увлекаешься делом",
+      "en": "delight at an impression already received — not the same as 'begeistern für', where you get enthusiastic about doing sth."
+    },
+    "examples": [
+      {
+        "de": "Ich bin begeistert von ihrem Gesang.",
+        "ru": "Я в восторге от её пения.",
+        "en": "I am delighted by her singing."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "begeisterung-ueber-akk",
+    "slug": {
+      "word": "begeisterung",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Begeisterung",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "восторг по поводу кого-л. / чего-л.",
+      "en": "enthusiasm about sb. / sth."
+    },
+    "senseNote": {
+      "ru": "существительное к «begeistert von» — тот же восторг от впечатления, другое падежное оформление",
+      "en": "the noun form of 'begeistert von' — the same delight at an impression, a different case frame"
+    },
+    "examples": [
+      {
+        "de": "Er zeigte seine Begeisterung über den Sieg.",
+        "ru": "Он выразил свой восторг по поводу победы.",
+        "en": "He showed his enthusiasm about the victory."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "beginnen-mit-dat",
     "slug": {
       "word": "beginnen",
@@ -540,6 +3044,87 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "begnuegen-mit-dat",
+    "slug": {
+      "word": "begnuegen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "begnügen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "довольствоваться чем-л.",
+      "en": "to content oneself with sth., to make do with sth."
+    },
+    "examples": [
+      {
+        "de": "Er begnügt sich mit dem, was er hat.",
+        "ru": "Он довольствуется тем, что у него есть.",
+        "en": "He makes do with what he has."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "behaengen-mit-dat",
+    "slug": {
+      "word": "behaengen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "behängen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "увешивать себя чем-л.",
+      "en": "to festoon oneself with sth., to hang sth. all over oneself"
+    },
+    "examples": [
+      {
+        "de": "Sie behängt sich gern mit Strass.",
+        "ru": "Она любит увешивать себя стразами.",
+        "en": "She likes to festoon herself with rhinestones."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "beharren-auf-dat",
+    "slug": {
+      "word": "beharren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "beharren",
+    "prep": "auf",
+    "case": "dat",
+    "gloss": {
+      "ru": "настаивать на чём-л.",
+      "en": "to insist on sth."
+    },
+    "examples": [
+      {
+        "de": "Sie beharrt auf ihrem Standpunkt.",
+        "ru": "Она настаивает на своей точке зрения.",
+        "en": "She insists on her point of view."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
     ]
   },
   {
@@ -581,6 +3166,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "известный чем-л.",
       "en": "known for sth."
     },
+    "senseNote": {
+      "ru": "чем известен — слава, репутация",
+      "en": "what sth. is known for — fame, reputation"
+    },
     "examples": [
       {
         "de": "Die Stadt ist bekannt für ihren Dom.",
@@ -590,6 +3179,62 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "bekannt-mit-dat",
+    "slug": {
+      "word": "bekannt",
+      "prep": "mit"
+    },
+    "pos": "adj",
+    "lemma": "bekannt",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "знакомый с кем-л. / чем-л.",
+      "en": "acquainted with sb. / sth."
+    },
+    "senseNote": {
+      "ru": "с кем/чем знаком — личная осведомлённость, а не слава",
+      "en": "who or what sb. is acquainted with — personal familiarity, not fame"
+    },
+    "examples": [
+      {
+        "de": "Ich bin mit seinem Problem seit Langem bekannt.",
+        "ru": "Я давно знаком с его проблемой.",
+        "en": "I have long been acquainted with his problem."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "bekennen-zu-dat",
+    "slug": {
+      "word": "bekennen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "bekennen",
+    "prep": "zu",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "признавать что-л., открыто заявлять о своей приверженности чему-л.",
+      "en": "to profess/admit to sth., to own up to sth."
+    },
+    "examples": [
+      {
+        "de": "Er bekennt sich zu seinen Fehlern.",
+        "ru": "Он признаёт свои ошибки.",
+        "en": "He owns up to his mistakes."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -652,6 +3297,34 @@ export const rektionen: readonly Rektion[] = [
     "level": "B2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "belaufen-auf-akk",
+    "slug": {
+      "word": "belaufen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "belaufen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "составлять какую-л. сумму",
+      "en": "to amount to sth."
+    },
+    "examples": [
+      {
+        "de": "Der Schaden beläuft sich auf etwa 650 Euro.",
+        "ru": "Ущерб составляет около 650 евро.",
+        "en": "The damage amounts to about 650 euros.",
+        "lemmaForm": "beläuft"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -798,6 +3471,33 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "berufen-auf-akk",
+    "slug": {
+      "word": "berufen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "berufen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "ссылаться на кого-л. / что-л.",
+      "en": "to invoke/cite sth. as justification"
+    },
+    "examples": [
+      {
+        "de": "Ich berufe mich auf dich als Zeugen.",
+        "ru": "Я ссылаюсь на тебя как на свидетеля.",
+        "en": "I am invoking you as a witness."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "beruhen-auf-dat",
     "slug": {
       "word": "beruhen",
@@ -846,6 +3546,174 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "beschaeftigung-mit-dat",
+    "slug": {
+      "word": "beschaeftigung",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Beschäftigung",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "занятие чем-л.",
+      "en": "engagement with sth., dealing with sth."
+    },
+    "examples": [
+      {
+        "de": "Die Beschäftigung mit Fragen der Politik interessiert ihn.",
+        "ru": "Его интересуют занятия политическими вопросами.",
+        "en": "He is interested in engaging with political questions."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "beschliessen-ueber-akk",
+    "slug": {
+      "word": "beschliessen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "beschließen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "принимать решение по какому-л. вопросу (голосованием)",
+      "en": "to decide on sth., to vote on sth."
+    },
+    "examples": [
+      {
+        "de": "Das Parlament beschließt über den neuen Haushalt.",
+        "ru": "Парламент принимает решение по новому бюджету.",
+        "en": "Parliament is voting on the new budget."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "beschraenken-auf-akk",
+    "slug": {
+      "word": "beschraenken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "beschränken",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "ограничивать(ся) чем-л.",
+      "en": "to limit oneself/sth. to sth."
+    },
+    "examples": [
+      {
+        "de": "Er beschränkt sich auf das Wesentliche.",
+        "ru": "Он ограничивается самым необходимым.",
+        "en": "He limits himself to the essentials."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "beschwerde-bei-dat",
+    "slug": {
+      "word": "beschwerde",
+      "prep": "bei"
+    },
+    "pos": "noun",
+    "lemma": "Beschwerde",
+    "article": "die",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "жалоба кому-л. (в какую инстанцию подана)",
+      "en": "complaint filed with sb./sth. (the authority it goes to)"
+    },
+    "senseNote": {
+      "ru": "кому подана жалоба — инстанция или лицо, рассматривающее её, а не виновник и не предмет",
+      "en": "who the complaint is filed with — the authority handling it, not the target or the subject"
+    },
+    "examples": [
+      {
+        "de": "Ich werde bei Ihrem Vorgesetzten Beschwerde einlegen.",
+        "ru": "Я подам жалобу вашему начальнику.",
+        "en": "I will file a complaint with your supervisor."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "beschwerde-gegen-akk",
+    "slug": {
+      "word": "beschwerde",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Beschwerde",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "жалоба на кого-л.",
+      "en": "complaint against sb."
+    },
+    "senseNote": {
+      "ru": "на кого жалоба — против конкретного человека",
+      "en": "who the complaint is against — a specific person"
+    },
+    "examples": [
+      {
+        "de": "Er reicht eine Beschwerde gegen den Nachbarn ein.",
+        "ru": "Он подаёт жалобу на соседа.",
+        "en": "He files a complaint against his neighbor."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "beschwerde-ueber-akk",
+    "slug": {
+      "word": "beschwerde",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Beschwerde",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "жалоба на что-л.",
+      "en": "complaint about sth."
+    },
+    "senseNote": {
+      "ru": "на что жалоба — предмет или обстоятельство, а не человек",
+      "en": "what the complaint is about — a matter or circumstance, not a person"
+    },
+    "examples": [
+      {
+        "de": "Er reicht eine Beschwerde über den Lärm ein.",
+        "ru": "Он подаёт жалобу на шум.",
+        "en": "He files a complaint about the noise."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -906,6 +3774,136 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "besinnen-auf-akk",
+    "slug": {
+      "word": "besinnen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "besinnen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "обращаться мыслями к чему-л., вспоминать о чём-л.",
+      "en": "to recall sth., to reconnect with sth."
+    },
+    "examples": [
+      {
+        "de": "Er besinnt sich auf seine Wurzeln.",
+        "ru": "Он обращается мыслями к своим корням.",
+        "en": "He is reconnecting with his roots."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "besinnung-auf-akk",
+    "slug": {
+      "word": "besinnung",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Besinnung",
+    "article": "die",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "возврат к чему-л., сосредоточение на главном",
+      "en": "a return to sth., a refocusing on sth. (the essentials)"
+    },
+    "examples": [
+      {
+        "de": "Nach der Krise kam es zu einer Besinnung auf das Wesentliche.",
+        "ru": "После кризиса произошёл возврат к главному.",
+        "en": "After the crisis there was a return to the essentials."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "besorgt-um-akk",
+    "slug": {
+      "word": "besorgt",
+      "prep": "um"
+    },
+    "pos": "adj",
+    "lemma": "besorgt",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "обеспокоенный за кого-л. / чем-л.",
+      "en": "worried about sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er ist sehr besorgt um ihre Gesundheit.",
+        "ru": "Он очень обеспокоен её здоровьем.",
+        "en": "He is very worried about her health."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "bestaendig-gegen-akk",
+    "slug": {
+      "word": "bestaendig",
+      "prep": "gegen"
+    },
+    "pos": "adj",
+    "lemma": "beständig",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "устойчивый к чему-л.",
+      "en": "resistant to sth."
+    },
+    "examples": [
+      {
+        "de": "Dieses Material ist beständig gegen Hitze.",
+        "ru": "Этот материал устойчив к жаре.",
+        "en": "This material is resistant to heat."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "bestehen-2-auf-dat",
+    "slug": {
+      "word": "bestehen-2",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Bestehen",
+    "article": "das",
+    "prep": "auf",
+    "case": "dat",
+    "gloss": {
+      "ru": "упорное настаивание на чём-л.",
+      "en": "dogged insistence on sth."
+    },
+    "examples": [
+      {
+        "de": "Sein trotziges Bestehen auf vermeintlichen Rechten verärgerte alle.",
+        "ru": "Его упрямое настаивание на мнимых правах разозлило всех.",
+        "en": "His stubborn insistence on supposed rights annoyed everyone."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1009,6 +4007,56 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "bestellen-zu-dat",
+    "slug": {
+      "word": "bestellen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "bestellen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "вызывать кого-л. куда-л. (к определённому времени/месту)",
+      "en": "to summon sb. to appear (at a place/time)"
+    },
+    "examples": [
+      {
+        "de": "Der Chef bestellt mich zu sich.",
+        "ru": "Начальник вызывает меня к себе.",
+        "en": "The boss summons me to his office."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "bestimmen-ueber-akk",
+    "slug": {
+      "word": "bestimmen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "bestimmen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "распоряжаться чем-л., решать за кого-л. / что-л.",
+      "en": "to have control over sth., to decide about sth."
+    },
+    "examples": [
+      {
+        "de": "Sie kann frei über ihr Geld bestimmen.",
+        "ru": "Она может свободно распоряжаться своими деньгами.",
+        "en": "She can freely decide about her money."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "beteiligen-an-dat",
     "slug": {
       "word": "beteiligen",
@@ -1033,6 +4081,134 @@ export const rektionen: readonly Rektion[] = [
     "level": "B2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "beteiligung-an-dat",
+    "slug": {
+      "word": "beteiligung",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Beteiligung",
+    "article": "die",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "участие в чём-л.",
+      "en": "participation in sth."
+    },
+    "examples": [
+      {
+        "de": "Die Beteiligung an der Versammlung war gering.",
+        "ru": "Участие в собрании было небольшим.",
+        "en": "Participation in the meeting was low."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "beten-fuer-akk",
+    "slug": {
+      "word": "beten",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "beten",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "молиться за кого-л. / что-л.",
+      "en": "to pray for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie betet für den Frieden.",
+        "ru": "Она молится за мир.",
+        "en": "She prays for peace."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "betrauen-mit-dat",
+    "slug": {
+      "word": "betrauen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "betrauen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "поручать кому-л. что-л., доверять кому-л. задачу",
+      "en": "to entrust sb. with sth."
+    },
+    "examples": [
+      {
+        "de": "Man betraut ihn mit der Leitung des Projekts.",
+        "ru": "Ему поручают руководство проектом.",
+        "en": "He is entrusted with the project's management."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "betruegen-um-akk",
+    "slug": {
+      "word": "betruegen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "betrügen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "обманом лишать кого-л. чего-л.",
+      "en": "to cheat sb. out of sth."
+    },
+    "examples": [
+      {
+        "de": "Er betrügt sie um ihr Erbe.",
+        "ru": "Он обманом лишает её наследства.",
+        "en": "He is cheating her out of her inheritance."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "bewegen-zu-dat",
+    "slug": {
+      "word": "bewegen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "bewegen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "склонять, побуждать кого-л. к чему-л.",
+      "en": "to induce sb. to do sth., to prompt sb. into sth."
+    },
+    "examples": [
+      {
+        "de": "Ihre Mahnung bewog ihn zum Verzicht.",
+        "ru": "Её увещевание побудило его отказаться.",
+        "en": "Her warning prompted him to give it up.",
+        "lemmaForm": "bewog"
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1100,6 +4276,84 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "bewerbung-um-akk",
+    "slug": {
+      "word": "bewerbung",
+      "prep": "um"
+    },
+    "pos": "noun",
+    "lemma": "Bewerbung",
+    "article": "die",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "заявка на что-л.",
+      "en": "application for sth."
+    },
+    "examples": [
+      {
+        "de": "Seine Bewerbung um diesen Posten hatte Erfolg.",
+        "ru": "Его заявка на эту должность увенчалась успехом.",
+        "en": "His application for this position was successful."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "bewerfen-mit-dat",
+    "slug": {
+      "word": "bewerfen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "bewerfen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "закидывать чем-л.",
+      "en": "to pelt sb./sth. with sth."
+    },
+    "examples": [
+      {
+        "de": "Die Kinder bewerfen sich mit Schneebällen.",
+        "ru": "Дети закидывают друг друга снежками.",
+        "en": "The children are pelting each other with snowballs."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "bezahlen-fuer-akk",
+    "slug": {
+      "word": "bezahlen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "bezahlen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "платить за что-л.",
+      "en": "to pay for sth."
+    },
+    "examples": [
+      {
+        "de": "Ich bezahle für den Kaffee.",
+        "ru": "Я плачу за кофе.",
+        "en": "I am paying for the coffee."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "beziehen-auf-akk",
     "slug": {
       "word": "beziehen",
@@ -1123,6 +4377,33 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "beziehung-zu-dat",
+    "slug": {
+      "word": "beziehung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Beziehung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "отношения с кем-л., связь с кем-л.",
+      "en": "relationship with sb."
+    },
+    "examples": [
+      {
+        "de": "Sie hat eine gute Beziehung zu ihrem Chef.",
+        "ru": "У неё хорошие отношения с начальником.",
+        "en": "She has a good relationship with her boss."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -1208,6 +4489,36 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "bock-auf-akk",
+    "slug": {
+      "word": "bock",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Bock",
+    "article": "der",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "желание, охота на что-л. (разг.)",
+      "en": "desire for sth., motivation for sth. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Ich habe keinen Bock auf diese Party.",
+        "ru": "У меня нет желания идти на эту вечеринку.",
+        "en": "I have no desire to go to this party."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "boese-auf-akk",
     "slug": {
       "word": "boese",
@@ -1230,6 +4541,172 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "brechen-mit-dat",
+    "slug": {
+      "word": "brechen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "brechen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "порывать с чем-л. (с привычкой, с прошлым)",
+      "en": "to break with sth. (a habit, the past)"
+    },
+    "examples": [
+      {
+        "de": "Er bricht mit einer alten Gewohnheit.",
+        "ru": "Он порывает со старой привычкой.",
+        "en": "He is breaking with an old habit.",
+        "lemmaForm": "bricht"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "bremsen-mit-dat",
+    "slug": {
+      "word": "bremsen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "bremsen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть экономным в чём-л., сдерживать что-л. (перен., о расходах)",
+      "en": "to curb sth., to cut back on sth. (figurative, of spending)"
+    },
+    "senseNote": {
+      "ru": "переносное значение — не о торможении транспорта",
+      "en": "figurative sense — not about braking a vehicle"
+    },
+    "examples": [
+      {
+        "de": "Wir müssen mit den Ausgaben bremsen.",
+        "ru": "Нам нужно быть экономнее в расходах.",
+        "en": "We need to curb our spending."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "brennen-auf-akk",
+    "slug": {
+      "word": "brennen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "brennen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "сгорать от нетерпения в ожидании чего-л., жаждать чего-л.",
+      "en": "to be burning for sth., to be dying for sth."
+    },
+    "senseNote": {
+      "ru": "чего жаждешь — то, чего нетерпеливо ждёшь",
+      "en": "what you are burning for — the thing you impatiently want"
+    },
+    "examples": [
+      {
+        "de": "Er brennt auf den Wettkampf.",
+        "ru": "Он сгорает от нетерпения перед соревнованием.",
+        "en": "He is burning for the competition."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "brennen-vor-dat",
+    "slug": {
+      "word": "brennen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "brennen",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "гореть от какого-л. чувства",
+      "en": "to burn with an emotion"
+    },
+    "senseNote": {
+      "ru": "от какого чувства горишь — причина состояния, а не его цель",
+      "en": "which emotion consumes you — the cause of the state, not its target"
+    },
+    "examples": [
+      {
+        "de": "Sie brennt vor Neugier.",
+        "ru": "Она сгорает от любопытства.",
+        "en": "She is burning with curiosity."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "chance-auf-akk",
+    "slug": {
+      "word": "chance",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Chance",
+    "article": "die",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "шанс на что-л.",
+      "en": "chance of sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat eine gute Chance auf den Sieg.",
+        "ru": "У него хороший шанс на победу.",
+        "en": "He has a good chance of victory."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "dank-fuer-akk",
+    "slug": {
+      "word": "dank",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Dank",
+    "article": "der",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "благодарность за что-л.",
+      "en": "thanks for sth."
+    },
+    "examples": [
+      {
+        "de": "Er sprach seinen Dank für den Empfang aus.",
+        "ru": "Он выразил благодарность за приём.",
+        "en": "He expressed his thanks for the reception."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1349,6 +4826,109 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "deuten-auf-akk",
+    "slug": {
+      "word": "deuten",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "deuten",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "указывать на что-л. (о признаках)",
+      "en": "to point to sth. (of signs, indications)"
+    },
+    "examples": [
+      {
+        "de": "Die Zeichen deuten auf einen Wandel.",
+        "ru": "Признаки указывают на перемену.",
+        "en": "The signs point to a change."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "dienen-bei-dat",
+    "slug": {
+      "word": "dienen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "dienen",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "служить у кого-л.",
+      "en": "to serve under sb."
+    },
+    "examples": [
+      {
+        "de": "Er hat drei Jahre bei diesem General gedient.",
+        "ru": "Он три года служил у этого генерала.",
+        "en": "He served under this general for three years."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "differenzieren-zwischen-dat",
+    "slug": {
+      "word": "differenzieren",
+      "prep": "zwischen"
+    },
+    "pos": "verb",
+    "lemma": "differenzieren",
+    "prep": "zwischen",
+    "case": "dat",
+    "gloss": {
+      "ru": "различать, проводить различие между чем-л.",
+      "en": "to differentiate between sth."
+    },
+    "examples": [
+      {
+        "de": "Man muss zwischen diesen beiden Erscheinungen differenzieren.",
+        "ru": "Нужно различать эти два явления.",
+        "en": "One has to differentiate between these two phenomena."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "diskussion-ueber-akk",
+    "slug": {
+      "word": "diskussion",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Diskussion",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "дискуссия о чём-л.",
+      "en": "discussion about sth."
+    },
+    "examples": [
+      {
+        "de": "Die Diskussion über den Vorschlag hält an.",
+        "ru": "Дискуссия о предложении продолжается.",
+        "en": "The discussion about the proposal continues."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "diskutieren-mit-dat",
     "slug": {
       "word": "diskutieren",
@@ -1408,6 +4988,227 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "drang-nach-dat",
+    "slug": {
+      "word": "drang",
+      "prep": "nach"
+    },
+    "pos": "noun",
+    "lemma": "Drang",
+    "article": "der",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "стремление к чему-л. (внутреннее, неудержимое)",
+      "en": "urge for sth., drive for sth."
+    },
+    "examples": [
+      {
+        "de": "Er verspürt einen starken Drang nach Freiheit.",
+        "ru": "Он испытывает сильное стремление к свободе.",
+        "en": "He feels a strong urge for freedom."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "drehen-um-akk",
+    "slug": {
+      "word": "drehen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "drehen",
+    "prep": "um",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "речь идёт о чём-л. (перен.)",
+      "en": "to be about sth., to concern sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Das Gespräch dreht sich um Politik.",
+        "ru": "Разговор идёт о политике.",
+        "en": "The conversation is about politics."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "dringen-auf-akk",
+    "slug": {
+      "word": "dringen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "dringen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "настаивать на чём-л., требовать чего-л.",
+      "en": "to press for sth., to insist on sth."
+    },
+    "examples": [
+      {
+        "de": "Die Firma dringt auf einen schnellen Abschluss.",
+        "ru": "Фирма настаивает на быстром завершении.",
+        "en": "The company is pressing for a quick conclusion."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "drohen-mit-dat",
+    "slug": {
+      "word": "drohen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "drohen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "угрожать чем-л.",
+      "en": "to threaten sb. with sth."
+    },
+    "examples": [
+      {
+        "de": "Er droht mir mit einer Anzeige.",
+        "ru": "Он угрожает мне заявлением в полицию.",
+        "en": "He is threatening me with a police report."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "druecken-auf-akk",
+    "slug": {
+      "word": "druecken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "drücken",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "нажимать на что-л.",
+      "en": "to press sth."
+    },
+    "senseNote": {
+      "ru": "буквально нажимаешь на предмет — не о том, что избегаешь",
+      "en": "a literal press on an object — not about avoiding something"
+    },
+    "examples": [
+      {
+        "de": "Sie drückt auf den Knopf.",
+        "ru": "Она нажимает на кнопку.",
+        "en": "She presses the button."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "druecken-vor-dat",
+    "slug": {
+      "word": "druecken",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "drücken",
+    "prep": "vor",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "уклоняться от чего-л.",
+      "en": "to shirk sth., to dodge sth."
+    },
+    "senseNote": {
+      "ru": "переносное — избегаешь дела, а не нажимаешь на предмет",
+      "en": "figurative — you avoid a task, not literally press on something"
+    },
+    "examples": [
+      {
+        "de": "Du drückst dich gern vor der Arbeit.",
+        "ru": "Ты любишь уклоняться от работы.",
+        "en": "You like to dodge work."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "durchessen-bei-dat",
+    "slug": {
+      "word": "durchessen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "durchessen",
+    "prep": "bei",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "объедать кого-л., жить за чей-л. счёт (о еде)",
+      "en": "to eat at sb.'s expense repeatedly"
+    },
+    "examples": [
+      {
+        "de": "Er isst sich ungeniert bei all seinen Bekannten durch.",
+        "ru": "Он беззастенчиво объедает всех своих знакомых.",
+        "en": "He shamelessly eats at the expense of all his acquaintances.",
+        "lemmaForm": "isst"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "durchfallen-bei-dat",
+    "slug": {
+      "word": "durchfallen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "durchfallen",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "провалить что-л. (экзамен, голосование)",
+      "en": "to fail sth. (an exam, a vote)"
+    },
+    "examples": [
+      {
+        "de": "Er ist bei der Prüfung durchgefallen.",
+        "ru": "Он провалил экзамен.",
+        "en": "He failed the exam.",
+        "lemmaForm": "durchgefallen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "eifersuechtig-auf-akk",
     "slug": {
       "word": "eifersuechtig",
@@ -1460,6 +5261,168 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "eignung-fuer-akk",
+    "slug": {
+      "word": "eignung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Eignung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "пригодность для чего-л.",
+      "en": "suitability for sth."
+    },
+    "examples": [
+      {
+        "de": "Seine Eignung für den Posten ist unbestritten.",
+        "ru": "Его пригодность для этой должности не оспаривается.",
+        "en": "His suitability for the post is undisputed."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ein-huehnchen-zu-rupfen-haben-mit-dat",
+    "slug": {
+      "word": "ein-huehnchen-zu-rupfen-haben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "ein Hühnchen zu rupfen haben",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "иметь счёты с кем-л., иметь претензии к кому-л. (разг.)",
+      "en": "to have a bone to pick with sb. (colloquial, idiom)"
+    },
+    "examples": [
+      {
+        "de": "Ich habe noch ein Hühnchen mit dir zu rupfen.",
+        "ru": "У меня с тобой ещё есть счёты.",
+        "en": "I still have a bone to pick with you.",
+        "lemmaForm": "habe"
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einbeziehen-in-akk",
+    "slug": {
+      "word": "einbeziehen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einbeziehen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "включать что-л. во что-л., учитывать что-л.",
+      "en": "to include sth. in sth., to factor sth. into sth."
+    },
+    "examples": [
+      {
+        "de": "Wir beziehen diesen Umstand in unsere Überlegungen ein.",
+        "ru": "Мы включаем это обстоятельство в наши размышления.",
+        "en": "We are factoring this circumstance into our considerations."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "einbringen-in-akk",
+    "slug": {
+      "word": "einbringen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einbringen",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "вносить вклад во что-л., включаться во что-л.",
+      "en": "to contribute to sth., to get involved in sth."
+    },
+    "examples": [
+      {
+        "de": "Du kannst dich gerne in diese Debatte einbringen.",
+        "ru": "Ты можешь смело включиться в эту дискуссию.",
+        "en": "You are welcome to get involved in this debate."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einen-guten-draht-haben-zu-dat",
+    "slug": {
+      "word": "einen-guten-draht-haben",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "einen guten Draht haben",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "иметь хорошие отношения с кем-л. (идиома)",
+      "en": "to have a good rapport with sb. (idiom)"
+    },
+    "examples": [
+      {
+        "de": "Sie hat einen guten Draht zu ihrem Chef.",
+        "ru": "У неё хорошие отношения с начальником.",
+        "en": "She has a good rapport with her boss.",
+        "lemmaForm": "hat"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einfallen-in-akk",
+    "slug": {
+      "word": "einfallen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einfallen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "вторгаться в какую-л. страну",
+      "en": "to invade a country"
+    },
+    "examples": [
+      {
+        "de": "Die Truppen fielen in das Nachbarland ein.",
+        "ru": "Войска вторглись в соседнюю страну.",
+        "en": "The troops invaded the neighbouring country.",
+        "lemmaForm": "fielen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "einfluss-auf-akk",
     "slug": {
       "word": "einfluss",
@@ -1483,6 +5446,226 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "einfuehlen-in-akk",
+    "slug": {
+      "word": "einfuehlen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einfühlen",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "вчувствоваться во что-л., поставить себя на чьё-л. место",
+      "en": "to empathize with sb./sth., to put oneself in sb.'s shoes"
+    },
+    "examples": [
+      {
+        "de": "Ihr müsst euch in die Person einfühlen.",
+        "ru": "Вам нужно вчувствоваться в этого человека.",
+        "en": "You have to put yourselves in this person's shoes."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "eingehen-auf-akk",
+    "slug": {
+      "word": "eingehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "eingehen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "реагировать на что-л., откликаться на что-л.",
+      "en": "to respond to sth., to address sth. (a question, a plan)"
+    },
+    "senseNote": {
+      "ru": "на что реагируешь — вопрос или план, к которому обращаешься",
+      "en": "what you respond to — a question or plan you address"
+    },
+    "examples": [
+      {
+        "de": "Der Lehrer geht auf die Frage ein.",
+        "ru": "Учитель отвечает на вопрос.",
+        "en": "The teacher responds to the question."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "eingehen-in-akk",
+    "slug": {
+      "word": "eingehen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "eingehen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "войти во что-л. (в историю), стать частью чего-л.",
+      "en": "to go down in sth. (history), to become part of sth."
+    },
+    "senseNote": {
+      "ru": "во что входишь — куда навсегда становишься частью, а не на что отвечаешь",
+      "en": "what you become part of — something you permanently enter, not something you respond to"
+    },
+    "examples": [
+      {
+        "de": "Der Tag ist in die Geschichte eingegangen.",
+        "ru": "Этот день вошёл в историю.",
+        "en": "The day went down in history."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "eingreifen-in-akk",
+    "slug": {
+      "word": "eingreifen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "eingreifen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "вмешиваться во что-л.",
+      "en": "to intervene in sth."
+    },
+    "examples": [
+      {
+        "de": "Die Polizei greift in den Streit ein.",
+        "ru": "Полиция вмешивается в конфликт.",
+        "en": "The police intervene in the dispute."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einhaemmern-auf-akk",
+    "slug": {
+      "word": "einhaemmern",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einhämmern",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "наносить удары по кому-л. (перен. тж. о критике)",
+      "en": "to hammer blows on sb., to pound sb. (figuratively also of criticism)"
+    },
+    "examples": [
+      {
+        "de": "Der Boxer hämmerte auf seinen Gegner ein.",
+        "ru": "Боксёр обрушивал удары на своего противника.",
+        "en": "The boxer hammered blows on his opponent."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einhergehen-mit-dat",
+    "slug": {
+      "word": "einhergehen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "einhergehen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "сопровождаться чем-л., идти рука об руку с чем-л.",
+      "en": "to be accompanied by sth., to go hand in hand with sth."
+    },
+    "examples": [
+      {
+        "de": "Die Krankheit geht mit Fieber einher.",
+        "ru": "Болезнь сопровождается температурой.",
+        "en": "The illness is accompanied by fever.",
+        "lemmaForm": "geht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einigen-auf-akk",
+    "slug": {
+      "word": "einigen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einigen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "договариваться о чём-л.",
+      "en": "to agree on sth."
+    },
+    "examples": [
+      {
+        "de": "Sie einigen sich auf einen Preis.",
+        "ru": "Они договариваются о цене.",
+        "en": "They agree on a price."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einkaufen-in-akk",
+    "slug": {
+      "word": "einkaufen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einkaufen",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "приобретать долю участия в чём-л. (напр., в фирме)",
+      "en": "to buy into sth. (e.g. a company)"
+    },
+    "examples": [
+      {
+        "de": "Er hat sich in die Firma eingekauft.",
+        "ru": "Он купил долю в фирме.",
+        "en": "He bought into the company.",
+        "lemmaForm": "eingekauft"
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1537,6 +5720,96 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "einlassen-auf-akk",
+    "slug": {
+      "word": "einlassen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einlassen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "решаться на что-л., ввязываться во что-л.",
+      "en": "to get involved in sth., to agree to sth. (a risk)"
+    },
+    "senseNote": {
+      "ru": "на что решаешься — риск или предложение, которое принимаешь",
+      "en": "what you agree to — a risk or offer you accept"
+    },
+    "examples": [
+      {
+        "de": "Sie lässt sich auf ein Abenteuer ein.",
+        "ru": "Она решается на приключение.",
+        "en": "She gets involved in an adventure.",
+        "lemmaForm": "lässt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einlassen-in-akk",
+    "slug": {
+      "word": "einlassen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einlassen",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "вступать во что-л. (разговор)",
+      "en": "to get into sth. (a conversation)"
+    },
+    "senseNote": {
+      "ru": "во что вступаешь — конкретное взаимодействие, а не риск вообще",
+      "en": "what you get into — a specific interaction, not a general risk"
+    },
+    "examples": [
+      {
+        "de": "Er lässt sich in ein Gespräch ein.",
+        "ru": "Он вступает в разговор.",
+        "en": "He gets into a conversation.",
+        "lemmaForm": "lässt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einmarschieren-in-akk",
+    "slug": {
+      "word": "einmarschieren",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einmarschieren",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "вторгаться в страну (с войсками)",
+      "en": "to march into/invade a country (with troops)"
+    },
+    "examples": [
+      {
+        "de": "Die Armee marschierte in das Nachbarland ein.",
+        "ru": "Армия вторглась в соседнюю страну.",
+        "en": "The army marched into the neighbouring country."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "einmischen-in-akk",
     "slug": {
       "word": "einmischen",
@@ -1560,6 +5833,224 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "einreichen-bei-dat",
+    "slug": {
+      "word": "einreichen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "einreichen",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "подавать что-л. куда-л. (заявление, жалобу)",
+      "en": "to submit sth. to an authority (a complaint, an application)"
+    },
+    "examples": [
+      {
+        "de": "Sie hat die Klage bei Gericht eingereicht.",
+        "ru": "Она подала иск в суд.",
+        "en": "She submitted the complaint to the court."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einreisen-in-akk",
+    "slug": {
+      "word": "einreisen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einreisen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "въезжать в страну (с артиклем женского рода или во множественном числе)",
+      "en": "to enter a country (one with a feminine or plural name)"
+    },
+    "senseNote": {
+      "ru": "у стран женского рода и стран во множественном числе — «in»",
+      "en": "for countries with a feminine or plural name — 'in'"
+    },
+    "examples": [
+      {
+        "de": "Sie reist in die Schweiz ein.",
+        "ru": "Она въезжает в Швейцарию.",
+        "en": "She is entering Switzerland."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einreisen-nach-dat",
+    "slug": {
+      "word": "einreisen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "einreisen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "въезжать в страну (с большинством других названий стран)",
+      "en": "to enter a country (most other country names)"
+    },
+    "senseNote": {
+      "ru": "у большинства других названий стран (без артикля) — «nach»",
+      "en": "for most other country names (used without an article) — 'nach'"
+    },
+    "examples": [
+      {
+        "de": "Er reist nach Frankreich ein.",
+        "ru": "Он въезжает во Францию.",
+        "en": "He is entering France."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einrichten-auf-akk",
+    "slug": {
+      "word": "einrichten",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einrichten",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "готовиться к чему-л., настраиваться на что-л.",
+      "en": "to prepare for sth., to get ready for sth."
+    },
+    "examples": [
+      {
+        "de": "Wir richten uns auf eine lange Wartezeit ein.",
+        "ru": "Мы готовимся к долгому ожиданию.",
+        "en": "We are preparing for a long wait."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "einschalten-in-akk",
+    "slug": {
+      "word": "einschalten",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einschalten",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "вмешиваться во что-л., подключаться к чему-л.",
+      "en": "to get involved in sth., to intervene in sth."
+    },
+    "examples": [
+      {
+        "de": "Ich habe mich in die Diskussion eingeschaltet.",
+        "ru": "Я подключился к дискуссии.",
+        "en": "I got involved in the discussion.",
+        "lemmaForm": "eingeschaltet"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "einschiessen-auf-akk",
+    "slug": {
+      "word": "einschiessen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einschießen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "фокусироваться на ком-л. с критикой, делать кого-л. постоянной мишенью",
+      "en": "to fixate on sb. with criticism, to make sb. a repeated target"
+    },
+    "examples": [
+      {
+        "de": "Die Medien hatten sich auf den Minister eingeschossen.",
+        "ru": "Медиа сделали министра постоянной мишенью критики.",
+        "en": "The media had fixated on the minister as their target."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einschlagen-auf-akk",
+    "slug": {
+      "word": "einschlagen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einschlagen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "наносить удары по кому-л.",
+      "en": "to strike at sb. repeatedly"
+    },
+    "examples": [
+      {
+        "de": "Wie von Sinnen schlug er auf ihn ein.",
+        "ru": "Он словно обезумев, бил по нему.",
+        "en": "As if out of his mind, he struck at him repeatedly."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einschwoeren-auf-akk",
+    "slug": {
+      "word": "einschwoeren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einschwören",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "настраивать, сплачивать вокруг чего-л.",
+      "en": "to commit/pledge sb. to sth."
+    },
+    "examples": [
+      {
+        "de": "Die Partei schwor sich auf den Kandidaten ein.",
+        "ru": "Партия сплотилась вокруг кандидата.",
+        "en": "The party pledged itself to the candidate."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -1589,6 +6080,198 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "einspringen-fuer-akk",
+    "slug": {
+      "word": "einspringen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "einspringen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "подменять кого-л., выручать кого-л.",
+      "en": "to fill in for sb., to step in for sb."
+    },
+    "examples": [
+      {
+        "de": "Er ist für seinen kranken Kollegen eingesprungen.",
+        "ru": "Он подменил своего заболевшего коллегу.",
+        "en": "He filled in for his sick colleague."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einsteigen-in-akk",
+    "slug": {
+      "word": "einsteigen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einsteigen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "садиться в транспорт",
+      "en": "to get on/into a vehicle"
+    },
+    "examples": [
+      {
+        "de": "Er steigt in den Bus ein.",
+        "ru": "Он садится в автобус.",
+        "en": "He is getting on the bus."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einstellen-auf-akk",
+    "slug": {
+      "word": "einstellen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einstellen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "настраиваться на что-л., приспосабливаться к чему-л.",
+      "en": "to adapt to sth., to prepare oneself for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie stellt sich auf die neue Situation ein.",
+        "ru": "Она приспосабливается к новой ситуации.",
+        "en": "She is adapting to the new situation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "einstellung-zu-dat",
+    "slug": {
+      "word": "einstellung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Einstellung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "отношение к кому-л. / чему-л.",
+      "en": "attitude towards sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat eine kritische Einstellung zu den neuen Regeln.",
+        "ru": "У неё критическое отношение к новым правилам.",
+        "en": "She has a critical attitude towards the new rules."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "eintreten-fuer-akk",
+    "slug": {
+      "word": "eintreten",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "eintreten",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "выступать за что-л., отстаивать что-л.",
+      "en": "to advocate for sth., to stand up for sth."
+    },
+    "senseNote": {
+      "ru": "за что выступаешь — дело, которое отстаиваешь, а не организация, в которую вступаешь",
+      "en": "what you stand up for — a cause you defend, not an organisation you join"
+    },
+    "examples": [
+      {
+        "de": "Sie tritt für ihre Rechte ein.",
+        "ru": "Она выступает за свои права.",
+        "en": "She is standing up for her rights.",
+        "lemmaForm": "tritt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "eintreten-in-akk",
+    "slug": {
+      "word": "eintreten",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "eintreten",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "вступать во что-л. (в клуб, партию)",
+      "en": "to join sth. (a club, a party)"
+    },
+    "senseNote": {
+      "ru": "во что вступаешь — организация, а не дело, за которое борешься",
+      "en": "what you join — an organisation, not a cause you fight for"
+    },
+    "examples": [
+      {
+        "de": "Er tritt in den Verein ein.",
+        "ru": "Он вступает в клуб.",
+        "en": "He is joining the club.",
+        "lemmaForm": "tritt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einverstaendnis-mit-dat",
+    "slug": {
+      "word": "einverstaendnis",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Einverständnis",
+    "article": "das",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "согласие с кем-л.",
+      "en": "agreement with sb."
+    },
+    "examples": [
+      {
+        "de": "Er handelte im Einverständnis mit seinen Eltern.",
+        "ru": "Он действовал с согласия своих родителей.",
+        "en": "He acted in agreement with his parents."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "einverstanden-mit-dat",
     "slug": {
       "word": "einverstanden",
@@ -1611,6 +6294,135 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "einwilligen-in-akk",
+    "slug": {
+      "word": "einwilligen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einwilligen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "соглашаться на что-л., давать согласие на что-л.",
+      "en": "to consent to sth."
+    },
+    "examples": [
+      {
+        "de": "Sie willigt in die Operation ein.",
+        "ru": "Она соглашается на операцию.",
+        "en": "She consents to the operation."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "einwilligung-zu-dat",
+    "slug": {
+      "word": "einwilligung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Einwilligung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "согласие на что-л.",
+      "en": "consent to sth."
+    },
+    "examples": [
+      {
+        "de": "Der Patient gab seine Einwilligung zu der Operation.",
+        "ru": "Пациент дал своё согласие на операцию.",
+        "en": "The patient gave his consent to the operation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "einzahlen-auf-akk",
+    "slug": {
+      "word": "einzahlen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "einzahlen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "вносить деньги на счёт, вкладывать на что-л.",
+      "en": "to pay into sth., to deposit into sth. (an account)"
+    },
+    "examples": [
+      {
+        "de": "Sie zahlt das Geld auf ihr Konto ein.",
+        "ru": "Она вносит деньги на свой счёт.",
+        "en": "She deposits the money into her account."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "einziehen-in-akk",
+    "slug": {
+      "word": "einziehen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "einziehen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "въезжать во что-л. (о жилье)",
+      "en": "to move into sth. (a dwelling)"
+    },
+    "examples": [
+      {
+        "de": "Die Familie zieht in ein neues Haus ein.",
+        "ru": "Семья въезжает в новый дом.",
+        "en": "The family is moving into a new house."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ekel-vor-dat",
+    "slug": {
+      "word": "ekel",
+      "prep": "vor"
+    },
+    "pos": "noun",
+    "lemma": "Ekel",
+    "article": "der",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "отвращение к чему-л.",
+      "en": "disgust at sth."
+    },
+    "examples": [
+      {
+        "de": "Sie empfand Ekel vor fettem Fleisch.",
+        "ru": "Она испытывала отвращение к жирному мясу.",
+        "en": "She felt disgust at fatty meat."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1638,6 +6450,82 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "empfaenglich-fuer-akk",
+    "slug": {
+      "word": "empfaenglich",
+      "prep": "fuer"
+    },
+    "pos": "adj",
+    "lemma": "empfänglich",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "восприимчивый к чему-л.",
+      "en": "receptive to sth., susceptible to sth."
+    },
+    "examples": [
+      {
+        "de": "Er ist empfänglich für Schmeicheleien.",
+        "ru": "Он восприимчив к лести.",
+        "en": "He is receptive to flattery."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "enden-mit-dat",
+    "slug": {
+      "word": "enden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "enden",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "заканчиваться чем-л.",
+      "en": "to end with sth."
+    },
+    "examples": [
+      {
+        "de": "Der Vortrag endete mit einem Zitat.",
+        "ru": "Доклад закончился цитатой.",
+        "en": "The talk ended with a quotation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "entlassen-aus-dat",
+    "slug": {
+      "word": "entlassen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "entlassen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "выпускать, освобождать кого-л. откуда-л. / от чего-л.",
+      "en": "to release sb. from sth., to discharge sb. from sth."
+    },
+    "examples": [
+      {
+        "de": "Der Arzt entlässt ihn aus dem Krankenhaus.",
+        "ru": "Врач выписывает его из больницы.",
+        "en": "The doctor is discharging him from the hospital."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1703,6 +6591,32 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "entscheidung-fuer-akk",
+    "slug": {
+      "word": "entscheidung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Entscheidung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "решение в пользу кого-л. / чего-л.",
+      "en": "decision in favor of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Entscheidung für diesen Kandidaten fiel spät.",
+        "ru": "Решение в пользу этого кандидата было принято поздно.",
+        "en": "The decision in favor of this candidate came late."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "entschliessen-zu-dat",
     "slug": {
       "word": "entschliessen",
@@ -1726,6 +6640,32 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "entschluss-zu-dat",
+    "slug": {
+      "word": "entschluss",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Entschluss",
+    "article": "der",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "решение о чём-л.",
+      "en": "decision on sth."
+    },
+    "examples": [
+      {
+        "de": "Sie fasste den Entschluss zu einer Reise.",
+        "ru": "Она приняла решение о путешествии.",
+        "en": "She made the decision to go on a trip."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1791,6 +6731,116 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "enttaeuscht-von-dat",
+    "slug": {
+      "word": "enttaeuscht",
+      "prep": "von"
+    },
+    "pos": "adj",
+    "lemma": "enttäuscht",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "разочарованный кем-л. / чем-л.",
+      "en": "disappointed by/in sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Ich bin schwer enttäuscht von ihr.",
+        "ru": "Я сильно разочарован в ней.",
+        "en": "I am deeply disappointed in her."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "entwickeln-aus-dat",
+    "slug": {
+      "word": "entwickeln",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "entwickeln",
+    "prep": "aus",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "развиваться из чего-л.",
+      "en": "to develop out of sth."
+    },
+    "senseNote": {
+      "ru": "из чего развивается — исходная форма",
+      "en": "what it develops out of — the starting form"
+    },
+    "examples": [
+      {
+        "de": "Aus der Raupe entwickelt sich der Schmetterling.",
+        "ru": "Из гусеницы развивается бабочка.",
+        "en": "The butterfly develops out of the caterpillar."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "entwickeln-zu-dat",
+    "slug": {
+      "word": "entwickeln",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "entwickeln",
+    "prep": "zu",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "превращаться во что-л., вырастать во что-л.",
+      "en": "to develop into sth."
+    },
+    "senseNote": {
+      "ru": "во что развивается — конечная форма, а не исходная",
+      "en": "what it develops into — the resulting form, not the starting one"
+    },
+    "examples": [
+      {
+        "de": "Japan hat sich zu einer Industriemacht entwickelt.",
+        "ru": "Япония превратилась в промышленную державу.",
+        "en": "Japan has developed into an industrial power."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "erfuellen-mit-dat",
+    "slug": {
+      "word": "erfuellen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "erfüllen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "наполнять кого-л. каким-л. чувством",
+      "en": "to fill sb. with a feeling"
+    },
+    "examples": [
+      {
+        "de": "Ihr Verhalten erfüllt mich mit Sorge.",
+        "ru": "Её поведение наполняет меня тревогой.",
+        "en": "Her behaviour fills me with worry."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "ergeben-aus-dat",
     "slug": {
       "word": "ergeben",
@@ -1815,6 +6865,98 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "ergehen-in-dat",
+    "slug": {
+      "word": "ergehen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "ergehen",
+    "prep": "in",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "пространно рассуждать о чём-л., распространяться на тему чего-л. (часто неодобр.)",
+      "en": "to dwell at length on sth., to go on and on about sth. (often disapproving)"
+    },
+    "senseNote": {
+      "ru": "многословно и с осуждением — не про содержание, а про манеру говорить",
+      "en": "wordy and disapproving — about the manner of speaking, not the content"
+    },
+    "examples": [
+      {
+        "de": "Er ergeht sich gern in langen Reden.",
+        "ru": "Он любит распространяться в длинных речах.",
+        "en": "He likes to go on and on in long speeches."
+      }
+    ],
+    "tags": [
+      "dated"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "erhoehen-auf-akk",
+    "slug": {
+      "word": "erhoehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "erhöhen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "повышать что-л. до какого-л. уровня",
+      "en": "to raise sth. to a level"
+    },
+    "senseNote": {
+      "ru": "до какого уровня — новое итоговое значение",
+      "en": "to what level — the new resulting figure"
+    },
+    "examples": [
+      {
+        "de": "Die Stadt erhöht die Miete auf den doppelten Betrag.",
+        "ru": "Город повышает арендную плату до двойной суммы.",
+        "en": "The city is raising the rent to double the amount."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "erhoehen-um-akk",
+    "slug": {
+      "word": "erhoehen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "erhöhen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "повышать что-л. на какую-л. величину",
+      "en": "to raise sth. by an amount"
+    },
+    "senseNote": {
+      "ru": "на какую величину — размер прибавки, а не итог",
+      "en": "by what amount — the size of the increase, not the result"
+    },
+    "examples": [
+      {
+        "de": "Der Betrieb erhöht die Löhne um einen kleinen Betrag.",
+        "ru": "Предприятие повышает зарплаты на небольшую сумму.",
+        "en": "The company is raising wages by a small amount."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -1927,6 +7069,57 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "erklaeren-zu-dat",
+    "slug": {
+      "word": "erklaeren",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "erklären",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "объявлять кого-л. кем-л. (официально)",
+      "en": "to declare sb. sth. (officially)"
+    },
+    "examples": [
+      {
+        "de": "Er wurde zum Sieger erklärt.",
+        "ru": "Его объявили победителем.",
+        "en": "He was declared the winner."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "erklaerung-fuer-akk",
+    "slug": {
+      "word": "erklaerung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Erklärung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "объяснение чего-л.",
+      "en": "an explanation for sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat für sein Verhalten keine Erklärung.",
+        "ru": "У него нет объяснения своему поведению.",
+        "en": "He has no explanation for his behavior."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "erkundigen-bei-dat",
     "slug": {
       "word": "erkundigen",
@@ -1985,6 +7178,136 @@ export const rektionen: readonly Rektion[] = [
     "level": "B2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "erkundigung-ueber-akk",
+    "slug": {
+      "word": "erkundigung",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Erkundigung",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "справка о ком-л. / чём-л.",
+      "en": "inquiry about sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Polizei zieht Erkundigungen über den Verdächtigen ein.",
+        "ru": "Полиция наводит справки о подозреваемом.",
+        "en": "The police are gathering information about the suspect."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ernaehren-von-dat",
+    "slug": {
+      "word": "ernaehren",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "ernähren",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "питаться чем-л.",
+      "en": "to live on sth., to feed on sth."
+    },
+    "examples": [
+      {
+        "de": "Pandas ernähren sich von Bambus.",
+        "ru": "Панды питаются бамбуком.",
+        "en": "Pandas feed on bamboo."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "erschrecken-vor-dat",
+    "slug": {
+      "word": "erschrecken",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "erschrecken",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "пугаться кого-л. / чего-л.",
+      "en": "to be startled by sb. / sth., to be frightened of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Ich erschrak vor ihr.",
+        "ru": "Я испугался её.",
+        "en": "I was startled by her.",
+        "lemmaForm": "erschrak"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ersehen-aus-dat",
+    "slug": {
+      "word": "ersehen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "ersehen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "делать вывод из чего-л., усматривать из чего-л.",
+      "en": "to gather from sth., to infer from sth."
+    },
+    "examples": [
+      {
+        "de": "Aus den Akten ist nichts zu ersehen.",
+        "ru": "Из документов ничего нельзя понять.",
+        "en": "Nothing can be inferred from the files."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "erwachen-zu-dat",
+    "slug": {
+      "word": "erwachen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "erwachen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "пробуждаться к чему-л. (перен.)",
+      "en": "to awaken to sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Im Frühling erwacht die Natur zu neuem Leben.",
+        "ru": "Весной природа пробуждается к новой жизни.",
+        "en": "In spring, nature awakens to new life."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2048,6 +7371,31 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "erziehen-zu-dat",
+    "slug": {
+      "word": "erziehen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "erziehen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "воспитывать в ком-л. какое-л. качество",
+      "en": "to bring sb. up to be sth., to raise sb. to sth."
+    },
+    "examples": [
+      {
+        "de": "Sie erzieht ihre Kinder zur Selbstständigkeit.",
+        "ru": "Она воспитывает в своих детях самостоятельность.",
+        "en": "She is bringing her children up to be independent."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "faehig-zu-dat",
     "slug": {
       "word": "faehig",
@@ -2070,6 +7418,92 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "fahren-mit-dat",
+    "slug": {
+      "word": "fahren",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "fahren",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "ехать на чём-л. (о транспорте)",
+      "en": "to go by sth. (a means of transport)"
+    },
+    "examples": [
+      {
+        "de": "Wir fahren mit dem Zug nach Berlin.",
+        "ru": "Мы едем в Берлин на поезде.",
+        "en": "We are going to Berlin by train."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "fallen-auf-akk",
+    "slug": {
+      "word": "fallen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "fallen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "выпадать на какой-л. день",
+      "en": "to fall on a day (a date, a holiday)"
+    },
+    "senseNote": {
+      "ru": "на что выпадает — календарная дата, а не категория",
+      "en": "what date it falls on — a calendar date, not a category"
+    },
+    "examples": [
+      {
+        "de": "Weihnachten fällt auf einen Sonntag.",
+        "ru": "Рождество выпадает на воскресенье.",
+        "en": "Christmas falls on a Sunday."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "fallen-in-akk",
+    "slug": {
+      "word": "fallen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "fallen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "относиться к чему-л. (компетенции, категории)",
+      "en": "to fall within sth. (a jurisdiction, a category)"
+    },
+    "senseNote": {
+      "ru": "в какую категорию попадает — сфера ответственности, а не дата",
+      "en": "what category it falls into — an area of responsibility, not a date"
+    },
+    "examples": [
+      {
+        "de": "Das fällt nicht in die Zuständigkeit der Gemeinde.",
+        "ru": "Это не относится к компетенции общины.",
+        "en": "That doesn't fall within the municipality's jurisdiction."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2098,6 +7532,88 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "feilen-an-dat",
+    "slug": {
+      "word": "feilen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "feilen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "оттачивать что-л., дорабатывать что-л. (перен.)",
+      "en": "to polish sth., to work on refining sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Sie feilt an ihrem Vortrag.",
+        "ru": "Она дорабатывает свой доклад.",
+        "en": "She is polishing her presentation."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "feilschen-um-akk",
+    "slug": {
+      "word": "feilschen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "feilschen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "торговаться за что-л., торговаться о чём-л.",
+      "en": "to haggle over sth."
+    },
+    "examples": [
+      {
+        "de": "Sie feilscht um den Preis.",
+        "ru": "Она торгуется за цену.",
+        "en": "She is haggling over the price."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "fertig-fuer-akk",
+    "slug": {
+      "word": "fertig",
+      "prep": "fuer"
+    },
+    "pos": "adj",
+    "lemma": "fertig",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "готовый к чему-л.",
+      "en": "ready for sth."
+    },
+    "senseNote": {
+      "ru": "к чему готов — предстоящее событие, а не завершённая задача",
+      "en": "what you are ready for — something ahead of you, not a finished task"
+    },
+    "examples": [
+      {
+        "de": "Er ist fertig für den Wettkampf.",
+        "ru": "Он готов к соревнованию.",
+        "en": "He is ready for the competition."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "fertig-mit-dat",
     "slug": {
       "word": "fertig",
@@ -2111,6 +7627,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "закончивший с чем-л.",
       "en": "finished with sth."
     },
+    "senseNote": {
+      "ru": "с чем закончил — задача уже выполнена",
+      "en": "what you are finished with — a task already completed"
+    },
     "examples": [
       {
         "de": "Bist du mit der Arbeit fertig?",
@@ -2120,6 +7640,140 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "fertigwerden-mit-dat",
+    "slug": {
+      "word": "fertigwerden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "fertigwerden",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "справляться с кем-л. / чем-л.",
+      "en": "to cope with sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie wird mit dem Stress nicht fertig.",
+        "ru": "Она не справляется со стрессом.",
+        "en": "She cannot cope with the stress.",
+        "lemmaForm": "wird"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "festbeissen-an-dat",
+    "slug": {
+      "word": "festbeissen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "festbeißen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "зацикливаться на чём-л. (перен.)",
+      "en": "to fixate on sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich an diesem Fall festgebissen.",
+        "ru": "Она зациклилась на этом деле.",
+        "en": "She has fixated on this case.",
+        "lemmaForm": "festgebissen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "festhalten-an-dat",
+    "slug": {
+      "word": "festhalten",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "festhalten",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "твёрдо держаться чего-л. (мнения, традиции)",
+      "en": "to stick to sth. (an opinion, a tradition)"
+    },
+    "examples": [
+      {
+        "de": "Sie hält an ihrer Meinung fest.",
+        "ru": "Она твёрдо держится своего мнения.",
+        "en": "She sticks to her opinion.",
+        "lemmaForm": "hält"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "festmachen-an-dat",
+    "slug": {
+      "word": "festmachen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "festmachen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "связывать что-л. с чем-л., объяснять что-л. чем-л. (перен.)",
+      "en": "to attribute sth. to sth., to pin sth. down to sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Man kann das Problem nicht allein an einer Ursache festmachen.",
+        "ru": "Нельзя объяснить проблему одной-единственной причиной.",
+        "en": "One cannot attribute the problem solely to one cause."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "festnageln-auf-akk",
+    "slug": {
+      "word": "festnageln",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "festnageln",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "припирать кого-л. к стенке, ловить кого-л. на слове",
+      "en": "to pin sb. down to sth. (a statement, a promise)"
+    },
+    "examples": [
+      {
+        "de": "Sie ließ sich nicht auf eine Aussage festnageln.",
+        "ru": "Она не позволила поймать себя на слове.",
+        "en": "She would not let herself be pinned down to a statement."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2148,6 +7802,67 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "fluechten-in-akk",
+    "slug": {
+      "word": "fluechten",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "flüchten",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "укрыться, спастись бегством куда-л.",
+      "en": "to take refuge in sth. (a place)"
+    },
+    "senseNote": {
+      "ru": "куда укрываешься — пункт назначения, а не источник опасности",
+      "en": "where you take refuge — the destination, not the danger"
+    },
+    "examples": [
+      {
+        "de": "Sie flüchten sich in eine Hütte.",
+        "ru": "Они укрываются в хижине.",
+        "en": "They take refuge in a hut."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "fluechten-vor-dat",
+    "slug": {
+      "word": "fluechten",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "flüchten",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "спасаться бегством от чего-л.",
+      "en": "to flee from sth., to escape sth."
+    },
+    "senseNote": {
+      "ru": "от чего бежишь — источник опасности",
+      "en": "what you flee from — the source of danger"
+    },
+    "examples": [
+      {
+        "de": "Die Menschen flüchten vor der Verfolgung.",
+        "ru": "Люди спасаются бегством от преследования.",
+        "en": "People are fleeing from persecution."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "folgen-aus-dat",
     "slug": {
       "word": "folgen",
@@ -2170,6 +7885,89 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "folgern-aus-dat",
+    "slug": {
+      "word": "folgern",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "folgern",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "делать вывод из чего-л., заключать из чего-л.",
+      "en": "to conclude from sth., to infer from sth."
+    },
+    "examples": [
+      {
+        "de": "Man kann aus seinem Schweigen folgern, dass er zustimmt.",
+        "ru": "Из его молчания можно заключить, что он согласен.",
+        "en": "One can conclude from his silence that he agrees."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "folgerung-aus-dat",
+    "slug": {
+      "word": "folgerung",
+      "prep": "aus"
+    },
+    "pos": "noun",
+    "lemma": "Folgerung",
+    "article": "die",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "вывод из чего-л.",
+      "en": "a conclusion drawn from sth."
+    },
+    "examples": [
+      {
+        "de": "Er zog eine wichtige Folgerung aus den Testergebnissen.",
+        "ru": "Он сделал важный вывод из результатов теста.",
+        "en": "He drew an important conclusion from the test results."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "frage-an-akk",
+    "slug": {
+      "word": "frage",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Frage",
+    "article": "die",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "вопрос к кому-л.",
+      "en": "question for sb."
+    },
+    "senseNote": {
+      "ru": "кому вопрос адресован — собеседник, а не тема",
+      "en": "who the question is addressed to — the person, not the topic"
+    },
+    "examples": [
+      {
+        "de": "Ich habe eine Frage an den Lehrer.",
+        "ru": "У меня вопрос к учителю.",
+        "en": "I have a question for the teacher."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2256,6 +8054,36 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "fressen-an-dat",
+    "slug": {
+      "word": "fressen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "fressen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "разъедать что-л., точить кого-л. (перен., о тревоге, ржавчине)",
+      "en": "to eat away at sth., to gnaw at sb. (figurative, of worry, corrosion)"
+    },
+    "senseNote": {
+      "ru": "переносное значение — не о еде животных",
+      "en": "figurative sense — not about an animal eating"
+    },
+    "examples": [
+      {
+        "de": "Säure frisst am Metall.",
+        "ru": "Кислота разъедает металл.",
+        "en": "Acid eats away at the metal.",
+        "lemmaForm": "frisst"
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -2355,6 +8183,37 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "freuen-fuer-akk",
+    "slug": {
+      "word": "freuen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "freuen",
+    "prep": "für",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "радоваться за кого-л.",
+      "en": "to be happy for sb."
+    },
+    "senseNote": {
+      "ru": "радость не своя, а чужая — радуешься за другого",
+      "en": "the joy is not your own — you are glad on someone else's behalf"
+    },
+    "examples": [
+      {
+        "de": "Ich freue mich für dich.",
+        "ru": "Я рад за тебя.",
+        "en": "I am happy for you."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "freuen-ueber-akk",
     "slug": {
       "word": "freuen",
@@ -2416,6 +8275,32 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "froh-ueber-akk",
+    "slug": {
+      "word": "froh",
+      "prep": "ueber"
+    },
+    "pos": "adj",
+    "lemma": "froh",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "радостный из-за чего-л., довольный чем-л.",
+      "en": "glad about sth."
+    },
+    "examples": [
+      {
+        "de": "Ich bin froh über den Erfolg.",
+        "ru": "Я рад успеху.",
+        "en": "I am glad about the success."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "fuehren-zu-dat",
     "slug": {
       "word": "fuehren",
@@ -2467,6 +8352,221 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "furcht-vor-dat",
+    "slug": {
+      "word": "furcht",
+      "prep": "vor"
+    },
+    "pos": "noun",
+    "lemma": "Furcht",
+    "article": "die",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "страх перед кем-л. / чем-л.",
+      "en": "fear of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Furcht vor dem Tod begleitete ihn sein Leben lang.",
+        "ru": "Страх перед смертью сопровождал его всю жизнь.",
+        "en": "The fear of death accompanied him his whole life."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "fussen-auf-dat",
+    "slug": {
+      "word": "fussen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "fußen",
+    "prep": "auf",
+    "case": "dat",
+    "gloss": {
+      "ru": "основываться на чём-л., опираться на что-л.",
+      "en": "to be based on sth., to rest on sth."
+    },
+    "examples": [
+      {
+        "de": "Die Entscheidung fußt auf einem Vertrag.",
+        "ru": "Решение основывается на договоре.",
+        "en": "The decision is based on a contract."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "geben-auf-akk",
+    "slug": {
+      "word": "geben",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "geben",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "придавать значение чему-л., считаться с чем-л.",
+      "en": "to set store by sth., to attach importance to sth."
+    },
+    "senseNote": {
+      "ru": "только в обороте с viel / wenig / nichts: «viel auf etwas geben». Это не общее управление глагола «давать»",
+      "en": "only in the fixed frame with viel / wenig / nichts: 'viel auf etwas geben'. Not a general government of 'to give'"
+    },
+    "examples": [
+      {
+        "de": "Er gibt viel auf seinen guten Ruf.",
+        "ru": "Он придаёт большое значение своей хорошей репутации.",
+        "en": "He sets great store by his good reputation.",
+        "lemmaForm": "gibt"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "gebet-fuer-akk",
+    "slug": {
+      "word": "gebet",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Gebet",
+    "article": "das",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "молитва за кого-л. / что-л.",
+      "en": "a prayer for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie sprachen ein Gebet für die Toten.",
+        "ru": "Они прочитали молитву за усопших.",
+        "en": "They said a prayer for the dead."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "gedanke-an-akk",
+    "slug": {
+      "word": "gedanke",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Gedanke",
+    "article": "der",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "мысль о ком-л. / чём-л.",
+      "en": "thought of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Der Gedanke an sie ließ ihn nicht los.",
+        "ru": "Мысль о ней не отпускала его.",
+        "en": "The thought of her would not let him go."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "gedenken-an-akk",
+    "slug": {
+      "word": "gedenken",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Gedenken",
+    "article": "das",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "память о ком-л. / чём-л., поминовение кого-л.",
+      "en": "remembrance of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Das Gedenken an die Opfer bewegte alle.",
+        "ru": "Память о жертвах тронула всех.",
+        "en": "The remembrance of the victims moved everyone."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "geeignet-fuer-akk",
+    "slug": {
+      "word": "geeignet",
+      "prep": "fuer"
+    },
+    "pos": "adj",
+    "lemma": "geeignet",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "подходящий для чего-л.",
+      "en": "suitable for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie ist für diese Tätigkeit gut geeignet.",
+        "ru": "Она хорошо подходит для этой работы.",
+        "en": "She is well suited for this job."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "gehen-auf-akk",
+    "slug": {
+      "word": "gehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "gehen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "быть на счету у кого-л. (об оплате), быть чьим-л. угощением",
+      "en": "to be on sb. (as in paying), to be sb.'s treat"
+    },
+    "senseNote": {
+      "ru": "кто платит — устойчивая идиома, а не буквальное «идти» или направление",
+      "en": "who's paying — a fixed idiom, not the literal 'go' or a direction"
+    },
+    "examples": [
+      {
+        "de": "Das Essen geht auf mich.",
+        "ru": "Ужин за мой счёт.",
+        "en": "The meal is on me."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "gehoeren-zu-dat",
     "slug": {
       "word": "gehoeren",
@@ -2493,6 +8593,93 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "gelten-fuer-akk",
+    "slug": {
+      "word": "gelten",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "gelten",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "действовать для кого-л. / чего-л., распространяться на кого-л.",
+      "en": "to apply to sb. / sth., to be valid for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Das Gesetz gilt für alle.",
+        "ru": "Закон действует для всех.",
+        "en": "The law applies to everyone.",
+        "lemmaForm": "gilt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "geraten-an-akk",
+    "slug": {
+      "word": "geraten",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "geraten",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "случайно связаться с кем-л. (обычно неприятным человеком)",
+      "en": "to end up dealing with sb. (usually unpleasant), to fall into sb.'s hands"
+    },
+    "senseNote": {
+      "ru": "на кого нарвался — человек, а не место или состояние",
+      "en": "who you end up dealing with — a person, not a place or a state"
+    },
+    "examples": [
+      {
+        "de": "Wie bist du an diesen Betrüger geraten?",
+        "ru": "Как ты связался с этим мошенником?",
+        "en": "How did you end up dealing with this fraudster?"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "geraten-auf-akk",
+    "slug": {
+      "word": "geraten",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "geraten",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "случайно оказываться на чём-л. / где-л.",
+      "en": "to end up on sth. (by accident)"
+    },
+    "senseNote": {
+      "ru": "куда попадаешь — место, случайно и нежелательно",
+      "en": "where you end up — a place, unintentionally"
+    },
+    "examples": [
+      {
+        "de": "Das Auto gerät auf die Gegenfahrbahn.",
+        "ru": "Машина выезжает на встречную полосу.",
+        "en": "The car ends up in the oncoming lane."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "geraten-in-akk",
     "slug": {
       "word": "geraten",
@@ -2506,6 +8693,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "попадать во что-л.",
       "en": "to get into sth."
     },
+    "senseNote": {
+      "ru": "во что попадаешь — ситуация или состояние",
+      "en": "what you get into — a situation or a state"
+    },
     "examples": [
       {
         "de": "Wir sind in einen Stau geraten.",
@@ -2515,6 +8706,119 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "geraten-nach-dat",
+    "slug": {
+      "word": "geraten",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "geraten",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть похожим на кого-л. (о родственнике)",
+      "en": "to take after sb. (a relative)"
+    },
+    "senseNote": {
+      "ru": "на кого похож — черта, унаследованная от родителя",
+      "en": "who you take after — a trait inherited from a parent"
+    },
+    "examples": [
+      {
+        "de": "Sie gerät ganz nach ihrem Vater.",
+        "ru": "Она вся в отца.",
+        "en": "She takes entirely after her father."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "geraten-unter-akk",
+    "slug": {
+      "word": "geraten",
+      "prep": "unter"
+    },
+    "pos": "verb",
+    "lemma": "geraten",
+    "prep": "unter",
+    "case": "akk",
+    "gloss": {
+      "ru": "попадать под чьё-л. влияние",
+      "en": "to fall under sth. (an influence)"
+    },
+    "senseNote": {
+      "ru": "под что попадаешь — воздействие извне, а не своё собственное состояние",
+      "en": "what you fall under — an outside influence, not your own state"
+    },
+    "examples": [
+      {
+        "de": "Er gerät unter schlechten Einfluss.",
+        "ru": "Он попадает под плохое влияние.",
+        "en": "He falls under a bad influence."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "geruch-nach-dat",
+    "slug": {
+      "word": "geruch",
+      "prep": "nach"
+    },
+    "pos": "noun",
+    "lemma": "Geruch",
+    "article": "der",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "запах чего-л.",
+      "en": "a smell of sth."
+    },
+    "examples": [
+      {
+        "de": "Im Treppenhaus hing ein Geruch nach Verbranntem.",
+        "ru": "В подъезде стоял запах гари.",
+        "en": "There was a smell of something burnt in the stairwell."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "geschehen-mit-dat",
+    "slug": {
+      "word": "geschehen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "geschehen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "происходить с кем-л. / чем-л., становиться с кем-л. / чем-л.",
+      "en": "to happen to sb. / sth., to become of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Was geschieht mit den alten Zeitungen?",
+        "ru": "Что происходит со старыми газетами?",
+        "en": "What happens to the old newspapers?",
+        "lemmaForm": "geschieht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2544,6 +8848,119 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "gespraech-mit-dat",
+    "slug": {
+      "word": "gespraech",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Gespräch",
+    "article": "das",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "разговор с кем-л.",
+      "en": "a conversation with sb."
+    },
+    "examples": [
+      {
+        "de": "Ich hatte ein langes Gespräch mit meinem Chef.",
+        "ru": "У меня был долгий разговор с моим начальником.",
+        "en": "I had a long conversation with my boss."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "gewalt-gegen-akk",
+    "slug": {
+      "word": "gewalt",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Gewalt",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "насилие в отношении кого-л. / чего-л.",
+      "en": "violence against sb. / sth."
+    },
+    "senseNote": {
+      "ru": "насилие, направленное на кого-л. — действие, а не власть",
+      "en": "violence directed at sb. — an act, not power"
+    },
+    "examples": [
+      {
+        "de": "Die Kampagne richtet sich gegen Gewalt gegen Frauen.",
+        "ru": "Кампания направлена против насилия в отношении женщин.",
+        "en": "The campaign is directed against violence against women."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "gewalt-ueber-akk",
+    "slug": {
+      "word": "gewalt",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Gewalt",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "власть, контроль над кем-л. / чем-л.",
+      "en": "power/control over sb. / sth."
+    },
+    "senseNote": {
+      "ru": "власть над чем-л. — контроль, способность управлять",
+      "en": "power over sth. — control, the ability to manage it"
+    },
+    "examples": [
+      {
+        "de": "Er verliert die Gewalt über sein Fahrzeug.",
+        "ru": "Он теряет контроль над своим автомобилем.",
+        "en": "He loses control over his vehicle."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "gewinnen-an-dat",
+    "slug": {
+      "word": "gewinnen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "gewinnen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "прибавлять в чём-л., набирать что-л. (значение, высоту, скорость)",
+      "en": "to gain in sth. (importance, altitude, speed)"
+    },
+    "examples": [
+      {
+        "de": "Das Thema gewinnt an Bedeutung.",
+        "ru": "Тема приобретает всё большее значение.",
+        "en": "The topic is gaining in importance."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "gewoehnen-an-akk",
     "slug": {
       "word": "gewoehnen",
@@ -2567,6 +8984,58 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "gewoehnt-an-akk",
+    "slug": {
+      "word": "gewoehnt",
+      "prep": "an"
+    },
+    "pos": "adj",
+    "lemma": "gewöhnt",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "привыкший к чему-л.",
+      "en": "used to sth."
+    },
+    "examples": [
+      {
+        "de": "Ich bin an diese Arbeit gewöhnt.",
+        "ru": "Я привык к этой работе.",
+        "en": "I am used to this work."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "glaube-an-akk",
+    "slug": {
+      "word": "glaube",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Glaube",
+    "article": "der",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "вера в кого-л. / что-л.",
+      "en": "belief in sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Ihr Glaube an die Zukunft ist stark.",
+        "ru": "Её вера в будущее сильна.",
+        "en": "Her belief in the future is strong."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2621,6 +9090,32 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "glueckwunsch-zu-dat",
+    "slug": {
+      "word": "glueckwunsch",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Glückwunsch",
+    "article": "der",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "поздравление с чем-л.",
+      "en": "congratulations on sth."
+    },
+    "examples": [
+      {
+        "de": "Herzlichen Glückwunsch zum Geburtstag!",
+        "ru": "Сердечно поздравляю с днём рождения!",
+        "en": "Congratulations on your birthday!"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "gratulieren-zu-dat",
     "slug": {
       "word": "gratulieren",
@@ -2646,6 +9141,86 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "grauen-vor-dat",
+    "slug": {
+      "word": "grauen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "grauen",
+    "prep": "vor",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "бояться чего-л., испытывать ужас перед чем-л.",
+      "en": "to dread sth."
+    },
+    "examples": [
+      {
+        "de": "Er graut sich vor der Prüfung.",
+        "ru": "Он боится экзамена.",
+        "en": "He dreads the exam."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "grenzen-an-akk",
+    "slug": {
+      "word": "grenzen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "grenzen",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "граничить с чем-л.",
+      "en": "to border on sth."
+    },
+    "examples": [
+      {
+        "de": "Deutschland grenzt an den Bodensee.",
+        "ru": "Германия граничит с Боденским озером.",
+        "en": "Germany borders on Lake Constance."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "gruenden-auf-dat",
+    "slug": {
+      "word": "gruenden",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "gründen",
+    "prep": "auf",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "основываться на чём-л.",
+      "en": "to be based on sth."
+    },
+    "examples": [
+      {
+        "de": "Der Verdacht gründet sich auf einer Aussage.",
+        "ru": "Подозрение основывается на показании.",
+        "en": "The suspicion is based on a statement."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "grund-fuer-akk",
     "slug": {
       "word": "grund",
@@ -2660,6 +9235,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "причина чего-л.",
       "en": "reason for sth."
     },
+    "senseNote": {
+      "ru": "причина конкретного факта или события",
+      "en": "the cause of a concrete fact or event"
+    },
     "examples": [
       {
         "de": "Der Grund für die Verspätung ist unklar.",
@@ -2669,6 +9248,192 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "grund-zu-dat",
+    "slug": {
+      "word": "grund",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Grund",
+    "article": "der",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "повод для чего-л. (обычно перед отглагольным существительным)",
+      "en": "grounds for sth. (usually before a deverbal noun)"
+    },
+    "senseNote": {
+      "ru": "повод для реакции или поступка, а не причина факта — «Grund zur Aufregung», «Grund zum Klagen»",
+      "en": "grounds for a reaction or an action, not the cause of a fact — 'Grund zur Aufregung', 'Grund zum Klagen'"
+    },
+    "examples": [
+      {
+        "de": "Es besteht kein Grund zur Aufregung.",
+        "ru": "Нет повода для беспокойства.",
+        "en": "There is no reason for concern."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "haben-mit-dat",
+    "slug": {
+      "word": "haben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "haben",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "иметь что-л. (роман, интрижку) с кем-л.",
+      "en": "to have a thing going with sb. (a relationship)"
+    },
+    "senseNote": {
+      "ru": "разговорная идиома об отношениях, не буквальное обладание",
+      "en": "a colloquial idiom about a relationship, not literal possession"
+    },
+    "examples": [
+      {
+        "de": "Sie hat etwas mit ihrem Kollegen.",
+        "ru": "У неё что-то с коллегой.",
+        "en": "She has a thing going with her colleague.",
+        "lemmaForm": "hat"
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "haben-von-dat",
+    "slug": {
+      "word": "haben",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "haben",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "получать пользу от чего-л., иметь прок в чём-л.",
+      "en": "to get sth. out of sth., to benefit from sth."
+    },
+    "senseNote": {
+      "ru": "какую пользу или отдачу получаешь от чего-л. — не буквальное обладание",
+      "en": "what benefit or payoff you get from sth. — not literal possession"
+    },
+    "examples": [
+      {
+        "de": "Ich habe viel von diesem Kurs.",
+        "ru": "Этот курс даёт мне много пользы.",
+        "en": "I am getting a lot out of this course."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "haften-an-dat",
+    "slug": {
+      "word": "haften",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "haften",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть неразрывно связанным с кем-л. / чем-л. (о недостатке, подозрении), липнуть к чему-л.",
+      "en": "to cling to sb. / sth. (a flaw, a suspicion), to stick to sth."
+    },
+    "senseNote": {
+      "ru": "что к кому-л. прилипло или относится — не про юридическую ответственность",
+      "en": "what clings to or is associated with sb. — not about legal liability"
+    },
+    "examples": [
+      {
+        "de": "Ein Makel haftet an dem Politiker.",
+        "ru": "На политике лежит изъян.",
+        "en": "A flaw clings to the politician."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "haften-fuer-akk",
+    "slug": {
+      "word": "haften",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "haften",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "нести ответственность за кого-л. / что-л.",
+      "en": "to be liable for sb. / sth."
+    },
+    "senseNote": {
+      "ru": "юридическая ответственность за кого-л. / что-л.",
+      "en": "legal liability for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Eltern haften für ihre Kinder.",
+        "ru": "Родители несут ответственность за своих детей.",
+        "en": "Parents are liable for their children."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "halten-an-akk",
+    "slug": {
+      "word": "halten",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "halten",
+    "prep": "an",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "придерживаться чего-л., соблюдать что-л.",
+      "en": "to abide by sth., to comply with sth."
+    },
+    "senseNote": {
+      "ru": "чему следуешь — правилу или обещанию, а не мнению",
+      "en": "what you comply with — a rule or a promise, not an opinion"
+    },
+    "examples": [
+      {
+        "de": "Er hält sich nicht an die Regeln.",
+        "ru": "Он не соблюдает правила.",
+        "en": "He doesn't abide by the rules."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2731,6 +9496,89 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "haltung-zu-dat",
+    "slug": {
+      "word": "haltung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Haltung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "позиция по отношению к чему-л.",
+      "en": "stance/attitude toward sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat eine klare Haltung zu diesem Thema.",
+        "ru": "У него чёткая позиция по этому вопросу.",
+        "en": "He has a clear stance on this topic."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "handel-mit-dat",
+    "slug": {
+      "word": "handel",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Handel",
+    "article": "der",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "торговля чем-л.",
+      "en": "trade in sth."
+    },
+    "examples": [
+      {
+        "de": "Der Handel mit Waffen ist streng geregelt.",
+        "ru": "Торговля оружием строго регулируется.",
+        "en": "The trade in weapons is strictly regulated."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "handeln-mit-dat",
+    "slug": {
+      "word": "handeln",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "handeln",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "торговать чем-л., вести дела с кем-л.",
+      "en": "to trade in sth., to do business with sb."
+    },
+    "senseNote": {
+      "ru": "с кем или чем торгуешь — партнёр или товар",
+      "en": "who or what you trade with — the partner or the goods"
+    },
+    "examples": [
+      {
+        "de": "Deutschland handelt mit vielen Ländern.",
+        "ru": "Германия торгует со многими странами.",
+        "en": "Germany trades with many countries."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "handeln-um-akk",
     "slug": {
       "word": "handeln",
@@ -2745,6 +9593,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "речь идёт о чём-л.",
       "en": "to be a matter of sth."
     },
+    "senseNote": {
+      "ru": "о чём вообще идёт речь — безличная конструкция, а не торговля или тема книги",
+      "en": "what it concerns in general — an impersonal construction, not trade or a book's subject"
+    },
     "examples": [
       {
         "de": "Es handelt sich um einen Irrtum.",
@@ -2754,6 +9606,62 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "handeln-von-dat",
+    "slug": {
+      "word": "handeln",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "handeln",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть о чём-л. (о книге, фильме)",
+      "en": "to be about sth. (a book, a film)"
+    },
+    "senseNote": {
+      "ru": "о чём произведение — предмет книги или фильма, а не сделка",
+      "en": "what a work is about — a book's or film's subject, not a deal"
+    },
+    "examples": [
+      {
+        "de": "Der Roman handelt von einer Liebesgeschichte.",
+        "ru": "Роман повествует об истории любви.",
+        "en": "The novel is about a love story."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "heirat-mit-dat",
+    "slug": {
+      "word": "heirat",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Heirat",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "женитьба на ком-л. / замужество за кем-л.",
+      "en": "marriage to sb."
+    },
+    "examples": [
+      {
+        "de": "Sie ging eine Heirat mit einem Kollegen ein.",
+        "ru": "Она вступила в брак с коллегой.",
+        "en": "She entered into marriage with a colleague."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -2782,6 +9690,437 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "heranmachen-an-akk",
+    "slug": {
+      "word": "heranmachen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "heranmachen",
+    "prep": "an",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "браться за что-л. энергично, приступать к чему-л.",
+      "en": "to set about sth., to tackle sth."
+    },
+    "examples": [
+      {
+        "de": "Er macht sich an die Reparatur heran.",
+        "ru": "Он берётся за ремонт.",
+        "en": "He sets about the repair.",
+        "lemmaForm": "macht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herantreten-an-akk",
+    "slug": {
+      "word": "herantreten",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "herantreten",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "обращаться к кому-л. (с просьбой, вопросом)",
+      "en": "to approach sb. (with a request, a question)"
+    },
+    "examples": [
+      {
+        "de": "Mit dieser Frage bin ich direkt an den Minister herangetreten.",
+        "ru": "С этим вопросом я обратился напрямую к министру.",
+        "en": "I approached the minister directly with this question."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herausschauen-bei-dat",
+    "slug": {
+      "word": "herausschauen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "herausschauen",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "перепадать кому-л. от чего-л. (разг., о выгоде)",
+      "en": "to be in it for sb. (colloquial, about a gain)"
+    },
+    "examples": [
+      {
+        "de": "Bei diesem Geschäft schaut nicht viel für uns heraus.",
+        "ru": "От этой сделки нам не много перепадёт.",
+        "en": "There's not much in this deal for us."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "hereinfallen-auf-akk",
+    "slug": {
+      "word": "hereinfallen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "hereinfallen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "попадаться на чью-л. удочку, поддаваться обману",
+      "en": "to fall for sth. (a trick, a scam)"
+    },
+    "examples": [
+      {
+        "de": "Sie fällt auf den Trick herein.",
+        "ru": "Она попадается на эту уловку.",
+        "en": "She falls for the trick.",
+        "lemmaForm": "fällt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herfallen-ueber-akk",
+    "slug": {
+      "word": "herfallen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "herfallen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "набрасываться на кого-л., резко критиковать кого-л.",
+      "en": "to pounce on sb., to attack/criticize sb. harshly"
+    },
+    "examples": [
+      {
+        "de": "Die Presse fällt über den Politiker her.",
+        "ru": "Пресса набрасывается на политика.",
+        "en": "The press pounces on the politician.",
+        "lemmaForm": "fällt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "hermachen-ueber-akk",
+    "slug": {
+      "word": "hermachen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "hermachen",
+    "prep": "über",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "с энтузиазмом браться за что-л., набрасываться на еду",
+      "en": "to dig into sth., to get stuck into sth. eagerly"
+    },
+    "senseNote": {
+      "ru": "с энтузиазмом приступать к чему-л. (еда, работа) — не то же, что агрессивно набрасываться на кого-л. (herfallen über)",
+      "en": "eagerly diving into sth. (food, work) — distinct from aggressively attacking sb. (herfallen über)"
+    },
+    "examples": [
+      {
+        "de": "Die Kinder machten sich über das Obst her.",
+        "ru": "Дети набросились на фрукты.",
+        "en": "The kids dug into the fruit."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herrschen-ueber-akk",
+    "slug": {
+      "word": "herrschen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "herrschen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "править кем-л. / чем-л.",
+      "en": "to rule over sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Der König herrscht über seinen Staat.",
+        "ru": "Король правит своим государством.",
+        "en": "The king rules over his state."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herschieben-vor-dat",
+    "slug": {
+      "word": "herschieben",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "herschieben",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "постоянно откладывать что-л. (перен.)",
+      "en": "to keep putting sth. off, to procrastinate on sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat die Entscheidung lange vor sich hergeschoben.",
+        "ru": "Он долго откладывал это решение.",
+        "en": "He kept putting off the decision for a long time.",
+        "lemmaForm": "hergeschoben"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herumhacken-auf-dat",
+    "slug": {
+      "word": "herumhacken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "herumhacken",
+    "prep": "auf",
+    "case": "dat",
+    "gloss": {
+      "ru": "постоянно придираться к кому-л.",
+      "en": "to pick on sb., to nag at sb."
+    },
+    "examples": [
+      {
+        "de": "Der Trainer hackt dauernd auf ihr herum.",
+        "ru": "Тренер постоянно придирается к ней.",
+        "en": "The coach keeps picking on her."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herumschrauben-an-dat",
+    "slug": {
+      "word": "herumschrauben",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "herumschrauben",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "возиться с чем-л., пытаться наладить что-л.",
+      "en": "to tinker with sth., to fiddle with sth."
+    },
+    "examples": [
+      {
+        "de": "Er schraubt schon seit Stunden an seinem Motorrad herum.",
+        "ru": "Он уже несколько часов возится со своим мотоциклом.",
+        "en": "He has been tinkering with his motorcycle for hours.",
+        "lemmaForm": "schraubt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "herumspuken-in-dat",
+    "slug": {
+      "word": "herumspuken",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "herumspuken",
+    "prep": "in",
+    "case": "dat",
+    "gloss": {
+      "ru": "не давать покоя, крутиться в голове у кого-л. (перен.)",
+      "en": "to haunt sb.'s mind, to keep swirling around in sb.'s head (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Ihm spuken immer neue Ideen im Kopf herum.",
+        "ru": "У него в голове постоянно крутятся новые идеи.",
+        "en": "New ideas keep swirling around in his head."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "hetzen-auf-akk",
+    "slug": {
+      "word": "hetzen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "hetzen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "натравливать кого-л. на кого-л.",
+      "en": "to sic sb. on sb., to set (an animal) on sb."
+    },
+    "examples": [
+      {
+        "de": "Er hetzt den Hund auf den Einbrecher.",
+        "ru": "Он натравливает собаку на грабителя.",
+        "en": "He sics the dog on the burglar."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "hilfe-fuer-akk",
+    "slug": {
+      "word": "hilfe",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Hilfe",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "помощь кому-л.",
+      "en": "help for sb."
+    },
+    "examples": [
+      {
+        "de": "Er organisiert Hilfe für behinderte Kinder.",
+        "ru": "Он организует помощь детям-инвалидам.",
+        "en": "He is organising help for disabled children."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "hindern-an-dat",
+    "slug": {
+      "word": "hindern",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "hindern",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "мешать кому-л. в чём-л., не давать сделать что-л.",
+      "en": "to prevent sb. from sth."
+    },
+    "examples": [
+      {
+        "de": "Der Lärm hindert mich an der Arbeit.",
+        "ru": "Шум мешает мне работать.",
+        "en": "The noise prevents me from working."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "hineinspielen-in-akk",
+    "slug": {
+      "word": "hineinspielen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "hineinspielen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "влиять на что-л., иметь значение для чего-л. (перен.)",
+      "en": "to play into sth., to have a bearing on sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "In diese Entscheidung spielen verschiedene Gesichtspunkte hinein.",
+        "ru": "В это решение играют роль разные соображения.",
+        "en": "Various considerations play into this decision."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "hinweggehen-ueber-akk",
+    "slug": {
+      "word": "hinweggehen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "hinweggehen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "не обращать внимания на что-л., игнорировать что-л.",
+      "en": "to disregard sth., to pass over sth."
+    },
+    "examples": [
+      {
+        "de": "Er geht taktvoll über die Anspielung hinweg.",
+        "ru": "Он тактично не обращает внимания на намёк.",
+        "en": "He tactfully disregards the allusion.",
+        "lemmaForm": "geht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "hinweisen-auf-akk",
     "slug": {
       "word": "hinweisen",
@@ -2804,6 +10143,32 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "hoeren-auf-akk",
+    "slug": {
+      "word": "hoeren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "hören",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "слушаться кого-л.",
+      "en": "to heed sb., to listen to sb."
+    },
+    "examples": [
+      {
+        "de": "Er hört nicht auf seinen Vater.",
+        "ru": "Он не слушается отца.",
+        "en": "He doesn't listen to his father."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -2861,6 +10226,188 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "horchen-auf-akk",
+    "slug": {
+      "word": "horchen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "horchen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "прислушиваться к кому-л. / чему-л.",
+      "en": "to listen out for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie horcht auf jedes Geräusch.",
+        "ru": "Она прислушивается к каждому звуку.",
+        "en": "She listens out for every sound."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "hunger-nach-dat",
+    "slug": {
+      "word": "hunger",
+      "prep": "nach"
+    },
+    "pos": "noun",
+    "lemma": "Hunger",
+    "article": "der",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "жажда, стремление к чему-л. (перен.)",
+      "en": "hunger for sth. (figurative)"
+    },
+    "examples": [
+      {
+        "de": "Ihr Hunger nach Gerechtigkeit ist groß.",
+        "ru": "Её стремление к справедливости велико.",
+        "en": "Her hunger for justice is great."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "hungern-nach-dat",
+    "slug": {
+      "word": "hungern",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "hungern",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "жаждать чего-л.",
+      "en": "to crave sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hungert nach Anerkennung.",
+        "ru": "Она жаждет признания.",
+        "en": "She craves recognition."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "identisch-mit-dat",
+    "slug": {
+      "word": "identisch",
+      "prep": "mit"
+    },
+    "pos": "adj",
+    "lemma": "identisch",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "идентичный кому-л. / чему-л., тождественный кому-л. / чему-л.",
+      "en": "identical to sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er ist identisch mit dem Gesuchten.",
+        "ru": "Он идентичен разыскиваемому.",
+        "en": "He is identical to the wanted person."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "identitaet-mit-dat",
+    "slug": {
+      "word": "identitaet",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Identität",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "тождественность с кем-л. / чем-л., совпадение с кем-л. / чем-л.",
+      "en": "identity with sb. / sth., being identical to sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Polizei bestätigte die Identität des Verdächtigen mit dem gesuchten Täter.",
+        "ru": "Полиция подтвердила тождество подозреваемого с разыскиваемым преступником.",
+        "en": "The police confirmed the suspect's identity with the wanted perpetrator."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "impfen-gegen-akk",
+    "slug": {
+      "word": "impfen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "impfen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "прививать от чего-л.",
+      "en": "to vaccinate against sth."
+    },
+    "examples": [
+      {
+        "de": "Die Ärztin impft die Kinder gegen Masern.",
+        "ru": "Врач прививает детей от кори.",
+        "en": "The doctor is vaccinating the children against measles."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "information-ueber-akk",
+    "slug": {
+      "word": "information",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Information",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "информация о чём-л.",
+      "en": "information about sth."
+    },
+    "examples": [
+      {
+        "de": "Er sammelte Informationen über das neue Projekt.",
+        "ru": "Он собирал информацию о новом проекте.",
+        "en": "He gathered information about the new project."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -3029,6 +10576,32 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "jagen-in-akk",
+    "slug": {
+      "word": "jagen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "jagen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "вгонять, вонзать что-л. во что-л.",
+      "en": "to drive/thrust sth. into sth."
+    },
+    "examples": [
+      {
+        "de": "Er jagte dem Tier eine Kugel in den Kopf.",
+        "ru": "Он всадил пулю зверю в голову.",
+        "en": "He drove a bullet into the animal's head."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "kaempfen-fuer-akk",
     "slug": {
       "word": "kaempfen",
@@ -3119,6 +10692,213 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "kampf-fuer-akk",
+    "slug": {
+      "word": "kampf",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Kampf",
+    "article": "der",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "борьба за что-л. (ради цели)",
+      "en": "fight for sth. (for a cause)"
+    },
+    "senseNote": {
+      "ru": "ради чего борьба — цель, которую защищают (не приз, который добывают)",
+      "en": "the cause the fight is for — something defended, not a prize to be won"
+    },
+    "examples": [
+      {
+        "de": "Der Kampf für eine bessere Zukunft vereint viele Menschen.",
+        "ru": "Борьба за лучшее будущее объединяет многих людей.",
+        "en": "The fight for a better future unites many people."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "kampf-gegen-akk",
+    "slug": {
+      "word": "kampf",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Kampf",
+    "article": "der",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "борьба против кого-л. / чего-л.",
+      "en": "fight against sb. / sth."
+    },
+    "senseNote": {
+      "ru": "против кого/чего борьба — противник или угроза",
+      "en": "what the fight is against — an opponent or a threat"
+    },
+    "examples": [
+      {
+        "de": "Der Kampf gegen den Klimawandel geht weiter.",
+        "ru": "Борьба против изменения климата продолжается.",
+        "en": "The fight against climate change continues."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "kampf-um-akk",
+    "slug": {
+      "word": "kampf",
+      "prep": "um"
+    },
+    "pos": "noun",
+    "lemma": "Kampf",
+    "article": "der",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "борьба за что-л.",
+      "en": "fight for sth."
+    },
+    "senseNote": {
+      "ru": "за что борьба — цель или приз",
+      "en": "what the fight is for — a goal or a prize"
+    },
+    "examples": [
+      {
+        "de": "Der Kampf um den Sieg war hart.",
+        "ru": "Борьба за победу была тяжёлой.",
+        "en": "The fight for victory was tough."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "kauen-an-dat",
+    "slug": {
+      "word": "kauen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "kauen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "грызть что-л. (нервно)",
+      "en": "to chew/gnaw at sth. (nervously)"
+    },
+    "examples": [
+      {
+        "de": "Er kaut nervös an den Fingernägeln.",
+        "ru": "Он нервно грызёт ногти.",
+        "en": "He is nervously chewing his fingernails."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kehren-an-akk",
+    "slug": {
+      "word": "kehren",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "kehren",
+    "prep": "an",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "считаться с чем-л. (обычно с отрицанием)",
+      "en": "to pay heed to sth. (usually negated)"
+    },
+    "senseNote": {
+      "ru": "почти всегда с отрицанием «не»",
+      "en": "almost always used with a negation"
+    },
+    "examples": [
+      {
+        "de": "Er kehrt sich nicht an die Kritik.",
+        "ru": "Он не считается с критикой.",
+        "en": "He does not pay heed to the criticism."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "klage-gegen-akk",
+    "slug": {
+      "word": "klage",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Klage",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "иск против кого-л. (юр.)",
+      "en": "lawsuit against sb. (legal)"
+    },
+    "senseNote": {
+      "ru": "судебный иск против кого-л. — юридический смысл",
+      "en": "a formal lawsuit against sb. — the legal sense"
+    },
+    "examples": [
+      {
+        "de": "Er erhob Klage gegen seinen ehemaligen Arbeitgeber.",
+        "ru": "Он подал иск против своего бывшего работодателя.",
+        "en": "He filed a lawsuit against his former employer."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "klage-ueber-akk",
+    "slug": {
+      "word": "klage",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Klage",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "жалоба на что-л.",
+      "en": "complaint about sth."
+    },
+    "senseNote": {
+      "ru": "бытовая жалоба на что-л. — не судебный иск",
+      "en": "an everyday complaint about sth. — not a lawsuit"
+    },
+    "examples": [
+      {
+        "de": "Es gab viele Klagen über die schlechte Bedienung.",
+        "ru": "Поступало много жалоб на плохое обслуживание.",
+        "en": "There were many complaints about the poor service."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "klagen-ueber-akk",
     "slug": {
       "word": "klagen",
@@ -3141,6 +10921,298 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "klarkommen-mit-dat",
+    "slug": {
+      "word": "klarkommen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "klarkommen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "справляться с кем-л. / чем-л., ладить с кем-л.",
+      "en": "to cope with sb. / sth., to get along with sb."
+    },
+    "examples": [
+      {
+        "de": "Mit meinen Brüdern komme ich gut klar.",
+        "ru": "Со своими братьями я хорошо лажу.",
+        "en": "I get along well with my brothers.",
+        "lemmaForm": "komme"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "klingeln-nach-dat",
+    "slug": {
+      "word": "klingeln",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "klingeln",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "звонить, вызывая кого-л. (звонком)",
+      "en": "to ring for sb. (to summon by bell)"
+    },
+    "examples": [
+      {
+        "de": "Er klingelte nach dem Zimmerkellner.",
+        "ru": "Он позвонил, вызывая коридорного.",
+        "en": "He rang for the room service waiter."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-an-akk",
+    "slug": {
+      "word": "kommen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "раздобыть что-л., завладеть чем-л.",
+      "en": "to get hold of sth., to obtain sth."
+    },
+    "senseNote": {
+      "ru": "что раздобыл — предмет или сведения, которыми завладел",
+      "en": "what you get hold of — an object or information you obtain"
+    },
+    "examples": [
+      {
+        "de": "Wie bist du an diese Informationen gekommen?",
+        "ru": "Как ты раздобыл эту информацию?",
+        "en": "How did you get hold of this information?"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-auf-akk",
+    "slug": {
+      "word": "kommen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "додуматься до чего-л., вспомнить что-л.",
+      "en": "to think of sth., to come up with sth."
+    },
+    "senseNote": {
+      "ru": "до чего додумался — идея или воспоминание, возникшее в голове",
+      "en": "what you think of — an idea or memory that occurs to you"
+    },
+    "examples": [
+      {
+        "de": "Ich komme nicht auf seinen Namen.",
+        "ru": "Я не могу вспомнить его имя.",
+        "en": "I can't think of his name."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-aus-dat",
+    "slug": {
+      "word": "kommen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть родом откуда-л.",
+      "en": "to come from sth. / somewhere (origin)"
+    },
+    "senseNote": {
+      "ru": "откуда родом — происхождение, а не то, до чего наконец дошли руки",
+      "en": "where you are from — origin, not something you finally got around to"
+    },
+    "examples": [
+      {
+        "de": "Sie kommt aus einer kleinen Stadt.",
+        "ru": "Она родом из маленького города.",
+        "en": "She comes from a small town."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-mit-dat",
+    "slug": {
+      "word": "kommen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "приставать к кому-л. с чем-л. (разг., с досадой)",
+      "en": "to come to sb. with sth. (colloquial, often exasperated)"
+    },
+    "senseNote": {
+      "ru": "с чем пристаёшь — раздражающий довод или предмет",
+      "en": "what you bring up — an annoying argument or object"
+    },
+    "examples": [
+      {
+        "de": "Komm mir nicht mit solchen Ausreden!",
+        "ru": "Не приставай ко мне с такими отговорками!",
+        "en": "Don't come to me with such excuses!"
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-um-akk",
+    "slug": {
+      "word": "kommen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "лишиться чего-л. (в т.ч. жизни)",
+      "en": "to lose sth. (incl. one's life)"
+    },
+    "senseNote": {
+      "ru": "чего лишился — утрата, а не то, до чего додумался",
+      "en": "what you lose — a loss, not something you think of"
+    },
+    "examples": [
+      {
+        "de": "Bei dem Unfall kam er ums Leben.",
+        "ru": "В этой аварии он погиб.",
+        "en": "He lost his life in the accident.",
+        "lemmaForm": "kam"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-von-dat",
+    "slug": {
+      "word": "kommen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть вызванным чем-л., проистекать из чего-л.",
+      "en": "to stem from sth., to be caused by sth."
+    },
+    "senseNote": {
+      "ru": "от чего это — причина, а не географическое происхождение (ср. aus)",
+      "en": "what causes it — a cause, not a geographic origin (cf. aus)"
+    },
+    "examples": [
+      {
+        "de": "Das kommt vom vielen Sitzen.",
+        "ru": "Это от долгого сидения.",
+        "en": "That comes from sitting too much."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kommen-zu-dat",
+    "slug": {
+      "word": "kommen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "kommen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "наконец найти время на что-л.",
+      "en": "to get around to sth."
+    },
+    "senseNote": {
+      "ru": "до чего дошли руки — упущенное время, а не происхождение",
+      "en": "what you finally got around to — time you found, not where you are from"
+    },
+    "examples": [
+      {
+        "de": "Ich komme nicht zum Schreiben.",
+        "ru": "Я никак не могу выкроить время написать.",
+        "en": "I just can't get around to writing."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "konzentration-auf-akk",
+    "slug": {
+      "word": "konzentration",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Konzentration",
+    "article": "die",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "сосредоточенность на чём-л.",
+      "en": "concentration on sth."
+    },
+    "examples": [
+      {
+        "de": "Ihre Konzentration auf die Aufgabe war beeindruckend.",
+        "ru": "Её сосредоточенность на задаче впечатляла.",
+        "en": "Her concentration on the task was impressive."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -3168,6 +11240,86 @@ export const rektionen: readonly Rektion[] = [
     "level": "B1",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "kopfzerbrechen-machen-ueber-akk",
+    "slug": {
+      "word": "kopfzerbrechen-machen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "Kopfzerbrechen machen",
+    "prep": "über",
+    "case": "akk",
+    "reflexive": "dat",
+    "gloss": {
+      "ru": "ломать голову над чем-л., переживать из-за чего-л.",
+      "en": "to rack one's brain about sth., to fret over sth."
+    },
+    "examples": [
+      {
+        "de": "Sie macht sich über die Zukunft ihrer Firma Kopfzerbrechen.",
+        "ru": "Она ломает голову над будущим своей фирмы.",
+        "en": "She is racking her brain over her company's future.",
+        "lemmaForm": "macht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kranken-an-dat",
+    "slug": {
+      "word": "kranken",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "kranken",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "страдать от чего-л. (о хроническом недостатке)",
+      "en": "to be hampered by sth. (a chronic flaw)"
+    },
+    "examples": [
+      {
+        "de": "Das Projekt krankt an schlechter Planung.",
+        "ru": "Проект страдает от плохого планирования.",
+        "en": "The project is hampered by poor planning."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "kratzen-an-dat",
+    "slug": {
+      "word": "kratzen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "kratzen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "царапать что-л., скрестись у чего-л.",
+      "en": "to scratch at sth."
+    },
+    "examples": [
+      {
+        "de": "Der Hund kratzt an der Tür.",
+        "ru": "Собака скребётся у двери.",
+        "en": "The dog is scratching at the door."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3224,6 +11376,74 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "laben-an-dat",
+    "slug": {
+      "word": "laben",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "laben",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "наслаждаться чем-л., лакомиться чем-л. (устар., книжн.)",
+      "en": "to delight in sth., to indulge in sth. (dated, literary)"
+    },
+    "senseNote": {
+      "ru": "чем именно лакомишься — конкретное лакомство",
+      "en": "the specific treat being savoured"
+    },
+    "examples": [
+      {
+        "de": "Die Gäste labten sich am Champagner.",
+        "ru": "Гости наслаждались шампанским.",
+        "en": "The guests delighted in the champagne."
+      }
+    ],
+    "tags": [
+      "dated"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "laben-mit-dat",
+    "slug": {
+      "word": "laben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "laben",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "подкрепляться чем-л. (устар., книжн.)",
+      "en": "to refresh/refuel oneself with sth. (dated, literary)"
+    },
+    "senseNote": {
+      "ru": "чем подкрепляешься — угощение в целом, не одно конкретное лакомство",
+      "en": "what you refresh yourself with — refreshments in general, not one specific treat"
+    },
+    "examples": [
+      {
+        "de": "Sie labten sich mit Kaffee und Kuchen.",
+        "ru": "Они подкреплялись кофе с пирожными.",
+        "en": "They refreshed themselves with coffee and cake."
+      }
+    ],
+    "tags": [
+      "dated"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "lachen-ueber-akk",
     "slug": {
       "word": "lachen",
@@ -3247,6 +11467,57 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "laecheln-ueber-akk",
+    "slug": {
+      "word": "laecheln",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "lächeln",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "усмехаться над кем-л. / чем-л.",
+      "en": "to smile at sb. / sth., to smile indulgently about sth."
+    },
+    "examples": [
+      {
+        "de": "Jeder lächelt über seine Marotte.",
+        "ru": "Все усмехаются над его причудой.",
+        "en": "Everyone smiles at his quirk."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "laestern-ueber-akk",
+    "slug": {
+      "word": "laestern",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "lästern",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "злословить о ком-л. / чём-л., сплетничать о ком-л.",
+      "en": "to gossip about sb. / sth., to badmouth sb."
+    },
+    "examples": [
+      {
+        "de": "Die Kollegen lästern über den Chef.",
+        "ru": "Коллеги злословят о начальнике.",
+        "en": "The colleagues are badmouthing the boss."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3276,6 +11547,36 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "leben-mit-dat",
+    "slug": {
+      "word": "leben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "leben",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "мириться с чем-л., справляться с чем-л.",
+      "en": "to live with sth., to cope with sth."
+    },
+    "senseNote": {
+      "ru": "с чем миришься — тяготы или обстоятельства, а не цель или средства",
+      "en": "what you come to terms with — a hardship or circumstance, not a purpose or means"
+    },
+    "examples": [
+      {
+        "de": "Sie muss mit den Konsequenzen leben.",
+        "ru": "Ей приходится мириться с последствиями.",
+        "en": "She has to live with the consequences."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3368,6 +11669,142 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "leihen-von-dat",
+    "slug": {
+      "word": "leihen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "leihen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "брать взаймы у кого-л.",
+      "en": "to borrow sth. from sb."
+    },
+    "examples": [
+      {
+        "de": "Er leiht das Geld von seinem Bruder.",
+        "ru": "Он берёт деньги взаймы у своего брата.",
+        "en": "He borrows the money from his brother."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "lernen-aus-dat",
+    "slug": {
+      "word": "lernen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "lernen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "учиться на чём-л., извлекать урок из чего-л.",
+      "en": "to learn from sth."
+    },
+    "examples": [
+      {
+        "de": "Man lernt aus seinen Fehlern.",
+        "ru": "На своих ошибках учатся.",
+        "en": "One learns from one's mistakes."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "lesen-aus-dat",
+    "slug": {
+      "word": "lesen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "lesen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "усматривать что-л. в чём-л., делать вывод из чего-л. (перен.)",
+      "en": "to infer sth. from sth., to read sth. into sth. (figurative)"
+    },
+    "senseNote": {
+      "ru": "переносное «aus» — делать вывод из чего-л., а не читать частично",
+      "en": "figurative 'aus' — inferring sth. from sth., not partial reading"
+    },
+    "examples": [
+      {
+        "de": "Ich las aus seinen Worten eine Enttäuschung.",
+        "ru": "Я усмотрел в его словах разочарование.",
+        "en": "I read disappointment into his words.",
+        "lemmaForm": "las"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "lesen-in-dat",
+    "slug": {
+      "word": "lesen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "lesen",
+    "prep": "in",
+    "case": "dat",
+    "gloss": {
+      "ru": "читать в чём-л. (не всю книгу целиком, а листать, читать местами)",
+      "en": "to read in sth. (browsing, not the whole book at once)"
+    },
+    "senseNote": {
+      "ru": "партитивное «in» — читать частями, в отличие от «ein Buch lesen» (прочитать книгу целиком)",
+      "en": "partitive 'in' — reading part of sth., unlike 'ein Buch lesen' (to read a whole book)"
+    },
+    "examples": [
+      {
+        "de": "Sie liest gern in diesem Buch.",
+        "ru": "Она любит читать эту книгу по частям.",
+        "en": "She likes to read in this book.",
+        "lemmaForm": "liest"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "liebaeugeln-mit-dat",
+    "slug": {
+      "word": "liebaeugeln",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "liebäugeln",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "подумывать о чём-л., присматриваться к чему-л.",
+      "en": "to toy with sth., to have one's eye on sth."
+    },
+    "examples": [
+      {
+        "de": "Ich liebäugele mit einem neuen Auto.",
+        "ru": "Я подумываю о новой машине.",
+        "en": "I am toying with the idea of a new car."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "liebe-zu-dat",
     "slug": {
       "word": "liebe",
@@ -3391,6 +11828,31 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "liefern-an-akk",
+    "slug": {
+      "word": "liefern",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "liefern",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "поставлять что-л. кому-л.",
+      "en": "to deliver/supply sth. to sb."
+    },
+    "examples": [
+      {
+        "de": "Wir liefern auch an Privatpersonen.",
+        "ru": "Мы поставляем товар и частным лицам.",
+        "en": "We also deliver to private individuals."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -3419,6 +11881,222 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "limitieren-auf-akk",
+    "slug": {
+      "word": "limitieren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "limitieren",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "ограничивать что-л. чем-л.",
+      "en": "to limit sth. to sth."
+    },
+    "examples": [
+      {
+        "de": "Der Verlag limitiert die Auflage auf dreihundert Exemplare.",
+        "ru": "Издательство ограничивает тираж тремястами экземплярами.",
+        "en": "The publisher limits the print run to three hundred copies."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "lob-fuer-akk",
+    "slug": {
+      "word": "lob",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Lob",
+    "article": "das",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "похвала за что-л.",
+      "en": "praise for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie verdient ein Lob für ihren Fleiß.",
+        "ru": "Она заслуживает похвалы за своё усердие.",
+        "en": "She deserves praise for her diligence."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "loben-fuer-akk",
+    "slug": {
+      "word": "loben",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "loben",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "хвалить кого-л. за что-л.",
+      "en": "to praise sb. for sth."
+    },
+    "examples": [
+      {
+        "de": "Der Lehrer lobt den Schüler für den guten Aufsatz.",
+        "ru": "Учитель хвалит ученика за хорошее сочинение.",
+        "en": "The teacher praises the pupil for the good essay."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "loesen-von-dat",
+    "slug": {
+      "word": "loesen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "lösen",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "освобождаться, отрываться от чего-л. / кого-л.",
+      "en": "to free oneself from sth. / sb., to break away from sth."
+    },
+    "examples": [
+      {
+        "de": "Er löst sich von seinen Vorurteilen.",
+        "ru": "Он освобождается от своих предрассудков.",
+        "en": "He is freeing himself from his prejudices."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "loesung-fuer-akk",
+    "slug": {
+      "word": "loesung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Lösung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "решение чего-л. (проблемы)",
+      "en": "a solution for sth. (a problem)"
+    },
+    "examples": [
+      {
+        "de": "Die Regierung entwickelte eine Lösung für die Betroffenen.",
+        "ru": "Правительство разработало решение для пострадавших.",
+        "en": "The government developed a solution for those affected."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "losfahren-gegen-akk",
+    "slug": {
+      "word": "losfahren",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "losfahren",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "набрасываться на кого-л. (словесно), огрызаться на кого-л.",
+      "en": "to lash out at sb., to snap at sb. (figurative)"
+    },
+    "senseNote": {
+      "ru": "переносное значение — не о начале движения транспорта",
+      "en": "figurative sense — not about a vehicle setting off"
+    },
+    "examples": [
+      {
+        "de": "Er fuhr gegen seinen Kollegen los.",
+        "ru": "Он набросился на своего коллегу.",
+        "en": "He snapped at his colleague.",
+        "lemmaForm": "fuhr"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "losreissen-von-dat",
+    "slug": {
+      "word": "losreissen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "losreißen",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "отрываться от чего-л., вырываться из чего-л.",
+      "en": "to tear oneself away from sth."
+    },
+    "examples": [
+      {
+        "de": "Er kann sich von dem Anblick nicht losreißen.",
+        "ru": "Он не может оторваться от этого зрелища.",
+        "en": "He cannot tear himself away from the sight."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "lust-an-dat",
+    "slug": {
+      "word": "lust",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Lust",
+    "article": "die",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "удовольствие от чего-л.",
+      "en": "pleasure in sth."
+    },
+    "senseNote": {
+      "ru": "постоянное удовольствие или увлечённость чем-л. — не сиюминутное желание",
+      "en": "ongoing pleasure or delight in sth. — not a momentary craving"
+    },
+    "examples": [
+      {
+        "de": "Er tat es aus purer Lust am Bösen.",
+        "ru": "Он делал это из чистого удовольствия от зла.",
+        "en": "He did it out of sheer delight in wickedness."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "lust-auf-akk",
     "slug": {
       "word": "lust",
@@ -3430,8 +12108,12 @@ export const rektionen: readonly Rektion[] = [
     "prep": "auf",
     "case": "akk",
     "gloss": {
-      "ru": "желание чего-л.",
-      "en": "desire for sth."
+      "ru": "желание чего-л. конкретного",
+      "en": "desire for sth. specific"
+    },
+    "senseNote": {
+      "ru": "чего конкретно хочется прямо сейчас — не общее удовольствие от занятия",
+      "en": "what you specifically feel like right now — not general enjoyment of an activity"
     },
     "examples": [
       {
@@ -3442,6 +12124,151 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "lustig-machen-ueber-akk",
+    "slug": {
+      "word": "lustig-machen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "lustig machen",
+    "prep": "über",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "насмехаться над кем-л. / чем-л.",
+      "en": "to make fun of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er macht sich über seinen Bruder lustig.",
+        "ru": "Он насмехается над своим братом.",
+        "en": "He is making fun of his brother.",
+        "lemmaForm": "macht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "machen-an-akk",
+    "slug": {
+      "word": "machen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "machen",
+    "prep": "an",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "приниматься за что-л.",
+      "en": "to get down to sth., to set about sth."
+    },
+    "senseNote": {
+      "ru": "с чего начинаешь — устойчивое возвратное выражение",
+      "en": "what you set about — a fixed reflexive expression"
+    },
+    "examples": [
+      {
+        "de": "Sie macht sich an die Arbeit.",
+        "ru": "Она принимается за работу.",
+        "en": "She gets down to work."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "machen-auf-akk",
+    "slug": {
+      "word": "machen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "machen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "строить из себя кого-л., изображать что-л.",
+      "en": "to act/play at being sth."
+    },
+    "senseNote": {
+      "ru": "разговорная идиома изображения роли, не буквальное «делать на что-л.»",
+      "en": "a colloquial idiom about playing a role, not literal 'doing onto sth.'"
+    },
+    "examples": [
+      {
+        "de": "Er macht auf cool.",
+        "ru": "Он строит из себя крутого.",
+        "en": "He is acting cool."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "maekeln-an-dat",
+    "slug": {
+      "word": "maekeln",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "mäkeln",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "придираться к чему-л.",
+      "en": "to nitpick about sth., to carp at sth."
+    },
+    "examples": [
+      {
+        "de": "Sie mäkelt ständig an dem Essen.",
+        "ru": "Она постоянно придирается к еде.",
+        "en": "She is constantly nitpicking about the food."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "mangel-an-dat",
+    "slug": {
+      "word": "mangel",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Mangel",
+    "article": "der",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "нехватка чего-л.",
+      "en": "lack of sth., shortage of sth."
+    },
+    "examples": [
+      {
+        "de": "Es besteht ein Mangel an diesem Rohstoff.",
+        "ru": "Ощущается нехватка этого сырья.",
+        "en": "There is a shortage of this raw material."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3505,6 +12332,177 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "melden-zu-dat",
+    "slug": {
+      "word": "melden",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "melden",
+    "prep": "zu",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "записываться на что-л.",
+      "en": "to sign up for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich zur Prüfung gemeldet.",
+        "ru": "Она записалась на экзамен.",
+        "en": "She signed up for the exam."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "messen-an-dat",
+    "slug": {
+      "word": "messen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "messen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "оценивать что-л. по какому-л. мерилу",
+      "en": "to measure sth. against sth., to judge sth. by sth."
+    },
+    "senseNote": {
+      "ru": "по какому мерилу оценивают — критерий, а не соперник",
+      "en": "the yardstick you judge by — a criterion, not a rival"
+    },
+    "examples": [
+      {
+        "de": "Man misst eine Leistung am Erfolg.",
+        "ru": "Достижение оценивают по успеху.",
+        "en": "A performance is measured against its success.",
+        "lemmaForm": "misst"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "messen-mit-dat",
+    "slug": {
+      "word": "messen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "messen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "меряться силами с кем-л.",
+      "en": "to pit oneself against sb., to compete with sb."
+    },
+    "senseNote": {
+      "ru": "с кем меряешься — соперник, а не критерий оценки",
+      "en": "whom you pit yourself against — a rival, not a criterion"
+    },
+    "examples": [
+      {
+        "de": "Er misst sich mit dem besten Läufer.",
+        "ru": "Он меряется силами с лучшим бегуном.",
+        "en": "He pits himself against the best runner.",
+        "lemmaForm": "misst"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "mitfahren-bei-dat",
+    "slug": {
+      "word": "mitfahren",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "mitfahren",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "ехать с кем-л. (в его машине), подсаживаться к кому-л.",
+      "en": "to ride along with sb., to carpool with sb."
+    },
+    "examples": [
+      {
+        "de": "Lass uns doch bei Lukas mitfahren!",
+        "ru": "Давай поедем с Лукасом!",
+        "en": "Let's ride along with Lukas!"
+      }
+    ],
+    "sources": [
+      "duden",
+      "de.wiktionary"
+    ]
+  },
+  {
+    "id": "muenden-in-akk",
+    "slug": {
+      "word": "muenden",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "münden",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "впадать во что-л. (о реке), приводить к чему-л.",
+      "en": "to flow into sth. (a river), to culminate in sth."
+    },
+    "examples": [
+      {
+        "de": "Der Fluss mündet ins Meer.",
+        "ru": "Река впадает в море.",
+        "en": "The river flows into the sea."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "muenzen-auf-akk",
+    "slug": {
+      "word": "muenzen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "münzen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "быть направленным против кого-л. / чего-л., метить в кого-л.",
+      "en": "to be aimed at sb. / sth., to be directed at sb. / sth."
+    },
+    "senseNote": {
+      "ru": "почти всегда употребляется в форме причастия «gemünzt sein», а не как обычный активный глагол",
+      "en": "almost always used as the participle 'gemünzt sein', not as an ordinary active verb"
+    },
+    "examples": [
+      {
+        "de": "Diese Bemerkung war auf ihn gemünzt.",
+        "ru": "Это замечание было направлено против него.",
+        "en": "This remark was aimed at him.",
+        "lemmaForm": "gemünzt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "nachdenken-ueber-akk",
     "slug": {
       "word": "nachdenken",
@@ -3536,6 +12534,59 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "nachtreten-gegen-akk",
+    "slug": {
+      "word": "nachtreten",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "nachtreten",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "добивать кого-л. критикой, когда он уже повержен (перен.)",
+      "en": "to kick sb. when they're down (figuratively, further attack sb. already defeated)"
+    },
+    "examples": [
+      {
+        "de": "Gegen den entlassenen Minister wurde in der Presse nachgetreten.",
+        "ru": "Прессa продолжала добивать уже уволенного министра.",
+        "en": "The press kept kicking the dismissed minister while he was down.",
+        "lemmaForm": "nachgetreten"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "neidisch-auf-akk",
+    "slug": {
+      "word": "neidisch",
+      "prep": "auf"
+    },
+    "pos": "adj",
+    "lemma": "neidisch",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "завистливый по отношению к кому-л.",
+      "en": "envious/jealous of sb."
+    },
+    "examples": [
+      {
+        "de": "Er ist neidisch auf seinen Bruder.",
+        "ru": "Он завидует своему брату.",
+        "en": "He is jealous of his brother."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "neigen-zu-dat",
     "slug": {
       "word": "neigen",
@@ -3558,6 +12609,193 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "neigung-zu-dat",
+    "slug": {
+      "word": "neigung",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Neigung",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "склонность к чему-л.",
+      "en": "tendency towards sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat eine Neigung zur Korpulenz.",
+        "ru": "У неё есть склонность к полноте.",
+        "en": "She has a tendency towards being overweight."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "nesteln-an-dat",
+    "slug": {
+      "word": "nesteln",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "nesteln",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "теребить, возиться с чем-л. пальцами",
+      "en": "to fumble with sth., to fiddle with sth."
+    },
+    "examples": [
+      {
+        "de": "Sie nestelt nervös an ihrer Krawatte.",
+        "ru": "Она нервно теребит свой галстук.",
+        "en": "She is nervously fiddling with her tie."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "notwendig-fuer-akk",
+    "slug": {
+      "word": "notwendig",
+      "prep": "fuer"
+    },
+    "pos": "adj",
+    "lemma": "notwendig",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "необходимый для кого-л. / чего-л.",
+      "en": "necessary for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Diese Fertigkeiten sind für den Beruf notwendig.",
+        "ru": "Эти навыки необходимы для этой профессии.",
+        "en": "These skills are necessary for this profession."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "operieren-an-dat",
+    "slug": {
+      "word": "operieren",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "operieren",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "оперировать что-л. (часть тела)",
+      "en": "to operate on sth. (a body part)"
+    },
+    "senseNote": {
+      "ru": "какую часть тела оперируют — медицинский смысл",
+      "en": "the body part being operated on — the medical sense"
+    },
+    "examples": [
+      {
+        "de": "Der Arzt operiert den Patienten am Magen.",
+        "ru": "Врач оперирует пациенту желудок.",
+        "en": "The doctor operates on the patient's stomach."
+      }
+    ],
+    "sources": [
+      "duden",
+      "de.wiktionary"
+    ]
+  },
+  {
+    "id": "operieren-mit-dat",
+    "slug": {
+      "word": "operieren",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "operieren",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "оперировать чем-л., пользоваться чем-л. (методами, цифрами)",
+      "en": "to operate with sth., to work using sth. (methods, figures)"
+    },
+    "senseNote": {
+      "ru": "чем оперируешь — инструмент или средство, переносный смысл",
+      "en": "what you operate with — a means or tool, the figurative sense"
+    },
+    "examples": [
+      {
+        "de": "Er operiert mit hohen Summen.",
+        "ru": "Он оперирует крупными суммами.",
+        "en": "He operates with large sums."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ordnen-nach-dat",
+    "slug": {
+      "word": "ordnen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "ordnen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "упорядочивать что-л. по какому-л. признаку",
+      "en": "to arrange sth. by sth., to sort sth. according to sth."
+    },
+    "examples": [
+      {
+        "de": "Sie ordnet die Bücher nach dem Alphabet.",
+        "ru": "Она расставляет книги по алфавиту.",
+        "en": "She arranges the books by the alphabet."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "packen-an-dat",
+    "slug": {
+      "word": "packen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "packen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "хватать кого-л. за что-л.",
+      "en": "to grab sb. by sth."
+    },
+    "examples": [
+      {
+        "de": "Er packt ihn am Arm.",
+        "ru": "Он хватает его за руку.",
+        "en": "He grabs him by the arm."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -3586,6 +12824,174 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "pfeifen-auf-akk",
+    "slug": {
+      "word": "pfeifen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "pfeifen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "плевать на что-л. (разг.)",
+      "en": "to not care about sth. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Ich pfeife auf den Chef.",
+        "ru": "Мне плевать на начальника.",
+        "en": "I don't care about the boss."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "plaedieren-auf-akk",
+    "slug": {
+      "word": "plaedieren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "plädieren",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "требовать определённого вердикта (юр.)",
+      "en": "to plead for a specific verdict (legal, e.g. guilty/not guilty)"
+    },
+    "senseNote": {
+      "ru": "на какой вердикт настаиваешь — формальная юридическая формула, а не позиция вообще",
+      "en": "which verdict you plead for — a formal legal term, not a general position"
+    },
+    "examples": [
+      {
+        "de": "Die Staatsanwaltschaft plädiert auf schuldig.",
+        "ru": "Обвинение настаивает на признании виновным.",
+        "en": "The prosecution pleads for a guilty verdict."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "plaedieren-fuer-akk",
+    "slug": {
+      "word": "plaedieren",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "plädieren",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "выступать за что-л.",
+      "en": "to plead for sth., to advocate for sth."
+    },
+    "senseNote": {
+      "ru": "за что выступаешь — позиция или причина вообще",
+      "en": "what you advocate for — a general position or cause"
+    },
+    "examples": [
+      {
+        "de": "Der Anwalt plädiert für einen Freispruch.",
+        "ru": "Адвокат выступает за оправдательный приговор.",
+        "en": "The lawyer is pleading for an acquittal."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "plaedoyer-fuer-akk",
+    "slug": {
+      "word": "plaedoyer",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Plädoyer",
+    "article": "das",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "выступление в защиту чего-л., призыв к чему-л.",
+      "en": "a plea/case for sth."
+    },
+    "examples": [
+      {
+        "de": "Die Rednerin hielt ein leidenschaftliches Plädoyer für soziale Gerechtigkeit.",
+        "ru": "Докладчица произнесла страстную речь в защиту социальной справедливости.",
+        "en": "The speaker gave a passionate plea for social justice."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "pochen-auf-akk",
+    "slug": {
+      "word": "pochen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "pochen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "настаивать на чём-л.",
+      "en": "to insist on sth."
+    },
+    "examples": [
+      {
+        "de": "Er pocht auf seinen Anspruch.",
+        "ru": "Он настаивает на своём притязании.",
+        "en": "He insists on his claim."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "prellen-um-akk",
+    "slug": {
+      "word": "prellen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "prellen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "надувать кого-л. на что-л. (обманом лишать)",
+      "en": "to cheat sb. out of sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat seinen Geschäftspartner um die Belohnung geprellt.",
+        "ru": "Он надул своего партнёра, лишив его вознаграждения.",
+        "en": "He cheated his business partner out of the reward."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "profitieren-von-dat",
     "slug": {
       "word": "profitieren",
@@ -3608,6 +13014,32 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "protest-gegen-akk",
+    "slug": {
+      "word": "protest",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Protest",
+    "article": "der",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "протест против чего-л.",
+      "en": "protest against sth."
+    },
+    "examples": [
+      {
+        "de": "Ihr Protest gegen das Gesetz war laut.",
+        "ru": "Их протест против закона был громким.",
+        "en": "Their protest against the law was loud."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -3634,6 +13066,110 @@ export const rektionen: readonly Rektion[] = [
     "level": "B1",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "pruefen-auf-akk",
+    "slug": {
+      "word": "pruefen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "prüfen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "проверять что-л. / кого-л. на что-л.",
+      "en": "to test sth. for sth., to check sb. for sth."
+    },
+    "examples": [
+      {
+        "de": "Der Arzt prüft den Patienten auf einen Infekt.",
+        "ru": "Врач проверяет пациента на инфекцию.",
+        "en": "The doctor checks the patient for an infection."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ranken-um-akk",
+    "slug": {
+      "word": "ranken",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "ranken",
+    "prep": "um",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "быть связанным с чем-л. (о легендах, историях)",
+      "en": "to revolve around sth. (legends, stories)"
+    },
+    "examples": [
+      {
+        "de": "Um das alte Schloss ranken sich viele Sagen.",
+        "ru": "Вокруг старого замка ходит множество легенд.",
+        "en": "Many legends revolve around the old castle."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "raten-zu-dat",
+    "slug": {
+      "word": "raten",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "raten",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "советовать что-л., рекомендовать что-л.",
+      "en": "to advise sth., to recommend sth."
+    },
+    "examples": [
+      {
+        "de": "Sie riet ihm zur Vorsicht.",
+        "ru": "Она посоветовала ему быть осторожным.",
+        "en": "She advised him to be cautious.",
+        "lemmaForm": "riet"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "raufen-mit-dat",
+    "slug": {
+      "word": "raufen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "raufen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "драться, возиться с кем-л.",
+      "en": "to scuffle/tussle with sb."
+    },
+    "examples": [
+      {
+        "de": "Er hat schon wieder mit seinem Bruder gerauft.",
+        "ru": "Он снова подрался со своим братом.",
+        "en": "He scuffled with his brother again."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3721,6 +13257,66 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "reden-mit-dat",
+    "slug": {
+      "word": "reden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "reden",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "разговаривать с кем-л.",
+      "en": "to talk with sb."
+    },
+    "senseNote": {
+      "ru": "с кем разговариваешь — собеседник, а не тема",
+      "en": "who you talk with — the other party, not the topic"
+    },
+    "examples": [
+      {
+        "de": "Ich rede mit meinem Nachbarn.",
+        "ru": "Я разговариваю со своим соседом.",
+        "en": "I am talking with my neighbor."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "reden-ueber-akk",
+    "slug": {
+      "word": "reden",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "reden",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "разговаривать о чём-л.",
+      "en": "to talk about sth."
+    },
+    "senseNote": {
+      "ru": "о чём разговариваешь — тема, а не собеседник",
+      "en": "what you talk about — the topic, not the other party"
+    },
+    "examples": [
+      {
+        "de": "Wir reden über den Plan.",
+        "ru": "Мы говорим о плане.",
+        "en": "We are talking about the plan."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "reich-an-dat",
     "slug": {
       "word": "reich",
@@ -3743,6 +13339,288 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "reichtum-an-dat",
+    "slug": {
+      "word": "reichtum",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Reichtum",
+    "article": "der",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "богатство чем-л.",
+      "en": "abundance of sth."
+    },
+    "examples": [
+      {
+        "de": "Der Reichtum an Singvögeln ist hier bemerkenswert.",
+        "ru": "Здесь примечательно богатство певчих птиц.",
+        "en": "The abundance of songbirds here is remarkable."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "reinigen-von-dat",
+    "slug": {
+      "word": "reinigen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "reinigen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "очищать что-л. от чего-л.",
+      "en": "to clean sth. of sth."
+    },
+    "examples": [
+      {
+        "de": "Die Stadt reinigt die Straßen von Unrat.",
+        "ru": "Город очищает улицы от мусора.",
+        "en": "The city cleans the streets of rubbish."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "resultieren-aus-dat",
+    "slug": {
+      "word": "resultieren",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "resultieren",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "проистекать из чего-л., быть следствием чего-л.",
+      "en": "to result from sth."
+    },
+    "examples": [
+      {
+        "de": "Das Ergebnis resultiert aus dem gesteigerten Einsatz.",
+        "ru": "Результат проистекает из возросших усилий.",
+        "en": "The result stems from the increased effort."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "retten-aus-dat",
+    "slug": {
+      "word": "retten",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "retten",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "вытаскивать кого-л. откуда-л. (из огня, из беды)",
+      "en": "to rescue sb. out of sth. (a fire, a plight)"
+    },
+    "senseNote": {
+      "ru": "откуда вытаскивают — положение, в котором уже находишься",
+      "en": "what you are pulled out of — a situation you are already in"
+    },
+    "examples": [
+      {
+        "de": "Die Feuerwehr rettete das Kind aus den Flammen.",
+        "ru": "Пожарные вытащили ребёнка из огня.",
+        "en": "The fire brigade rescued the child out of the flames."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "retten-vor-dat",
+    "slug": {
+      "word": "retten",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "retten",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "спасать кого-л. от чего-л. (от угрозы)",
+      "en": "to save sb. from sth. (from a threat)"
+    },
+    "senseNote": {
+      "ru": "от какой угрозы уберегают — то, что могло случиться, но не случилось",
+      "en": "which threat you are shielded from — what might have happened but did not"
+    },
+    "examples": [
+      {
+        "de": "Der Arzt rettete ihn vor dem Tod.",
+        "ru": "Врач спас его от смерти.",
+        "en": "The doctor saved him from death."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "rettung-aus-dat",
+    "slug": {
+      "word": "rettung",
+      "prep": "aus"
+    },
+    "pos": "noun",
+    "lemma": "Rettung",
+    "article": "die",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "спасение от чего-л. (из опасности)",
+      "en": "rescue from sth. (a danger)"
+    },
+    "examples": [
+      {
+        "de": "Seine Rettung aus Lebensgefahr grenzte an ein Wunder.",
+        "ru": "Его спасение от смертельной опасности было сродни чуду.",
+        "en": "His rescue from mortal danger was almost a miracle."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "richten-an-akk",
+    "slug": {
+      "word": "richten",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "richten",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "обращать что-л. к кому-л. (вопрос, просьбу)",
+      "en": "to direct/address sth. to sb. (a question, a request)"
+    },
+    "senseNote": {
+      "ru": "к кому обращаешь — адресат сообщения, а не то, чему следуешь",
+      "en": "who you address — the recipient of a message, not what you go by"
+    },
+    "examples": [
+      {
+        "de": "Ich richte die Frage an dich.",
+        "ru": "Я обращаю вопрос к тебе.",
+        "en": "I am directing the question to you."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "richten-auf-akk",
+    "slug": {
+      "word": "richten",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "richten",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "направлять что-л. на кого-л. / что-л. (взгляд, прибор)",
+      "en": "to direct/aim sth. at sb. / sth. (a gaze, an instrument)"
+    },
+    "senseNote": {
+      "ru": "на что направляешь — цель взгляда или прибора, физическое наведение",
+      "en": "what you aim at — the target of a gaze or an instrument, a physical aiming"
+    },
+    "examples": [
+      {
+        "de": "Sie richtet die Kamera auf den Ausgang.",
+        "ru": "Она направляет камеру на выход.",
+        "en": "She points the camera at the exit."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "richten-gegen-akk",
+    "slug": {
+      "word": "richten",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "richten",
+    "prep": "gegen",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "быть направленным против кого-л. / чего-л.",
+      "en": "to be directed against sb. / sth."
+    },
+    "senseNote": {
+      "ru": "против кого направлено — противник или объект противодействия",
+      "en": "who it is directed against — an opponent or a target of opposition"
+    },
+    "examples": [
+      {
+        "de": "Der Verdacht richtet sich gegen ihn.",
+        "ru": "Подозрение направлено против него.",
+        "en": "The suspicion is directed against him."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "richten-nach-dat",
+    "slug": {
+      "word": "richten",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "richten",
+    "prep": "nach",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "определяться чем-л., руководствоваться чем-л.",
+      "en": "to depend on sth., to go by sth."
+    },
+    "senseNote": {
+      "ru": "чем руководствуешься — критерий, а не адресат сообщения",
+      "en": "what you go by — a criterion, not the target of a gaze or an instrument"
+    },
+    "examples": [
+      {
+        "de": "Der Preis richtet sich nach der Nachfrage.",
+        "ru": "Цена определяется спросом.",
+        "en": "The price depends on demand."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3771,6 +13649,594 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "ruetteln-an-dat",
+    "slug": {
+      "word": "ruetteln",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "rütteln",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "трясти что-л.; перен. ставить что-л. под сомнение",
+      "en": "to rattle sth.; fig. to call sth. into question"
+    },
+    "examples": [
+      {
+        "de": "Der Sturm rüttelt an den Fensterläden.",
+        "ru": "Буря трясёт ставни.",
+        "en": "The storm is rattling the shutters."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "rufen-nach-dat",
+    "slug": {
+      "word": "rufen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "rufen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "звать кого-л., просить кого-л. (о помощи и т.п.)",
+      "en": "to call for sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Das Kind ruft nach seiner Mutter.",
+        "ru": "Ребёнок зовёт свою маму.",
+        "en": "The child is calling for its mother."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "sagen-zu-dat",
+    "slug": {
+      "word": "sagen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "sagen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "высказываться по поводу чего-л., говорить о чём-л.",
+      "en": "to say sth. about sth., to comment on sth."
+    },
+    "examples": [
+      {
+        "de": "Möchtest du noch etwas zu diesem Thema sagen?",
+        "ru": "Хочешь ещё что-нибудь сказать по этой теме?",
+        "en": "Would you like to say anything more on this topic?"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "sammeln-fuer-akk",
+    "slug": {
+      "word": "sammeln",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "sammeln",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "собирать средства на что-л. / для кого-л.",
+      "en": "to collect money for sth. / sb."
+    },
+    "examples": [
+      {
+        "de": "Sie sammeln für die Erdbebenopfer.",
+        "ru": "Они собирают средства для жертв землетрясения.",
+        "en": "They are collecting for the earthquake victims."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "sammlung-fuer-akk",
+    "slug": {
+      "word": "sammlung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Sammlung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "сбор средств на что-л. / для кого-л.",
+      "en": "a collection of money for sth. / sb."
+    },
+    "senseNote": {
+      "ru": "сбор денег ради цели — не собрание предметов",
+      "en": "raising money for a cause — not a collection of objects"
+    },
+    "examples": [
+      {
+        "de": "In der Schule läuft eine Sammlung für das Rote Kreuz.",
+        "ru": "В школе идёт сбор средств для Красного Креста.",
+        "en": "The school is running a collection for the Red Cross."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "sammlung-von-dat",
+    "slug": {
+      "word": "sammlung",
+      "prep": "von"
+    },
+    "pos": "noun",
+    "lemma": "Sammlung",
+    "article": "die",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "собрание, коллекция чего-л.",
+      "en": "a collection of sth."
+    },
+    "senseNote": {
+      "ru": "собрание предметов или произведений — не сбор денег",
+      "en": "a collection of objects or works — not a fundraiser"
+    },
+    "examples": [
+      {
+        "de": "Das Museum zeigt eine Sammlung von Gemälden.",
+        "ru": "Музей показывает коллекцию картин.",
+        "en": "The museum is showing a collection of paintings."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "sauer-auf-akk",
+    "slug": {
+      "word": "sauer",
+      "prep": "auf"
+    },
+    "pos": "adj",
+    "lemma": "sauer",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "злой на кого-л. (разг.)",
+      "en": "mad at sb., annoyed at sb. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Sie ist sauer auf ihren Bruder.",
+        "ru": "Она злится на своего брата.",
+        "en": "She is mad at her brother."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schaben-an-dat",
+    "slug": {
+      "word": "schaben",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "schaben",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "тереться о что-л., скрести обо что-л.",
+      "en": "to scrape/rub against sth."
+    },
+    "examples": [
+      {
+        "de": "Das rechte Vorderrad schabt am Kotflügel.",
+        "ru": "Правое переднее колесо трётся о крыло.",
+        "en": "The right front wheel scrapes against the fender."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schaeumen-vor-dat",
+    "slug": {
+      "word": "schaeumen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "schäumen",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть вне себя от чего-л. (о ярости), кипеть от чего-л.",
+      "en": "to foam/seethe with sth. (rage)"
+    },
+    "examples": [
+      {
+        "de": "Er schäumte vor Wut.",
+        "ru": "Он кипел от ярости.",
+        "en": "He was foaming with rage."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schalten-auf-akk",
+    "slug": {
+      "word": "schalten",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "schalten",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "переключать что-л. на что-л. (режим, состояние)",
+      "en": "to switch sth. to sth. (a mode, a setting)"
+    },
+    "examples": [
+      {
+        "de": "Sie schaltet das Gerät auf Automatik.",
+        "ru": "Она переключает прибор на автоматический режим.",
+        "en": "She switches the device to automatic mode."
+      }
+    ],
+    "sources": [
+      "duden",
+      "de.wiktionary"
+    ]
+  },
+  {
+    "id": "scharf-auf-akk",
+    "slug": {
+      "word": "scharf",
+      "prep": "auf"
+    },
+    "pos": "adj",
+    "lemma": "scharf",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "жаждущий чего-л. (разг.)",
+      "en": "keen on sth., eager for sth. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Er ist scharf auf den neuen Job.",
+        "ru": "Он жаждет получить новую работу.",
+        "en": "He is keen on the new job."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schauen-auf-akk",
+    "slug": {
+      "word": "schauen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "schauen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "придавать значение чему-л., ценить что-л. (южн.-нем., австр., швейц.)",
+      "en": "to value sth., to be mindful of sth. (southern German, Austrian, Swiss)"
+    },
+    "senseNote": {
+      "ru": "чему придаёшь значение — приоритет, региональный вариант",
+      "en": "what you value — a priority, a regional variant"
+    },
+    "examples": [
+      {
+        "de": "Er schaut auf Sauberkeit.",
+        "ru": "Он ценит чистоту.",
+        "en": "He values cleanliness."
+      }
+    ],
+    "tags": [
+      "regional"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schauen-nach-dat",
+    "slug": {
+      "word": "schauen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "schauen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "присматривать за кем-л., проведывать кого-л.",
+      "en": "to look after sb., to check on sb."
+    },
+    "senseNote": {
+      "ru": "за кем присматриваешь — забота о человеке, а не оценка чего-л.",
+      "en": "who you check on — caring for a person, not valuing sth."
+    },
+    "examples": [
+      {
+        "de": "Schau mal nach den Kindern.",
+        "ru": "Присмотри за детьми.",
+        "en": "Please check on the children."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "scheiden-aus-dat",
+    "slug": {
+      "word": "scheiden",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "scheiden",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "уходить с должности, покидать что-л. (офиц.)",
+      "en": "to leave sth., to retire from sth. (formal)"
+    },
+    "examples": [
+      {
+        "de": "Er scheidet aus dem Dienst.",
+        "ru": "Он уходит со службы.",
+        "en": "He is leaving the service."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "scheren-um-akk",
+    "slug": {
+      "word": "scheren",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "scheren",
+    "prep": "um",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "заботиться о чём-л. (обычно с отрицанием)",
+      "en": "to care about sth. (usually negated)"
+    },
+    "senseNote": {
+      "ru": "почти всегда с отрицанием «не»",
+      "en": "almost always used with a negation"
+    },
+    "examples": [
+      {
+        "de": "Er schert sich nicht um die Vorschriften.",
+        "ru": "Ему нет дела до предписаний.",
+        "en": "He does not care about the regulations."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "scheuen-vor-dat",
+    "slug": {
+      "word": "scheuen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "scheuen",
+    "prep": "vor",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "бояться чего-л., избегать чего-л. (уклоняться)",
+      "en": "to shy away from sth."
+    },
+    "examples": [
+      {
+        "de": "Er scheut sich vor der Verantwortung.",
+        "ru": "Он избегает ответственности.",
+        "en": "He shies away from responsibility."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schieben-auf-akk",
+    "slug": {
+      "word": "schieben",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "schieben",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "сваливать вину, ответственность на кого-л.",
+      "en": "to pin sth. on sb., to shift the blame onto sb."
+    },
+    "examples": [
+      {
+        "de": "Er schiebt die Missstände auf die Partei.",
+        "ru": "Он сваливает недостатки на партию.",
+        "en": "He blames the shortcomings on the party."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schimpfen-auf-akk",
+    "slug": {
+      "word": "schimpfen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "schimpfen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "ругать кого-л., браниться на кого-л.",
+      "en": "to scold sb., to grumble about sb."
+    },
+    "senseNote": {
+      "ru": "на кого ругаешься заочно — за спиной, в отличие от mit, где бранят напрямую",
+      "en": "whom you grumble about behind their back — unlike mit, which is scolding directly"
+    },
+    "examples": [
+      {
+        "de": "Sie schimpft auf den Chef.",
+        "ru": "Она ругает начальника.",
+        "en": "She is grumbling about the boss."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schimpfen-mit-dat",
+    "slug": {
+      "word": "schimpfen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "schimpfen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "бранить кого-л.",
+      "en": "to scold sb."
+    },
+    "senseNote": {
+      "ru": "кого бранишь напрямую — в отличие от auf, где ругают заочно, за спиной",
+      "en": "whom you scold directly — unlike auf, which is grumbling about sb. behind their back"
+    },
+    "examples": [
+      {
+        "de": "Die Mutter schimpft mit dem Kind.",
+        "ru": "Мать бранит ребёнка.",
+        "en": "The mother is scolding the child."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schliessen-aus-dat",
+    "slug": {
+      "word": "schliessen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "schließen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "делать вывод из чего-л., заключать по чему-л.",
+      "en": "to conclude sth. from sth., to infer sth. from sth."
+    },
+    "senseNote": {
+      "ru": "из чего делаешь вывод — основание умозаключения",
+      "en": "what you infer from — the ground of the conclusion"
+    },
+    "examples": [
+      {
+        "de": "Aus dieser Bemerkung schließe ich, dass er zustimmt.",
+        "ru": "Из этого замечания я делаю вывод, что он согласен.",
+        "en": "From this remark I conclude that he agrees."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schliessen-mit-dat",
+    "slug": {
+      "word": "schliessen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "schließen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "заканчивать что-л. чем-л. (письмо, речь)",
+      "en": "to close sth. with sth. (a letter, a speech)"
+    },
+    "senseNote": {
+      "ru": "чем заканчиваешь — заключительная часть, а не основание вывода",
+      "en": "what you close with — the final part, not the ground of a conclusion"
+    },
+    "examples": [
+      {
+        "de": "Er schloss seinen Brief mit den Worten.",
+        "ru": "Он закончил своё письмо этими словами.",
+        "en": "He closed his letter with these words.",
+        "lemmaForm": "schloss"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "schmecken-nach-dat",
     "slug": {
       "word": "schmecken",
@@ -3793,6 +14259,59 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "schneiden-an-dat",
+    "slug": {
+      "word": "schneiden",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "schneiden",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "порезаться обо что-л.",
+      "en": "to cut oneself on sth."
+    },
+    "examples": [
+      {
+        "de": "Ich habe mich an einer Scherbe geschnitten.",
+        "ru": "Я порезался о черепок.",
+        "en": "I cut myself on a shard.",
+        "lemmaForm": "geschnitten"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schnuppern-an-dat",
+    "slug": {
+      "word": "schnuppern",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "schnuppern",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "нюхать что-л., принюхиваться к чему-л.",
+      "en": "to sniff at sth."
+    },
+    "examples": [
+      {
+        "de": "Der Hund schnuppert an dem Baum.",
+        "ru": "Собака принюхивается к дереву.",
+        "en": "The dog is sniffing at the tree."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3885,6 +14404,65 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "schreien-nach-dat",
+    "slug": {
+      "word": "schreien",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "schreien",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "кричать, звать кого-л. / что-л.",
+      "en": "to cry out for sb. / sth."
+    },
+    "senseNote": {
+      "ru": "кого зовёшь криком — то, чего требуешь",
+      "en": "what you cry out for — the thing you demand"
+    },
+    "examples": [
+      {
+        "de": "Die Kinder schrien nach ihrer Mutter.",
+        "ru": "Дети кричали, зовя мать.",
+        "en": "The children cried out for their mother.",
+        "lemmaForm": "schrien"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schreien-vor-dat",
+    "slug": {
+      "word": "schreien",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "schreien",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "кричать от какого-л. чувства",
+      "en": "to scream with an emotion"
+    },
+    "senseNote": {
+      "ru": "от чего кричишь — причина крика, а не его адресат",
+      "en": "what makes you scream — the cause, not the target"
+    },
+    "examples": [
+      {
+        "de": "Das Kind schreit vor Angst.",
+        "ru": "Ребёнок кричит от страха.",
+        "en": "The child is screaming with fear."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "schuetzen-vor-dat",
     "slug": {
       "word": "schuetzen",
@@ -3910,6 +14488,32 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "schuld-2-an-dat",
+    "slug": {
+      "word": "schuld-2",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Schuld",
+    "article": "die",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "вина за что-л.",
+      "en": "fault for sth., blame for sth."
+    },
+    "examples": [
+      {
+        "de": "Er trägt die Schuld an dem Unfall.",
+        "ru": "На нём лежит вина за аварию.",
+        "en": "He bears the blame for the accident."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "schuld-an-dat",
     "slug": {
       "word": "schuld",
@@ -3932,6 +14536,238 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "schutz-vor-dat",
+    "slug": {
+      "word": "schutz",
+      "prep": "vor"
+    },
+    "pos": "noun",
+    "lemma": "Schutz",
+    "article": "der",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "защита от кого-л. / чего-л.",
+      "en": "protection from sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Das Dach bot Schutz vor dem Gewitter.",
+        "ru": "Крыша давала защиту от грозы.",
+        "en": "The roof gave protection from the thunderstorm."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schwanger-von-dat",
+    "slug": {
+      "word": "schwanger",
+      "prep": "von"
+    },
+    "pos": "adj",
+    "lemma": "schwanger",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "беременная от кого-л.",
+      "en": "pregnant by sb."
+    },
+    "examples": [
+      {
+        "de": "Sie ist von ihrem Mann schwanger.",
+        "ru": "Она беременна от своего мужа.",
+        "en": "She is pregnant by her husband."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schweigen-ueber-akk",
+    "slug": {
+      "word": "schweigen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "schweigen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "молчать о чём-л.",
+      "en": "to keep silent about sth."
+    },
+    "senseNote": {
+      "ru": "о чём молчишь — тема, которую не затрагиваешь",
+      "en": "what you keep silent about — a topic you do not raise"
+    },
+    "examples": [
+      {
+        "de": "Er schweigt über den Vorfall.",
+        "ru": "Он молчит об этом происшествии.",
+        "en": "He keeps silent about the incident."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schweigen-zu-dat",
+    "slug": {
+      "word": "schweigen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "schweigen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "не отвечать на что-л., отмалчиваться в ответ",
+      "en": "to say nothing in response to sth."
+    },
+    "senseNote": {
+      "ru": "на что молчишь — то, на что не отвечаешь, а не тема, которую скрываешь",
+      "en": "what you stay silent in the face of — what you decline to answer, not a topic you hide"
+    },
+    "examples": [
+      {
+        "de": "Zu allen Vorwürfen hat er geschwiegen.",
+        "ru": "На все обвинения он отвечал молчанием.",
+        "en": "He said nothing in response to all the accusations.",
+        "lemmaForm": "geschwiegen"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "schwoeren-auf-akk",
+    "slug": {
+      "word": "schwoeren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "schwören",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "свято верить во что-л., клясться чем-л.",
+      "en": "to swear by sth., to be a firm believer in sth."
+    },
+    "senseNote": {
+      "ru": "во что веришь — испытанное средство, а не клятва с призыванием в свидетели",
+      "en": "what you swear by — a trusted remedy, not an oath invoking a witness"
+    },
+    "examples": [
+      {
+        "de": "Meine Mutter schwört auf ihren Kräutertee.",
+        "ru": "Моя мама свято верит в свой травяной чай.",
+        "en": "My mother swears by her herbal tea."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "schwoeren-bei-dat",
+    "slug": {
+      "word": "schwoeren",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "schwören",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "клясться кем-л. / чем-л. (призывая в свидетели)",
+      "en": "to swear by sth./sb. (invoking as a witness)"
+    },
+    "senseNote": {
+      "ru": "кем клянёшься — свидетель клятвы, а не проверенное средство",
+      "en": "who/what you swear by — the witness of an oath, not a trusted remedy"
+    },
+    "examples": [
+      {
+        "de": "Er schwört bei seiner Ehre, unschuldig zu sein.",
+        "ru": "Он клянётся своей честью, что невиновен.",
+        "en": "He swears on his honour that he is innocent."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "sehen-auf-akk",
+    "slug": {
+      "word": "sehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "sehen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "придавать значение чему-л., ставить что-л. во главу угла",
+      "en": "to place importance on sth., to prioritise sth."
+    },
+    "senseNote": {
+      "ru": "чему придаёшь значение — приоритет, а не забота о ком-л.",
+      "en": "what you prioritise — not caring for a person"
+    },
+    "examples": [
+      {
+        "de": "Sie sieht nur auf ihren eigenen Vorteil.",
+        "ru": "Она думает только о собственной выгоде.",
+        "en": "She only looks out for her own advantage.",
+        "lemmaForm": "sieht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "sehen-nach-dat",
+    "slug": {
+      "word": "sehen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "sehen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "присматривать за кем-л.",
+      "en": "to look after sb."
+    },
+    "senseNote": {
+      "ru": "за кем присматриваешь — забота о человеке, а не приоритет",
+      "en": "who you look after — caring for a person, not a priority"
+    },
+    "examples": [
+      {
+        "de": "Kannst du kurz nach den Kindern sehen?",
+        "ru": "Можешь ненадолго присмотреть за детьми?",
+        "en": "Can you check on the children for a moment?"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -3988,6 +14824,121 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "setzen-auf-akk",
+    "slug": {
+      "word": "setzen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "setzen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "ставить на кого-л. / что-л. (в игре; перен. — надеяться на кого-л. / что-л.)",
+      "en": "to bet on sb. / sth., to stake sth. on sth."
+    },
+    "senseNote": {
+      "ru": "ставишь на что-л. — азарт, надежда на исход",
+      "en": "you're betting on sth. — a stake, hoping for an outcome"
+    },
+    "examples": [
+      {
+        "de": "Er setzt sein Geld auf das Pferd.",
+        "ru": "Он ставит деньги на лошадь.",
+        "en": "He is betting his money on the horse."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "setzen-ueber-akk",
+    "slug": {
+      "word": "setzen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "setzen",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "перепрыгивать через что-л., переправляться через что-л.",
+      "en": "to jump over sth., to cross sth. (by boat)"
+    },
+    "senseNote": {
+      "ru": "физическое движение через препятствие или воду — не про ставки",
+      "en": "physical movement across an obstacle or water — nothing to do with betting"
+    },
+    "examples": [
+      {
+        "de": "Das Pferd setzt über den Graben.",
+        "ru": "Лошадь перепрыгивает через ров.",
+        "en": "The horse jumps over the ditch."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "sitzen-ueber-dat",
+    "slug": {
+      "word": "sitzen",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "sitzen",
+    "prep": "über",
+    "case": "dat",
+    "gloss": {
+      "ru": "корпеть над чем-л. (учёбой, работой)",
+      "en": "to be absorbed in sth., to pore over sth. (studying, work)"
+    },
+    "examples": [
+      {
+        "de": "Er sitzt seit Stunden über den Büchern.",
+        "ru": "Он уже несколько часов корпит над книгами.",
+        "en": "He has been poring over his books for hours."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "sorge-fuer-akk",
+    "slug": {
+      "word": "sorge",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Sorge",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "забота о ком-л. / чём-л. (обеспечение)",
+      "en": "care for sb. / sth. (provision)"
+    },
+    "senseNote": {
+      "ru": "обеспечивать, брать на себя ответственность — действие (параллель к «sorgen für»)",
+      "en": "to provide, to take responsibility — an action (parallel to 'sorgen für')"
+    },
+    "examples": [
+      {
+        "de": "Die Sorge für die Familie fordert all ihre Kräfte.",
+        "ru": "Забота о семье требует от неё всех сил.",
+        "en": "Caring for the family demands all her strength."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "sorge-um-akk",
     "slug": {
       "word": "sorge",
@@ -4001,6 +14952,10 @@ export const rektionen: readonly Rektion[] = [
     "gloss": {
       "ru": "тревога о ком-л. / чём-л.",
       "en": "worry about sb. / sth."
+    },
+    "senseNote": {
+      "ru": "тревожиться — чувство, не действие (параллель к «sorgen um», возвратному)",
+      "en": "to be anxious — a feeling, not an action (parallel to reflexive 'sich sorgen um')"
     },
     "examples": [
       {
@@ -4071,6 +15026,147 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "sparen-auf-akk",
+    "slug": {
+      "word": "sparen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "sparen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "копить на что-л.",
+      "en": "to save up for sth."
+    },
+    "senseNote": {
+      "ru": "на что копишь — цель накоплений",
+      "en": "what you save up for — the goal of the saving"
+    },
+    "examples": [
+      {
+        "de": "Er spart auf einen neuen Wagen.",
+        "ru": "Он копит на новую машину.",
+        "en": "He is saving up for a new car."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "sparen-mit-dat",
+    "slug": {
+      "word": "sparen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "sparen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "скупиться на что-л., экономить на чём-л.",
+      "en": "to be sparing with sth."
+    },
+    "senseNote": {
+      "ru": "на чём скупишься — то, чего выдаёшь мало, а не цель накоплений",
+      "en": "what you are sparing with — what you dole out little of, not a savings goal"
+    },
+    "examples": [
+      {
+        "de": "Er sparte nicht mit Lob.",
+        "ru": "Он не скупился на похвалу.",
+        "en": "He was not sparing with his praise."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "spielen-mit-dat",
+    "slug": {
+      "word": "spielen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "spielen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "играть с кем-л. / чем-л.",
+      "en": "to play with sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Kinder spielen mit dem Ball.",
+        "ru": "Дети играют с мячом.",
+        "en": "The children are playing with the ball."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "spitzen-auf-akk",
+    "slug": {
+      "word": "spitzen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "spitzen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "с нетерпением ждать чего-л. (регион.)",
+      "en": "to eagerly anticipate sth. (regional)"
+    },
+    "examples": [
+      {
+        "de": "Die Kinder spitzen sich auf die Ferien.",
+        "ru": "Дети с нетерпением ждут каникул.",
+        "en": "The children are eagerly looking forward to the holidays."
+      }
+    ],
+    "tags": [
+      "regional"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "spotten-ueber-akk",
+    "slug": {
+      "word": "spotten",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "spotten",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "насмехаться над кем-л. / чем-л.",
+      "en": "to mock sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie spotten über seine Angst.",
+        "ru": "Они насмехаются над его страхом.",
+        "en": "They mock his fear."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -4195,6 +15291,66 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "starren-auf-akk",
+    "slug": {
+      "word": "starren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "starren",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "пристально смотреть на кого-л. / что-л.",
+      "en": "to stare at sb. / sth."
+    },
+    "senseNote": {
+      "ru": "на что смотришь — объект пристального взгляда",
+      "en": "what you stare at — the object of the fixed gaze"
+    },
+    "examples": [
+      {
+        "de": "Er starrt auf sein Handy.",
+        "ru": "Он уставился на свой телефон.",
+        "en": "He is staring at his phone."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "starren-vor-dat",
+    "slug": {
+      "word": "starren",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "starren",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "быть сплошь покрытым чем-л. (о грязи и т.п.)",
+      "en": "to be caked with sth. (dirt etc.)"
+    },
+    "senseNote": {
+      "ru": "чем покрыт — грязь, ржавчина; не взгляд, а состояние поверхности",
+      "en": "what it's caked with — dirt, rust; a surface condition, not a gaze"
+    },
+    "examples": [
+      {
+        "de": "Seine Kleidung starrt vor Schmutz.",
+        "ru": "Его одежда сплошь покрыта грязью.",
+        "en": "His clothing is caked with dirt."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "staunen-ueber-akk",
     "slug": {
       "word": "staunen",
@@ -4218,6 +15374,124 @@ export const rektionen: readonly Rektion[] = [
     "level": "B1",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "stecken-in-akk",
+    "slug": {
+      "word": "stecken",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "stecken",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "вкладывать что-л. во что-л. (силы, деньги)",
+      "en": "to put/invest sth. into sth. (effort, money)"
+    },
+    "examples": [
+      {
+        "de": "Sie hat ihr ganzes Vermögen in das Unternehmen gesteckt.",
+        "ru": "Она вложила всё своё состояние в это предприятие.",
+        "en": "She put her entire fortune into the company."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "stehen-auf-akk",
+    "slug": {
+      "word": "stehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "stehen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "быть неравнодушным к чему-л., любить что-л. (разг.)",
+      "en": "to be into sth., to like sth. (colloquial)"
+    },
+    "senseNote": {
+      "ru": "на что запал — личное предпочтение, разговорный оборот",
+      "en": "what you are into — a personal preference, a colloquial idiom"
+    },
+    "examples": [
+      {
+        "de": "Ich stehe auf klassische Musik.",
+        "ru": "Мне нравится классическая музыка.",
+        "en": "I am into classical music."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "stehen-fuer-akk",
+    "slug": {
+      "word": "stehen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "stehen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "олицетворять что-л., символизировать что-л.",
+      "en": "to stand for sth., to represent sth."
+    },
+    "senseNote": {
+      "ru": "что олицетворяешь — символическое значение, а не обязательство",
+      "en": "what you represent — a symbolic meaning, not a commitment"
+    },
+    "examples": [
+      {
+        "de": "Die Marke steht für Qualität.",
+        "ru": "Бренд олицетворяет качество.",
+        "en": "The brand stands for quality."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "stehen-zu-dat",
+    "slug": {
+      "word": "stehen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "stehen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "держать слово, поддерживать что-л.",
+      "en": "to stand by sth., to support sth."
+    },
+    "senseNote": {
+      "ru": "к чему причастен — обязательство, которое держишь",
+      "en": "what you stand by — a commitment you keep"
+    },
+    "examples": [
+      {
+        "de": "Er steht zu seinem Wort.",
+        "ru": "Он держит своё слово.",
+        "en": "He stands by his word."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -4248,6 +15522,203 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "stimmen-fuer-akk",
+    "slug": {
+      "word": "stimmen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "stimmen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "голосовать за что-л. / кого-л.",
+      "en": "to vote for sth./sb."
+    },
+    "senseNote": {
+      "ru": "за что голосуешь — поддерживаемый вариант",
+      "en": "what you vote for — the option you support"
+    },
+    "examples": [
+      {
+        "de": "Die Mehrheit stimmt für den Vorschlag.",
+        "ru": "Большинство голосует за предложение.",
+        "en": "The majority votes for the proposal."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "stimmen-gegen-akk",
+    "slug": {
+      "word": "stimmen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "stimmen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "голосовать против чего-л. / кого-л.",
+      "en": "to vote against sth./sb."
+    },
+    "senseNote": {
+      "ru": "против чего голосуешь — отвергаемый вариант",
+      "en": "what you vote against — the option you reject"
+    },
+    "examples": [
+      {
+        "de": "Die Minderheit stimmt gegen den Vorschlag.",
+        "ru": "Меньшинство голосует против предложения.",
+        "en": "The minority votes against the proposal."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "stinken-nach-dat",
+    "slug": {
+      "word": "stinken",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "stinken",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "попахивать чем-л. (перен.)",
+      "en": "to reek of sth. (figurative)"
+    },
+    "examples": [
+      {
+        "de": "Das stinkt nach Verrat.",
+        "ru": "Это попахивает предательством.",
+        "en": "That reeks of betrayal."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "stoeren-an-dat",
+    "slug": {
+      "word": "stoeren",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "stören",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "быть недовольным чем-л., раздражаться из-за чего-л.",
+      "en": "to be bothered by sth., to take exception to sth."
+    },
+    "senseNote": {
+      "ru": "чем ты сам недоволен — источник раздражения, а не занятие, которое прерывают",
+      "en": "what bothers you — the irritant, not an activity being interrupted"
+    },
+    "examples": [
+      {
+        "de": "Er stört sich an den Autos vor dem Haus.",
+        "ru": "Его раздражают машины перед домом.",
+        "en": "He is bothered by the cars in front of the house."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "stoeren-bei-dat",
+    "slug": {
+      "word": "stoeren",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "stören",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "мешать кому-л. в каком-л. занятии",
+      "en": "to disturb sb. at sth. (an activity)"
+    },
+    "senseNote": {
+      "ru": "в каком занятии мешаешь — то, что прерываешь",
+      "en": "which activity you interrupt — what you break into"
+    },
+    "examples": [
+      {
+        "de": "Sie stört ihn bei der Arbeit.",
+        "ru": "Она мешает ему работать.",
+        "en": "She is disturbing him at his work."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "stoerung-bei-dat",
+    "slug": {
+      "word": "stoerung",
+      "prep": "bei"
+    },
+    "pos": "noun",
+    "lemma": "Störung",
+    "article": "die",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "помеха кому-л. в каком-л. занятии",
+      "en": "a disturbance to sb. at sth. (an activity)"
+    },
+    "examples": [
+      {
+        "de": "Häufige Störungen bei der Arbeit machten ihn nervös.",
+        "ru": "Частые помехи в работе выводили его из себя.",
+        "en": "Frequent disturbances at work made him nervous."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "stolz-2-auf-akk",
+    "slug": {
+      "word": "stolz-2",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Stolz",
+    "article": "der",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "гордость за кого-л. / что-л.",
+      "en": "pride in sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sein Stolz auf seinen Sohn ist groß.",
+        "ru": "Его гордость за сына велика.",
+        "en": "His pride in his son is great."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "stolz-auf-akk",
     "slug": {
       "word": "stolz",
@@ -4274,6 +15745,120 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "stossen-an-dat",
+    "slug": {
+      "word": "stossen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "stoßen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "быть задетым чем-л., осуждать что-л.",
+      "en": "to take exception to sth., to be bothered by sth."
+    },
+    "senseNote": {
+      "ru": "что задевает — раздражитель, а не находка",
+      "en": "what bothers you — an irritant, not a find"
+    },
+    "examples": [
+      {
+        "de": "Sie stößt sich an seinem Ton.",
+        "ru": "Её задевает его тон.",
+        "en": "She takes exception to his tone."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "stossen-auf-akk",
+    "slug": {
+      "word": "stossen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "stoßen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "натыкаться на что-л., случайно обнаруживать что-л.",
+      "en": "to come across sth., to encounter sth. unexpectedly"
+    },
+    "senseNote": {
+      "ru": "на что наткнулся — неожиданная находка, а не то, что задевает",
+      "en": "what you come across — an unexpected find, not something that bothers you"
+    },
+    "examples": [
+      {
+        "de": "Sie stößt auf ein Problem.",
+        "ru": "Она натыкается на проблему.",
+        "en": "She comes across a problem."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "straeuben-gegen-akk",
+    "slug": {
+      "word": "straeuben",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "sträuben",
+    "prep": "gegen",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "сопротивляться чему-л., противиться чему-л.",
+      "en": "to resist sth."
+    },
+    "examples": [
+      {
+        "de": "Er sträubt sich gegen die Reform.",
+        "ru": "Он сопротивляется реформе.",
+        "en": "He is resisting the reform."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "streben-2-nach-dat",
+    "slug": {
+      "word": "streben-2",
+      "prep": "nach"
+    },
+    "pos": "noun",
+    "lemma": "Streben",
+    "article": "das",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "стремление к чему-л.",
+      "en": "striving for sth."
+    },
+    "examples": [
+      {
+        "de": "Sein Streben nach Erfolg ist groß.",
+        "ru": "Его стремление к успеху велико.",
+        "en": "His striving for success is great."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "streben-nach-dat",
     "slug": {
       "word": "streben",
@@ -4296,6 +15881,214 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "streik-fuer-akk",
+    "slug": {
+      "word": "streik",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Streik",
+    "article": "der",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "забастовка за что-л.",
+      "en": "a strike for sth."
+    },
+    "senseNote": {
+      "ru": "за что бастуют — требование, а не то, что отвергают",
+      "en": "what they strike for — the demand, not what they reject"
+    },
+    "examples": [
+      {
+        "de": "Die Gewerkschaft rief zu einem Streik für höhere Löhne auf.",
+        "ru": "Профсоюз призвал к забастовке за повышение зарплаты.",
+        "en": "The union called for a strike for higher wages."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "streik-gegen-akk",
+    "slug": {
+      "word": "streik",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Streik",
+    "article": "der",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "забастовка против чего-л.",
+      "en": "a strike against sth."
+    },
+    "senseNote": {
+      "ru": "против чего бастуют — то, что отвергают, а не требование",
+      "en": "what they strike against — what they reject, not the demand"
+    },
+    "examples": [
+      {
+        "de": "Sie organisierten einen Streik gegen die Beschlüsse der Arbeitgeber.",
+        "ru": "Они организовали забастовку против решений работодателей.",
+        "en": "They organized a strike against the employers' decisions."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "streiken-fuer-akk",
+    "slug": {
+      "word": "streiken",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "streiken",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "бастовать за что-л.",
+      "en": "to strike for sth."
+    },
+    "senseNote": {
+      "ru": "за что бастуют — требование",
+      "en": "what they strike for — the demand"
+    },
+    "examples": [
+      {
+        "de": "Sie streiken für den höheren Lohn.",
+        "ru": "Они бастуют за повышение зарплаты.",
+        "en": "They are striking for higher pay."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "streiken-gegen-akk",
+    "slug": {
+      "word": "streiken",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "streiken",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "бастовать против чего-л.",
+      "en": "to strike against sth."
+    },
+    "senseNote": {
+      "ru": "против чего бастуют — то, что отвергают, а не то, чего требуют",
+      "en": "what they strike against — what they reject, not what they demand"
+    },
+    "examples": [
+      {
+        "de": "Sie streiken gegen den Beschluss.",
+        "ru": "Они бастуют против этого решения.",
+        "en": "They are striking against the decision."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "streit-mit-dat",
+    "slug": {
+      "word": "streit",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Streit",
+    "article": "der",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "спор, ссора с кем-л.",
+      "en": "quarrel with sb."
+    },
+    "senseNote": {
+      "ru": "с кем спор — противник, а не предмет или тема",
+      "en": "who the quarrel is with — the other party, not the object or topic"
+    },
+    "examples": [
+      {
+        "de": "Der Streit mit der Schwägerin dauert schon Jahre.",
+        "ru": "Ссора с золовкой длится уже годы.",
+        "en": "The quarrel with the sister-in-law has been going on for years."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "streit-ueber-akk",
+    "slug": {
+      "word": "streit",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Streit",
+    "article": "der",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "спор о чём-л. (о теме)",
+      "en": "argument about sth. (a topic)"
+    },
+    "senseNote": {
+      "ru": "о чём спор — тема разногласий, а не предмет борьбы",
+      "en": "what the argument is about — a topic of disagreement, not a contested object"
+    },
+    "examples": [
+      {
+        "de": "Der Streit über den Vertrag eskalierte.",
+        "ru": "Спор о договоре обострился.",
+        "en": "The argument about the contract escalated."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "streit-um-akk",
+    "slug": {
+      "word": "streit",
+      "prep": "um"
+    },
+    "pos": "noun",
+    "lemma": "Streit",
+    "article": "der",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "спор из-за чего-л. (о предмете спора)",
+      "en": "argument over sth. (a contested object)"
+    },
+    "senseNote": {
+      "ru": "из-за чего конфликт — конкретный предмет, за который борются",
+      "en": "what the conflict is over — a specific contested thing"
+    },
+    "examples": [
+      {
+        "de": "Der Streit um den Parkplatz dauert an.",
+        "ru": "Спор из-за парковочного места продолжается.",
+        "en": "The argument over the parking spot goes on."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -4391,6 +16184,33 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "stuerzen-auf-akk",
+    "slug": {
+      "word": "stuerzen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "stürzen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "набрасываться на кого-л. / что-л.",
+      "en": "to pounce on sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Kinder stürzen sich auf die Süßigkeiten.",
+        "ru": "Дети набрасываются на сладости.",
+        "en": "The children pounce on the sweets."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "suche-nach-dat",
     "slug": {
       "word": "suche",
@@ -4439,6 +16259,117 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "sucht-nach-dat",
+    "slug": {
+      "word": "sucht",
+      "prep": "nach"
+    },
+    "pos": "noun",
+    "lemma": "Sucht",
+    "article": "die",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "тяга к чему-л., пристрастие к чему-л.",
+      "en": "craving for sth., addiction to sth."
+    },
+    "examples": [
+      {
+        "de": "Er leidet an seiner Sucht nach dem Spiel.",
+        "ru": "Он страдает от своей тяги к игре.",
+        "en": "He suffers from his craving for gambling."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "suechtig-nach-dat",
+    "slug": {
+      "word": "suechtig",
+      "prep": "nach"
+    },
+    "pos": "adj",
+    "lemma": "süchtig",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "зависимый от чего-л. (пристрастившийся)",
+      "en": "addicted to sth."
+    },
+    "examples": [
+      {
+        "de": "Er ist süchtig nach diesem Spiel.",
+        "ru": "Он зависим от этой игры.",
+        "en": "He is addicted to this game."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "teilen-in-akk",
+    "slug": {
+      "word": "teilen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "teilen",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "делить между собой что-л. (выигрыш, имущество)",
+      "en": "to split sth. between themselves (a prize, property)"
+    },
+    "senseNote": {
+      "ru": "что делят между собой — сам предмет дележа, а не партнёр",
+      "en": "what gets divided up — the thing itself, not the partner"
+    },
+    "examples": [
+      {
+        "de": "Wir teilen uns in den Gewinn.",
+        "ru": "Мы делим выигрыш между собой.",
+        "en": "We are splitting the winnings between us."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "teilen-mit-dat",
+    "slug": {
+      "word": "teilen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "teilen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "делить что-л. с кем-л.",
+      "en": "to share sth. with sb."
+    },
+    "senseNote": {
+      "ru": "с кем делишь — второй участник",
+      "en": "whom you share with — the other party"
+    },
+    "examples": [
+      {
+        "de": "Sie teilt das Zimmer mit ihrer Schwester.",
+        "ru": "Она делит комнату со своей сестрой.",
+        "en": "She shares the room with her sister."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -4546,6 +16477,117 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "trainieren-fuer-akk",
+    "slug": {
+      "word": "trainieren",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "trainieren",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "тренироваться к чему-л.",
+      "en": "to train for sth."
+    },
+    "examples": [
+      {
+        "de": "Er trainiert hart für die nächsten Spiele.",
+        "ru": "Он усердно тренируется к следующим играм.",
+        "en": "He is training hard for the next games."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "trauer-ueber-akk",
+    "slug": {
+      "word": "trauer",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Trauer",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "печаль из-за чего-л.",
+      "en": "grief over sth."
+    },
+    "senseNote": {
+      "ru": "печаль из-за события или потери в целом",
+      "en": "grief over an event or a loss in general"
+    },
+    "examples": [
+      {
+        "de": "Die Trauer über den Verlust war groß.",
+        "ru": "Печаль из-за потери была велика.",
+        "en": "The grief over the loss was great."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "trauer-um-akk",
+    "slug": {
+      "word": "trauer",
+      "prep": "um"
+    },
+    "pos": "noun",
+    "lemma": "Trauer",
+    "article": "die",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "скорбь по кому-л. (об умершем)",
+      "en": "mourning for sb. (the deceased)"
+    },
+    "senseNote": {
+      "ru": "скорбь по конкретному умершему человеку",
+      "en": "mourning for a specific person who died"
+    },
+    "examples": [
+      {
+        "de": "Die Trauer um ihren Vater dauert an.",
+        "ru": "Скорбь по отцу не утихает.",
+        "en": "The mourning for her father continues."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "traum-von-dat",
+    "slug": {
+      "word": "traum",
+      "prep": "von"
+    },
+    "pos": "noun",
+    "lemma": "Traum",
+    "article": "der",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "мечта о чём-л.",
+      "en": "dream of sth."
+    },
+    "examples": [
+      {
+        "de": "Der Traum vom Glück begleitet ihn.",
+        "ru": "Мечта о счастье сопровождает его.",
+        "en": "The dream of happiness accompanies him."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "traurig-ueber-akk",
     "slug": {
       "word": "traurig",
@@ -4597,6 +16639,83 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "trennen-von-dat",
+    "slug": {
+      "word": "trennen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "trennen",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "расставаться с кем-л. / чем-л.",
+      "en": "to part with sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Firma hat sich von diesem Mitarbeiter getrennt.",
+        "ru": "Фирма рассталась с этим сотрудником.",
+        "en": "The company parted with this employee."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "trinken-auf-akk",
+    "slug": {
+      "word": "trinken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "trinken",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "пить за кого-л. / что-л. (произносить тост)",
+      "en": "to drink to sb. / sth., to toast sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Wir trinken auf einen guten Ausgang.",
+        "ru": "Мы пьём за благополучный исход.",
+        "en": "We are drinking to a good outcome."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "tuefteln-an-dat",
+    "slug": {
+      "word": "tuefteln",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "tüfteln",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "корпеть над чем-л., возиться с чем-л.",
+      "en": "to tinker with sth."
+    },
+    "examples": [
+      {
+        "de": "Er tüftelt an der Maschine.",
+        "ru": "Он корпит над машиной.",
+        "en": "He is tinkering with the machine."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "typisch-fuer-akk",
     "slug": {
       "word": "typisch",
@@ -4619,6 +16738,279 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "ueben-in-akk",
+    "slug": {
+      "word": "ueben",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "üben",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "упражняться в чём-л., развивать в себе что-л.",
+      "en": "to practise sth. (a virtue, a skill)"
+    },
+    "examples": [
+      {
+        "de": "Er übt sich in Geduld.",
+        "ru": "Он упражняется в терпении.",
+        "en": "He is practising patience.",
+        "lemmaForm": "übt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ueberraschen-mit-dat",
+    "slug": {
+      "word": "ueberraschen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "überraschen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "удивлять, радовать кого-л. чем-л.",
+      "en": "to surprise sb. with sth."
+    },
+    "examples": [
+      {
+        "de": "Er überraschte sie mit einem Geschenk.",
+        "ru": "Он удивил её подарком.",
+        "en": "He surprised her with a present."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ueberrascht-ueber-akk",
+    "slug": {
+      "word": "ueberrascht",
+      "prep": "ueber"
+    },
+    "pos": "adj",
+    "lemma": "überrascht",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "удивлённый чем-л.",
+      "en": "surprised about sth."
+    },
+    "examples": [
+      {
+        "de": "Wir waren über den herzlichen Empfang überrascht.",
+        "ru": "Мы были удивлены сердечным приёмом.",
+        "en": "We were surprised about the warm welcome."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ueberreden-zu-dat",
+    "slug": {
+      "word": "ueberreden",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "überreden",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "уговаривать кого-л. на что-л.",
+      "en": "to talk sb. into sth., to persuade sb. to do sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat ihn zu einem Kauf überredet.",
+        "ru": "Она уговорила его на покупку.",
+        "en": "She talked him into a purchase."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ueberschaeumen-vor-dat",
+    "slug": {
+      "word": "ueberschaeumen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "überschäumen",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "бить через край от чего-л. (перен.)",
+      "en": "to brim over with sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Sie überschäumt vor Begeisterung.",
+        "ru": "Она бьёт через край от восторга.",
+        "en": "She is brimming over with enthusiasm."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "uebersetzen-aus-dat",
+    "slug": {
+      "word": "uebersetzen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "übersetzen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "переводить с какого-л. языка",
+      "en": "to translate from a language"
+    },
+    "senseNote": {
+      "ru": "с какого языка переводишь — язык-источник",
+      "en": "what language you translate from — the source language"
+    },
+    "examples": [
+      {
+        "de": "Sie übersetzt den Roman aus dem Englischen.",
+        "ru": "Она переводит роман с английского.",
+        "en": "She is translating the novel from English."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "uebersetzen-in-akk",
+    "slug": {
+      "word": "uebersetzen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "übersetzen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "переводить на какой-л. язык",
+      "en": "to translate into a language"
+    },
+    "senseNote": {
+      "ru": "на какой язык переводишь — язык назначения",
+      "en": "what language you translate into — the target language"
+    },
+    "examples": [
+      {
+        "de": "Sie übersetzt den Roman ins Englische.",
+        "ru": "Она переводит роман на английский.",
+        "en": "She is translating the novel into English."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "uebersetzung-in-akk",
+    "slug": {
+      "word": "uebersetzung",
+      "prep": "in"
+    },
+    "pos": "noun",
+    "lemma": "Übersetzung",
+    "article": "die",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "перевод на какой-л. язык",
+      "en": "translation into a language"
+    },
+    "examples": [
+      {
+        "de": "Für die Übersetzung des Vertrags ins Deutsche hat er drei Stunden gebraucht.",
+        "ru": "На перевод договора на немецкий у него ушло три часа.",
+        "en": "He needed three hours for the translation of the contract into German."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ueberweisen-an-akk",
+    "slug": {
+      "word": "ueberweisen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "überweisen",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "направлять кого-л. / что-л. к кому-л. (к врачу, в инстанцию)",
+      "en": "to refer sb. / sth. to sb. (a specialist, an authority)"
+    },
+    "senseNote": {
+      "ru": "к кому направляют — адресат направления, а не счёт для денег",
+      "en": "who someone is referred to — the addressee, not an account for money"
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt überweist sie an einen Facharzt.",
+        "ru": "Терапевт направляет её к специалисту.",
+        "en": "The GP refers her to a specialist."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "ueberweisen-auf-akk",
+    "slug": {
+      "word": "ueberweisen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "überweisen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "переводить деньги на счёт",
+      "en": "to transfer money to an account"
+    },
+    "senseNote": {
+      "ru": "куда переводят деньги — счёт",
+      "en": "where the money goes — the account"
+    },
+    "examples": [
+      {
+        "de": "Der Betrieb überweist das Gehalt auf ein Konto.",
+        "ru": "Предприятие переводит зарплату на счёт.",
+        "en": "The company transfers the salary to an account."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -4669,6 +17061,86 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "umschauen-nach-dat",
+    "slug": {
+      "word": "umschauen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "umschauen",
+    "prep": "nach",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "присматривать что-л., искать что-л.",
+      "en": "to look around for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie schaut sich nach einer neuen Wohnung um.",
+        "ru": "Она присматривает новую квартиру.",
+        "en": "She is looking around for a new apartment.",
+        "lemmaForm": "schaut"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "umsteigen-auf-akk",
+    "slug": {
+      "word": "umsteigen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "umsteigen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "переходить на что-л. другое (перен.)",
+      "en": "to switch over to sth. else"
+    },
+    "examples": [
+      {
+        "de": "Er steigt auf öffentliche Verkehrsmittel um.",
+        "ru": "Он переходит на общественный транспорт.",
+        "en": "He is switching to public transport.",
+        "lemmaForm": "steigt"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "umtauschen-gegen-akk",
+    "slug": {
+      "word": "umtauschen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "umtauschen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "обменивать что-л. на что-л. (замена)",
+      "en": "to exchange sth. for sth. (a replacement)"
+    },
+    "examples": [
+      {
+        "de": "Der Arbeitgeber muss das Zwischenzeugnis gegen ein endgültiges Zeugnis umtauschen.",
+        "ru": "Работодатель должен обменять промежуточную справку на окончательную.",
+        "en": "The employer must exchange the interim certificate for a final one."
+      }
+    ],
+    "sources": [
+      "duden",
+      "de.wiktionary"
     ]
   },
   {
@@ -4735,6 +17207,179 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "unterhaltung-mit-dat",
+    "slug": {
+      "word": "unterhaltung",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Unterhaltung",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "беседа с кем-л.",
+      "en": "a conversation with sb."
+    },
+    "examples": [
+      {
+        "de": "Er führte eine lange Unterhaltung mit dem Gast.",
+        "ru": "Он вёл долгую беседу с гостем.",
+        "en": "He had a long conversation with the guest."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "unterrichten-in-dat",
+    "slug": {
+      "word": "unterrichten",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "unterrichten",
+    "prep": "in",
+    "case": "dat",
+    "gloss": {
+      "ru": "преподавать что-л., обучать кого-л. чему-л.",
+      "en": "to teach sth., to instruct sb. in sth."
+    },
+    "senseNote": {
+      "ru": "какому предмету обучаешь — школьная сторона глагола",
+      "en": "what subject you teach — the classroom side of the verb"
+    },
+    "examples": [
+      {
+        "de": "Sie unterrichtet ihre Kinder im Malen.",
+        "ru": "Она обучает своих детей рисованию.",
+        "en": "She instructs her children in painting."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "unterrichten-ueber-akk",
+    "slug": {
+      "word": "unterrichten",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "unterrichten",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "осведомлять кого-л. о чём-л.",
+      "en": "to inform sb. about sth."
+    },
+    "senseNote": {
+      "ru": "о чём осведомляешь — передача сведений, а не преподавание. Так же ведёт себя informieren über",
+      "en": "what you inform about — passing on news, not teaching. informieren über behaves the same way"
+    },
+    "examples": [
+      {
+        "de": "Der Bote unterrichtet den König über die Lage.",
+        "ru": "Гонец осведомляет короля о положении дел.",
+        "en": "The messenger informs the king about the situation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "unterscheiden-von-dat",
+    "slug": {
+      "word": "unterscheiden",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "unterscheiden",
+    "prep": "von",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "отличаться от кого-л. / чего-л.",
+      "en": "to differ from sb. / sth."
+    },
+    "senseNote": {
+      "ru": "от кого отличаешься — то, с чем сравнивают тебя самого",
+      "en": "what you differ from — the thing you yourself are compared against"
+    },
+    "examples": [
+      {
+        "de": "Sie unterscheidet sich deutlich von ihrer Schwester.",
+        "ru": "Она заметно отличается от своей сестры.",
+        "en": "She differs markedly from her sister."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "unterscheiden-zwischen-dat",
+    "slug": {
+      "word": "unterscheiden",
+      "prep": "zwischen"
+    },
+    "pos": "verb",
+    "lemma": "unterscheiden",
+    "prep": "zwischen",
+    "case": "dat",
+    "gloss": {
+      "ru": "различать между чем-л. и чем-л.",
+      "en": "to distinguish between sth. and sth."
+    },
+    "senseNote": {
+      "ru": "между чем различаешь — две вещи, которые сам разводишь",
+      "en": "between what you distinguish — two things you tell apart"
+    },
+    "examples": [
+      {
+        "de": "Man unterscheidet zwischen dem alten und dem neuen Modell.",
+        "ru": "Различают между старой и новой моделью.",
+        "en": "A distinction is made between the old and the new model."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "unterschied-zu-dat",
+    "slug": {
+      "word": "unterschied",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Unterschied",
+    "article": "der",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "отличие от кого-л. / чего-л. (обычно «im Unterschied zu»)",
+      "en": "difference from sb. / sth. (usually 'im Unterschied zu')"
+    },
+    "senseNote": {
+      "ru": "от чего/кого отличие — единственный ориентир для сравнения, а не пара из «zwischen»",
+      "en": "what it differs from — a single reference point, not the pair used with 'zwischen'"
+    },
+    "examples": [
+      {
+        "de": "Im Unterschied zu ihm interessiert sie das überhaupt nicht.",
+        "ru": "В отличие от него, её это совершенно не интересует.",
+        "en": "Unlike him, she is not interested in that at all."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "unterschied-zwischen-dat",
     "slug": {
       "word": "unterschied",
@@ -4749,6 +17394,10 @@ export const rektionen: readonly Rektion[] = [
       "ru": "разница между кем-л. / чем-л.",
       "en": "difference between sb. / sth."
     },
+    "senseNote": {
+      "ru": "между кем/чем разница — два сопоставляемых объекта в одной фразе",
+      "en": "between what the difference lies — two things compared side by side"
+    },
     "examples": [
       {
         "de": "Der Unterschied zwischen den beiden ist klein.",
@@ -4758,6 +17407,169 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "untersuchen-auf-akk",
+    "slug": {
+      "word": "untersuchen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "untersuchen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "проверять, обследовать на предмет чего-л.",
+      "en": "to examine sth. for sth., to test sth. for sth."
+    },
+    "examples": [
+      {
+        "de": "Der Arzt untersucht das Blut auf einen Erreger.",
+        "ru": "Врач проверяет кровь на возбудителя.",
+        "en": "The doctor is testing the blood for a pathogen."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "untersuchung-gegen-akk",
+    "slug": {
+      "word": "untersuchung",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Untersuchung",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "расследование против кого-л.",
+      "en": "an investigation against sb."
+    },
+    "senseNote": {
+      "ru": "официальное (полицейское/дисциплинарное) расследование против кого-л.",
+      "en": "a formal (police/disciplinary) investigation against sb."
+    },
+    "examples": [
+      {
+        "de": "Die Polizei leitete eine Untersuchung gegen den Verdächtigen ein.",
+        "ru": "Полиция начала расследование против подозреваемого.",
+        "en": "The police opened an investigation against the suspect."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "untersuchung-ueber-akk",
+    "slug": {
+      "word": "untersuchung",
+      "prep": "ueber"
+    },
+    "pos": "noun",
+    "lemma": "Untersuchung",
+    "article": "die",
+    "prep": "über",
+    "case": "akk",
+    "gloss": {
+      "ru": "исследование чего-л.",
+      "en": "a study of sth., research on sth."
+    },
+    "senseNote": {
+      "ru": "научное исследование предмета — академический смысл",
+      "en": "an academic study of a subject"
+    },
+    "examples": [
+      {
+        "de": "Die Wissenschaftler veröffentlichten eine Untersuchung über die Umweltschäden.",
+        "ru": "Учёные опубликовали исследование об экологическом ущербе.",
+        "en": "The scientists published a study on the environmental damage."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "unwohl-bei-dat",
+    "slug": {
+      "word": "unwohl",
+      "prep": "bei"
+    },
+    "pos": "adj",
+    "lemma": "unwohl",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "неуютно от чего-л., тревожно при чём-л.",
+      "en": "uneasy about sth."
+    },
+    "examples": [
+      {
+        "de": "Mir ist unwohl bei dem Gedanken, dass er trotzdem kommt.",
+        "ru": "Мне неуютно от мысли, что он всё равно придёт.",
+        "en": "I feel uneasy about the thought that he is coming anyway."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verabreden-mit-dat",
+    "slug": {
+      "word": "verabreden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verabreden",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "договариваться о встрече с кем-л.",
+      "en": "to arrange to meet sb."
+    },
+    "examples": [
+      {
+        "de": "Sie verabredet sich mit ihrem Freund.",
+        "ru": "Она договаривается о встрече со своим другом.",
+        "en": "She is arranging to meet her friend."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verabredung-mit-dat",
+    "slug": {
+      "word": "verabredung",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Verabredung",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "договорённость о встрече с кем-л.",
+      "en": "arrangement to meet sb."
+    },
+    "examples": [
+      {
+        "de": "Ich habe morgen eine Verabredung mit ihm.",
+        "ru": "У меня завтра встреча с ним.",
+        "en": "I have an arrangement to meet him tomorrow."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -4838,6 +17650,167 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "verbinden-mit-dat",
+    "slug": {
+      "word": "verbinden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verbinden",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "соединять что-л. с чем-л., сочетать",
+      "en": "to combine sth. with sth., to connect sth. to sth."
+    },
+    "examples": [
+      {
+        "de": "Er verbindet das Angenehme mit dem Nützlichen.",
+        "ru": "Он сочетает приятное с полезным.",
+        "en": "He combines the pleasant with the useful."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verbindung-mit-dat",
+    "slug": {
+      "word": "verbindung",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Verbindung",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "сочетание чего-л. с чем-л.",
+      "en": "combination of sth. with sth."
+    },
+    "examples": [
+      {
+        "de": "Die Verbindung der Dienstreise mit einem kurzen Urlaub war praktisch.",
+        "ru": "Сочетание командировки с коротким отпуском было практичным.",
+        "en": "Combining the business trip with a short vacation was practical."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verbreiten-ueber-akk",
+    "slug": {
+      "word": "verbreiten",
+      "prep": "ueber"
+    },
+    "pos": "verb",
+    "lemma": "verbreiten",
+    "prep": "über",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "распространяться на тему чего-л., долго рассуждать о чём-л. (часто неодобр.)",
+      "en": "to hold forth on sth., to go on at length about sth. (often disapproving)"
+    },
+    "examples": [
+      {
+        "de": "Er verbreitete sich stundenlang über das Thema.",
+        "ru": "Он часами распространялся на эту тему.",
+        "en": "He held forth on the topic for hours."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verdienen-an-dat",
+    "slug": {
+      "word": "verdienen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verdienen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "зарабатывать на чём-л., получать прибыль от чего-л.",
+      "en": "to earn/profit from sth."
+    },
+    "examples": [
+      {
+        "de": "Der Wirt verdient hauptsächlich am Bier.",
+        "ru": "Хозяин зарабатывает в основном на пиве.",
+        "en": "The innkeeper earns mainly from the beer."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verdienst-um-akk",
+    "slug": {
+      "word": "verdienst",
+      "prep": "um"
+    },
+    "pos": "noun",
+    "lemma": "Verdienst",
+    "article": "das",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "заслуга перед кем-л. / чем-л.",
+      "en": "credit/merit for sth. (for one's contribution to it)"
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich große Verdienste um die Stadt erworben.",
+        "ru": "Она заслужила большое признание перед городом.",
+        "en": "She has earned great credit for her contribution to the city."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verfeinden-mit-dat",
+    "slug": {
+      "word": "verfeinden",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verfeinden",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "враждовать с кем-л., рассориться с кем-л.",
+      "en": "to become enemies with sb., to fall out with sb."
+    },
+    "examples": [
+      {
+        "de": "Er hat sich mit seinem Nachbarn verfeindet.",
+        "ru": "Он рассорился со своим соседом.",
+        "en": "He has fallen out with his neighbour."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "verfuegen-ueber-akk",
     "slug": {
       "word": "verfuegen",
@@ -4860,6 +17833,60 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "vergehen-an-dat",
+    "slug": {
+      "word": "vergehen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "vergehen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "совершать преступление, посягать на кого-л. / что-л.",
+      "en": "to commit an offense against sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat sich an fremdem Eigentum vergangen.",
+        "ru": "Он посягнул на чужое имущество.",
+        "en": "He committed an offense against others' property.",
+        "lemmaForm": "vergangen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vergleich-mit-dat",
+    "slug": {
+      "word": "vergleich",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Vergleich",
+    "article": "der",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "сравнение с кем-л. / чем-л.",
+      "en": "comparison with sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Im Vergleich mit seiner Frau ist er sehr ruhig.",
+        "ru": "По сравнению с женой он очень спокойный.",
+        "en": "In comparison with his wife, he is very calm."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -4888,6 +17915,94 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "vergreifen-an-dat",
+    "slug": {
+      "word": "vergreifen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "vergreifen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "посягать на кого-л. / незаконно присваивать что-л.",
+      "en": "to lay a hand on sb.; to misappropriate sth."
+    },
+    "examples": [
+      {
+        "de": "Er vergreift sich am Geld der Firma.",
+        "ru": "Он незаконно присваивает деньги фирмы.",
+        "en": "He misappropriates the company's money."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vergucken-in-akk",
+    "slug": {
+      "word": "vergucken",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "vergucken",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "влюбиться в кого-л. (разг.)",
+      "en": "to fall for sb. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Er hat sich in seine Nachbarin verguckt.",
+        "ru": "Он влюбился в свою соседку.",
+        "en": "He has fallen for his neighbour."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verhaeltnis-mit-dat",
+    "slug": {
+      "word": "verhaeltnis",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Verhältnis",
+    "article": "das",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "любовная связь с кем-л.",
+      "en": "an affair with sb."
+    },
+    "senseNote": {
+      "ru": "романтическая/любовная связь — конкретный, часто тайный роман, а не отношения вообще",
+      "en": "a romantic affair — a specific, often secret liaison, not a relationship in general"
+    },
+    "examples": [
+      {
+        "de": "Er hat ein Verhältnis mit seiner Kollegin.",
+        "ru": "У него роман со своей коллегой.",
+        "en": "He is having an affair with his colleague."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "verhaeltnis-zu-dat",
     "slug": {
       "word": "verhaeltnis",
@@ -4901,6 +18016,10 @@ export const rektionen: readonly Rektion[] = [
     "gloss": {
       "ru": "отношение к кому-л.",
       "en": "relationship to sb."
+    },
+    "senseNote": {
+      "ru": "общая природа отношений с кем-л. — не обязательно романтических",
+      "en": "the general nature of a relationship with sb. — not necessarily romantic"
     },
     "examples": [
       {
@@ -4939,6 +18058,137 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "verkaufen-an-akk",
+    "slug": {
+      "word": "verkaufen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verkaufen",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "продавать что-л. кому-л.",
+      "en": "to sell sth. to sb."
+    },
+    "examples": [
+      {
+        "de": "Sie hat ihren Wagen an einen Kollegen verkauft.",
+        "ru": "Она продала свою машину коллеге.",
+        "en": "She sold her car to a colleague."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verknallt-in-akk",
+    "slug": {
+      "word": "verknallt",
+      "prep": "in"
+    },
+    "pos": "adj",
+    "lemma": "verknallt",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "втюрившийся в кого-л. (разг.)",
+      "en": "smitten with sb. (colloquial)"
+    },
+    "examples": [
+      {
+        "de": "Er ist total verknallt in seine Kollegin.",
+        "ru": "Он совсем втюрился в свою коллегу.",
+        "en": "He is totally smitten with his colleague."
+      }
+    ],
+    "tags": [
+      "colloquial"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verlangen-nach-2-dat",
+    "slug": {
+      "word": "verlangen",
+      "prep": "nach-2"
+    },
+    "pos": "noun",
+    "lemma": "Verlangen",
+    "article": "das",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "жажда чего-л., сильное желание чего-л.",
+      "en": "yearning for sth., craving for sth."
+    },
+    "examples": [
+      {
+        "de": "Sein Verlangen nach Anerkennung war unstillbar.",
+        "ru": "Его жажда признания была неутолимой.",
+        "en": "His yearning for recognition was unquenchable."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verlangen-nach-dat",
+    "slug": {
+      "word": "verlangen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "verlangen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "жаждать чего-л., просить чего-л.",
+      "en": "to yearn for sth., to call for sth."
+    },
+    "examples": [
+      {
+        "de": "Der Kranke verlangt nach einem Glas Wasser.",
+        "ru": "Больной просит стакан воды.",
+        "en": "The patient is calling for a glass of water."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verlass-auf-akk",
+    "slug": {
+      "word": "verlass",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Verlass",
+    "article": "der",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "надёжность в отношении кого-л. / чего-л. (обычно «kein Verlass auf»)",
+      "en": "reliance on sb. / sth. (usually 'kein Verlass auf')"
+    },
+    "examples": [
+      {
+        "de": "Auf ihn ist kein Verlass.",
+        "ru": "На него нет никакой надежды.",
+        "en": "There is no relying on him."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "verlassen-auf-akk",
     "slug": {
       "word": "verlassen",
@@ -4968,6 +18218,58 @@ export const rektionen: readonly Rektion[] = [
     "level": "B1",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "verletzen-an-dat",
+    "slug": {
+      "word": "verletzen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verletzen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "повредить себе что-л., пораниться (о части тела)",
+      "en": "to injure oneself on sth. (a body part)"
+    },
+    "examples": [
+      {
+        "de": "Ich habe mich am Kopf verletzt.",
+        "ru": "Я повредил себе голову.",
+        "en": "I injured my head."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verletzung-an-dat",
+    "slug": {
+      "word": "verletzung",
+      "prep": "an"
+    },
+    "pos": "noun",
+    "lemma": "Verletzung",
+    "article": "die",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "травма чего-л. (части тела)",
+      "en": "injury to sth. (a body part)"
+    },
+    "examples": [
+      {
+        "de": "Er hat eine Verletzung am Knie.",
+        "ru": "У него травма колена.",
+        "en": "He has an injury to his knee."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -5022,6 +18324,340 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "verlieren-an-dat",
+    "slug": {
+      "word": "verlieren",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verlieren",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "терять в чём-л. (в весе, в значении, в высоте)",
+      "en": "to lose in sth. (weight, significance, altitude)"
+    },
+    "senseNote": {
+      "ru": "в чём теряешь — мера убыли. Зеркало к gewinnen an, и падеж тот же — Dativ",
+      "en": "what you lose in — the dimension of the decrease. The mirror of gewinnen an, same case: Dativ"
+    },
+    "examples": [
+      {
+        "de": "Das Flugzeug verliert an Höhe.",
+        "ru": "Самолёт теряет высоту.",
+        "en": "The plane is losing altitude."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verlieren-gegen-akk",
+    "slug": {
+      "word": "verlieren",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "verlieren",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "проигрывать кому-л. (сопернику)",
+      "en": "to lose to sb. (an opponent)"
+    },
+    "senseNote": {
+      "ru": "кому проигрываешь — соперник, а не мера убыли",
+      "en": "whom you lose to — an opponent, not a dimension of loss"
+    },
+    "examples": [
+      {
+        "de": "Er verlor gegen den besseren Spieler.",
+        "ru": "Он проиграл более сильному игроку.",
+        "en": "He lost to the better player.",
+        "lemmaForm": "verlor"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verloben-mit-dat",
+    "slug": {
+      "word": "verloben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verloben",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "обручаться, помолвиться с кем-л.",
+      "en": "to get engaged to sb."
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich mit ihm verlobt.",
+        "ru": "Она обручилась с ним.",
+        "en": "She got engaged to him."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verlobung-mit-dat",
+    "slug": {
+      "word": "verlobung",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Verlobung",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "помолвка с кем-л.",
+      "en": "engagement to sb."
+    },
+    "examples": [
+      {
+        "de": "Wir geben die Verlobung unserer Tochter mit Herrn Bauer bekannt.",
+        "ru": "Мы объявляем о помолвке нашей дочери с господином Бауэром.",
+        "en": "We are announcing our daughter's engagement to Mr. Bauer."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "vermieten-an-akk",
+    "slug": {
+      "word": "vermieten",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "vermieten",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "сдавать что-л. в аренду кому-л.",
+      "en": "to rent sth. out to sb."
+    },
+    "examples": [
+      {
+        "de": "Er vermietet seine Wohnung an ein junges Ehepaar.",
+        "ru": "Он сдаёт свою квартиру в аренду молодой паре.",
+        "en": "He rents his apartment out to a young couple."
+      }
+    ],
+    "sources": [
+      "duden",
+      "de.wiktionary"
+    ]
+  },
+  {
+    "id": "verrechnen-in-dat",
+    "slug": {
+      "word": "verrechnen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "verrechnen",
+    "prep": "in",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "ошибиться в оценке кого-л. / чего-л.",
+      "en": "to misjudge sb. / sth."
+    },
+    "senseNote": {
+      "ru": "в ком/чём ошибся — оценка человека или ситуации, а не арифметика",
+      "en": "who/what you misjudged — an assessment of a person or situation, not arithmetic"
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich in diesem Menschen verrechnet.",
+        "ru": "Она ошиблась в оценке этого человека.",
+        "en": "She misjudged this person."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verrechnen-mit-dat",
+    "slug": {
+      "word": "verrechnen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verrechnen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "зачитывать что-л. в счёт чего-л., включать в расчёт",
+      "en": "to offset sth. against sth., to include sth. in a settlement"
+    },
+    "senseNote": {
+      "ru": "включаешь в расчёт сумму — не возвратная форма, в отличие от значений с um и in",
+      "en": "including an amount in a settlement — non-reflexive, unlike the um and in senses"
+    },
+    "examples": [
+      {
+        "de": "Der Kassierer verrechnet den Gutschein mit der Rechnung.",
+        "ru": "Кассир зачитывает купон в счёт оплаты.",
+        "en": "The cashier is offsetting the voucher against the bill."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verrechnen-um-akk",
+    "slug": {
+      "word": "verrechnen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "verrechnen",
+    "prep": "um",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "ошибиться в подсчётах на какую-л. сумму",
+      "en": "to miscalculate by an amount"
+    },
+    "senseNote": {
+      "ru": "на сколько ошибся — сумма промаха в арифметике",
+      "en": "by how much you were off — the size of the arithmetic slip"
+    },
+    "examples": [
+      {
+        "de": "Du hast dich um fünf Euro verrechnet.",
+        "ru": "Ты ошибся в подсчётах на пять евро.",
+        "en": "You miscalculated by five euros."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verschlucken-an-dat",
+    "slug": {
+      "word": "verschlucken",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verschlucken",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "подавиться чем-л.",
+      "en": "to choke on sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat sich an der Suppe verschluckt.",
+        "ru": "Она подавилась супом.",
+        "en": "She choked on the soup."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "versichern-gegen-akk",
+    "slug": {
+      "word": "versichern",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "versichern",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "страховать что-л. от чего-л.",
+      "en": "to insure sth. against sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat ihr Haus gegen Feuer versichert.",
+        "ru": "Она застраховала свой дом от пожара.",
+        "en": "She insured her house against fire."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "versicherung-gegen-akk",
+    "slug": {
+      "word": "versicherung",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Versicherung",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "страховка от чего-л.",
+      "en": "insurance against sth."
+    },
+    "examples": [
+      {
+        "de": "Wir haben eine Versicherung gegen Feuer abgeschlossen.",
+        "ru": "Мы заключили страховку от пожара.",
+        "en": "We took out insurance against fire."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verstaendnis-fuer-akk",
+    "slug": {
+      "word": "verstaendnis",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Verständnis",
+    "article": "das",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "понимание чего-л., сочувствие к чему-л.",
+      "en": "understanding of sth., sympathy for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie zeigte großes Verständnis für seine Lage.",
+        "ru": "Она проявила большое понимание к его положению.",
+        "en": "She showed great understanding of his situation."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "verstecken-vor-dat",
     "slug": {
       "word": "verstecken",
@@ -5045,6 +18681,68 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "verstehen-auf-akk",
+    "slug": {
+      "word": "verstehen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "verstehen",
+    "prep": "auf",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "быть умелым в чём-л., знать толк в чём-л.",
+      "en": "to be skilled at sth., to know how to handle sth."
+    },
+    "senseNote": {
+      "ru": "в чём умел — практический навык, а не просто знание о предмете",
+      "en": "what you are skilled at — practical competence, not just knowing about the subject"
+    },
+    "examples": [
+      {
+        "de": "Er versteht sich auf diesen Beruf.",
+        "ru": "Он знает толк в этой профессии.",
+        "en": "He is skilled at this profession."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verstehen-mit-dat",
+    "slug": {
+      "word": "verstehen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verstehen",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "ладить с кем-л.",
+      "en": "to get along with sb."
+    },
+    "senseNote": {
+      "ru": "с кем ладишь — отношения, а не толкование слова или знание темы",
+      "en": "who you get along with — a relationship, not interpreting a word or knowing a field"
+    },
+    "examples": [
+      {
+        "de": "Ich verstehe mich gut mit meiner Schwester.",
+        "ru": "Я хорошо лажу с сестрой.",
+        "en": "I get along well with my sister."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -5106,6 +18804,32 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "verstoss-gegen-akk",
+    "slug": {
+      "word": "verstoss",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Verstoß",
+    "article": "der",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "нарушение чего-л.",
+      "en": "a violation of sth."
+    },
+    "examples": [
+      {
+        "de": "Das ist ein Verstoß gegen den Anstand.",
+        "ru": "Это нарушение приличий.",
+        "en": "That is a violation of common decency."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "verstossen-gegen-akk",
     "slug": {
       "word": "verstossen",
@@ -5128,6 +18852,147 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "versuchen-an-dat",
+    "slug": {
+      "word": "versuchen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "versuchen",
+    "prep": "an",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "пробовать свои силы в чём-л.",
+      "en": "to try one's hand at sth."
+    },
+    "examples": [
+      {
+        "de": "Sie versuchte sich an einem Roman.",
+        "ru": "Она пробовала свои силы в романе.",
+        "en": "She tried her hand at a novel."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verteilen-an-akk",
+    "slug": {
+      "word": "verteilen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verteilen",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "раздавать что-л. кому-л.",
+      "en": "to hand sth. out to sb., to distribute sth. to sb."
+    },
+    "senseNote": {
+      "ru": "кому раздаёшь — получатели",
+      "en": "who you hand it out to — the recipients"
+    },
+    "examples": [
+      {
+        "de": "Sie verteilte das Geld an die Armen.",
+        "ru": "Она раздала деньги бедным.",
+        "en": "She distributed the money to the poor."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verteilen-auf-akk",
+    "slug": {
+      "word": "verteilen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "verteilen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "распределять что-л. по чему-л.",
+      "en": "to spread sth. across sth., to divide sth. among sth."
+    },
+    "senseNote": {
+      "ru": "по чему распределяешь — места или доли, а не люди-получатели",
+      "en": "what you spread it across — places or shares, not human recipients"
+    },
+    "examples": [
+      {
+        "de": "Die Flüchtlinge wurden auf drei Unterkünfte verteilt.",
+        "ru": "Беженцев распределили по трём общежитиям.",
+        "en": "The refugees were distributed across three shelters."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "vertiefen-in-akk",
+    "slug": {
+      "word": "vertiefen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "vertiefen",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "погружаться во что-л., углубляться во что-л.",
+      "en": "to immerse oneself in sth."
+    },
+    "examples": [
+      {
+        "de": "Sie vertieft sich in das Buch.",
+        "ru": "Она погружается в книгу.",
+        "en": "She immerses herself in the book."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vertrauen-auf-2-akk",
+    "slug": {
+      "word": "vertrauen",
+      "prep": "auf-2"
+    },
+    "pos": "noun",
+    "lemma": "Vertrauen",
+    "article": "das",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "доверие к чему-л., упование на что-л.",
+      "en": "trust in sth., reliance on sth."
+    },
+    "senseNote": {
+      "ru": "на что полагаешься — доверие как опора, а не отношение к человеку",
+      "en": "what you rely on — trust as reliance, not a relationship with a person"
+    },
+    "examples": [
+      {
+        "de": "Vertrauen auf Gott.",
+        "ru": "Упование на Бога.",
+        "en": "Trust in God."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -5157,6 +19022,357 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "vertrauen-zu-dat",
+    "slug": {
+      "word": "vertrauen",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Vertrauen",
+    "article": "das",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "доверие к кому-л.",
+      "en": "trust in sb."
+    },
+    "senseNote": {
+      "ru": "к кому испытываешь доверие — личное отношение, в отличие от «auf», где полагаются на что-л.",
+      "en": "whom you trust — a personal relationship, unlike 'auf', which is relying on sth."
+    },
+    "examples": [
+      {
+        "de": "Ich habe Vertrauen zu meinem Arzt.",
+        "ru": "У меня есть доверие к своему врачу.",
+        "en": "I have trust in my doctor."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vertraut-mit-dat",
+    "slug": {
+      "word": "vertraut",
+      "prep": "mit"
+    },
+    "pos": "adj",
+    "lemma": "vertraut",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "хорошо знакомый с чем-л.",
+      "en": "familiar with sth."
+    },
+    "examples": [
+      {
+        "de": "Sie ist mit der Materie gut vertraut.",
+        "ru": "Она хорошо знакома с этим предметом.",
+        "en": "She is well familiar with the subject."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "vertrautheit-mit-dat",
+    "slug": {
+      "word": "vertrautheit",
+      "prep": "mit"
+    },
+    "pos": "noun",
+    "lemma": "Vertrautheit",
+    "article": "die",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "знакомство с чем-л., осведомлённость в чём-л.",
+      "en": "familiarity with sth."
+    },
+    "examples": [
+      {
+        "de": "Meine Vertrautheit mit diesem Land half mir sehr.",
+        "ru": "Моё знакомство с этой страной очень мне помогло.",
+        "en": "My familiarity with this country helped me a lot."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verwahren-gegen-akk",
+    "slug": {
+      "word": "verwahren",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "verwahren",
+    "prep": "gegen",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "решительно возражать против чего-л., протестовать против чего-л.",
+      "en": "to protest against sth., to object strongly to sth."
+    },
+    "examples": [
+      {
+        "de": "Er verwahrt sich gegen diese Anschuldigung.",
+        "ru": "Он решительно возражает против этого обвинения.",
+        "en": "He protests strongly against this accusation."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verwahrung-gegen-akk",
+    "slug": {
+      "word": "verwahrung",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Verwahrung",
+    "article": "die",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "протест, возражение против чего-л. (офиц.)",
+      "en": "a formal protest/objection against sth."
+    },
+    "examples": [
+      {
+        "de": "Der Anwalt legte Verwahrung gegen das Urteil ein.",
+        "ru": "Адвокат заявил официальный протест против приговора.",
+        "en": "The lawyer lodged a formal protest against the verdict."
+      }
+    ],
+    "tags": [
+      "formal"
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verwandeln-in-akk",
+    "slug": {
+      "word": "verwandeln",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "verwandeln",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "превращать что-л. во что-л.",
+      "en": "to turn/transform sth. into sth."
+    },
+    "examples": [
+      {
+        "de": "Er verwandelt die Niederlage in einen Sieg.",
+        "ru": "Он превращает поражение в победу.",
+        "en": "He turns the defeat into a victory."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verwechseln-mit-dat",
+    "slug": {
+      "word": "verwechseln",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "verwechseln",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "путать кого-л. / что-л. с кем-л. / чем-л.",
+      "en": "to confuse sb. / sth. with sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie hat mich mit meinem Bruder verwechselt.",
+        "ru": "Она перепутала меня с моим братом.",
+        "en": "She confused me with my brother."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verweisen-auf-akk",
+    "slug": {
+      "word": "verweisen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "verweisen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "указывать на что-л., отсылать к чему-л.",
+      "en": "to refer/point to sth."
+    },
+    "examples": [
+      {
+        "de": "Das Schild verweist auf die Einfahrt.",
+        "ru": "Табличка указывает на въезд.",
+        "en": "The sign points to the entrance."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "verwenden-auf-akk",
+    "slug": {
+      "word": "verwenden",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "verwenden",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "тратить время, силы на что-л.",
+      "en": "to devote time, effort to sth."
+    },
+    "senseNote": {
+      "ru": "на что тратишь — то, во что вкладываешь время и силы, а не назначение вещи",
+      "en": "what you expend it on — where time and effort go, not what an object is for"
+    },
+    "examples": [
+      {
+        "de": "Sie verwendet viel Mühe auf diese Arbeit.",
+        "ru": "Она тратит много усилий на эту работу.",
+        "en": "She devotes a lot of effort to this work."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verwenden-fuer-akk",
+    "slug": {
+      "word": "verwenden",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "verwenden",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "использовать что-л. для чего-л.",
+      "en": "to use sth. for sth."
+    },
+    "senseNote": {
+      "ru": "для чего используешь — назначение, цель применения",
+      "en": "what you use it for — the purpose it serves"
+    },
+    "examples": [
+      {
+        "de": "Für die Salatsoße verwende ich Olivenöl.",
+        "ru": "Для заправки я использую оливковое масло.",
+        "en": "For the salad dressing I use olive oil."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verwendung-fuer-akk",
+    "slug": {
+      "word": "verwendung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Verwendung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "применение чего-л. для чего-л.",
+      "en": "a use for sth."
+    },
+    "examples": [
+      {
+        "de": "Ich habe keine Verwendung für diesen alten Drucker.",
+        "ru": "У меня нет применения для этого старого принтера.",
+        "en": "I have no use for this old printer."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verwickeln-in-akk",
+    "slug": {
+      "word": "verwickeln",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "verwickeln",
+    "prep": "in",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "запутываться в чём-л. (в противоречиях, в истории)",
+      "en": "to get entangled in sth. (contradictions, an affair)"
+    },
+    "examples": [
+      {
+        "de": "Sie verwickelt sich in Widersprüche.",
+        "ru": "Она запутывается в противоречиях.",
+        "en": "She is getting entangled in contradictions."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "verzicht-auf-akk",
+    "slug": {
+      "word": "verzicht",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Verzicht",
+    "article": "der",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "отказ от чего-л.",
+      "en": "renunciation of sth., waiver of sth."
+    },
+    "examples": [
+      {
+        "de": "Sein Verzicht auf das Erbe überraschte alle.",
+        "ru": "Его отказ от наследства всех удивил.",
+        "en": "His renunciation of the inheritance surprised everyone."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
     "id": "verzichten-auf-akk",
     "slug": {
       "word": "verzichten",
@@ -5180,6 +19396,33 @@ export const rektionen: readonly Rektion[] = [
     "level": "B1",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "verzweifeln-an-dat",
+    "slug": {
+      "word": "verzweifeln",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "verzweifeln",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "отчаиваться из-за чего-л.",
+      "en": "to despair of sth."
+    },
+    "examples": [
+      {
+        "de": "Er verzweifelt an der Situation.",
+        "ru": "Он отчаивается из-за ситуации.",
+        "en": "He despairs of the situation."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
     ]
   },
   {
@@ -5236,6 +19479,299 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "vorgehen-gegen-akk",
+    "slug": {
+      "word": "vorgehen",
+      "prep": "gegen"
+    },
+    "pos": "verb",
+    "lemma": "vorgehen",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "принимать меры против кого-л. / чего-л.",
+      "en": "to take action against sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Polizei geht entschieden gegen die Randalierer vor.",
+        "ru": "Полиция принимает решительные меры против дебоширов.",
+        "en": "The police take decisive action against the rioters."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vorhaben-mit-dat",
+    "slug": {
+      "word": "vorhaben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "vorhaben",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "иметь планы, намерения в отношении кого-л.",
+      "en": "to have plans/intentions regarding sb."
+    },
+    "examples": [
+      {
+        "de": "Er hat Großes mit ihm vor.",
+        "ru": "У него большие планы на его счёт.",
+        "en": "He has great plans for him."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "vorliebe-fuer-akk",
+    "slug": {
+      "word": "vorliebe",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Vorliebe",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "пристрастие к чему-л.",
+      "en": "preference/fondness for sth."
+    },
+    "examples": [
+      {
+        "de": "Er hat eine Vorliebe für scharfes Essen.",
+        "ru": "У него пристрастие к острой еде.",
+        "en": "He has a fondness for spicy food."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vorliebnehmen-mit-dat",
+    "slug": {
+      "word": "vorliebnehmen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "vorliebnehmen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "довольствоваться чем-л., мириться с тем, что есть",
+      "en": "to make do with sth."
+    },
+    "examples": [
+      {
+        "de": "Wir müssen mit dem, was da ist, vorliebnehmen.",
+        "ru": "Нам приходится довольствоваться тем, что есть.",
+        "en": "We have to make do with what is there."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vorsprechen-bei-dat",
+    "slug": {
+      "word": "vorsprechen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "vorsprechen",
+    "prep": "bei",
+    "case": "dat",
+    "gloss": {
+      "ru": "являться лично к кому-л. (в учреждение)",
+      "en": "to call in person on sb., to apply in person at a place"
+    },
+    "examples": [
+      {
+        "de": "Er spricht persönlich beim Amt vor.",
+        "ru": "Он лично является в учреждение.",
+        "en": "He calls in person at the office.",
+        "lemmaForm": "spricht"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "vorstellen-bei-dat",
+    "slug": {
+      "word": "vorstellen",
+      "prep": "bei"
+    },
+    "pos": "verb",
+    "lemma": "vorstellen",
+    "prep": "bei",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "представляться где-л., приходить на собеседование",
+      "en": "to introduce oneself somewhere, to go for an interview"
+    },
+    "examples": [
+      {
+        "de": "Sie stellt sich bei der Personalleiterin vor.",
+        "ru": "Она представляется начальнице отдела кадров.",
+        "en": "She is introducing herself to the head of HR."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wachsen-an-dat",
+    "slug": {
+      "word": "wachsen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "wachsen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "расти, взрослеть благодаря чему-л. (о человеке)",
+      "en": "to grow through sth., to be strengthened by sth."
+    },
+    "examples": [
+      {
+        "de": "Er ist an seinen Aufgaben gewachsen.",
+        "ru": "Он вырос благодаря своим задачам.",
+        "en": "He has grown through his responsibilities."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "waehlen-zu-dat",
+    "slug": {
+      "word": "waehlen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "wählen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "избирать кого-л. кем-л.",
+      "en": "to elect sb. as sth."
+    },
+    "senseNote": {
+      "ru": "кем избирают — должность, а не набор вариантов",
+      "en": "what someone is elected as — the office, not a set of options"
+    },
+    "examples": [
+      {
+        "de": "Sie wurde zur Vorsitzenden gewählt.",
+        "ru": "Её избрали председателем.",
+        "en": "She was elected chairwoman."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "waehlen-zwischen-dat",
+    "slug": {
+      "word": "waehlen",
+      "prep": "zwischen"
+    },
+    "pos": "verb",
+    "lemma": "wählen",
+    "prep": "zwischen",
+    "case": "dat",
+    "gloss": {
+      "ru": "выбирать между чем-л.",
+      "en": "to choose between sth."
+    },
+    "senseNote": {
+      "ru": "между чем выбираешь — сами варианты",
+      "en": "what you choose between — the options themselves"
+    },
+    "examples": [
+      {
+        "de": "Sie wählt zwischen dem Auto und dem Fahrrad.",
+        "ru": "Она выбирает между машиной и велосипедом.",
+        "en": "She is choosing between the car and the bicycle."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wahl-zu-dat",
+    "slug": {
+      "word": "wahl",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Wahl",
+    "article": "die",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "избрание на какую-л. должность",
+      "en": "election to sth. (an office, a position)"
+    },
+    "examples": [
+      {
+        "de": "Die Wahl zum neuen Landtag findet im Herbst statt.",
+        "ru": "Выборы в новый ландтаг пройдут осенью.",
+        "en": "The election to the new state parliament will take place in autumn."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wappnen-fuer-akk",
+    "slug": {
+      "word": "wappnen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "wappnen",
+    "prep": "für",
+    "case": "akk",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "готовиться к чему-л. (заранее, к трудностям)",
+      "en": "to brace oneself for sth."
+    },
+    "examples": [
+      {
+        "de": "Sie wappnet sich für die Prüfung.",
+        "ru": "Она готовится к экзамену.",
+        "en": "She braces herself for the exam."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "warnen-vor-dat",
     "slug": {
       "word": "warnen",
@@ -5258,6 +19794,32 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "warnung-vor-dat",
+    "slug": {
+      "word": "warnung",
+      "prep": "vor"
+    },
+    "pos": "noun",
+    "lemma": "Warnung",
+    "article": "die",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "предупреждение о чём-л.",
+      "en": "warning of sth."
+    },
+    "examples": [
+      {
+        "de": "Eine Warnung vor dem Sturm wurde ausgegeben.",
+        "ru": "Было выпущено предупреждение о буре.",
+        "en": "A warning of the storm was issued."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -5292,6 +19854,176 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "wechseln-mit-dat",
+    "slug": {
+      "word": "wechseln",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "wechseln",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "обмениваться чем-л. с кем-л. (письмами, взглядами)",
+      "en": "to exchange sth. with sb. (letters, glances)"
+    },
+    "senseNote": {
+      "ru": "с кем обмениваешься — партнёр по обмену, а не место, куда переходишь",
+      "en": "whom you exchange with — the other party, not a place you switch to"
+    },
+    "examples": [
+      {
+        "de": "Sie wechselt mit ihrem Nachbarn nur wenige Worte.",
+        "ru": "Она обменивается с соседом лишь парой слов.",
+        "en": "She exchanges only a few words with her neighbour."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wechseln-zu-dat",
+    "slug": {
+      "word": "wechseln",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "wechseln",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "переходить к кому-л. / чему-л. (к другому оператору, работодателю)",
+      "en": "to switch to sth. / sb. (a provider, an employer)"
+    },
+    "senseNote": {
+      "ru": "куда переходишь — новое место, новый поставщик",
+      "en": "what you switch to — the new place or provider"
+    },
+    "examples": [
+      {
+        "de": "Er wechselt zu einem anderen Anbieter.",
+        "ru": "Он переходит к другому провайдеру.",
+        "en": "He is switching to a different provider."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wecken-in-dat",
+    "slug": {
+      "word": "wecken",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "wecken",
+    "prep": "in",
+    "case": "dat",
+    "gloss": {
+      "ru": "пробуждать что-л. в ком-л. (чувство, желание)",
+      "en": "to arouse sth. in sb. (a feeling, a desire)"
+    },
+    "examples": [
+      {
+        "de": "Diese Begegnung weckte in ihm alte Erinnerungen.",
+        "ru": "Эта встреча пробудила в нём старые воспоминания.",
+        "en": "This encounter aroused old memories in him."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "weglaufen-vor-dat",
+    "slug": {
+      "word": "weglaufen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "weglaufen",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "убегать от кого-л. / чего-л.",
+      "en": "to run away from sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Der Hund läuft vor dem Gewitter weg.",
+        "ru": "Собака убегает от грозы.",
+        "en": "The dog runs away from the thunderstorm.",
+        "lemmaForm": "läuft"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "wegziehen-aus-dat",
+    "slug": {
+      "word": "wegziehen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "wegziehen",
+    "prep": "aus",
+    "case": "dat",
+    "gloss": {
+      "ru": "переезжать, уезжать из какого-л. места (обычно с названием места)",
+      "en": "to move away from a place (usually with a named place)"
+    },
+    "senseNote": {
+      "ru": "обычно с названием места",
+      "en": "usually with a named place"
+    },
+    "examples": [
+      {
+        "de": "Er ist letztes Jahr aus Hamburg weggezogen.",
+        "ru": "В прошлом году он уехал из Гамбурга.",
+        "en": "He moved away from Hamburg last year."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "wegziehen-von-dat",
+    "slug": {
+      "word": "wegziehen",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "wegziehen",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "переезжать, уезжать откуда-л. (обычно с наречием места)",
+      "en": "to move away from somewhere (usually with a locative adverb)"
+    },
+    "senseNote": {
+      "ru": "обычно с наречием места (hier, dort), а не с названием",
+      "en": "usually with a locative adverb (here, there), not a named place"
+    },
+    "examples": [
+      {
+        "de": "Er ist letztes Jahr von hier weggezogen.",
+        "ru": "В прошлом году он уехал отсюда.",
+        "en": "He moved away from here last year."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "wehren-gegen-akk",
     "slug": {
       "word": "wehren",
@@ -5315,6 +20047,91 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "weichen-stellen-fuer-akk",
+    "slug": {
+      "word": "weichen-stellen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "die Weichen stellen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "определять направление развития чего-л.",
+      "en": "to set the course for sth."
+    },
+    "examples": [
+      {
+        "de": "Das Kabinett hat die Weichen für die Steuerreform gestellt.",
+        "ru": "Кабинет министров определил направление налоговой реформы.",
+        "en": "The cabinet set the course for the tax reform.",
+        "lemmaForm": "gestellt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "weinen-um-akk",
+    "slug": {
+      "word": "weinen",
+      "prep": "um"
+    },
+    "pos": "verb",
+    "lemma": "weinen",
+    "prep": "um",
+    "case": "akk",
+    "gloss": {
+      "ru": "оплакивать кого-л.",
+      "en": "to weep for sb., to mourn sb."
+    },
+    "senseNote": {
+      "ru": "кого оплакиваешь — тот, кого потерял",
+      "en": "whom you weep for — the one you have lost"
+    },
+    "examples": [
+      {
+        "de": "Sie weint um ihren Vater.",
+        "ru": "Она оплакивает отца.",
+        "en": "She is weeping for her father."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "weinen-vor-dat",
+    "slug": {
+      "word": "weinen",
+      "prep": "vor"
+    },
+    "pos": "verb",
+    "lemma": "weinen",
+    "prep": "vor",
+    "case": "dat",
+    "gloss": {
+      "ru": "плакать от какого-л. чувства",
+      "en": "to cry with an emotion"
+    },
+    "senseNote": {
+      "ru": "от какого чувства плачешь — причина слёз, а не тот, кого оплакивают",
+      "en": "which emotion makes you cry — the cause of the tears, not the person mourned"
+    },
+    "examples": [
+      {
+        "de": "Sie weint vor Freude.",
+        "ru": "Она плачет от радости.",
+        "en": "She is crying with joy."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {
@@ -5376,6 +20193,277 @@ export const rektionen: readonly Rektion[] = [
     ],
     "sources": [
       "prototype"
+    ]
+  },
+  {
+    "id": "werden-zu-dat",
+    "slug": {
+      "word": "werden",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "werden",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "становиться кем-л. / чем-л.",
+      "en": "to become sth., to turn into sth."
+    },
+    "examples": [
+      {
+        "de": "Das Kind wird zum Mann.",
+        "ru": "Ребёнок становится мужчиной.",
+        "en": "The child is becoming a man.",
+        "lemmaForm": "wird"
+      }
+    ],
+    "sources": [
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "werfen-mit-dat",
+    "slug": {
+      "word": "werfen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "werfen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "бросаться, кидаться чем-л.",
+      "en": "to throw sth., to pelt with sth."
+    },
+    "senseNote": {
+      "ru": "чем бросаешь — сам снаряд, а не тот, в кого целишься",
+      "en": "what you throw — the projectile itself, not who you aim at"
+    },
+    "examples": [
+      {
+        "de": "Die Kinder werfen mit Schneebällen.",
+        "ru": "Дети бросаются снежками.",
+        "en": "The children are throwing snowballs."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "werfen-nach-dat",
+    "slug": {
+      "word": "werfen",
+      "prep": "nach"
+    },
+    "pos": "verb",
+    "lemma": "werfen",
+    "prep": "nach",
+    "case": "dat",
+    "gloss": {
+      "ru": "бросать в кого-л. / что-л. (целясь)",
+      "en": "to throw at sb. / sth."
+    },
+    "senseNote": {
+      "ru": "в кого целишься — мишень, а не снаряд",
+      "en": "who you aim at — the target, not the projectile"
+    },
+    "examples": [
+      {
+        "de": "Er wirft mit Steinen nach dem Hund.",
+        "ru": "Он бросает камнями в собаку.",
+        "en": "He is throwing stones at the dog.",
+        "lemmaForm": "wirft"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wertschaetzung-fuer-akk",
+    "slug": {
+      "word": "wertschaetzung",
+      "prep": "fuer"
+    },
+    "pos": "noun",
+    "lemma": "Wertschätzung",
+    "article": "die",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "признательность за что-л., уважение к кому-л. / чему-л.",
+      "en": "appreciation for sth."
+    },
+    "examples": [
+      {
+        "de": "Wir versichern Ihnen unsere Wertschätzung für Ihren Einsatz.",
+        "ru": "Мы выражаем вам нашу признательность за ваши усилия.",
+        "en": "We assure you of our appreciation for your efforts."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "widerstand-gegen-akk",
+    "slug": {
+      "word": "widerstand",
+      "prep": "gegen"
+    },
+    "pos": "noun",
+    "lemma": "Widerstand",
+    "article": "der",
+    "prep": "gegen",
+    "case": "akk",
+    "gloss": {
+      "ru": "сопротивление кому-л. / чему-л.",
+      "en": "resistance against sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Der Widerstand gegen den Diktator wuchs von Jahr zu Jahr.",
+        "ru": "Сопротивление диктатору росло из года в год.",
+        "en": "Resistance against the dictator grew year by year."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "winken-mit-dat",
+    "slug": {
+      "word": "winken",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "winken",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "махать чем-л.",
+      "en": "to wave sth., to wave with sth."
+    },
+    "examples": [
+      {
+        "de": "Sie winkt mit einem Taschentuch.",
+        "ru": "Она машет платком.",
+        "en": "She is waving a handkerchief."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wirken-auf-akk",
+    "slug": {
+      "word": "wirken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "wirken",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "производить впечатление на кого-л.",
+      "en": "to have an effect on sb., to come across to sb."
+    },
+    "examples": [
+      {
+        "de": "Der Vortrag wirkt auf den Zuschauer.",
+        "ru": "Доклад производит впечатление на зрителя.",
+        "en": "The talk makes an impression on the viewer."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "wirkung-auf-akk",
+    "slug": {
+      "word": "wirkung",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Wirkung",
+    "article": "die",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "воздействие на кого-л. / что-л.",
+      "en": "effect on sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Die Wirkung von Farben auf den Menschen ist bekannt.",
+        "ru": "Воздействие цветов на человека хорошо известно.",
+        "en": "The effect of colours on people is well known."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "wuchern-mit-dat",
+    "slug": {
+      "word": "wuchern",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "wuchern",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "не упускать случая показать что-л., щеголять чем-л. (перен.)",
+      "en": "to flaunt sth., to make the most of sth. (figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Er wuchert mit seinen Talenten.",
+        "ru": "Он не упускает случая показать свои таланты.",
+        "en": "He makes the most of his talents."
+      }
+    ],
+    "tags": [
+      "dated"
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "wuergen-an-dat",
+    "slug": {
+      "word": "wuergen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "würgen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "с трудом жевать/глотать что-л. (тж. перен.)",
+      "en": "to struggle to chew/swallow sth. (also figuratively)"
+    },
+    "examples": [
+      {
+        "de": "Das Kind würgt an seinem Essen.",
+        "ru": "Ребёнок с трудом жуёт свою еду.",
+        "en": "The child is struggling to eat its food."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
     ]
   },
   {
@@ -5490,6 +20578,316 @@ export const rektionen: readonly Rektion[] = [
     ]
   },
   {
+    "id": "wut-auf-akk",
+    "slug": {
+      "word": "wut",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Wut",
+    "article": "die",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "злость на кого-л.",
+      "en": "anger at sb."
+    },
+    "examples": [
+      {
+        "de": "Er hat große Wut auf seinen Bruder.",
+        "ru": "Он очень злится на своего брата.",
+        "en": "He has great anger at his brother."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "zaehlen-auf-akk",
+    "slug": {
+      "word": "zaehlen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zählen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "рассчитывать на кого-л.",
+      "en": "to count on sb., to rely on sb."
+    },
+    "examples": [
+      {
+        "de": "Ich zähle auf dich.",
+        "ru": "Я рассчитываю на тебя.",
+        "en": "I am counting on you."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zahlen-an-akk",
+    "slug": {
+      "word": "zahlen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "zahlen",
+    "prep": "an",
+    "case": "akk",
+    "gloss": {
+      "ru": "платить кому-л. / куда-л. (получателю)",
+      "en": "to pay sb./an institution (the recipient)"
+    },
+    "senseNote": {
+      "ru": "кому платишь — получатель платежа, а не причина",
+      "en": "who you pay — the recipient of the payment, not the reason"
+    },
+    "examples": [
+      {
+        "de": "Sie zahlt die Miete an den Vermieter.",
+        "ru": "Она платит арендную плату арендодателю.",
+        "en": "She pays the rent to the landlord."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zahlen-fuer-akk",
+    "slug": {
+      "word": "zahlen",
+      "prep": "fuer"
+    },
+    "pos": "verb",
+    "lemma": "zahlen",
+    "prep": "für",
+    "case": "akk",
+    "gloss": {
+      "ru": "платить за что-л.",
+      "en": "to pay for sth."
+    },
+    "senseNote": {
+      "ru": "за что платишь — причина платежа, а не получатель",
+      "en": "what you pay for — the reason for the payment, not the recipient"
+    },
+    "examples": [
+      {
+        "de": "Ich zahle für den Schaden.",
+        "ru": "Я плачу за ущерб.",
+        "en": "I am paying for the damage."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zehren-an-dat",
+    "slug": {
+      "word": "zehren",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "zehren",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "изматывать что-л., подтачивать что-л.",
+      "en": "to sap sth., to wear on sth."
+    },
+    "senseNote": {
+      "ru": "что подтачивает — силы, нервы, здоровье истощаются",
+      "en": "what it wears on — strength, nerves, health being worn down"
+    },
+    "examples": [
+      {
+        "de": "Die ständigen Aufregungen zehren an ihren Nerven.",
+        "ru": "Постоянные волнения изматывают её нервы.",
+        "en": "The constant excitement is wearing on her nerves."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zehren-von-dat",
+    "slug": {
+      "word": "zehren",
+      "prep": "von"
+    },
+    "pos": "verb",
+    "lemma": "zehren",
+    "prep": "von",
+    "case": "dat",
+    "gloss": {
+      "ru": "жить за счёт чего-л., существовать на какие-л. запасы",
+      "en": "to live off sth."
+    },
+    "senseNote": {
+      "ru": "за счёт чего живёшь — расходуешь имеющийся запас, а не изматываешься",
+      "en": "what you live off — spending down a reserve, not being worn down"
+    },
+    "examples": [
+      {
+        "de": "Sie zehrten bereits von ihren Ersparnissen.",
+        "ru": "Они уже жили за счёт своих сбережений.",
+        "en": "They were already living off their savings."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zeigen-auf-akk",
+    "slug": {
+      "word": "zeigen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zeigen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "показывать на кого-л. / что-л.",
+      "en": "to point at sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Sie zeigt auf den Ausgang.",
+        "ru": "Она показывает на выход.",
+        "en": "She is pointing at the exit."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "ziehen-an-dat",
+    "slug": {
+      "word": "ziehen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "ziehen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "тянуть за что-л.",
+      "en": "to pull on sth., to tug at sth."
+    },
+    "examples": [
+      {
+        "de": "Der Hund zieht an der Leine.",
+        "ru": "Собака тянет за поводок.",
+        "en": "The dog is pulling on the leash."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "zorn-auf-akk",
+    "slug": {
+      "word": "zorn",
+      "prep": "auf"
+    },
+    "pos": "noun",
+    "lemma": "Zorn",
+    "article": "der",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "гнев на кого-л.",
+      "en": "anger at sb."
+    },
+    "senseNote": {
+      "ru": "не путать с «zürnen mit» (глагол берёт другой предлог и падеж)",
+      "en": "not to be confused with 'zürnen mit' (the verb takes a different preposition and case)"
+    },
+    "examples": [
+      {
+        "de": "Er hatte einen mächtigen Zorn auf seinen Bruder.",
+        "ru": "Он был в сильном гневе на своего брата.",
+        "en": "He had a powerful anger at his brother."
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "zu-tun-haben-mit-dat",
+    "slug": {
+      "word": "zu-tun-haben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "zu tun haben",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "иметь дело с кем-л. / чем-л.",
+      "en": "to have to do with sb. / sth., to be dealing with sb. / sth."
+    },
+    "senseNote": {
+      "ru": "безличная идиома с фиксированным «es» — не общая конструкция с «tun»",
+      "en": "an impersonal idiom with a fixed 'es' — not a general construction with 'tun'"
+    },
+    "examples": [
+      {
+        "de": "Wir haben es hier mit einem ernsten Problem zu tun.",
+        "ru": "Мы имеем дело с серьёзной проблемой.",
+        "en": "We are dealing with a serious problem here.",
+        "lemmaForm": "haben"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zuernen-mit-dat",
+    "slug": {
+      "word": "zuernen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "zürnen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "гневаться на кого-л., дуться на кого-л.",
+      "en": "to be angry with sb."
+    },
+    "examples": [
+      {
+        "de": "Sie zürnt mit ihm.",
+        "ru": "Она сердится на него.",
+        "en": "She is angry with him."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
     "id": "zufrieden-mit-dat",
     "slug": {
       "word": "zufrieden",
@@ -5513,6 +20911,393 @@ export const rektionen: readonly Rektion[] = [
     "level": "A2",
     "sources": [
       "seed"
+    ]
+  },
+  {
+    "id": "zufriedengeben-mit-dat",
+    "slug": {
+      "word": "zufriedengeben",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "zufriedengeben",
+    "prep": "mit",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "довольствоваться чем-л.",
+      "en": "to be content with sth."
+    },
+    "examples": [
+      {
+        "de": "Er gibt sich mit dem Ergebnis zufrieden.",
+        "ru": "Он довольствуется результатом.",
+        "en": "He is content with the result.",
+        "lemmaForm": "gibt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zukommen-auf-akk",
+    "slug": {
+      "word": "zukommen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zukommen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "предстоять кому-л., ожидать кого-л. (о проблеме, расходах)",
+      "en": "to be about to face sb., to come sb.'s way (a problem, a cost)"
+    },
+    "examples": [
+      {
+        "de": "Hohe Kosten kommen auf uns zu.",
+        "ru": "Нас ждут большие расходы.",
+        "en": "High costs are coming our way."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zunehmen-an-dat",
+    "slug": {
+      "word": "zunehmen",
+      "prep": "an"
+    },
+    "pos": "verb",
+    "lemma": "zunehmen",
+    "prep": "an",
+    "case": "dat",
+    "gloss": {
+      "ru": "прибавлять в чём-л. (в весе, в силе)",
+      "en": "to gain in sth. (weight, strength)"
+    },
+    "examples": [
+      {
+        "de": "Der Wind nimmt an Stärke zu.",
+        "ru": "Ветер усиливается.",
+        "en": "The wind is gaining in strength.",
+        "lemmaForm": "nimmt"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "zurande-kommen-mit-dat",
+    "slug": {
+      "word": "zurande-kommen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "zurande kommen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "справляться с кем-л. / чем-л.",
+      "en": "to manage sth., to get along with sb."
+    },
+    "senseNote": {
+      "ru": "устойчивое выражение, синоним zurechtkommen, но отдельная лемма",
+      "en": "a fixed idiom synonymous with zurechtkommen, but its own separate headword"
+    },
+    "examples": [
+      {
+        "de": "Niemand ist mit dieser Aufgabe zurande gekommen.",
+        "ru": "Никто не справился с этой задачей.",
+        "en": "Nobody managed to get to grips with this task.",
+        "lemmaForm": "gekommen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zurechtkommen-mit-dat",
+    "slug": {
+      "word": "zurechtkommen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "zurechtkommen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "справляться с кем-л. / чем-л., ладить с кем-л.",
+      "en": "to cope with sb. / sth., to get along with sb."
+    },
+    "examples": [
+      {
+        "de": "Sie kommt mit den Kindern gut zurecht.",
+        "ru": "Она хорошо справляется с детьми.",
+        "en": "She copes well with the children.",
+        "lemmaForm": "kommt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zurueckfallen-auf-akk",
+    "slug": {
+      "word": "zurueckfallen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zurückfallen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "негативно отражаться на ком-л.",
+      "en": "to reflect badly on sb. / sth."
+    },
+    "senseNote": {
+      "ru": "на кого падает — переносится на кого-то как следствие, а не состояние, в которое возвращаешься",
+      "en": "who it falls on — passed onto someone as a consequence, not a state you relapse into"
+    },
+    "examples": [
+      {
+        "de": "Der Fehler fällt auf den Chef zurück.",
+        "ru": "Ошибка ложится на начальника.",
+        "en": "The mistake falls back on the boss.",
+        "lemmaForm": "fällt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "de.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zurueckfallen-in-akk",
+    "slug": {
+      "word": "zurueckfallen",
+      "prep": "in"
+    },
+    "pos": "verb",
+    "lemma": "zurückfallen",
+    "prep": "in",
+    "case": "akk",
+    "gloss": {
+      "ru": "возвращаться к чему-л. (о прежнем состоянии)",
+      "en": "to relapse into sth."
+    },
+    "senseNote": {
+      "ru": "в какое состояние возвращаешься — регресс, а не последствие для кого-то",
+      "en": "what state you relapse into — a regression, not a consequence for someone"
+    },
+    "examples": [
+      {
+        "de": "Er fällt in seinen alten Trott zurück.",
+        "ru": "Он снова скатывается к старой рутине.",
+        "en": "He is falling back into his old routine.",
+        "lemmaForm": "fällt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zurueckfuehren-auf-akk",
+    "slug": {
+      "word": "zurueckfuehren",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zurückführen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "объяснять что-л. чем-л., возводить к чему-л.",
+      "en": "to trace sth. back to sth., to attribute sth. to sth."
+    },
+    "examples": [
+      {
+        "de": "Die Ärzte führen die Krankheit auf einen Virus zurück.",
+        "ru": "Врачи связывают болезнь с вирусом.",
+        "en": "The doctors attribute the illness to a virus.",
+        "lemmaForm": "führen"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zurueckwirken-auf-akk",
+    "slug": {
+      "word": "zurueckwirken",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zurückwirken",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "оказывать обратное воздействие на что-л.",
+      "en": "to have a retroactive effect on sth."
+    },
+    "examples": [
+      {
+        "de": "Die Reaktion des Publikums wirkt auf die Schauspieler zurück.",
+        "ru": "Реакция публики оказывает обратное воздействие на актёров.",
+        "en": "The audience's reaction has a retroactive effect on the actors.",
+        "lemmaForm": "wirkt"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zusammenfassen-zu-dat",
+    "slug": {
+      "word": "zusammenfassen",
+      "prep": "zu"
+    },
+    "pos": "verb",
+    "lemma": "zusammenfassen",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "объединять что-л. во что-л.",
+      "en": "to combine sth. into sth."
+    },
+    "examples": [
+      {
+        "de": "Der Lehrer fasst die Teilnehmer zu Gruppen zusammen.",
+        "ru": "Учитель объединяет участников в группы.",
+        "en": "The teacher combines the participants into groups.",
+        "lemmaForm": "fasst"
+      }
+    ],
+    "sources": [
+      "duden"
+    ]
+  },
+  {
+    "id": "zusammensetzen-aus-dat",
+    "slug": {
+      "word": "zusammensetzen",
+      "prep": "aus"
+    },
+    "pos": "verb",
+    "lemma": "zusammensetzen",
+    "prep": "aus",
+    "case": "dat",
+    "reflexive": "akk",
+    "gloss": {
+      "ru": "состоять из чего-л.",
+      "en": "to consist of sth., to be made up of sth."
+    },
+    "examples": [
+      {
+        "de": "Die Kommission setzt sich aus zwölf Mitgliedern zusammen.",
+        "ru": "Комиссия состоит из двенадцати членов.",
+        "en": "The committee is composed of twelve members."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zusammenziehen-mit-dat",
+    "slug": {
+      "word": "zusammenziehen",
+      "prep": "mit"
+    },
+    "pos": "verb",
+    "lemma": "zusammenziehen",
+    "prep": "mit",
+    "case": "dat",
+    "gloss": {
+      "ru": "съезжаться жить с кем-л.",
+      "en": "to move in together with sb."
+    },
+    "examples": [
+      {
+        "de": "Sie will mit ihrem Freund zusammenziehen.",
+        "ru": "Она хочет съехаться со своим парнем.",
+        "en": "She wants to move in together with her boyfriend."
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zutreffen-auf-akk",
+    "slug": {
+      "word": "zutreffen",
+      "prep": "auf"
+    },
+    "pos": "verb",
+    "lemma": "zutreffen",
+    "prep": "auf",
+    "case": "akk",
+    "gloss": {
+      "ru": "относиться к кому-л. / чему-л., быть верным для кого-л.",
+      "en": "to apply to sb. / sth., to be true of sb. / sth."
+    },
+    "examples": [
+      {
+        "de": "Diese Beschreibung trifft auf ihn zu.",
+        "ru": "Это описание относится к нему.",
+        "en": "This description applies to him.",
+        "lemmaForm": "trifft"
+      }
+    ],
+    "sources": [
+      "en.wiktionary",
+      "duden"
+    ]
+  },
+  {
+    "id": "zwang-zu-dat",
+    "slug": {
+      "word": "zwang",
+      "prep": "zu"
+    },
+    "pos": "noun",
+    "lemma": "Zwang",
+    "article": "der",
+    "prep": "zu",
+    "case": "dat",
+    "gloss": {
+      "ru": "необходимость чего-л., принуждение к чему-л.",
+      "en": "a compulsion toward sth."
+    },
+    "examples": [
+      {
+        "de": "In der Werbung herrscht ein Zwang zur Kürze.",
+        "ru": "В рекламе царит необходимость краткости.",
+        "en": "In advertising there is a compulsion toward brevity."
+      }
+    ],
+    "sources": [
+      "duden"
     ]
   },
   {

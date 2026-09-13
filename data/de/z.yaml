@@ -1,5 +1,159 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+zahlen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "платить за что-л."
+        en: "to pay for sth."
+      examples:
+        - de: "Ich zahle für den Schaden."
+          ru: "Я плачу за ущерб."
+          en: "I am paying for the damage."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за что платишь — причина платежа, а не получатель"
+        en: "what you pay for — the reason for the payment, not the recipient"
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "платить кому-л. / куда-л. (получателю)"
+        en: "to pay sb./an institution (the recipient)"
+      examples:
+        - de: "Sie zahlt die Miete an den Vermieter."
+          ru: "Она платит арендную плату арендодателю."
+          en: "She pays the rent to the landlord."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "кому платишь — получатель платежа, а не причина"
+        en: "who you pay — the recipient of the payment, not the reason"
+
+zählen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "рассчитывать на кого-л."
+        en: "to count on sb., to rely on sb."
+      examples:
+        - de: "Ich zähle auf dich."
+          ru: "Я рассчитываю на тебя."
+          en: "I am counting on you."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zehren:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "изматывать что-л., подтачивать что-л."
+        en: "to sap sth., to wear on sth."
+      examples:
+        - de: "Die ständigen Aufregungen zehren an ihren Nerven."
+          ru: "Постоянные волнения изматывают её нервы."
+          en: "The constant excitement is wearing on her nerves."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "что подтачивает — силы, нервы, здоровье истощаются"
+        en: "what it wears on — strength, nerves, health being worn down"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "жить за счёт чего-л., существовать на какие-л. запасы"
+        en: "to live off sth."
+      examples:
+        - de: "Sie zehrten bereits von ihren Ersparnissen."
+          ru: "Они уже жили за счёт своих сбережений."
+          en: "They were already living off their savings."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за счёт чего живёшь — расходуешь имеющийся запас, а не изматываешься"
+        en: "what you live off — spending down a reserve, not being worn down"
+
+zeigen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "показывать на кого-л. / что-л."
+        en: "to point at sb. / sth."
+      examples:
+        - de: "Sie zeigt auf den Ausgang."
+          ru: "Она показывает на выход."
+          en: "She is pointing at the exit."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+ziehen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "тянуть за что-л."
+        en: "to pull on sth., to tug at sth."
+      examples:
+        - de: "Der Hund zieht an der Leine."
+          ru: "Собака тянет за поводок."
+          en: "The dog is pulling on the leash."
+      sources:
+        - "duden"
+
+Zorn:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "гнев на кого-л."
+        en: "anger at sb."
+      examples:
+        - de: "Er hatte einen mächtigen Zorn auf seinen Bruder."
+          ru: "Он был в сильном гневе на своего брата."
+          en: "He had a powerful anger at his brother."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "не путать с «zürnen mit» (глагол берёт другой предлог и падеж)"
+        en: "not to be confused with 'zürnen mit' (the verb takes a different preposition and case)"
+
+zu tun haben:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "иметь дело с кем-л. / чем-л."
+        en: "to have to do with sb. / sth., to be dealing with sb. / sth."
+      examples:
+        - de: "Wir haben es hier mit einem ernsten Problem zu tun."
+          ru: "Мы имеем дело с серьёзной проблемой."
+          en: "We are dealing with a serious problem here."
+          lemmaForm: haben
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "безличная идиома с фиксированным «es» — не общая конструкция с «tun»"
+        en: "an impersonal idiom with a fixed 'es' — not a general construction with 'tun'"
+
 zufrieden:
   pos: "adj"
   patterns:
@@ -15,6 +169,262 @@ zufrieden:
           en: "He is satisfied with the result."
       sources:
         - "seed"
+
+zufriedengeben:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "довольствоваться чем-л."
+        en: "to be content with sth."
+      examples:
+        - de: "Er gibt sich mit dem Ergebnis zufrieden."
+          ru: "Он довольствуется результатом."
+          en: "He is content with the result."
+          lemmaForm: gibt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zukommen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "предстоять кому-л., ожидать кого-л. (о проблеме, расходах)"
+        en: "to be about to face sb., to come sb.'s way (a problem, a cost)"
+      examples:
+        - de: "Hohe Kosten kommen auf uns zu."
+          ru: "Нас ждут большие расходы."
+          en: "High costs are coming our way."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zunehmen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "прибавлять в чём-л. (в весе, в силе)"
+        en: "to gain in sth. (weight, strength)"
+      examples:
+        - de: "Der Wind nimmt an Stärke zu."
+          ru: "Ветер усиливается."
+          en: "The wind is gaining in strength."
+          lemmaForm: nimmt
+      sources:
+        - "duden"
+
+zurande kommen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "справляться с кем-л. / чем-л."
+        en: "to manage sth., to get along with sb."
+      examples:
+        - de: "Niemand ist mit dieser Aufgabe zurande gekommen."
+          ru: "Никто не справился с этой задачей."
+          en: "Nobody managed to get to grips with this task."
+          lemmaForm: gekommen
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "устойчивое выражение, синоним zurechtkommen, но отдельная лемма"
+        en: "a fixed idiom synonymous with zurechtkommen, but its own separate headword"
+
+zurechtkommen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "справляться с кем-л. / чем-л., ладить с кем-л."
+        en: "to cope with sb. / sth., to get along with sb."
+      examples:
+        - de: "Sie kommt mit den Kindern gut zurecht."
+          ru: "Она хорошо справляется с детьми."
+          en: "She copes well with the children."
+          lemmaForm: kommt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zürnen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "гневаться на кого-л., дуться на кого-л."
+        en: "to be angry with sb."
+      examples:
+        - de: "Sie zürnt mit ihm."
+          ru: "Она сердится на него."
+          en: "She is angry with him."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zurückfallen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "негативно отражаться на ком-л."
+        en: "to reflect badly on sb. / sth."
+      examples:
+        - de: "Der Fehler fällt auf den Chef zurück."
+          ru: "Ошибка ложится на начальника."
+          en: "The mistake falls back on the boss."
+          lemmaForm: fällt
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на кого падает — переносится на кого-то как следствие, а не состояние, в которое возвращаешься"
+        en: "who it falls on — passed onto someone as a consequence, not a state you relapse into"
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "возвращаться к чему-л. (о прежнем состоянии)"
+        en: "to relapse into sth."
+      examples:
+        - de: "Er fällt in seinen alten Trott zurück."
+          ru: "Он снова скатывается к старой рутине."
+          en: "He is falling back into his old routine."
+          lemmaForm: fällt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "в какое состояние возвращаешься — регресс, а не последствие для кого-то"
+        en: "what state you relapse into — a regression, not a consequence for someone"
+
+zurückführen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "объяснять что-л. чем-л., возводить к чему-л."
+        en: "to trace sth. back to sth., to attribute sth. to sth."
+      examples:
+        - de: "Die Ärzte führen die Krankheit auf einen Virus zurück."
+          ru: "Врачи связывают болезнь с вирусом."
+          en: "The doctors attribute the illness to a virus."
+          lemmaForm: führen
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zurückwirken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "оказывать обратное воздействие на что-л."
+        en: "to have a retroactive effect on sth."
+      examples:
+        - de: "Die Reaktion des Publikums wirkt auf die Schauspieler zurück."
+          ru: "Реакция публики оказывает обратное воздействие на актёров."
+          en: "The audience's reaction has a retroactive effect on the actors."
+          lemmaForm: wirkt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zusammenfassen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "объединять что-л. во что-л."
+        en: "to combine sth. into sth."
+      examples:
+        - de: "Der Lehrer fasst die Teilnehmer zu Gruppen zusammen."
+          ru: "Учитель объединяет участников в группы."
+          en: "The teacher combines the participants into groups."
+          lemmaForm: fasst
+      sources:
+        - "duden"
+
+zusammensetzen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "состоять из чего-л."
+        en: "to consist of sth., to be made up of sth."
+      examples:
+        - de: "Die Kommission setzt sich aus zwölf Mitgliedern zusammen."
+          ru: "Комиссия состоит из двенадцати членов."
+          en: "The committee is composed of twelve members."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zusammenziehen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "съезжаться жить с кем-л."
+        en: "to move in together with sb."
+      examples:
+        - de: "Sie will mit ihrem Freund zusammenziehen."
+          ru: "Она хочет съехаться со своим парнем."
+          en: "She wants to move in together with her boyfriend."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+zutreffen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "относиться к кому-л. / чему-л., быть верным для кого-л."
+        en: "to apply to sb. / sth., to be true of sb. / sth."
+      examples:
+        - de: "Diese Beschreibung trifft auf ihn zu."
+          ru: "Это описание относится к нему."
+          en: "This description applies to him."
+          lemmaForm: trifft
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Zwang:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "необходимость чего-л., принуждение к чему-л."
+        en: "a compulsion toward sth."
+      examples:
+        - de: "In der Werbung herrscht ein Zwang zur Kürze."
+          ru: "В рекламе царит необходимость краткости."
+          en: "In advertising there is a compulsion toward brevity."
+      sources:
+        - "duden"
 
 Zweifel:
   pos: "noun"

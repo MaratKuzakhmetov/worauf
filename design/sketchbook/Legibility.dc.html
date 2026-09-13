@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600;700&family=Fira+Sans:wght@400;500;600&family=Fira+Mono&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #1a202c; } a:hover { color: #3182ce; }
+
+    /* Theme lives in a real stylesheet, so the switch is one class, not a dozen holes.
+       Dark is the navy blueprint from markgp.com; light is cool graph paper. */
+    .t-light {
+      --paper: #fbfcfe; --card: #ffffff; --panel: #eef2f7;
+      --ink: #1a202c; --ink-2: #6b7688; --ink-3: rgba(26,32,44,.22);
+      --hair: rgba(26,32,44,.1); --grid: rgba(26,32,44,.055); --mark: #ffe08a;
+      --akk: #1f3fcb; --dat: #b26205;
+      --en-bg: #1a202c; --en-fg: #fbfcfe; --ru-bg: transparent; --ru-fg: #1a202c;
+    }
+    .t-dark {
+      --paper: #151a26; --card: #1e2433; --panel: #232b3d;
+      --ink: #f7fafc; --ink-2: #9aa7bd; --ink-3: rgba(247,250,252,.24);
+      --hair: rgba(247,250,252,.12); --grid: rgba(247,250,252,.05); --mark: rgba(255,224,138,.3);
+      --akk: #7c93ff; --dat: #e9a13b;
+      --en-bg: #f7fafc; --en-fg: #151a26; --ru-bg: transparent; --ru-fg: #f7fafc;
+    }
+  </style>
+</helmet>
+
+<div class="{{themeClass}}" style="
+  width: 900px; height: 640px; overflow: hidden;
+  font-family: 'Shantell Sans', cursive;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  padding: 34px 40px;
+  box-sizing: border-box;
+">
+
+  <div style="display: flex; align-items: center; gap: 18px;">
+    <div style="font-size: 26px; font-weight: 700;">{{t.title}}</div>
+    <div style="flex: 1; height: 3px; background: var(--ink); border-radius: 2px;"></div>
+  </div>
+  <div style="font-size: 15px; font-weight: 600; color: var(--ink-2); margin-top: 8px; max-width: 46rem;">
+    {{t.sub}}
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 24px;">
+
+    <!-- marker -->
+    <div style="background: var(--card); border: 2px dashed var(--ink-2); border-radius: 5px; padding: 18px 20px;">
+      <div style="display: flex; align-items: baseline; gap: 9px;">
+        <span style="font-family: 'Fira Mono', monospace; font-size: 11px; letter-spacing: .1em; color: var(--ink-2);">SHANTELL SANS</span>
+        <span style="font-size: 13px; font-weight: 700; color: var(--ink-2);">{{t.markerVerdict}}</span>
+      </div>
+      <div style="font-family: 'Shantell Sans', cursive; margin-top: 14px;">
+        <div style="font-size: 25px; font-weight: 600;" lang="de">auf den Termin</div>
+        <div style="font-size: 25px; font-weight: 600; margin-top: 2px;" lang="de">auf dem Termin</div>
+        <div style="font-size: 15px; margin-top: 12px;" lang="de">für · über · Größe · maß · weiß</div>
+        <div style="font-size: 12px; margin-top: 10px;" lang="de">Ich freue mich auf den Urlaub.</div>
+      </div>
+      <div style="font-size: 13.5px; line-height: 1.5; margin-top: 15px;">{{t.markerBody}}</div>
+    </div>
+
+    <!-- the app's face -->
+    <div style="background: var(--card); border: 2px solid var(--ink); border-radius: 5px; padding: 18px 20px; box-shadow: 4px 5px 0 0 var(--ink-3);">
+      <div style="display: flex; align-items: baseline; gap: 9px;">
+        <span style="font-family: 'Fira Mono', monospace; font-size: 11px; letter-spacing: .1em; color: var(--ink-2);">FIRA SANS</span>
+        <span style="font-size: 13px; font-weight: 700;">{{t.firaVerdict}}</span>
+      </div>
+      <div style="font-family: 'Fira Sans', system-ui, sans-serif; margin-top: 14px;">
+        <div style="font-size: 25px; font-weight: 600;" lang="de">auf <span style="color: var(--akk);">den</span> Termin</div>
+        <div style="font-size: 25px; font-weight: 600; margin-top: 2px;" lang="de">auf <span style="color: var(--dat);">dem</span> Termin</div>
+        <div style="font-size: 15px; margin-top: 12px;" lang="de">für · über · Größe · maß · weiß</div>
+        <div style="font-size: 12px; margin-top: 10px;" lang="de">Ich freue mich auf den Urlaub.</div>
+      </div>
+      <div style="font-size: 13.5px; line-height: 1.5; margin-top: 15px;">{{t.firaBody}}</div>
+    </div>
+  </div>
+
+  <!-- the split -->
+  <div style="background: var(--panel); border: 2px solid var(--ink); border-radius: 5px; padding: 20px 22px; margin-top: 22px; box-shadow: 4px 5px 0 0 var(--ink-3);">
+    <div style="font-size: 19px; font-weight: 700;">{{t.splitTitle}}</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 12px;">
+      <div style="font-size: 14.5px; line-height: 1.5;">{{t.splitA}}</div>
+      <div style="font-size: 14.5px; line-height: 1.5;">{{t.splitB}}</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{
+  "dark": {"editor": "boolean", "default": false, "section": "Theme"},
+  "locale": {"editor": "enum", "options": ["en", "ru"], "default": "en", "section": "Theme"},
+  "$preview": {"width": 900, "height": 640}
+}'>
+class Component extends DCLogic {
+  renderVals() {
+    const dark = this.props.dark ?? false;
+    const locale = this.props.locale ?? 'en';
+
+    const themeClass = dark ? 't-dark' : 't-light';
+
+    const en = {
+      title: 'Where the marker has to stop',
+      sub: 'The whole product is one letter: den vs dem. Everything the aesthetic touches has to leave that pair alone.',
+      markerVerdict: '— not for German',
+      markerBody: 'The rounded terminals soften exactly the strokes that separate n from m, and the umlaut dots crowd the bowl at list sizes. A lovely voice, the wrong instrument for a case distinction.',
+      firaVerdict: '— keeps the German',
+      firaBody: "Already the app's face, already tested at these sizes, and the one place the case colours are allowed to land. Unchanged by this direction.",
+      splitTitle: 'So the direction splits by job, not by screen',
+      splitA: 'Marker takes the chrome: headings, labels, counts, buttons, section rules, the pen circle and the highlighter — plus the whole landing page, where there is no case to protect.',
+      splitB: 'Fira keeps the content: every German word, example, gloss and case tag. Colour stays reserved for case in both, so the sketchbook never brings an accent of its own.',
+    };
+
+    const ru = {
+      title: 'Где маркер обязан остановиться',
+      sub: 'Весь продукт — одна буква: den против dem. Всё, к чему прикасается стиль, эту пару обязано оставить в покое.',
+      markerVerdict: '— не для немецкого',
+      markerBody: 'Скруглённые окончания штрихов гасят ровно то, что отличает n от m, а точки умлаута на списочных размерах налезают на букву. Хороший голос и неверный инструмент для различения падежа.',
+      firaVerdict: '— держит немецкое',
+      firaBody: 'Уже шрифт приложения, уже проверен на этих размерах, и единственное место, где падежным цветам разрешено находиться. Этим направлением не затронут.',
+      splitTitle: 'Поэтому направление делится по роли, а не по экрану',
+      splitA: 'Маркеру — оформление: заголовки, подписи, счётчики, кнопки, линейки, обводка и маркерная заливка. И вся лендинг-страница, где падеж защищать не нужно.',
+      splitB: 'Fira — содержание: каждое немецкое слово, пример, глосса и метка падежа. Цвет в обоих случаях остаётся за падежом, и стиль не приносит собственного акцента.',
+    };
+
+    return { themeClass, t: locale === 'ru' ? ru : en };
+  }
+}
+</script>
+</body>
+</html>

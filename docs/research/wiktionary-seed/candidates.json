@@ -1,0 +1,3163 @@
+{
+  "rows": [
+    {
+      "lemma": "haben",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/haben#German",
+          "gloss": "about someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "fit",
+      "pos": "adj",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fit#German",
+          "gloss": "able, prepared, up to a task (able to perform adequately, in contrast to a prior or possibly future state of inadequacy)"
+        }
+      ]
+    },
+    {
+      "lemma": "machen",
+      "pos": "verb",
+      "prep": "aus",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/machen#German",
+          "gloss": "from something else"
+        }
+      ]
+    },
+    {
+      "lemma": "gehen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/gehen#German",
+          "gloss": "on/for a body part or sense"
+        }
+      ]
+    },
+    {
+      "lemma": "kommen",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/kommen#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "reden",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/reden#German",
+          "gloss": "q:less common"
+        }
+      ]
+    },
+    {
+      "lemma": "reden",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/reden#German",
+          "gloss": "about someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "passen",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/passen#German",
+          "gloss": "someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "passen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/passen#German",
+          "gloss": "someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "fein",
+      "pos": "adj",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fein#German",
+          "gloss": "for an act"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "fein",
+      "pos": "adj",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fein#German",
+          "gloss": "for someone"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "dicht",
+      "pos": "adj",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/dicht#German",
+          "gloss": "close"
+        }
+      ]
+    },
+    {
+      "lemma": "dicht",
+      "pos": "adj",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/dicht#German",
+          "gloss": "to something"
+        }
+      ]
+    },
+    {
+      "lemma": "Set",
+      "pos": "noun",
+      "prep": "aus",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Set#German",
+          "gloss": "of some items"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Set#German",
+          "gloss": "of some items"
+        }
+      ]
+    },
+    {
+      "lemma": "fertig",
+      "pos": "adj",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fertig#German",
+          "gloss": "ready to start; fully prepared"
+        }
+      ]
+    },
+    {
+      "lemma": "schlafen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schlafen#German",
+          "gloss": "to sleep on something; to wait and think before making a decision"
+        }
+      ]
+    },
+    {
+      "lemma": "stoßen",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/sto%C3%9Fen#German",
+          "gloss": "into/against something"
+        }
+      ]
+    },
+    {
+      "lemma": "treten",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/treten#German",
+          "gloss": "on(to) something"
+        }
+      ]
+    },
+    {
+      "lemma": "hängen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%A4ngen#German",
+          "gloss": "on something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%A4ngen#German",
+          "gloss": "someone"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%A4ngen#German",
+          "gloss": "on something"
+        }
+      ]
+    },
+    {
+      "lemma": "hängen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%A4ngen#German",
+          "gloss": "on(to) something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%A4ngen#German",
+          "gloss": "on(to) something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%A4ngen#German",
+          "gloss": "someone"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "bereit",
+      "pos": "adj",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bereit#German",
+          "gloss": "for something"
+        }
+      ]
+    },
+    {
+      "lemma": "beißen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bei%C3%9Fen#German",
+          "gloss": "with something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "melden",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/melden#German",
+          "gloss": "an advertisement, etc."
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "melden",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/melden#German",
+          "gloss": "to someone, especially a superior"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/melden#German",
+          "gloss": "with someone"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "scheißen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schei%C3%9Fen#German",
+          "gloss": "something, in something"
+        }
+      ]
+    },
+    {
+      "lemma": "scheißen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schei%C3%9Fen#German",
+          "gloss": "someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "handeln",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/handeln#German",
+          "gloss": "with respect to something else"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "eintreten",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/eintreten#German",
+          "gloss": "to kick [with auf (+ accusative)]"
+        }
+      ]
+    },
+    {
+      "lemma": "langen",
+      "pos": "verb",
+      "prep": "nach",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/langen#German",
+          "gloss": "for something"
+        }
+      ]
+    },
+    {
+      "lemma": "erinnern",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/erinnern#German",
+          "gloss": "against a proposal, law, etc."
+        }
+      ]
+    },
+    {
+      "lemma": "schimpfen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schimpfen#German",
+          "gloss": "to complain, to grouse, to bitch, to curse"
+        }
+      ]
+    },
+    {
+      "lemma": "wirken",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/wirken#German",
+          "gloss": "for/toward a goal or for a cause"
+        }
+      ]
+    },
+    {
+      "lemma": "durchfallen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/durchfallen#German",
+          "gloss": "an exam, a test"
+        }
+      ]
+    },
+    {
+      "lemma": "verdienen",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verdienen#German",
+          "gloss": "for"
+        }
+      ]
+    },
+    {
+      "lemma": "übersetzen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%BCbersetzen#German",
+          "gloss": "whereof"
+        }
+      ]
+    },
+    {
+      "lemma": "übersetzen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%BCbersetzen#German",
+          "gloss": "a location"
+        }
+      ]
+    },
+    {
+      "lemma": "einziehen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/einziehen#German",
+          "gloss": "to a location"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/einziehen#German",
+          "gloss": "in a location"
+        }
+      ]
+    },
+    {
+      "lemma": "aussprechen",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/aussprechen#German",
+          "gloss": "to pour one's heart out; to disbosom oneself"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "aussprechen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/aussprechen#German",
+          "gloss": "to talk things out (resolve a problem by talking)"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "ausgeben",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ausgeben#German",
+          "gloss": "on someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "fies",
+      "pos": "adj",
+      "prep": "vor",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fies#German",
+          "gloss": "disgusted"
+        }
+      ]
+    },
+    {
+      "lemma": "fies",
+      "pos": "adj",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fies#German",
+          "gloss": "by something"
+        }
+      ]
+    },
+    {
+      "lemma": "starren",
+      "pos": "verb",
+      "prep": "nach",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/starren#German",
+          "gloss": "towards someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "starren",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/starren#German",
+          "gloss": "into someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "starren",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/starren#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "vorbeigehen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vorbeigehen#German",
+          "gloss": "someone/something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vorbeigehen#German",
+          "gloss": "someone"
+        }
+      ]
+    },
+    {
+      "lemma": "Abgabe",
+      "pos": "noun",
+      "prep": "an",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Abgabe#German",
+          "gloss": "delivery, delivering (often used for delivery of pharmaceuticals drugs, chemical liquids, other substances and agents)"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Abgabe#German",
+          "gloss": "submission, submitting, issuing (e.g., taxes, a bid, a rating)"
+        }
+      ]
+    },
+    {
+      "lemma": "kleben",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/kleben#German",
+          "gloss": "onto"
+        }
+      ]
+    },
+    {
+      "lemma": "kleben",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/kleben#German",
+          "gloss": "to"
+        }
+      ]
+    },
+    {
+      "lemma": "steuern",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/steuern#German",
+          "gloss": "[with auf (+ accusative)] to use something or someone for support"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "schwitzen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schwitzen#German",
+          "gloss": "on a mental task"
+        }
+      ]
+    },
+    {
+      "lemma": "neugierig",
+      "pos": "adj",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/neugierig#German",
+          "gloss": "nosy, curious, inquisitive, prying"
+        }
+      ]
+    },
+    {
+      "lemma": "üben",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%BCben#German",
+          "gloss": "(doing) an action"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%BCben#German",
+          "gloss": "(doing) an action"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "nachkommen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/nachkommen#German",
+          "gloss": "someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "verschieden",
+      "pos": "adj",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verschieden#German",
+          "gloss": "from someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "fortfahren",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/fortfahren#German",
+          "gloss": "with an action, etc."
+        }
+      ]
+    },
+    {
+      "lemma": "wegsehen",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/wegsehen#German",
+          "gloss": "to look the other way, to turn a blind eye (to purposely ignore something wrong)"
+        }
+      ]
+    },
+    {
+      "lemma": "wegsehen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/wegsehen#German",
+          "gloss": "something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/wegsehen#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "Vertrauen",
+      "pos": "noun",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Vertrauen#German",
+          "gloss": "gerund of vertrauen; trust (confidence in or reliance on some person or quality)"
+        }
+      ]
+    },
+    {
+      "lemma": "verwandeln",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verwandeln#German",
+          "gloss": "into someone/something else"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verwandeln#German",
+          "gloss": "into someone/something else"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "picken",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/picken#German",
+          "gloss": "onto"
+        }
+      ]
+    },
+    {
+      "lemma": "picken",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/picken#German",
+          "gloss": "to"
+        }
+      ]
+    },
+    {
+      "lemma": "bewerben",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bewerben#German",
+          "gloss": "to apply (submit oneself as a candidate)"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "bewerben",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bewerben#German",
+          "gloss": "q:colloquial"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bewerben#German",
+          "gloss": "in response to an advertisement, etc."
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "wimmeln",
+      "pos": "verb",
+      "prep": "vor",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/wimmeln#German",
+          "gloss": "with"
+        }
+      ]
+    },
+    {
+      "lemma": "bemühen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bem%C3%BChen#German",
+          "gloss": "with something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "einprägen",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/einpr%C3%A4gen#German",
+          "gloss": "someone"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "schämen",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/sch%C3%A4men#German",
+          "gloss": "to be ashamed or (less often) embarrassed, bashful"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "umfallen",
+      "pos": "verb",
+      "prep": "um",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/umfallen#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "begründen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/begr%C3%BCnden#German",
+          "gloss": "by doing something, with an argument"
+        }
+      ]
+    },
+    {
+      "lemma": "ansetzen",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ansetzen#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "schwanger",
+      "pos": "adj",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schwanger#German",
+          "gloss": "with a child"
+        }
+      ]
+    },
+    {
+      "lemma": "übertreten",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%BCbertreten#German",
+          "gloss": "from"
+        }
+      ]
+    },
+    {
+      "lemma": "übertreten",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%BCbertreten#German",
+          "gloss": "into"
+        }
+      ]
+    },
+    {
+      "lemma": "verabschieden",
+      "pos": "verb",
+      "prep": "aus",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verabschieden#German",
+          "gloss": "somewhere"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "ätzen",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%C3%A4tzen#German",
+          "gloss": "someone"
+        }
+      ]
+    },
+    {
+      "lemma": "Gelegenheit",
+      "pos": "noun",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Gelegenheit#German",
+          "gloss": "for/to"
+        }
+      ]
+    },
+    {
+      "lemma": "anordnen",
+      "pos": "verb",
+      "prep": "nach",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/anordnen#German",
+          "gloss": "according to some property"
+        }
+      ]
+    },
+    {
+      "lemma": "zuführen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zuf%C3%BChren#German",
+          "gloss": "to somewhere"
+        }
+      ]
+    },
+    {
+      "lemma": "klarkommen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klarkommen#German",
+          "gloss": "l:very,colloquial,youth,_,slang,chiefly in the negative,implying a certain emotional emphasis"
+        }
+      ]
+    },
+    {
+      "lemma": "beharren",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/beharren#German",
+          "gloss": "in something, e.g. an opinion"
+        }
+      ]
+    },
+    {
+      "lemma": "beharren",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/beharren#German",
+          "gloss": "somewhere"
+        }
+      ]
+    },
+    {
+      "lemma": "rechtfertigen",
+      "pos": "verb",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/rechtfertigen#German",
+          "gloss": "for doing something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "verknallen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verknallen#German",
+          "gloss": "to become infatuated, to fall for, to get a crush"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "einhalten",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/einhalten#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "hinfahren",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/hinfahren#German",
+          "gloss": "to quickly wipe (away) (not repeatedly) [with über (+ accusative)]"
+        }
+      ]
+    },
+    {
+      "lemma": "Verdienst",
+      "pos": "noun",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Verdienst#German",
+          "gloss": "for something"
+        }
+      ]
+    },
+    {
+      "lemma": "rassistisch",
+      "pos": "adj",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/rassistisch#German",
+          "gloss": "racist"
+        }
+      ]
+    },
+    {
+      "lemma": "Evolution",
+      "pos": "noun",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Evolution#German",
+          "gloss": "to something"
+        }
+      ]
+    },
+    {
+      "lemma": "anfahren",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/anfahren#German",
+          "gloss": "something, e.g. the wind, current"
+        }
+      ]
+    },
+    {
+      "lemma": "tendieren",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/tendieren#German",
+          "gloss": "towards something"
+        }
+      ]
+    },
+    {
+      "lemma": "ergehen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ergehen#German",
+          "gloss": "on a subject"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "erkundigen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/erkundigen#German",
+          "gloss": "about someone"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "vorbeischauen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vorbeischauen#German",
+          "gloss": "past someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "vorbeikommen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vorbeikommen#German",
+          "gloss": "for some purpose"
+        }
+      ]
+    },
+    {
+      "lemma": "vorbeikommen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vorbeikommen#German",
+          "gloss": "a location, an obstacle, etc."
+        }
+      ]
+    },
+    {
+      "lemma": "abgehärtet",
+      "pos": "adj",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/abgeh%C3%A4rtet#German",
+          "gloss": "hardened, hardy"
+        }
+      ]
+    },
+    {
+      "lemma": "verrechnen",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verrechnen#German",
+          "gloss": "to miscalculate"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "drankommen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/drankommen#German",
+          "gloss": "something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/drankommen#German",
+          "gloss": "something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/drankommen#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "verbeißen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verbei%C3%9Fen#German",
+          "gloss": "something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "rammeln",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/rammeln#German",
+          "gloss": "someone/something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/rammeln#German",
+          "gloss": "someone/something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "letzen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/letzen#German",
+          "gloss": "on"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "vorbeifahren",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vorbeifahren#German",
+          "gloss": "a vehicle, etc."
+        }
+      ]
+    },
+    {
+      "lemma": "abdriften",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/abdriften#German",
+          "gloss": "to lapse, to fall into, to get caught up in a state or environment framed as negative"
+        }
+      ]
+    },
+    {
+      "lemma": "ereifern",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ereifern#German",
+          "gloss": "about"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "auflehnen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/auflehnen#German",
+          "gloss": "to lean (one's arms) on"
+        }
+      ]
+    },
+    {
+      "lemma": "kleckern",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/kleckern#German",
+          "gloss": "to drip, to spill (cause a liquid or mushy substance to fall in irregular drops) [auxiliary haben]"
+        }
+      ]
+    },
+    {
+      "lemma": "Waschung",
+      "pos": "noun",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Waschung#German",
+          "gloss": "the act of washing"
+        }
+      ]
+    },
+    {
+      "lemma": "anliegen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/anliegen#German",
+          "gloss": "on/to"
+        }
+      ]
+    },
+    {
+      "lemma": "schlampen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schlampen#German",
+          "gloss": "to work in a careless, sloppy manner; to slack; to botch"
+        }
+      ]
+    },
+    {
+      "lemma": "auskennen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/auskennen#German",
+          "gloss": "(on) e.g. an island"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "auskennen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/auskennen#German",
+          "gloss": "a subject"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "schuld sein",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/schuld%20sein#German",
+          "gloss": "for something"
+        }
+      ]
+    },
+    {
+      "lemma": "ein Hühnchen rupfen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ein%20H%C3%BChnchen%20rupfen#German",
+          "gloss": "with someone"
+        }
+      ]
+    },
+    {
+      "lemma": "sich den Kopf zerbrechen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/sich%20den%20Kopf%20zerbrechen#German",
+          "gloss": "about something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/sich%20den%20Kopf%20zerbrechen#German",
+          "gloss": "about something"
+        }
+      ]
+    },
+    {
+      "lemma": "entlieben",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/entlieben#German",
+          "gloss": "with someone"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "auskotzen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/auskotzen#German",
+          "gloss": "about someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "einrechnen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/einrechnen#German",
+          "gloss": "cost, time needed, etc."
+        }
+      ]
+    },
+    {
+      "lemma": "Bescheid wissen",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Bescheid%20wissen#German",
+          "gloss": "about someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "Abhärtung",
+      "pos": "noun",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/Abh%C3%A4rtung#German",
+          "gloss": "resilience, hardening, induration, toughening up"
+        }
+      ]
+    },
+    {
+      "lemma": "verschauen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/verschauen#German",
+          "gloss": "with"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "hochschauen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/hochschauen#German",
+          "gloss": "at someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "hochschauen",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/hochschauen#German",
+          "gloss": "from something/somewhere"
+        }
+      ]
+    },
+    {
+      "lemma": "hochschauen",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/hochschauen#German",
+          "gloss": "to a role model"
+        }
+      ]
+    },
+    {
+      "lemma": "rumsen",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/rumsen#German",
+          "gloss": "against"
+        }
+      ]
+    },
+    {
+      "lemma": "runterschauen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/runterschauen#German",
+          "gloss": "on someone"
+        }
+      ]
+    },
+    {
+      "lemma": "reinfallen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/reinfallen#German",
+          "gloss": "to fall into"
+        }
+      ]
+    },
+    {
+      "lemma": "reinfallen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/reinfallen#German",
+          "gloss": "to fall for, to be deceived by"
+        }
+      ]
+    },
+    {
+      "lemma": "zustürmen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zust%C3%BCrmen#German",
+          "gloss": "up to someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "zuvortun",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zuvortun#German",
+          "gloss": "in/at something"
+        }
+      ]
+    },
+    {
+      "lemma": "relaten",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/relaten#German",
+          "gloss": "to"
+        }
+      ]
+    },
+    {
+      "lemma": "relaten",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/relaten#German",
+          "gloss": "with"
+        }
+      ]
+    },
+    {
+      "lemma": "rumkommen",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/rumkommen#German",
+          "gloss": "for someone/in something"
+        }
+      ]
+    },
+    {
+      "lemma": "zubewegen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zubewegen#German",
+          "gloss": "to"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zubewegen#German",
+          "gloss": "to"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "hineinbewegen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/hineinbewegen#German",
+          "gloss": "somewhere"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "aufpudeln",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/aufpudeln#German",
+          "gloss": "to get upset, to get worked up about something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "herumopern",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/herumopern#German",
+          "gloss": "with a tool, subject, etc."
+        }
+      ]
+    },
+    {
+      "lemma": "höchste Eisenbahn",
+      "pos": "noun",
+      "prep": "für",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/h%C3%B6chste%20Eisenbahn#German",
+          "gloss": "q:optionally"
+        }
+      ]
+    },
+    {
+      "lemma": "ablästern",
+      "pos": "verb",
+      "prep": "über",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/abl%C3%A4stern#German",
+          "gloss": "to gossip, usually in a disdainful way; to bitch about; to speak ill of someone behind their back"
+        }
+      ]
+    },
+    {
+      "lemma": "narrisch",
+      "pos": "adj",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/narrisch#German",
+          "gloss": "something or someone"
+        }
+      ]
+    },
+    {
+      "lemma": "abängstigen",
+      "pos": "verb",
+      "prep": "um",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ab%C3%A4ngstigen#German",
+          "gloss": "about"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "klick machen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "on something, e.g. a camera or keyboard button"
+        }
+      ]
+    },
+    {
+      "lemma": "klick machen",
+      "pos": "verb",
+      "prep": "bei",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "for someone"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "for someone"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "to click; to suddenly feel excitement or enthusiasm"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "to click; to fall in love"
+        }
+      ]
+    },
+    {
+      "lemma": "klick machen",
+      "pos": "verb",
+      "prep": "zwischen",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "for someone/something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/klick%20machen#German",
+          "gloss": "with someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "hereinfinden",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/hereinfinden#German",
+          "gloss": "something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "ein Liedchen singen können",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/ein%20Liedchen%20singen%20k%C3%B6nnen#German",
+          "gloss": "the thing known"
+        }
+      ]
+    },
+    {
+      "lemma": "zu Rande kommen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zu%20Rande%20kommen#German",
+          "gloss": "with someone/something"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/zu%20Rande%20kommen#German",
+          "gloss": "with someone/something"
+        }
+      ]
+    },
+    {
+      "lemma": "abrutschen",
+      "pos": "verb",
+      "prep": "von",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/abrutschen#German",
+          "gloss": "to slip off, to slip from something"
+        }
+      ]
+    },
+    {
+      "lemma": "reinscheißen",
+      "pos": "verb",
+      "prep": "in",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/reinschei%C3%9Fen#German",
+          "gloss": "to shit into, to defecate into"
+        }
+      ]
+    },
+    {
+      "lemma": "vergucken",
+      "pos": "verb",
+      "prep": "in",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/vergucken#German",
+          "gloss": "with"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "herschieben",
+      "pos": "verb",
+      "prep": "vor",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/herschieben#German",
+          "gloss": "to push something in front"
+        },
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/herschieben#German",
+          "gloss": "to put off something"
+        }
+      ],
+      "reflexive": true
+    },
+    {
+      "lemma": "goonen",
+      "pos": "verb",
+      "prep": "auf",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/goonen#German",
+          "gloss": "to goon (to masturbate)"
+        }
+      ]
+    },
+    {
+      "lemma": "goonen",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/goonen#German",
+          "gloss": "to something"
+        }
+      ]
+    },
+    {
+      "lemma": "aufstacheln",
+      "pos": "verb",
+      "prep": "gegen",
+      "case": "akk",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-prep-for-existing-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/aufstacheln#German",
+          "gloss": "against"
+        }
+      ]
+    },
+    {
+      "lemma": "sein Auslangen finden",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/sein%20Auslangen%20finden#German",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "lemma": "bebildern",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "en.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "en.wiktionary",
+          "url": "https://en.wiktionary.org/wiki/bebildern#German",
+          "gloss": "to illustrate"
+        }
+      ]
+    },
+    {
+      "lemma": "treiben",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "de.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "de.wiktionary",
+          "url": "https://de.wiktionary.org/wiki/treiben",
+          "gloss": "den Geschlechtsverkehr ausüben"
+        }
+      ]
+    },
+    {
+      "lemma": "laden",
+      "pos": "verb",
+      "prep": "zu",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "de.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "de.wiktionary",
+          "url": "https://de.wiktionary.org/wiki/laden",
+          "gloss": "jemanden (zu einer Veranstaltung) [[einladen]]"
+        }
+      ]
+    },
+    {
+      "lemma": "vorübergehen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "de.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "de.wiktionary",
+          "url": "https://de.wiktionary.org/wiki/vor%C3%BCbergehen"
+        }
+      ]
+    },
+    {
+      "lemma": "schrauben",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "de.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "de.wiktionary",
+          "url": "https://de.wiktionary.org/wiki/schrauben",
+          "gloss": "an etwas basteln, es verändern, indem (kleine) Veränderungen (schrittweise) ausprobiert/umgesetzt werden"
+        }
+      ]
+    },
+    {
+      "lemma": "zoffen",
+      "pos": "verb",
+      "prep": "mit",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "de.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "de.wiktionary",
+          "url": "https://de.wiktionary.org/wiki/zoffen",
+          "gloss": "mit jemandem Ärger/[[Streit]], ‚Zoff‘ haben"
+        }
+      ]
+    },
+    {
+      "lemma": "gebrechen",
+      "pos": "verb",
+      "prep": "an",
+      "case": "dat",
+      "confidence": "medium",
+      "editions": [
+        "de.wiktionary"
+      ],
+      "status": "new-word",
+      "sources": [
+        {
+          "edition": "de.wiktionary",
+          "url": "https://de.wiktionary.org/wiki/gebrechen",
+          "gloss": "fehlen, mangeln"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "lemma": "hängen",
+      "pos": "verb",
+      "prep": "an",
+      "cases": [
+        "dat",
+        "akk"
+      ]
+    },
+    {
+      "lemma": "einziehen",
+      "pos": "verb",
+      "prep": "in",
+      "cases": [
+        "dat",
+        "akk"
+      ]
+    },
+    {
+      "lemma": "picken",
+      "pos": "verb",
+      "prep": "auf",
+      "cases": [
+        "akk",
+        "dat"
+      ]
+    }
+  ],
+  "unsupported": [
+    {
+      "lemma": "kommen",
+      "pos": "verb",
+      "prep": "durch",
+      "case": "akk",
+      "edition": "en.wiktionary",
+      "url": "https://en.wiktionary.org/wiki/kommen#German",
+      "gloss": "something"
+    },
+    {
+      "lemma": "stehen",
+      "pos": "verb",
+      "prep": "hinter",
+      "case": "dat",
+      "edition": "en.wiktionary",
+      "url": "https://en.wiktionary.org/wiki/stehen#German",
+      "gloss": "someone"
+    },
+    {
+      "lemma": "jagen",
+      "pos": "verb",
+      "prep": "durch",
+      "case": "akk",
+      "edition": "en.wiktionary",
+      "url": "https://en.wiktionary.org/wiki/jagen#German",
+      "gloss": "through"
+    },
+    {
+      "lemma": "auskommen",
+      "pos": "verb",
+      "prep": "ohne",
+      "case": "akk",
+      "edition": "en.wiktionary",
+      "url": "https://en.wiktionary.org/wiki/auskommen#German",
+      "gloss": "without something"
+    },
+    {
+      "lemma": "schämen",
+      "pos": "verb",
+      "prep": "wegen",
+      "case": "gen",
+      "edition": "en.wiktionary",
+      "url": "https://en.wiktionary.org/wiki/sch%C3%A4men#German",
+      "gloss": "q:less often",
+      "reflexive": true
+    },
+    {
+      "lemma": "kennzeichnen",
+      "pos": "verb",
+      "prep": "als",
+      "case": "akk",
+      "edition": "de.wiktionary",
+      "url": "https://de.wiktionary.org/wiki/kennzeichnen",
+      "gloss": "mit [[Markierung]], [[Symbol]]/[[Zeichen]]/[[Kennzeichen]] versehen"
+    }
+  ]
+}

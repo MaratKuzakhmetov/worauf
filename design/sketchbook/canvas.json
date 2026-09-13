@@ -1,0 +1,31 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 900, "title": "Browse" },
+    { "file": "Trainer.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 900, "title": "Practice" },
+    { "file": "Legibility.dc.html", "x": 0, "y": 1060, "w": 900, "h": 640, "title": "Where the marker stops" }
+  ],
+  "annotations": [
+    {
+      "id": "switches",
+      "x": 0,
+      "y": -240,
+      "w": 500,
+      "text": "Two pages, the two that exist: Browse and Practice.\n\nEach artboard has two switches above it — Dark and Locale (en / ru).\n\nLocale moves only the explanation layer. The German never shifts, and the case names stay German (AKKUSATIV, DATIV) in both, per the project's own rule."
+    },
+    {
+      "id": "palette",
+      "x": 1560,
+      "y": -240,
+      "w": 500,
+      "text": "Light is near-white paper (#fbfcfe) with pure-white panes; the tint is left only in the header strips, so the grid reads as paper without greying the screen.\n\nDark is the navy blueprint from markgp.com — #151a26 paper, #1e2433 panes, #f7fafc ink.\n\nNo decorative accent in either: the sketch marks are drawn in ink, so the only colour on screen is grammatical case. The yellow is a highlighter — material, not meaning."
+    },
+    {
+      "id": "why-legibility",
+      "x": 0,
+      "y": 1780,
+      "w": 500,
+      "text": "Not a page — the constraint that governs how far the marker face can go.\n\nden vs dem is the whole product, so German stays in Fira Sans everywhere and the marker takes only headings, labels, counts and buttons."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}

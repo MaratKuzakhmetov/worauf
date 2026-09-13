@@ -1,5 +1,52 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+Kampf:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "борьба против кого-л. / чего-л."
+        en: "fight against sb. / sth."
+      examples:
+        - de: "Der Kampf gegen den Klimawandel geht weiter."
+          ru: "Борьба против изменения климата продолжается."
+          en: "The fight against climate change continues."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "против кого/чего борьба — противник или угроза"
+        en: "what the fight is against — an opponent or a threat"
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "борьба за что-л."
+        en: "fight for sth."
+      examples:
+        - de: "Der Kampf um den Sieg war hart."
+          ru: "Борьба за победу была тяжёлой."
+          en: "The fight for victory was tough."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "за что борьба — цель или приз"
+        en: "what the fight is for — a goal or a prize"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "борьба за что-л. (ради цели)"
+        en: "fight for sth. (for a cause)"
+      examples:
+        - de: "Der Kampf für eine bessere Zukunft vereint viele Menschen."
+          ru: "Борьба за лучшее будущее объединяет многих людей."
+          en: "The fight for a better future unites many people."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "ради чего борьба — цель, которую защищают (не приз, который добывают)"
+        en: "the cause the fight is for — something defended, not a prize to be won"
+
 kämpfen:
   pos: "verb"
   patterns:
@@ -49,6 +96,75 @@ kämpfen:
       sources:
         - "seed"
 
+kauen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "грызть что-л. (нервно)"
+        en: "to chew/gnaw at sth. (nervously)"
+      examples:
+        - de: "Er kaut nervös an den Fingernägeln."
+          ru: "Он нервно грызёт ногти."
+          en: "He is nervously chewing his fingernails."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+kehren:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "считаться с чем-л. (обычно с отрицанием)"
+        en: "to pay heed to sth. (usually negated)"
+      examples:
+        - de: "Er kehrt sich nicht an die Kritik."
+          ru: "Он не считается с критикой."
+          en: "He does not pay heed to the criticism."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "почти всегда с отрицанием «не»"
+        en: "almost always used with a negation"
+
+Klage:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "жалоба на что-л."
+        en: "complaint about sth."
+      examples:
+        - de: "Es gab viele Klagen über die schlechte Bedienung."
+          ru: "Поступало много жалоб на плохое обслуживание."
+          en: "There were many complaints about the poor service."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "бытовая жалоба на что-л. — не судебный иск"
+        en: "an everyday complaint about sth. — not a lawsuit"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "иск против кого-л. (юр.)"
+        en: "lawsuit against sb. (legal)"
+      examples:
+        - de: "Er erhob Klage gegen seinen ehemaligen Arbeitgeber."
+          ru: "Он подал иск против своего бывшего работодателя."
+          en: "He filed a lawsuit against his former employer."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "судебный иск против кого-л. — юридический смысл"
+        en: "a formal lawsuit against sb. — the legal sense"
+
 klagen:
   pos: "verb"
   patterns:
@@ -63,6 +179,166 @@ klagen:
           en: "She complains of the headache."
       sources:
         - "prototype"
+
+klarkommen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "справляться с кем-л. / чем-л., ладить с кем-л."
+        en: "to cope with sb. / sth., to get along with sb."
+      examples:
+        - de: "Mit meinen Brüdern komme ich gut klar."
+          ru: "Со своими братьями я хорошо лажу."
+          en: "I get along well with my brothers."
+          lemmaForm: komme
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+klingeln:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "звонить, вызывая кого-л. (звонком)"
+        en: "to ring for sb. (to summon by bell)"
+      examples:
+        - de: "Er klingelte nach dem Zimmerkellner."
+          ru: "Он позвонил, вызывая коридорного."
+          en: "He rang for the room service waiter."
+      sources:
+        - "duden"
+
+kommen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "быть родом откуда-л."
+        en: "to come from sth. / somewhere (origin)"
+      examples:
+        - de: "Sie kommt aus einer kleinen Stadt."
+          ru: "Она родом из маленького города."
+          en: "She comes from a small town."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "откуда родом — происхождение, а не то, до чего наконец дошли руки"
+        en: "where you are from — origin, not something you finally got around to"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "наконец найти время на что-л."
+        en: "to get around to sth."
+      examples:
+        - de: "Ich komme nicht zum Schreiben."
+          ru: "Я никак не могу выкроить время написать."
+          en: "I just can't get around to writing."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "до чего дошли руки — упущенное время, а не происхождение"
+        en: "what you finally got around to — time you found, not where you are from"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "додуматься до чего-л., вспомнить что-л."
+        en: "to think of sth., to come up with sth."
+      examples:
+        - de: "Ich komme nicht auf seinen Namen."
+          ru: "Я не могу вспомнить его имя."
+          en: "I can't think of his name."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "до чего додумался — идея или воспоминание, возникшее в голове"
+        en: "what you think of — an idea or memory that occurs to you"
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "лишиться чего-л. (в т.ч. жизни)"
+        en: "to lose sth. (incl. one's life)"
+      examples:
+        - de: "Bei dem Unfall kam er ums Leben."
+          ru: "В этой аварии он погиб."
+          en: "He lost his life in the accident."
+          lemmaForm: kam
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чего лишился — утрата, а не то, до чего додумался"
+        en: "what you lose — a loss, not something you think of"
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "раздобыть что-л., завладеть чем-л."
+        en: "to get hold of sth., to obtain sth."
+      examples:
+        - de: "Wie bist du an diese Informationen gekommen?"
+          ru: "Как ты раздобыл эту информацию?"
+          en: "How did you get hold of this information?"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "что раздобыл — предмет или сведения, которыми завладел"
+        en: "what you get hold of — an object or information you obtain"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "быть вызванным чем-л., проистекать из чего-л."
+        en: "to stem from sth., to be caused by sth."
+      examples:
+        - de: "Das kommt vom vielen Sitzen."
+          ru: "Это от долгого сидения."
+          en: "That comes from sitting too much."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "от чего это — причина, а не географическое происхождение (ср. aus)"
+        en: "what causes it — a cause, not a geographic origin (cf. aus)"
+    - prep: "mit"
+      case: "dat"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "приставать к кому-л. с чем-л. (разг., с досадой)"
+        en: "to come to sb. with sth. (colloquial, often exasperated)"
+      examples:
+        - de: "Komm mir nicht mit solchen Ausreden!"
+          ru: "Не приставай ко мне с такими отговорками!"
+          en: "Don't come to me with such excuses!"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с чем пристаёшь — раздражающий довод или предмет"
+        en: "what you bring up — an annoying argument or object"
+
+Konzentration:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "сосредоточенность на чём-л."
+        en: "concentration on sth."
+      examples:
+        - de: "Ihre Konzentration auf die Aufgabe war beeindruckend."
+          ru: "Её сосредоточенность на задаче впечатляла."
+          en: "Her concentration on the task was impressive."
+      sources:
+        - "duden"
 
 konzentrieren:
   pos: "verb"
@@ -80,6 +356,56 @@ konzentrieren:
       sources:
         - "seed"
       reflexive: "akk"
+
+Kopfzerbrechen machen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      reflexive: "dat"
+      gloss:
+        ru: "ломать голову над чем-л., переживать из-за чего-л."
+        en: "to rack one's brain about sth., to fret over sth."
+      examples:
+        - de: "Sie macht sich über die Zukunft ihrer Firma Kopfzerbrechen."
+          ru: "Она ломает голову над будущим своей фирмы."
+          en: "She is racking her brain over her company's future."
+          lemmaForm: macht
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+kranken:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "страдать от чего-л. (о хроническом недостатке)"
+        en: "to be hampered by sth. (a chronic flaw)"
+      examples:
+        - de: "Das Projekt krankt an schlechter Planung."
+          ru: "Проект страдает от плохого планирования."
+          en: "The project is hampered by poor planning."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+kratzen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "царапать что-л., скрестись у чего-л."
+        en: "to scratch at sth."
+      examples:
+        - de: "Der Hund kratzt an der Tür."
+          ru: "Собака скребётся у двери."
+          en: "The dog is scratching at the door."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 Kritik:
   pos: "noun"

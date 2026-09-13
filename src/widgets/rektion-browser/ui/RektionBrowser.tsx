@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useRef, useState, type ReactNode } from 'react';
 import { prepositionSlug, prepositions } from '@/entities/preposition';
-import { findWord, prepositionCounts, words } from '@/entities/rektion';
+import { datasetVersion, findWord, prepositionCounts, words } from '@/entities/rektion';
 import { PrepositionList } from '@/features/preposition-list';
 import { WordList } from '@/features/word-list';
 import { routes } from '@/shared/config';
@@ -104,6 +104,12 @@ export function RektionBrowser({ lang, children }: { lang: Locale; children: Rea
           · {t.prepositions(prepositions.length)}
         </span>
         <span className={styles.keys}>{t.keyboardHint}</span>
+        {/*
+          The dataset's content hash (ADR 0005), which makes a stale client diagnosable from
+          one screenshot — there is no telemetry to ask instead, and a cached-offline reader
+          reporting a wrong case is otherwise indistinguishable from a data bug.
+        */}
+        <span className={styles.build}>{t.buildLabel(datasetVersion)}</span>
       </footer>
     </div>
   );

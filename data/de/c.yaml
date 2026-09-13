@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+Chance:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "шанс на что-л."
+        en: "chance of sth."
+      examples:
+        - de: "Er hat eine gute Chance auf den Sieg."
+          ru: "У него хороший шанс на победу."
+          en: "He has a good chance of victory."
+      sources:
+        - "en.wiktionary"
+        - "duden"

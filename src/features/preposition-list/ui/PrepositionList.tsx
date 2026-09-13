@@ -33,6 +33,9 @@ export function PrepositionList({ lang, counts, word, selectedPrep }: Props) {
           const slug = prepositionSlug(key);
           const pattern = word?.patterns.find((p) => p.prep === key);
           const dimmed = available !== null && pattern === undefined;
+          // The other half of the same selection: dimmed prepositions drop to `--ink-2`,
+          // lit ones take the marker swipe (docs/DESIGN.md §14.4).
+          const lit = available !== null && pattern !== undefined;
           const selected = key === selectedPrep;
 
           // Always the preposition's own page. Clicking one never combines it with the
@@ -43,7 +46,12 @@ export function PrepositionList({ lang, counts, word, selectedPrep }: Props) {
             <li key={key}>
               <Link
                 href={target}
-                className={[styles.row, dimmed ? styles.dim : '', selected ? styles.on : '']
+                className={[
+                  styles.row,
+                  dimmed ? styles.dim : '',
+                  lit ? styles.lit : '',
+                  selected ? styles.on : '',
+                ]
                   .filter(Boolean)
                   .join(' ')}
                 data-row=""

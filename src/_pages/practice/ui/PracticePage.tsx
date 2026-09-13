@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { defaultConfig, SESSION_LENGTH, type SavedRun } from '@/entities/exercise';
+import { ExportProgress } from '@/features/progress-export';
+import { ImportProgress } from '@/features/progress-import';
 import { strings, type Locale } from '@/shared/i18n';
 import { AppHeader } from '@/widgets/app-header';
 import { Trainer, loadRun } from '@/widgets/trainer';
@@ -44,6 +46,17 @@ export function PracticePage({ lang }: { lang: Locale }) {
             <button type="button" className={styles.button} onClick={() => setRunning(true)}>
               {t.startSession}
             </button>
+
+            {/*
+              * Carrying progress in and out lives here, on the way IN to a drill, and not on
+              * the summary screen: it is housekeeping, and putting it after a session would
+              * make the end of a drill a place where the app asks for something. There is
+              * deliberately no count of what is "due" anywhere near it (docs/TRAINER.md §6).
+              */}
+            <div className={styles.transfer}>
+              <ExportProgress lang={lang} />
+              <ImportProgress lang={lang} />
+            </div>
           </div>
         )}
       </main>

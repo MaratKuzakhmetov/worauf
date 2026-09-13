@@ -1,5 +1,76 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+haben:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "иметь что-л. (роман, интрижку) с кем-л."
+        en: "to have a thing going with sb. (a relationship)"
+      examples:
+        - de: "Sie hat etwas mit ihrem Kollegen."
+          ru: "У неё что-то с коллегой."
+          en: "She has a thing going with her colleague."
+          lemmaForm: hat
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "разговорная идиома об отношениях, не буквальное обладание"
+        en: "a colloquial idiom about a relationship, not literal possession"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "получать пользу от чего-л., иметь прок в чём-л."
+        en: "to get sth. out of sth., to benefit from sth."
+      examples:
+        - de: "Ich habe viel von diesem Kurs."
+          ru: "Этот курс даёт мне много пользы."
+          en: "I am getting a lot out of this course."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "какую пользу или отдачу получаешь от чего-л. — не буквальное обладание"
+        en: "what benefit or payoff you get from sth. — not literal possession"
+
+haften:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "нести ответственность за кого-л. / что-л."
+        en: "to be liable for sb. / sth."
+      examples:
+        - de: "Die Eltern haften für ihre Kinder."
+          ru: "Родители несут ответственность за своих детей."
+          en: "Parents are liable for their children."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "юридическая ответственность за кого-л. / что-л."
+        en: "legal liability for sb. / sth."
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "быть неразрывно связанным с кем-л. / чем-л. (о недостатке, подозрении), липнуть к чему-л."
+        en: "to cling to sb. / sth. (a flaw, a suspicion), to stick to sth."
+      examples:
+        - de: "Ein Makel haftet an dem Politiker."
+          ru: "На политике лежит изъян."
+          en: "A flaw clings to the politician."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "что к кому-л. прилипло или относится — не про юридическую ответственность"
+        en: "what clings to or is associated with sb. — not about legal liability"
+
 halten:
   pos: "verb"
   patterns:
@@ -32,6 +103,56 @@ halten:
       senseNote:
         ru: "какого ты мнения — оцениваешь целиком"
         en: "what you think of sb. or sth. — you judge it as a whole"
+    - prep: "an"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "придерживаться чего-л., соблюдать что-л."
+        en: "to abide by sth., to comply with sth."
+      examples:
+        - de: "Er hält sich nicht an die Regeln."
+          ru: "Он не соблюдает правила."
+          en: "He doesn't abide by the rules."
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чему следуешь — правилу или обещанию, а не мнению"
+        en: "what you comply with — a rule or a promise, not an opinion"
+
+Haltung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "позиция по отношению к чему-л."
+        en: "stance/attitude toward sth."
+      examples:
+        - de: "Er hat eine klare Haltung zu diesem Thema."
+          ru: "У него чёткая позиция по этому вопросу."
+          en: "He has a clear stance on this topic."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Handel:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "торговля чем-л."
+        en: "trade in sth."
+      examples:
+        - de: "Der Handel mit Waffen ist streng geregelt."
+          ru: "Торговля оружием строго регулируется."
+          en: "The trade in weapons is strictly regulated."
+      sources:
+        - "duden"
 
 handeln:
   pos: "verb"
@@ -48,6 +169,55 @@ handeln:
           en: "It is a matter of a mistake."
       sources:
         - "prototype"
+      senseNote:
+        ru: "о чём вообще идёт речь — безличная конструкция, а не торговля или тема книги"
+        en: "what it concerns in general — an impersonal construction, not trade or a book's subject"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "торговать чем-л., вести дела с кем-л."
+        en: "to trade in sth., to do business with sb."
+      examples:
+        - de: "Deutschland handelt mit vielen Ländern."
+          ru: "Германия торгует со многими странами."
+          en: "Germany trades with many countries."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с кем или чем торгуешь — партнёр или товар"
+        en: "who or what you trade with — the partner or the goods"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "быть о чём-л. (о книге, фильме)"
+        en: "to be about sth. (a book, a film)"
+      examples:
+        - de: "Der Roman handelt von einer Liebesgeschichte."
+          ru: "Роман повествует об истории любви."
+          en: "The novel is about a love story."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "о чём произведение — предмет книги или фильма, а не сделка"
+        en: "what a work is about — a book's or film's subject, not a deal"
+
+Heirat:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "женитьба на ком-л. / замужество за кем-л."
+        en: "marriage to sb."
+      examples:
+        - de: "Sie ging eine Heirat mit einem Kollegen ein."
+          ru: "Она вступила в брак с коллегой."
+          en: "She entered into marriage with a colleague."
+      sources:
+        - "duden"
 
 helfen:
   pos: "verb"
@@ -63,6 +233,275 @@ helfen:
           en: "Can you help me with the homework?"
       sources:
         - "prototype"
+
+heranmachen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "браться за что-л. энергично, приступать к чему-л."
+        en: "to set about sth., to tackle sth."
+      examples:
+        - de: "Er macht sich an die Reparatur heran."
+          ru: "Он берётся за ремонт."
+          en: "He sets about the repair."
+          lemmaForm: macht
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herantreten:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "обращаться к кому-л. (с просьбой, вопросом)"
+        en: "to approach sb. (with a request, a question)"
+      examples:
+        - de: "Mit dieser Frage bin ich direkt an den Minister herangetreten."
+          ru: "С этим вопросом я обратился напрямую к министру."
+          en: "I approached the minister directly with this question."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herausschauen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "перепадать кому-л. от чего-л. (разг., о выгоде)"
+        en: "to be in it for sb. (colloquial, about a gain)"
+      examples:
+        - de: "Bei diesem Geschäft schaut nicht viel für uns heraus."
+          ru: "От этой сделки нам не много перепадёт."
+          en: "There's not much in this deal for us."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+hereinfallen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "попадаться на чью-л. удочку, поддаваться обману"
+        en: "to fall for sth. (a trick, a scam)"
+      examples:
+        - de: "Sie fällt auf den Trick herein."
+          ru: "Она попадается на эту уловку."
+          en: "She falls for the trick."
+          lemmaForm: fällt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herfallen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "набрасываться на кого-л., резко критиковать кого-л."
+        en: "to pounce on sb., to attack/criticize sb. harshly"
+      examples:
+        - de: "Die Presse fällt über den Politiker her."
+          ru: "Пресса набрасывается на политика."
+          en: "The press pounces on the politician."
+          lemmaForm: fällt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+hermachen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "с энтузиазмом браться за что-л., набрасываться на еду"
+        en: "to dig into sth., to get stuck into sth. eagerly"
+      examples:
+        - de: "Die Kinder machten sich über das Obst her."
+          ru: "Дети набросились на фрукты."
+          en: "The kids dug into the fruit."
+      senseNote:
+        ru: "с энтузиазмом приступать к чему-л. (еда, работа) — не то же, что агрессивно набрасываться на кого-л. (herfallen über)"
+        en: "eagerly diving into sth. (food, work) — distinct from aggressively attacking sb. (herfallen über)"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herrschen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "править кем-л. / чем-л."
+        en: "to rule over sb. / sth."
+      examples:
+        - de: "Der König herrscht über seinen Staat."
+          ru: "Король правит своим государством."
+          en: "The king rules over his state."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herschieben:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "постоянно откладывать что-л. (перен.)"
+        en: "to keep putting sth. off, to procrastinate on sth."
+      examples:
+        - de: "Er hat die Entscheidung lange vor sich hergeschoben."
+          ru: "Он долго откладывал это решение."
+          en: "He kept putting off the decision for a long time."
+          lemmaForm: hergeschoben
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herumhacken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "постоянно придираться к кому-л."
+        en: "to pick on sb., to nag at sb."
+      examples:
+        - de: "Der Trainer hackt dauernd auf ihr herum."
+          ru: "Тренер постоянно придирается к ней."
+          en: "The coach keeps picking on her."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herumschrauben:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "возиться с чем-л., пытаться наладить что-л."
+        en: "to tinker with sth., to fiddle with sth."
+      examples:
+        - de: "Er schraubt schon seit Stunden an seinem Motorrad herum."
+          ru: "Он уже несколько часов возится со своим мотоциклом."
+          en: "He has been tinkering with his motorcycle for hours."
+          lemmaForm: schraubt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+herumspuken:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      gloss:
+        ru: "не давать покоя, крутиться в голове у кого-л. (перен.)"
+        en: "to haunt sb.'s mind, to keep swirling around in sb.'s head (figuratively)"
+      examples:
+        - de: "Ihm spuken immer neue Ideen im Kopf herum."
+          ru: "У него в голове постоянно крутятся новые идеи."
+          en: "New ideas keep swirling around in his head."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+hetzen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "натравливать кого-л. на кого-л."
+        en: "to sic sb. on sb., to set (an animal) on sb."
+      examples:
+        - de: "Er hetzt den Hund auf den Einbrecher."
+          ru: "Он натравливает собаку на грабителя."
+          en: "He sics the dog on the burglar."
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+
+Hilfe:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "помощь кому-л."
+        en: "help for sb."
+      examples:
+        - de: "Er organisiert Hilfe für behinderte Kinder."
+          ru: "Он организует помощь детям-инвалидам."
+          en: "He is organising help for disabled children."
+      sources:
+        - "duden"
+
+hindern:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "мешать кому-л. в чём-л., не давать сделать что-л."
+        en: "to prevent sb. from sth."
+      examples:
+        - de: "Der Lärm hindert mich an der Arbeit."
+          ru: "Шум мешает мне работать."
+          en: "The noise prevents me from working."
+      sources:
+        - "duden"
+
+hineinspielen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "влиять на что-л., иметь значение для чего-л. (перен.)"
+        en: "to play into sth., to have a bearing on sth. (figuratively)"
+      examples:
+        - de: "In diese Entscheidung spielen verschiedene Gesichtspunkte hinein."
+          ru: "В это решение играют роль разные соображения."
+          en: "Various considerations play into this decision."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+hinweggehen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "не обращать внимания на что-л., игнорировать что-л."
+        en: "to disregard sth., to pass over sth."
+      examples:
+        - de: "Er geht taktvoll über die Anspielung hinweg."
+          ru: "Он тактично не обращает внимания на намёк."
+          en: "He tactfully disregards the allusion."
+          lemmaForm: geht
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 hinweisen:
   pos: "verb"
@@ -114,3 +553,67 @@ Hoffnung:
           en: "The hope for peace remains."
       sources:
         - "prototype"
+
+horchen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "прислушиваться к кому-л. / чему-л."
+        en: "to listen out for sb. / sth."
+      examples:
+        - de: "Sie horcht auf jedes Geräusch."
+          ru: "Она прислушивается к каждому звуку."
+          en: "She listens out for every sound."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+hören:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "слушаться кого-л."
+        en: "to heed sb., to listen to sb."
+      examples:
+        - de: "Er hört nicht auf seinen Vater."
+          ru: "Он не слушается отца."
+          en: "He doesn't listen to his father."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Hunger:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "жажда, стремление к чему-л. (перен.)"
+        en: "hunger for sth. (figurative)"
+      examples:
+        - de: "Ihr Hunger nach Gerechtigkeit ist groß."
+          ru: "Её стремление к справедливости велико."
+          en: "Her hunger for justice is great."
+      sources:
+        - "duden"
+
+hungern:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "жаждать чего-л."
+        en: "to crave sth."
+      examples:
+        - de: "Sie hungert nach Anerkennung."
+          ru: "Она жаждет признания."
+          en: "She craves recognition."
+      sources:
+        - "en.wiktionary"
+        - "duden"

@@ -4,6 +4,9 @@ export { buildItem, kindsFor, gapArticle, casesFor, isCorrect, normalise, shuffl
 export type { Random } from './build';
 export {
   startSession,
+  resumeSession,
+  sessionFrom,
+  orderCandidates,
   planItems,
   reduce,
   isFinished,
@@ -12,7 +15,13 @@ export {
   SESSION_LENGTH,
   RETRY_GAP,
 } from './session';
-export type { Session, SessionAction, SessionConfig } from './session';
+export type {
+  PatternWeight,
+  Session,
+  SessionAction,
+  SessionConfig,
+  StreamFor,
+} from './session';
 export {
   startRun,
   advance,
@@ -20,6 +29,7 @@ export {
   restoreRun,
   isSavedRun,
   seededRandom,
+  streamsFor,
   newSeed,
 } from './run';
 export type { Run, SavedRun } from './run';

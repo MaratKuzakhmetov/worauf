@@ -5,8 +5,8 @@
   gap: var(--space-3);
   min-height: var(--header-height);
   padding: var(--space-2) var(--space-4);
-  background: var(--card);
-  border-bottom: 1px solid var(--rule);
+  /* No fill: the sheet drawn on the body runs up through the header (§14.4). */
+  border-bottom: 2px solid var(--ink);
 }
 
 .brand {
@@ -37,13 +37,13 @@
 
 .modes {
   display: flex;
-  border: 1px solid var(--rule);
+  border: 2px solid var(--ink);
 }
 
 .mode {
   padding: 0.4375rem 0.875rem;
-  font-family: var(--font-cond), Arial, sans-serif;
-  font-weight: 500;
+  font-family: var(--font-marker), 'Comic Sans MS', cursive;
+  font-weight: 700;
   font-size: var(--step-1);
   color: var(--ink-2);
 }

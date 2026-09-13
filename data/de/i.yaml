@@ -1,5 +1,69 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+identisch:
+  pos: "adj"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "идентичный кому-л. / чему-л., тождественный кому-л. / чему-л."
+        en: "identical to sb. / sth."
+      examples:
+        - de: "Er ist identisch mit dem Gesuchten."
+          ru: "Он идентичен разыскиваемому."
+          en: "He is identical to the wanted person."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Identität:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "тождественность с кем-л. / чем-л., совпадение с кем-л. / чем-л."
+        en: "identity with sb. / sth., being identical to sb. / sth."
+      examples:
+        - de: "Die Polizei bestätigte die Identität des Verdächtigen mit dem gesuchten Täter."
+          ru: "Полиция подтвердила тождество подозреваемого с разыскиваемым преступником."
+          en: "The police confirmed the suspect's identity with the wanted perpetrator."
+      sources:
+        - "duden"
+
+impfen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "прививать от чего-л."
+        en: "to vaccinate against sth."
+      examples:
+        - de: "Die Ärztin impft die Kinder gegen Masern."
+          ru: "Врач прививает детей от кори."
+          en: "The doctor is vaccinating the children against measles."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Information:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "информация о чём-л."
+        en: "information about sth."
+      examples:
+        - de: "Er sammelte Informationen über das neue Projekt."
+          ru: "Он собирал информацию о новом проекте."
+          en: "He gathered information about the new project."
+      sources:
+        - "duden"
+
 informieren:
   pos: "verb"
   patterns:

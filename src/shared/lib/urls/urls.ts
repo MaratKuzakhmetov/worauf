@@ -22,11 +22,20 @@ const UNSET_ORIGIN = 'https://worauf.invalid';
 
 export type SiteConfig = { origin: string; basePath: string };
 
+/**
+ * `basePath` is a parameter of the functions below and stays one — the normalisation it gets
+ * there is tested and describes a real bug class. What is gone is reading it from the
+ * environment: `NEXT_PUBLIC_BASE_PATH` was removed from `next.config.mjs` with ADR 0004
+ * (subdomain, served from the root), so routing no longer applies one. Were the variable
+ * still honoured here, setting it would produce canonical and hreflang URLs pointing at a
+ * prefix no route answers on — and per ADR 0006 it would also narrow the service worker's
+ * scope and silently disable offline. One deployment fact, one place that knows it.
+ */
 export function siteConfig(): SiteConfig {
   // Direct member access, not a computed key — Next inlines these at build time.
   return {
     origin: process.env.NEXT_PUBLIC_SITE_ORIGIN ?? UNSET_ORIGIN,
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? '',
+    basePath: '',
   };
 }
 

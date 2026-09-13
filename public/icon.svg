@@ -1,0 +1,22 @@
+<!--
+  `width`/`height` are not decoration: a viewBox alone gives an SVG no intrinsic size, and
+  Chrome's manifest icon decoder refuses a sizeless image — "Download error or resource
+  isn't a valid image" in the console, with the icon silently absent from the install prompt.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="worauf">
+  <!--
+    The wordmark's own idea, cropped to an icon: `wo` in the Akkusativ colour because the
+    name is the rule the app teaches (docs/DESIGN.md §12). Values are the light-theme
+    --paper, --ink and --akk tokens; an SVG in `public/` cannot read CSS custom properties,
+    so they are literal here for the same reason app/manifest.ts repeats them.
+
+    Deliberately maskable-safe: the glyphs sit inside the middle 80%, so a platform that
+    crops to a circle takes nothing off them.
+  -->
+  <rect width="512" height="512" fill="#eeefea"/>
+  <text x="256" y="256"
+        font-family="Fira Sans Condensed, Fira Sans, Helvetica Neue, Arial, sans-serif"
+        font-size="248" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <tspan fill="#1f3fcb">wo</tspan><tspan fill="#16191c">r?</tspan>
+  </text>
+</svg>

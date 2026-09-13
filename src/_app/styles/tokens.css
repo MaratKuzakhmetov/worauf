@@ -1,20 +1,49 @@
 /*
- * Design tokens — docs/DESIGN.md §3.
- * Rule: colour means case, and nothing else. Selection and focus are ink/paper
- * inversion, never a fourth colour. Do not add a colour here without changing that doc.
+ * Design tokens — docs/DESIGN.md §14.2 («чертёжная бумага»), which supersedes the §3 table.
+ *
+ * Rule, unchanged and now stricter: colour means case, and nothing else. The chrome has no
+ * accent colour of its own — pen strokes, rules and borders are drawn in ink — so the only
+ * colour on any screen is grammatical case. Selection and focus are ink/paper inversion,
+ * never a fourth colour. Do not add a colour here without changing that doc.
+ *
+ * `--mark` is the one addition to the palette and is deliberately NOT a text colour: it is
+ * a highlighter swipe behind letters. Material, not meaning.
  */
 
 :root {
   color-scheme: light;
 
-  --paper: #eeefea;
+  /* Near-white on purpose: a grey ground reads as a dimmed screen, not as paper. */
+  --paper: #fbfcfe;
   --card: #ffffff;
-  --ink: #16191c;
-  --ink-2: #5a6169;
-  --rule: #d6d9d2;
+  /* The only surface that keeps a tint — column headers, status bar. */
+  --panel: #eef2f7;
+
+  --ink: #1a202c;
+  /*
+   * Measured, not eyeballed. The value first written into §14.2 (#6b7688) came off a mockup
+   * where it only ever sat on white; against the two other grounds it failed AA — 4.47:1 on
+   * --paper and 4.09:1 on --panel — and left no headroom for a muted state derived from it.
+   * #5a6474 keeps the old token's darkness and takes its hue toward the navy of this
+   * direction: 5.98:1 on --card, 5.83:1 on --paper, 5.32:1 on --panel.
+   */
+  --ink-2: #5a6474;
+  /* Hairlines, borders and the offset "pen" shadow: one ink at low alpha, so a rule laid
+     over the paper grid lets the grid through instead of covering it. Replaces --rule. */
+  --ink-3: rgba(26, 32, 44, 0.22);
+
+  --grid: rgba(26, 32, 44, 0.055);
+  --mark: #ffe08a;
 
   --akk: #1f3fcb;
-  --dat: #b26205;
+  /*
+   * Darkened from #b26205. That value was the marginal one in the whole palette: 4.52:1 on
+   * --card (passing by 0.02), 4.41:1 on --paper and 4.02:1 on --panel — so the Dativ label,
+   * the smallest and most load-bearing text in the app, failed AA on two of the three
+   * grounds. #9c5504 is the same ochre a step darker: 5.65 / 5.51 / 5.03. The hue is
+   * unchanged, so the blue/orange pair §3 relies on for deuteranopia is unaffected.
+   */
+  --dat: #9c5504;
   --gen: #a81e63;
 
   --step-0: 0.75rem;
@@ -37,15 +66,25 @@
   --touch-target: 2.75rem;
 }
 
+/*
+ * Dark is a navy blueprint rather than a neutral grey: the values come from the owner's own
+ * site (markgp.com) — #1a202c body, #171923 deeper, #f7fafc ink — so the two properties read
+ * as one hand. Case colours keep their existing dark variants untouched.
+ */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     color-scheme: dark;
 
-    --paper: #131614;
-    --card: #1b1f1d;
-    --ink: #e8eae4;
-    --ink-2: #9aa29b;
-    --rule: #2c322e;
+    --paper: #151a26;
+    --card: #1e2433;
+    --panel: #232b3d;
+
+    --ink: #f7fafc;
+    --ink-2: #9aa7bd;
+    --ink-3: rgba(247, 250, 252, 0.24);
+
+    --grid: rgba(247, 250, 252, 0.05);
+    --mark: rgba(255, 224, 138, 0.3);
 
     --akk: #7c93ff;
     --dat: #e9a13b;
@@ -56,11 +95,16 @@
 :root[data-theme='dark'] {
   color-scheme: dark;
 
-  --paper: #131614;
-  --card: #1b1f1d;
-  --ink: #e8eae4;
-  --ink-2: #9aa29b;
-  --rule: #2c322e;
+  --paper: #151a26;
+  --card: #1e2433;
+  --panel: #232b3d;
+
+  --ink: #f7fafc;
+  --ink-2: #9aa7bd;
+  --ink-3: rgba(247, 250, 252, 0.24);
+
+  --grid: rgba(247, 250, 252, 0.05);
+  --mark: rgba(255, 224, 138, 0.3);
 
   --akk: #7c93ff;
   --dat: #e9a13b;

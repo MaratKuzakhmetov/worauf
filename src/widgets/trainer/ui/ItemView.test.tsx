@@ -46,6 +46,14 @@ describe('after a wrong answer', () => {
     show(built0().label);
     expect(screen.getByText(/wo → Dativ \/ wohin → Akkusativ/)).toBeDefined();
   });
+
+  it('announces the verdict in a live region — the visible colour and border say nothing to a screen reader', () => {
+    if (!item) throw new Error('no article item for warten auf');
+    show(built0().label);
+    const status = screen.getByRole('status');
+    expect(status.textContent).toMatch(/Wrong/);
+    expect(status.textContent).toContain(item.answer);
+  });
 });
 
 describe('after a right answer', () => {
@@ -53,6 +61,12 @@ describe('after a right answer', () => {
     if (!item) throw new Error('no article item for warten auf');
     show(item.answer);
     expect(screen.queryByText(/You have to know it/)).toBeNull();
+  });
+
+  it('announces the verdict in a live region', () => {
+    if (!item) throw new Error('no article item for warten auf');
+    show(item.answer);
+    expect(screen.getByRole('status').textContent).toMatch(/Correct/);
   });
 });
 

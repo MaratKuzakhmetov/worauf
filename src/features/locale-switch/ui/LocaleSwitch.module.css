@@ -1,6 +1,6 @@
 .languages {
   display: flex;
-  border: 1px solid var(--rule);
+  border: 2px solid var(--ink);
 }
 
 .language {

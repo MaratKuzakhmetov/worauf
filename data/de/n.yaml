@@ -20,6 +20,39 @@ nachdenken:
       sources:
         - "seed"
 
+nachtreten:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "добивать кого-л. критикой, когда он уже повержен (перен.)"
+        en: "to kick sb. when they're down (figuratively, further attack sb. already defeated)"
+      examples:
+        - de: "Gegen den entlassenen Minister wurde in der Presse nachgetreten."
+          ru: "Прессa продолжала добивать уже уволенного министра."
+          en: "The press kept kicking the dismissed minister while he was down."
+          lemmaForm: nachgetreten
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+neidisch:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "завистливый по отношению к кому-л."
+        en: "envious/jealous of sb."
+      examples:
+        - de: "Er ist neidisch auf seinen Bruder."
+          ru: "Он завидует своему брату."
+          en: "He is jealous of his brother."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 neigen:
   pos: "verb"
   patterns:
@@ -34,3 +67,51 @@ neigen:
           en: "He tends towards exaggeration."
       sources:
         - "prototype"
+
+Neigung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "склонность к чему-л."
+        en: "tendency towards sth."
+      examples:
+        - de: "Sie hat eine Neigung zur Korpulenz."
+          ru: "У неё есть склонность к полноте."
+          en: "She has a tendency towards being overweight."
+      sources:
+        - "duden"
+
+nesteln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "теребить, возиться с чем-л. пальцами"
+        en: "to fumble with sth., to fiddle with sth."
+      examples:
+        - de: "Sie nestelt nervös an ihrer Krawatte."
+          ru: "Она нервно теребит свой галстук."
+          en: "She is nervously fiddling with her tie."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+notwendig:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "необходимый для кого-л. / чего-л."
+        en: "necessary for sb. / sth."
+      examples:
+        - de: "Diese Fertigkeiten sind für den Beruf notwendig."
+          ru: "Эти навыки необходимы для этой профессии."
+          en: "These skills are necessary for this profession."
+      sources:
+        - "en.wiktionary"
+        - "duden"

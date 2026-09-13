@@ -1,5 +1,322 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+sagen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "высказываться по поводу чего-л., говорить о чём-л."
+        en: "to say sth. about sth., to comment on sth."
+      examples:
+        - de: "Möchtest du noch etwas zu diesem Thema sagen?"
+          ru: "Хочешь ещё что-нибудь сказать по этой теме?"
+          en: "Would you like to say anything more on this topic?"
+      sources:
+        - "duden"
+
+sammeln:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "собирать средства на что-л. / для кого-л."
+        en: "to collect money for sth. / sb."
+      examples:
+        - de: "Sie sammeln für die Erdbebenopfer."
+          ru: "Они собирают средства для жертв землетрясения."
+          en: "They are collecting for the earthquake victims."
+      sources:
+        - "duden"
+
+Sammlung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "сбор средств на что-л. / для кого-л."
+        en: "a collection of money for sth. / sb."
+      senseNote:
+        ru: "сбор денег ради цели — не собрание предметов"
+        en: "raising money for a cause — not a collection of objects"
+      examples:
+        - de: "In der Schule läuft eine Sammlung für das Rote Kreuz."
+          ru: "В школе идёт сбор средств для Красного Креста."
+          en: "The school is running a collection for the Red Cross."
+      sources:
+        - "duden"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "собрание, коллекция чего-л."
+        en: "a collection of sth."
+      senseNote:
+        ru: "собрание предметов или произведений — не сбор денег"
+        en: "a collection of objects or works — not a fundraiser"
+      examples:
+        - de: "Das Museum zeigt eine Sammlung von Gemälden."
+          ru: "Музей показывает коллекцию картин."
+          en: "The museum is showing a collection of paintings."
+      sources:
+        - "duden"
+
+sauer:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "злой на кого-л. (разг.)"
+        en: "mad at sb., annoyed at sb. (colloquial)"
+      examples:
+        - de: "Sie ist sauer auf ihren Bruder."
+          ru: "Она злится на своего брата."
+          en: "She is mad at her brother."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+schaben:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "тереться о что-л., скрести обо что-л."
+        en: "to scrape/rub against sth."
+      examples:
+        - de: "Das rechte Vorderrad schabt am Kotflügel."
+          ru: "Правое переднее колесо трётся о крыло."
+          en: "The right front wheel scrapes against the fender."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+schalten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "переключать что-л. на что-л. (режим, состояние)"
+        en: "to switch sth. to sth. (a mode, a setting)"
+      examples:
+        - de: "Sie schaltet das Gerät auf Automatik."
+          ru: "Она переключает прибор на автоматический режим."
+          en: "She switches the device to automatic mode."
+      sources:
+        - "duden"
+        - "de.wiktionary"
+
+scharf:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "жаждущий чего-л. (разг.)"
+        en: "keen on sth., eager for sth. (colloquial)"
+      examples:
+        - de: "Er ist scharf auf den neuen Job."
+          ru: "Он жаждет получить новую работу."
+          en: "He is keen on the new job."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+schauen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "придавать значение чему-л., ценить что-л. (южн.-нем., австр., швейц.)"
+        en: "to value sth., to be mindful of sth. (southern German, Austrian, Swiss)"
+      examples:
+        - de: "Er schaut auf Sauberkeit."
+          ru: "Он ценит чистоту."
+          en: "He values cleanliness."
+      tags:
+        - "regional"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чему придаёшь значение — приоритет, региональный вариант"
+        en: "what you value — a priority, a regional variant"
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "присматривать за кем-л., проведывать кого-л."
+        en: "to look after sb., to check on sb."
+      examples:
+        - de: "Schau mal nach den Kindern."
+          ru: "Присмотри за детьми."
+          en: "Please check on the children."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за кем присматриваешь — забота о человеке, а не оценка чего-л."
+        en: "who you check on — caring for a person, not valuing sth."
+
+schäumen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "быть вне себя от чего-л. (о ярости), кипеть от чего-л."
+        en: "to foam/seethe with sth. (rage)"
+      examples:
+        - de: "Er schäumte vor Wut."
+          ru: "Он кипел от ярости."
+          en: "He was foaming with rage."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+scheiden:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "уходить с должности, покидать что-л. (офиц.)"
+        en: "to leave sth., to retire from sth. (formal)"
+      examples:
+        - de: "Er scheidet aus dem Dienst."
+          ru: "Он уходит со службы."
+          en: "He is leaving the service."
+      sources:
+        - "duden"
+
+scheren:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "заботиться о чём-л. (обычно с отрицанием)"
+        en: "to care about sth. (usually negated)"
+      examples:
+        - de: "Er schert sich nicht um die Vorschriften."
+          ru: "Ему нет дела до предписаний."
+          en: "He does not care about the regulations."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "почти всегда с отрицанием «не»"
+        en: "almost always used with a negation"
+
+scheuen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "бояться чего-л., избегать чего-л. (уклоняться)"
+        en: "to shy away from sth."
+      examples:
+        - de: "Er scheut sich vor der Verantwortung."
+          ru: "Он избегает ответственности."
+          en: "He shies away from responsibility."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+schieben:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "сваливать вину, ответственность на кого-л."
+        en: "to pin sth. on sb., to shift the blame onto sb."
+      examples:
+        - de: "Er schiebt die Missstände auf die Partei."
+          ru: "Он сваливает недостатки на партию."
+          en: "He blames the shortcomings on the party."
+      sources:
+        - "duden"
+
+schimpfen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "ругать кого-л., браниться на кого-л."
+        en: "to scold sb., to grumble about sb."
+      examples:
+        - de: "Sie schimpft auf den Chef."
+          ru: "Она ругает начальника."
+          en: "She is grumbling about the boss."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на кого ругаешься заочно — за спиной, в отличие от mit, где бранят напрямую"
+        en: "whom you grumble about behind their back — unlike mit, which is scolding directly"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "бранить кого-л."
+        en: "to scold sb."
+      examples:
+        - de: "Die Mutter schimpft mit dem Kind."
+          ru: "Мать бранит ребёнка."
+          en: "The mother is scolding the child."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "кого бранишь напрямую — в отличие от auf, где ругают заочно, за спиной"
+        en: "whom you scold directly — unlike auf, which is grumbling about sb. behind their back"
+
+schließen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "делать вывод из чего-л., заключать по чему-л."
+        en: "to conclude sth. from sth., to infer sth. from sth."
+      examples:
+        - de: "Aus dieser Bemerkung schließe ich, dass er zustimmt."
+          ru: "Из этого замечания я делаю вывод, что он согласен."
+          en: "From this remark I conclude that he agrees."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "из чего делаешь вывод — основание умозаключения"
+        en: "what you infer from — the ground of the conclusion"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "заканчивать что-л. чем-л. (письмо, речь)"
+        en: "to close sth. with sth. (a letter, a speech)"
+      examples:
+        - de: "Er schloss seinen Brief mit den Worten."
+          ru: "Он закончил своё письмо этими словами."
+          en: "He closed his letter with these words."
+          lemmaForm: schloss
+      sources:
+        - "duden"
+      senseNote:
+        ru: "чем заканчиваешь — заключительная часть, а не основание вывода"
+        en: "what you close with — the final part, not the ground of a conclusion"
+
 schmecken:
   pos: "verb"
   patterns:
@@ -14,6 +331,39 @@ schmecken:
           en: "That tastes of the lemon in the cake."
       sources:
         - "prototype"
+
+schneiden:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "порезаться обо что-л."
+        en: "to cut oneself on sth."
+      examples:
+        - de: "Ich habe mich an einer Scherbe geschnitten."
+          ru: "Я порезался о черепок."
+          en: "I cut myself on a shard."
+          lemmaForm: geschnitten
+      sources:
+        - "duden"
+
+schnuppern:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "нюхать что-л., принюхиваться к чему-л."
+        en: "to sniff at sth."
+      examples:
+        - de: "Der Hund schnuppert an dem Baum."
+          ru: "Собака принюхивается к дереву."
+          en: "The dog is sniffing at the tree."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 schreiben:
   pos: "verb"
@@ -64,6 +414,56 @@ schreiben:
         ru: "о чём пишешь — тема текста. an + Akk это кому, an + Dat это над чем работаешь"
         en: "what you write about — the subject. an + Akk is the addressee, an + Dat is the work in progress"
 
+schreien:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "кричать, звать кого-л. / что-л."
+        en: "to cry out for sb. / sth."
+      examples:
+        - de: "Die Kinder schrien nach ihrer Mutter."
+          ru: "Дети кричали, зовя мать."
+          en: "The children cried out for their mother."
+          lemmaForm: schrien
+      sources:
+        - "duden"
+      senseNote:
+        ru: "кого зовёшь криком — то, чего требуешь"
+        en: "what you cry out for — the thing you demand"
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "кричать от какого-л. чувства"
+        en: "to scream with an emotion"
+      examples:
+        - de: "Das Kind schreit vor Angst."
+          ru: "Ребёнок кричит от страха."
+          en: "The child is screaming with fear."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "от чего кричишь — причина крика, а не его адресат"
+        en: "what makes you scream — the cause, not the target"
+
+Schuld:
+  pos: "noun"
+  article: "die"
+  slugSuffix: 2
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "вина за что-л."
+        en: "fault for sth., blame for sth."
+      examples:
+        - de: "Er trägt die Schuld an dem Unfall."
+          ru: "На нём лежит вина за аварию."
+          en: "He bears the blame for the accident."
+      sources:
+        - "duden"
+
 schuld:
   pos: "adj"
   patterns:
@@ -79,6 +479,22 @@ schuld:
       sources:
         - "prototype"
 
+Schutz:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "защита от кого-л. / чего-л."
+        en: "protection from sb. / sth."
+      examples:
+        - de: "Das Dach bot Schutz vor dem Gewitter."
+          ru: "Крыша давала защиту от грозы."
+          en: "The roof gave protection from the thunderstorm."
+      sources:
+        - "duden"
+
 schützen:
   pos: "verb"
   patterns:
@@ -93,6 +509,124 @@ schützen:
           en: "The cream protects from the sun."
       sources:
         - "prototype"
+
+schwanger:
+  pos: "adj"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "беременная от кого-л."
+        en: "pregnant by sb."
+      examples:
+        - de: "Sie ist von ihrem Mann schwanger."
+          ru: "Она беременна от своего мужа."
+          en: "She is pregnant by her husband."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+schweigen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "молчать о чём-л."
+        en: "to keep silent about sth."
+      examples:
+        - de: "Er schweigt über den Vorfall."
+          ru: "Он молчит об этом происшествии."
+          en: "He keeps silent about the incident."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "о чём молчишь — тема, которую не затрагиваешь"
+        en: "what you keep silent about — a topic you do not raise"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "не отвечать на что-л., отмалчиваться в ответ"
+        en: "to say nothing in response to sth."
+      examples:
+        - de: "Zu allen Vorwürfen hat er geschwiegen."
+          ru: "На все обвинения он отвечал молчанием."
+          en: "He said nothing in response to all the accusations."
+          lemmaForm: geschwiegen
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на что молчишь — то, на что не отвечаешь, а не тема, которую скрываешь"
+        en: "what you stay silent in the face of — what you decline to answer, not a topic you hide"
+
+schwören:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "свято верить во что-л., клясться чем-л."
+        en: "to swear by sth., to be a firm believer in sth."
+      examples:
+        - de: "Meine Mutter schwört auf ihren Kräutertee."
+          ru: "Моя мама свято верит в свой травяной чай."
+          en: "My mother swears by her herbal tea."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "во что веришь — испытанное средство, а не клятва с призыванием в свидетели"
+        en: "what you swear by — a trusted remedy, not an oath invoking a witness"
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "клясться кем-л. / чем-л. (призывая в свидетели)"
+        en: "to swear by sth./sb. (invoking as a witness)"
+      examples:
+        - de: "Er schwört bei seiner Ehre, unschuldig zu sein."
+          ru: "Он клянётся своей честью, что невиновен."
+          en: "He swears on his honour that he is innocent."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "кем клянёшься — свидетель клятвы, а не проверенное средство"
+        en: "who/what you swear by — the witness of an oath, not a trusted remedy"
+
+sehen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "придавать значение чему-л., ставить что-л. во главу угла"
+        en: "to place importance on sth., to prioritise sth."
+      examples:
+        - de: "Sie sieht nur auf ihren eigenen Vorteil."
+          ru: "Она думает только о собственной выгоде."
+          en: "She only looks out for her own advantage."
+          lemmaForm: sieht
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чему придаёшь значение — приоритет, а не забота о ком-л."
+        en: "what you prioritise — not caring for a person"
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "присматривать за кем-л."
+        en: "to look after sb."
+      examples:
+        - de: "Kannst du kurz nach den Kindern sehen?"
+          ru: "Можешь ненадолго присмотреть за детьми?"
+          en: "Can you check on the children for a moment?"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за кем присматриваешь — забота о человеке, а не приоритет"
+        en: "who you look after — caring for a person, not a priority"
 
 sehnen:
   pos: "verb"
@@ -127,6 +661,55 @@ Sehnsucht:
       sources:
         - "prototype"
 
+setzen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "ставить на кого-л. / что-л. (в игре; перен. — надеяться на кого-л. / что-л.)"
+        en: "to bet on sb. / sth., to stake sth. on sth."
+      examples:
+        - de: "Er setzt sein Geld auf das Pferd."
+          ru: "Он ставит деньги на лошадь."
+          en: "He is betting his money on the horse."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "ставишь на что-л. — азарт, надежда на исход"
+        en: "you're betting on sth. — a stake, hoping for an outcome"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "перепрыгивать через что-л., переправляться через что-л."
+        en: "to jump over sth., to cross sth. (by boat)"
+      examples:
+        - de: "Das Pferd setzt über den Graben."
+          ru: "Лошадь перепрыгивает через ров."
+          en: "The horse jumps over the ditch."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "физическое движение через препятствие или воду — не про ставки"
+        en: "physical movement across an obstacle or water — nothing to do with betting"
+
+sitzen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "dat"
+      gloss:
+        ru: "корпеть над чем-л. (учёбой, работой)"
+        en: "to be absorbed in sth., to pore over sth. (studying, work)"
+      examples:
+        - de: "Er sitzt seit Stunden über den Büchern."
+          ru: "Он уже несколько часов корпит над книгами."
+          en: "He has been poring over his books for hours."
+      sources:
+        - "duden"
+
 Sorge:
   pos: "noun"
   article: "die"
@@ -142,6 +725,23 @@ Sorge:
           en: "The worry about the children is growing."
       sources:
         - "prototype"
+      senseNote:
+        ru: "тревожиться — чувство, не действие (параллель к «sorgen um», возвратному)"
+        en: "to be anxious — a feeling, not an action (parallel to reflexive 'sich sorgen um')"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "забота о ком-л. / чём-л. (обеспечение)"
+        en: "care for sb. / sth. (provision)"
+      examples:
+        - de: "Die Sorge für die Familie fordert all ihre Kräfte."
+          ru: "Забота о семье требует от неё всех сил."
+          en: "Caring for the family demands all her strength."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "обеспечивать, брать на себя ответственность — действие (параллель к «sorgen für»)"
+        en: "to provide, to take responsibility — an action (parallel to 'sorgen für')"
 
 sorgen:
   pos: "verb"
@@ -176,6 +776,90 @@ sorgen:
       senseNote:
         ru: "тревожиться — чувство, а не действие, и глагол здесь возвратный"
         en: "to be anxious — a feeling, not an action, and here the verb is reflexive"
+
+sparen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "копить на что-л."
+        en: "to save up for sth."
+      examples:
+        - de: "Er spart auf einen neuen Wagen."
+          ru: "Он копит на новую машину."
+          en: "He is saving up for a new car."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на что копишь — цель накоплений"
+        en: "what you save up for — the goal of the saving"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "скупиться на что-л., экономить на чём-л."
+        en: "to be sparing with sth."
+      examples:
+        - de: "Er sparte nicht mit Lob."
+          ru: "Он не скупился на похвалу."
+          en: "He was not sparing with his praise."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на чём скупишься — то, чего выдаёшь мало, а не цель накоплений"
+        en: "what you are sparing with — what you dole out little of, not a savings goal"
+
+spielen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "играть с кем-л. / чем-л."
+        en: "to play with sb. / sth."
+      examples:
+        - de: "Die Kinder spielen mit dem Ball."
+          ru: "Дети играют с мячом."
+          en: "The children are playing with the ball."
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+
+spitzen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      tags:
+        - "regional"
+      gloss:
+        ru: "с нетерпением ждать чего-л. (регион.)"
+        en: "to eagerly anticipate sth. (regional)"
+      examples:
+        - de: "Die Kinder spitzen sich auf die Ferien."
+          ru: "Дети с нетерпением ждут каникул."
+          en: "The children are eagerly looking forward to the holidays."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+spotten:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "насмехаться над кем-л. / чем-л."
+        en: "to mock sb. / sth."
+      examples:
+        - de: "Sie spotten über seine Angst."
+          ru: "Они насмехаются над его страхом."
+          en: "They mock his fear."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 sprechen:
   pos: "verb"
@@ -246,6 +930,40 @@ stammen:
       sources:
         - "prototype"
 
+starren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "пристально смотреть на кого-л. / что-л."
+        en: "to stare at sb. / sth."
+      examples:
+        - de: "Er starrt auf sein Handy."
+          ru: "Он уставился на свой телефон."
+          en: "He is staring at his phone."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что смотришь — объект пристального взгляда"
+        en: "what you stare at — the object of the fixed gaze"
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "быть сплошь покрытым чем-л. (о грязи и т.п.)"
+        en: "to be caked with sth. (dirt etc.)"
+      examples:
+        - de: "Seine Kleidung starrt vor Schmutz."
+          ru: "Его одежда сплошь покрыта грязью."
+          en: "His clothing is caked with dirt."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чем покрыт — грязь, ржавчина; не взгляд, а состояние поверхности"
+        en: "what it's caked with — dirt, rust; a surface condition, not a gaze"
+
 staunen:
   pos: "verb"
   patterns:
@@ -261,6 +979,72 @@ staunen:
           en: "The children marvel at the magician."
       sources:
         - "seed"
+
+stecken:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "вкладывать что-л. во что-л. (силы, деньги)"
+        en: "to put/invest sth. into sth. (effort, money)"
+      examples:
+        - de: "Sie hat ihr ganzes Vermögen in das Unternehmen gesteckt."
+          ru: "Она вложила всё своё состояние в это предприятие."
+          en: "She put her entire fortune into the company."
+      sources:
+        - "duden"
+
+stehen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "держать слово, поддерживать что-л."
+        en: "to stand by sth., to support sth."
+      examples:
+        - de: "Er steht zu seinem Wort."
+          ru: "Он держит своё слово."
+          en: "He stands by his word."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "к чему причастен — обязательство, которое держишь"
+        en: "what you stand by — a commitment you keep"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "олицетворять что-л., символизировать что-л."
+        en: "to stand for sth., to represent sth."
+      examples:
+        - de: "Die Marke steht für Qualität."
+          ru: "Бренд олицетворяет качество."
+          en: "The brand stands for quality."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "что олицетворяешь — символическое значение, а не обязательство"
+        en: "what you represent — a symbolic meaning, not a commitment"
+    - prep: "auf"
+      case: "akk"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "быть неравнодушным к чему-л., любить что-л. (разг.)"
+        en: "to be into sth., to like sth. (colloquial)"
+      examples:
+        - de: "Ich stehe auf klassische Musik."
+          ru: "Мне нравится классическая музыка."
+          en: "I am into classical music."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что запал — личное предпочтение, разговорный оборот"
+        en: "what you are into — a personal preference, a colloquial idiom"
 
 sterben:
   pos: "verb"
@@ -279,6 +1063,73 @@ sterben:
       sources:
         - "seed"
 
+stimmen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "голосовать за что-л. / кого-л."
+        en: "to vote for sth./sb."
+      examples:
+        - de: "Die Mehrheit stimmt für den Vorschlag."
+          ru: "Большинство голосует за предложение."
+          en: "The majority votes for the proposal."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за что голосуешь — поддерживаемый вариант"
+        en: "what you vote for — the option you support"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "голосовать против чего-л. / кого-л."
+        en: "to vote against sth./sb."
+      examples:
+        - de: "Die Minderheit stimmt gegen den Vorschlag."
+          ru: "Меньшинство голосует против предложения."
+          en: "The minority votes against the proposal."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "против чего голосуешь — отвергаемый вариант"
+        en: "what you vote against — the option you reject"
+
+stinken:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "попахивать чем-л. (перен.)"
+        en: "to reek of sth. (figurative)"
+      examples:
+        - de: "Das stinkt nach Verrat."
+          ru: "Это попахивает предательством."
+          en: "That reeks of betrayal."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Stolz:
+  pos: "noun"
+  article: "der"
+  slugSuffix: 2
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "гордость за кого-л. / что-л."
+        en: "pride in sb. / sth."
+      examples:
+        - de: "Sein Stolz auf seinen Sohn ist groß."
+          ru: "Его гордость за сына велика."
+          en: "His pride in his son is great."
+      sources:
+        - "duden"
+
 stolz:
   pos: "adj"
   patterns:
@@ -295,6 +1146,124 @@ stolz:
       sources:
         - "seed"
 
+stören:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "мешать кому-л. в каком-л. занятии"
+        en: "to disturb sb. at sth. (an activity)"
+      examples:
+        - de: "Sie stört ihn bei der Arbeit."
+          ru: "Она мешает ему работать."
+          en: "She is disturbing him at his work."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "в каком занятии мешаешь — то, что прерываешь"
+        en: "which activity you interrupt — what you break into"
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "быть недовольным чем-л., раздражаться из-за чего-л."
+        en: "to be bothered by sth., to take exception to sth."
+      examples:
+        - de: "Er stört sich an den Autos vor dem Haus."
+          ru: "Его раздражают машины перед домом."
+          en: "He is bothered by the cars in front of the house."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "чем ты сам недоволен — источник раздражения, а не занятие, которое прерывают"
+        en: "what bothers you — the irritant, not an activity being interrupted"
+
+Störung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "помеха кому-л. в каком-л. занятии"
+        en: "a disturbance to sb. at sth. (an activity)"
+      examples:
+        - de: "Häufige Störungen bei der Arbeit machten ihn nervös."
+          ru: "Частые помехи в работе выводили его из себя."
+          en: "Frequent disturbances at work made him nervous."
+      sources:
+        - "duden"
+
+stoßen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "натыкаться на что-л., случайно обнаруживать что-л."
+        en: "to come across sth., to encounter sth. unexpectedly"
+      examples:
+        - de: "Sie stößt auf ein Problem."
+          ru: "Она натыкается на проблему."
+          en: "She comes across a problem."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что наткнулся — неожиданная находка, а не то, что задевает"
+        en: "what you come across — an unexpected find, not something that bothers you"
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "быть задетым чем-л., осуждать что-л."
+        en: "to take exception to sth., to be bothered by sth."
+      examples:
+        - de: "Sie stößt sich an seinem Ton."
+          ru: "Её задевает его тон."
+          en: "She takes exception to his tone."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "что задевает — раздражитель, а не находка"
+        en: "what bothers you — an irritant, not a find"
+
+sträuben:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "сопротивляться чему-л., противиться чему-л."
+        en: "to resist sth."
+      examples:
+        - de: "Er sträubt sich gegen die Reform."
+          ru: "Он сопротивляется реформе."
+          en: "He is resisting the reform."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Streben:
+  pos: "noun"
+  article: "das"
+  slugSuffix: 2
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "стремление к чему-л."
+        en: "striving for sth."
+      examples:
+        - de: "Sein Streben nach Erfolg ist groß."
+          ru: "Его стремление к успеху велико."
+          en: "His striving for success is great."
+      sources:
+        - "duden"
+
 streben:
   pos: "verb"
   patterns:
@@ -309,6 +1278,118 @@ streben:
           en: "He strives for the truth."
       sources:
         - "prototype"
+
+Streik:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "забастовка за что-л."
+        en: "a strike for sth."
+      examples:
+        - de: "Die Gewerkschaft rief zu einem Streik für höhere Löhne auf."
+          ru: "Профсоюз призвал к забастовке за повышение зарплаты."
+          en: "The union called for a strike for higher wages."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "за что бастуют — требование, а не то, что отвергают"
+        en: "what they strike for — the demand, not what they reject"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "забастовка против чего-л."
+        en: "a strike against sth."
+      examples:
+        - de: "Sie organisierten einen Streik gegen die Beschlüsse der Arbeitgeber."
+          ru: "Они организовали забастовку против решений работодателей."
+          en: "They organized a strike against the employers' decisions."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "против чего бастуют — то, что отвергают, а не требование"
+        en: "what they strike against — what they reject, not the demand"
+
+streiken:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "бастовать за что-л."
+        en: "to strike for sth."
+      examples:
+        - de: "Sie streiken für den höheren Lohn."
+          ru: "Они бастуют за повышение зарплаты."
+          en: "They are striking for higher pay."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "за что бастуют — требование"
+        en: "what they strike for — the demand"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "бастовать против чего-л."
+        en: "to strike against sth."
+      examples:
+        - de: "Sie streiken gegen den Beschluss."
+          ru: "Они бастуют против этого решения."
+          en: "They are striking against the decision."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "против чего бастуют — то, что отвергают, а не то, чего требуют"
+        en: "what they strike against — what they reject, not what they demand"
+
+Streit:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "спор из-за чего-л. (о предмете спора)"
+        en: "argument over sth. (a contested object)"
+      examples:
+        - de: "Der Streit um den Parkplatz dauert an."
+          ru: "Спор из-за парковочного места продолжается."
+          en: "The argument over the parking spot goes on."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "из-за чего конфликт — конкретный предмет, за который борются"
+        en: "what the conflict is over — a specific contested thing"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "спор о чём-л. (о теме)"
+        en: "argument about sth. (a topic)"
+      examples:
+        - de: "Der Streit über den Vertrag eskalierte."
+          ru: "Спор о договоре обострился."
+          en: "The argument about the contract escalated."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "о чём спор — тема разногласий, а не предмет борьбы"
+        en: "what the argument is about — a topic of disagreement, not a contested object"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "спор, ссора с кем-л."
+        en: "quarrel with sb."
+      examples:
+        - de: "Der Streit mit der Schwägerin dauert schon Jahre."
+          ru: "Ссора с золовкой длится уже годы."
+          en: "The quarrel with the sister-in-law has been going on for years."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "с кем спор — противник, а не предмет или тема"
+        en: "who the quarrel is with — the other party, not the object or topic"
 
 streiten:
   pos: "verb"
@@ -361,6 +1442,23 @@ streiten:
         ru: "из-за чего ссора — то, что делят. über — тема, о которой спорят"
         en: "what the quarrel is over — the thing being fought for. über is the topic argued about"
 
+stürzen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "набрасываться на кого-л. / что-л."
+        en: "to pounce on sb. / sth."
+      examples:
+        - de: "Die Kinder stürzen sich auf die Süßigkeiten."
+          ru: "Дети набрасываются на сладости."
+          en: "The children pounce on the sweets."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Suche:
   pos: "noun"
   article: "die"
@@ -391,3 +1489,35 @@ suchen:
           en: "I am searching for a solution."
       sources:
         - "prototype"
+
+Sucht:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "тяга к чему-л., пристрастие к чему-л."
+        en: "craving for sth., addiction to sth."
+      examples:
+        - de: "Er leidet an seiner Sucht nach dem Spiel."
+          ru: "Он страдает от своей тяги к игре."
+          en: "He suffers from his craving for gambling."
+      sources:
+        - "duden"
+
+süchtig:
+  pos: "adj"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "зависимый от чего-л. (пристрастившийся)"
+        en: "addicted to sth."
+      examples:
+        - de: "Er ist süchtig nach diesem Spiel."
+          ru: "Он зависим от этой игры."
+          en: "He is addicted to this game."
+      sources:
+        - "en.wiktionary"
+        - "duden"

@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+operieren:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "оперировать что-л. (часть тела)"
+        en: "to operate on sth. (a body part)"
+      examples:
+        - de: "Der Arzt operiert den Patienten am Magen."
+          ru: "Врач оперирует пациенту желудок."
+          en: "The doctor operates on the patient's stomach."
+      sources:
+        - "duden"
+        - "de.wiktionary"
+      senseNote:
+        ru: "какую часть тела оперируют — медицинский смысл"
+        en: "the body part being operated on — the medical sense"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "оперировать чем-л., пользоваться чем-л. (методами, цифрами)"
+        en: "to operate with sth., to work using sth. (methods, figures)"
+      examples:
+        - de: "Er operiert mit hohen Summen."
+          ru: "Он оперирует крупными суммами."
+          en: "He operates with large sums."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "чем оперируешь — инструмент или средство, переносный смысл"
+        en: "what you operate with — a means or tool, the figurative sense"
+
+ordnen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "упорядочивать что-л. по какому-л. признаку"
+        en: "to arrange sth. by sth., to sort sth. according to sth."
+      examples:
+        - de: "Sie ordnet die Bücher nach dem Alphabet."
+          ru: "Она расставляет книги по алфавиту."
+          en: "She arranges the books by the alphabet."
+      sources:
+        - "duden"

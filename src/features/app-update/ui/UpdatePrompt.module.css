@@ -1,0 +1,41 @@
+/*
+ * Bottom-centre, above everything, and inside the safe area so a phone's home indicator
+ * does not sit on the button. Ink on card with a rule, like every other surface here — a
+ * new version is not an error and gets no colour of its own (docs/DESIGN.md).
+ */
+.prompt {
+  position: fixed;
+  z-index: 10;
+  bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  max-width: calc(100vw - 2 * var(--space-4));
+  padding: var(--space-2) var(--space-3);
+  background: var(--card);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 5px 0 0 var(--ink-3);
+  border-radius: 2px;
+  font-size: var(--step-1);
+  color: var(--ink);
+}
+
+.button {
+  flex: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  padding: var(--space-1) var(--space-3);
+  cursor: pointer;
+}
+
+/* Focus is ink/paper inversion, never a fourth colour (docs/DESIGN.md). */
+.button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}

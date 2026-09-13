@@ -7,13 +7,19 @@
   letter-spacing: -0.01em;
   line-height: 1.1;
 }
-.meta { margin: 0.3rem 0 1rem; font-size: var(--step-1); color: var(--ink-2); }
+.meta {
+  margin: 0.3rem 0 1rem;
+  font-family: var(--font-marker), 'Comic Sans MS', cursive;
+  font-weight: 600;
+  font-size: var(--step-1);
+  color: var(--ink-2);
+}
 .cards { display: flex; flex-direction: column; gap: 0.875rem; }
 .tried {
   margin: 0 0 1rem;
   padding: 0.7rem 0.9rem;
   background: var(--card);
-  border: 1px solid var(--rule);
-  border-left: 3px solid var(--ink);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 5px 0 0 var(--ink-3);
   font-size: var(--step-2);
 }

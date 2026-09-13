@@ -1,5 +1,54 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+ranken:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "быть связанным с чем-л. (о легендах, историях)"
+        en: "to revolve around sth. (legends, stories)"
+      examples:
+        - de: "Um das alte Schloss ranken sich viele Sagen."
+          ru: "Вокруг старого замка ходит множество легенд."
+          en: "Many legends revolve around the old castle."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+raten:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "советовать что-л., рекомендовать что-л."
+        en: "to advise sth., to recommend sth."
+      examples:
+        - de: "Sie riet ihm zur Vorsicht."
+          ru: "Она посоветовала ему быть осторожным."
+          en: "She advised him to be cautious."
+          lemmaForm: riet
+      sources:
+        - "duden"
+
+raufen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "драться, возиться с кем-л."
+        en: "to scuffle/tussle with sb."
+      examples:
+        - de: "Er hat schon wieder mit seinem Bruder gerauft."
+          ru: "Он снова подрался со своим братом."
+          en: "He scuffled with his brother again."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 reagieren:
   pos: "verb"
   patterns:
@@ -53,6 +102,40 @@ Recht:
       sources:
         - "seed"
 
+reden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "разговаривать с кем-л."
+        en: "to talk with sb."
+      examples:
+        - de: "Ich rede mit meinem Nachbarn."
+          ru: "Я разговариваю со своим соседом."
+          en: "I am talking with my neighbor."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с кем разговариваешь — собеседник, а не тема"
+        en: "who you talk with — the other party, not the topic"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "разговаривать о чём-л."
+        en: "to talk about sth."
+      examples:
+        - de: "Wir reden über den Plan."
+          ru: "Мы говорим о плане."
+          en: "We are talking about the plan."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "о чём разговариваешь — тема, а не собеседник"
+        en: "what you talk about — the topic, not the other party"
+
 reich:
   pos: "adj"
   patterns:
@@ -68,6 +151,166 @@ reich:
       sources:
         - "prototype"
 
+Reichtum:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "богатство чем-л."
+        en: "abundance of sth."
+      examples:
+        - de: "Der Reichtum an Singvögeln ist hier bemerkenswert."
+          ru: "Здесь примечательно богатство певчих птиц."
+          en: "The abundance of songbirds here is remarkable."
+      sources:
+        - "duden"
+
+reinigen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "очищать что-л. от чего-л."
+        en: "to clean sth. of sth."
+      examples:
+        - de: "Die Stadt reinigt die Straßen von Unrat."
+          ru: "Город очищает улицы от мусора."
+          en: "The city cleans the streets of rubbish."
+      sources:
+        - "duden"
+
+resultieren:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "проистекать из чего-л., быть следствием чего-л."
+        en: "to result from sth."
+      examples:
+        - de: "Das Ergebnis resultiert aus dem gesteigerten Einsatz."
+          ru: "Результат проистекает из возросших усилий."
+          en: "The result stems from the increased effort."
+      sources:
+        - "duden"
+
+retten:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "спасать кого-л. от чего-л. (от угрозы)"
+        en: "to save sb. from sth. (from a threat)"
+      examples:
+        - de: "Der Arzt rettete ihn vor dem Tod."
+          ru: "Врач спас его от смерти."
+          en: "The doctor saved him from death."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "от какой угрозы уберегают — то, что могло случиться, но не случилось"
+        en: "which threat you are shielded from — what might have happened but did not"
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "вытаскивать кого-л. откуда-л. (из огня, из беды)"
+        en: "to rescue sb. out of sth. (a fire, a plight)"
+      examples:
+        - de: "Die Feuerwehr rettete das Kind aus den Flammen."
+          ru: "Пожарные вытащили ребёнка из огня."
+          en: "The fire brigade rescued the child out of the flames."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "откуда вытаскивают — положение, в котором уже находишься"
+        en: "what you are pulled out of — a situation you are already in"
+
+Rettung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "спасение от чего-л. (из опасности)"
+        en: "rescue from sth. (a danger)"
+      examples:
+        - de: "Seine Rettung aus Lebensgefahr grenzte an ein Wunder."
+          ru: "Его спасение от смертельной опасности было сродни чуду."
+          en: "His rescue from mortal danger was almost a miracle."
+      sources:
+        - "duden"
+
+richten:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "обращать что-л. к кому-л. (вопрос, просьбу)"
+        en: "to direct/address sth. to sb. (a question, a request)"
+      examples:
+        - de: "Ich richte die Frage an dich."
+          ru: "Я обращаю вопрос к тебе."
+          en: "I am directing the question to you."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "к кому обращаешь — адресат сообщения, а не то, чему следуешь"
+        en: "who you address — the recipient of a message, not what you go by"
+    - prep: "nach"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "определяться чем-л., руководствоваться чем-л."
+        en: "to depend on sth., to go by sth."
+      examples:
+        - de: "Der Preis richtet sich nach der Nachfrage."
+          ru: "Цена определяется спросом."
+          en: "The price depends on demand."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чем руководствуешься — критерий, а не адресат сообщения"
+        en: "what you go by — a criterion, not the target of a gaze or an instrument"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "направлять что-л. на кого-л. / что-л. (взгляд, прибор)"
+        en: "to direct/aim sth. at sb. / sth. (a gaze, an instrument)"
+      examples:
+        - de: "Sie richtet die Kamera auf den Ausgang."
+          ru: "Она направляет камеру на выход."
+          en: "She points the camera at the exit."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что направляешь — цель взгляда или прибора, физическое наведение"
+        en: "what you aim at — the target of a gaze or an instrument, a physical aiming"
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "быть направленным против кого-л. / чего-л."
+        en: "to be directed against sb. / sth."
+      examples:
+        - de: "Der Verdacht richtet sich gegen ihn."
+          ru: "Подозрение направлено против него."
+          en: "The suspicion is directed against him."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "против кого направлено — противник или объект противодействия"
+        en: "who it is directed against — an opponent or a target of opposition"
+
 riechen:
   pos: "verb"
   patterns:
@@ -82,3 +325,35 @@ riechen:
           en: "It smells of the coffee from the kitchen."
       sources:
         - "prototype"
+
+rufen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "звать кого-л., просить кого-л. (о помощи и т.п.)"
+        en: "to call for sb. / sth."
+      examples:
+        - de: "Das Kind ruft nach seiner Mutter."
+          ru: "Ребёнок зовёт свою маму."
+          en: "The child is calling for its mother."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+rütteln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "трясти что-л.; перен. ставить что-л. под сомнение"
+        en: "to rattle sth.; fig. to call sth. into question"
+      examples:
+        - de: "Der Sturm rüttelt an den Fensterläden."
+          ru: "Буря трясёт ставни."
+          en: "The storm is rattling the shutters."
+      sources:
+        - "en.wiktionary"
+        - "duden"

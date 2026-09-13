@@ -3,13 +3,14 @@ import { buildItem, isCorrect, kindsFor, shuffle, type Random } from './build';
 import type { Item, Result } from './schema';
 
 /**
- * A session, and deliberately not a scheduler.
+ * A session, and still deliberately not a scheduler.
  *
  * Kim & Webb (2022) found equal and expanding spacing statistically equivalent, which means
  * a queue that brings a missed item back a few items later captures most of the spacing
- * effect. A full SM-2/FSRS scheduler would buy the rest at the price of stored progress,
- * export/import, migration when a pattern's case is corrected, and a review-debt loop —
- * Anki already exists and already wins that comparison (docs/TRAINER.md).
+ * effect. Phase 6 added stored history on top (ADR 0005), but only the quiet half of it: a
+ * weight may make a missed pattern likelier to appear, and that is all. There is no due
+ * queue, no backlog and no debt — the loop `docs/TRAINER.md` §6 argued against is still not
+ * built, and this file is where that would have to happen if it ever were.
  */
 
 export const SESSION_LENGTH = 12;
@@ -39,21 +40,70 @@ export type Session = {
 };
 
 /**
+ * How much likelier one pattern is to be drawn than an unseen one. Supplied from outside:
+ * this entity has no idea that stored progress exists, and `entities/progress` has no idea
+ * the trainer exists. The widget above both is what joins them (ADR 0005).
+ */
+export type PatternWeight = (patternId: string) => number;
+
+/** A random source per pattern rather than one shared stream — see `streamsFor` in `run.ts`. */
+export type StreamFor = (patternId: string) => Random;
+
+/** Below this a weight would divide by ~zero and a pattern would become unreachable. */
+const MIN_WEIGHT = 0.001;
+
+/**
+ * The order the session draws from.
+ *
+ * Without weights this is the plain shuffle it always was. With them it is weighted sampling
+ * without replacement (Efraimidis & Spirakis): each pattern takes the key `u ** (1 / w)`, and
+ * sorting by that key descending draws in proportion to `w`. A heavier pattern is likelier to
+ * come early — never certain to, which matters: a deterministic "hardest first" would turn
+ * every session into the same twelve failures.
+ */
+export function orderCandidates(
+  all: readonly Rektion[],
+  random: Random,
+  weight?: PatternWeight,
+): Rektion[] {
+  if (!weight) return shuffle(all, random);
+
+  return all
+    .map((pattern) => ({
+      pattern,
+      key: Math.pow(random(), 1 / Math.max(weight(pattern.id), MIN_WEIGHT)),
+    }))
+    .sort((a, b) => b.key - a.key)
+    .map((keyed) => keyed.pattern);
+}
+
+/**
  * Two patterns of one lemma never share a session. `sich freuen auf` answered as Akkusativ
  * hands over most of `sich freuen über`, and an item whose answer was just given tests
  * recognition of the last screen rather than knowledge of the language. This is a judgement
  * call about leakage, not a finding: the contrastive-learning literature would argue the
  * opposite, and the browser already shows the pair side by side, which is where the contrast
  * belongs (docs/TRAINER.md).
+ *
+ * Candidates come in already ordered, and each item is built from its OWN random stream. That
+ * second part is what lets a run be restored from a list of pattern ids: an item's options
+ * depend on its pattern and the seed, never on how many patterns were considered and skipped
+ * before it.
  */
-export function planItems(all: readonly Rektion[], config: SessionConfig, random: Random): Item[] {
+export function planItems(
+  candidates: readonly Rektion[],
+  all: readonly Rektion[],
+  config: SessionConfig,
+  streamFor: StreamFor,
+): Item[] {
   const items: Item[] = [];
   const usedLemmas = new Set<string>();
 
-  for (const pattern of shuffle(all, random)) {
+  for (const pattern of candidates) {
     if (items.length >= config.length) break;
     if (usedLemmas.has(pattern.lemma)) continue;
 
+    const random = streamFor(pattern.id);
     const kind = shuffle(kindsFor(pattern, all), random)[0];
     if (!kind) continue;
 
@@ -66,12 +116,7 @@ export function planItems(all: readonly Rektion[], config: SessionConfig, random
   return items;
 }
 
-export function startSession(
-  all: readonly Rektion[],
-  config: SessionConfig,
-  random: Random,
-): Session {
-  const items = planItems(all, config, random);
+export function sessionFrom(items: readonly Item[]): Session {
   const [first, ...rest] = items;
   return {
     queue: rest,
@@ -82,6 +127,36 @@ export function startSession(
     planned: items.length,
     retried: [],
   };
+}
+
+export function startSession(
+  all: readonly Rektion[],
+  config: SessionConfig,
+  selection: Random,
+  streamFor: StreamFor,
+  weight?: PatternWeight,
+): Session {
+  return sessionFrom(planItems(orderCandidates(all, selection, weight), all, config, streamFor));
+}
+
+/**
+ * Rebuilds a session from the pattern ids it was planned with, skipping selection entirely.
+ * Returns null if the dataset no longer has one of them.
+ */
+export function resumeSession(
+  patternIds: readonly string[],
+  all: readonly Rektion[],
+  config: SessionConfig,
+  streamFor: StreamFor,
+): Session | null {
+  const byId = new Map(all.map((pattern) => [pattern.id, pattern]));
+  const patterns: Rektion[] = [];
+  for (const id of patternIds) {
+    const pattern = byId.get(id);
+    if (!pattern) return null;
+    patterns.push(pattern);
+  }
+  return sessionFrom(planItems(patterns, all, config, streamFor));
 }
 
 export type SessionAction =

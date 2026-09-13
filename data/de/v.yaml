@@ -1,5 +1,37 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+verabreden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "договариваться о встрече с кем-л."
+        en: "to arrange to meet sb."
+      examples:
+        - de: "Sie verabredet sich mit ihrem Freund."
+          ru: "Она договаривается о встрече со своим другом."
+          en: "She is arranging to meet her friend."
+      sources:
+        - "duden"
+
+Verabredung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "договорённость о встрече с кем-л."
+        en: "arrangement to meet sb."
+      examples:
+        - de: "Ich habe morgen eine Verabredung mit ihm."
+          ru: "У меня завтра встреча с ним."
+          en: "I have an arrangement to meet him tomorrow."
+      sources:
+        - "duden"
+
 verabschieden:
   pos: "verb"
   patterns:
@@ -47,6 +79,106 @@ Verantwortung:
       sources:
         - "prototype"
 
+verbinden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "соединять что-л. с чем-л., сочетать"
+        en: "to combine sth. with sth., to connect sth. to sth."
+      examples:
+        - de: "Er verbindet das Angenehme mit dem Nützlichen."
+          ru: "Он сочетает приятное с полезным."
+          en: "He combines the pleasant with the useful."
+      sources:
+        - "duden"
+
+Verbindung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "сочетание чего-л. с чем-л."
+        en: "combination of sth. with sth."
+      examples:
+        - de: "Die Verbindung der Dienstreise mit einem kurzen Urlaub war praktisch."
+          ru: "Сочетание командировки с коротким отпуском было практичным."
+          en: "Combining the business trip with a short vacation was practical."
+      sources:
+        - "duden"
+
+verbreiten:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "распространяться на тему чего-л., долго рассуждать о чём-л. (часто неодобр.)"
+        en: "to hold forth on sth., to go on at length about sth. (often disapproving)"
+      examples:
+        - de: "Er verbreitete sich stundenlang über das Thema."
+          ru: "Он часами распространялся на эту тему."
+          en: "He held forth on the topic for hours."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+verdienen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "зарабатывать на чём-л., получать прибыль от чего-л."
+        en: "to earn/profit from sth."
+      examples:
+        - de: "Der Wirt verdient hauptsächlich am Bier."
+          ru: "Хозяин зарабатывает в основном на пиве."
+          en: "The innkeeper earns mainly from the beer."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Verdienst:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "заслуга перед кем-л. / чем-л."
+        en: "credit/merit for sth. (for one's contribution to it)"
+      examples:
+        - de: "Sie hat sich große Verdienste um die Stadt erworben."
+          ru: "Она заслужила большое признание перед городом."
+          en: "She has earned great credit for her contribution to the city."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+verfeinden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "враждовать с кем-л., рассориться с кем-л."
+        en: "to become enemies with sb., to fall out with sb."
+      examples:
+        - de: "Er hat sich mit seinem Nachbarn verfeindet."
+          ru: "Он рассорился со своим соседом."
+          en: "He has fallen out with his neighbour."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 verfügen:
   pos: "verb"
   patterns:
@@ -61,6 +193,40 @@ verfügen:
           en: "He has the necessary experience at his disposal."
       sources:
         - "prototype"
+
+vergehen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "совершать преступление, посягать на кого-л. / что-л."
+        en: "to commit an offense against sb. / sth."
+      examples:
+        - de: "Er hat sich an fremdem Eigentum vergangen."
+          ru: "Он посягнул на чужое имущество."
+          en: "He committed an offense against others' property."
+          lemmaForm: vergangen
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Vergleich:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "сравнение с кем-л. / чем-л."
+        en: "comparison with sb. / sth."
+      examples:
+        - de: "Im Vergleich mit seiner Frau ist er sehr ruhig."
+          ru: "По сравнению с женой он очень спокойный."
+          en: "In comparison with his wife, he is very calm."
+      sources:
+        - "duden"
 
 vergleichen:
   pos: "verb"
@@ -77,6 +243,43 @@ vergleichen:
       sources:
         - "prototype"
 
+vergreifen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "посягать на кого-л. / незаконно присваивать что-л."
+        en: "to lay a hand on sb.; to misappropriate sth."
+      examples:
+        - de: "Er vergreift sich am Geld der Firma."
+          ru: "Он незаконно присваивает деньги фирмы."
+          en: "He misappropriates the company's money."
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+
+vergucken:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "влюбиться в кого-л. (разг.)"
+        en: "to fall for sb. (colloquial)"
+      examples:
+        - de: "Er hat sich in seine Nachbarin verguckt."
+          ru: "Он влюбился в свою соседку."
+          en: "He has fallen for his neighbour."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Verhältnis:
   pos: "noun"
   article: "das"
@@ -86,12 +289,29 @@ Verhältnis:
       gloss:
         ru: "отношение к кому-л."
         en: "relationship to sb."
+      senseNote:
+        ru: "общая природа отношений с кем-л. — не обязательно романтических"
+        en: "the general nature of a relationship with sb. — not necessarily romantic"
       examples:
         - de: "Sein Verhältnis zu den Kollegen ist gut."
           ru: "Его отношения с коллегами хорошие."
           en: "His relationship to his colleagues is good."
       sources:
         - "prototype"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "любовная связь с кем-л."
+        en: "an affair with sb."
+      senseNote:
+        ru: "романтическая/любовная связь — конкретный, часто тайный роман, а не отношения вообще"
+        en: "a romantic affair — a specific, often secret liaison, not a relationship in general"
+      examples:
+        - de: "Er hat ein Verhältnis mit seiner Kollegin."
+          ru: "У него роман со своей коллегой."
+          en: "He is having an affair with his colleague."
+      sources:
+        - "duden"
 
 verheiratet:
   pos: "adj"
@@ -107,6 +327,87 @@ verheiratet:
           en: "She is married to a doctor."
       sources:
         - "prototype"
+
+verkaufen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "продавать что-л. кому-л."
+        en: "to sell sth. to sb."
+      examples:
+        - de: "Sie hat ihren Wagen an einen Kollegen verkauft."
+          ru: "Она продала свою машину коллеге."
+          en: "She sold her car to a colleague."
+      sources:
+        - "duden"
+
+verknallt:
+  pos: "adj"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "втюрившийся в кого-л. (разг.)"
+        en: "smitten with sb. (colloquial)"
+      examples:
+        - de: "Er ist total verknallt in seine Kollegin."
+          ru: "Он совсем втюрился в свою коллегу."
+          en: "He is totally smitten with his colleague."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Verlangen:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      slugSuffix: 2
+      gloss:
+        ru: "жажда чего-л., сильное желание чего-л."
+        en: "yearning for sth., craving for sth."
+      examples:
+        - de: "Sein Verlangen nach Anerkennung war unstillbar."
+          ru: "Его жажда признания была неутолимой."
+          en: "His yearning for recognition was unquenchable."
+      sources:
+        - "duden"
+
+verlangen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "жаждать чего-л., просить чего-л."
+        en: "to yearn for sth., to call for sth."
+      examples:
+        - de: "Der Kranke verlangt nach einem Glas Wasser."
+          ru: "Больной просит стакан воды."
+          en: "The patient is calling for a glass of water."
+      sources:
+        - "duden"
+
+Verlass:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "надёжность в отношении кого-л. / чего-л. (обычно «kein Verlass auf»)"
+        en: "reliance on sb. / sth. (usually 'kein Verlass auf')"
+      examples:
+        - de: "Auf ihn ist kein Verlass."
+          ru: "На него нет никакой надежды."
+          en: "There is no relying on him."
+      sources:
+        - "duden"
 
 verlassen:
   pos: "verb"
@@ -128,6 +429,38 @@ verlassen:
       sources:
         - "seed"
       reflexive: "akk"
+
+verletzen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "повредить себе что-л., пораниться (о части тела)"
+        en: "to injure oneself on sth. (a body part)"
+      examples:
+        - de: "Ich habe mich am Kopf verletzt."
+          ru: "Я повредил себе голову."
+          en: "I injured my head."
+      sources:
+        - "duden"
+
+Verletzung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "травма чего-л. (части тела)"
+        en: "injury to sth. (a body part)"
+      examples:
+        - de: "Er hat eine Verletzung am Knie."
+          ru: "У него травма колена."
+          en: "He has an injury to his knee."
+      sources:
+        - "duden"
 
 verlieben:
   pos: "verb"
@@ -159,6 +492,203 @@ verliebt:
           en: "She is in love with him."
       sources:
         - "prototype"
+
+verlieren:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "терять в чём-л. (в весе, в значении, в высоте)"
+        en: "to lose in sth. (weight, significance, altitude)"
+      examples:
+        - de: "Das Flugzeug verliert an Höhe."
+          ru: "Самолёт теряет высоту."
+          en: "The plane is losing altitude."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "в чём теряешь — мера убыли. Зеркало к gewinnen an, и падеж тот же — Dativ"
+        en: "what you lose in — the dimension of the decrease. The mirror of gewinnen an, same case: Dativ"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "проигрывать кому-л. (сопернику)"
+        en: "to lose to sb. (an opponent)"
+      examples:
+        - de: "Er verlor gegen den besseren Spieler."
+          ru: "Он проиграл более сильному игроку."
+          en: "He lost to the better player."
+          lemmaForm: verlor
+      sources:
+        - "duden"
+      senseNote:
+        ru: "кому проигрываешь — соперник, а не мера убыли"
+        en: "whom you lose to — an opponent, not a dimension of loss"
+
+verloben:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "обручаться, помолвиться с кем-л."
+        en: "to get engaged to sb."
+      examples:
+        - de: "Sie hat sich mit ihm verlobt."
+          ru: "Она обручилась с ним."
+          en: "She got engaged to him."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Verlobung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "помолвка с кем-л."
+        en: "engagement to sb."
+      examples:
+        - de: "Wir geben die Verlobung unserer Tochter mit Herrn Bauer bekannt."
+          ru: "Мы объявляем о помолвке нашей дочери с господином Бауэром."
+          en: "We are announcing our daughter's engagement to Mr. Bauer."
+      sources:
+        - "duden"
+
+vermieten:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "сдавать что-л. в аренду кому-л."
+        en: "to rent sth. out to sb."
+      examples:
+        - de: "Er vermietet seine Wohnung an ein junges Ehepaar."
+          ru: "Он сдаёт свою квартиру в аренду молодой паре."
+          en: "He rents his apartment out to a young couple."
+      sources:
+        - "duden"
+        - "de.wiktionary"
+
+verrechnen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "зачитывать что-л. в счёт чего-л., включать в расчёт"
+        en: "to offset sth. against sth., to include sth. in a settlement"
+      examples:
+        - de: "Der Kassierer verrechnet den Gutschein mit der Rechnung."
+          ru: "Кассир зачитывает купон в счёт оплаты."
+          en: "The cashier is offsetting the voucher against the bill."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "включаешь в расчёт сумму — не возвратная форма, в отличие от значений с um и in"
+        en: "including an amount in a settlement — non-reflexive, unlike the um and in senses"
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "ошибиться в подсчётах на какую-л. сумму"
+        en: "to miscalculate by an amount"
+      examples:
+        - de: "Du hast dich um fünf Euro verrechnet."
+          ru: "Ты ошибся в подсчётах на пять евро."
+          en: "You miscalculated by five euros."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на сколько ошибся — сумма промаха в арифметике"
+        en: "by how much you were off — the size of the arithmetic slip"
+    - prep: "in"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "ошибиться в оценке кого-л. / чего-л."
+        en: "to misjudge sb. / sth."
+      examples:
+        - de: "Sie hat sich in diesem Menschen verrechnet."
+          ru: "Она ошиблась в оценке этого человека."
+          en: "She misjudged this person."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "в ком/чём ошибся — оценка человека или ситуации, а не арифметика"
+        en: "who/what you misjudged — an assessment of a person or situation, not arithmetic"
+
+verschlucken:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "подавиться чем-л."
+        en: "to choke on sth."
+      examples:
+        - de: "Sie hat sich an der Suppe verschluckt."
+          ru: "Она подавилась супом."
+          en: "She choked on the soup."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+versichern:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "страховать что-л. от чего-л."
+        en: "to insure sth. against sth."
+      examples:
+        - de: "Sie hat ihr Haus gegen Feuer versichert."
+          ru: "Она застраховала свой дом от пожара."
+          en: "She insured her house against fire."
+      sources:
+        - "duden"
+
+Versicherung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "страховка от чего-л."
+        en: "insurance against sth."
+      examples:
+        - de: "Wir haben eine Versicherung gegen Feuer abgeschlossen."
+          ru: "Мы заключили страховку от пожара."
+          en: "We took out insurance against fire."
+      sources:
+        - "duden"
+
+Verständnis:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "понимание чего-л., сочувствие к чему-л."
+        en: "understanding of sth., sympathy for sth."
+      examples:
+        - de: "Sie zeigte großes Verständnis für seine Lage."
+          ru: "Она проявила большое понимание к его положению."
+          en: "She showed great understanding of his situation."
+      sources:
+        - "duden"
 
 verstecken:
   pos: "verb"
@@ -207,6 +737,54 @@ verstehen:
       senseNote:
         ru: "в чём разбираешься — область знания"
         en: "what you know about — a field of knowledge"
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "ладить с кем-л."
+        en: "to get along with sb."
+      examples:
+        - de: "Ich verstehe mich gut mit meiner Schwester."
+          ru: "Я хорошо лажу с сестрой."
+          en: "I get along well with my sister."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с кем ладишь — отношения, а не толкование слова или знание темы"
+        en: "who you get along with — a relationship, not interpreting a word or knowing a field"
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "быть умелым в чём-л., знать толк в чём-л."
+        en: "to be skilled at sth., to know how to handle sth."
+      examples:
+        - de: "Er versteht sich auf diesen Beruf."
+          ru: "Он знает толк в этой профессии."
+          en: "He is skilled at this profession."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "в чём умел — практический навык, а не просто знание о предмете"
+        en: "what you are skilled at — practical competence, not just knowing about the subject"
+
+Verstoß:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "нарушение чего-л."
+        en: "a violation of sth."
+      examples:
+        - de: "Das ist ein Verstoß gegen den Anstand."
+          ru: "Это нарушение приличий."
+          en: "That is a violation of common decency."
+      sources:
+        - "duden"
 
 verstoßen:
   pos: "verb"
@@ -222,6 +800,106 @@ verstoßen:
           en: "That violates the rules."
       sources:
         - "prototype"
+
+versuchen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "пробовать свои силы в чём-л."
+        en: "to try one's hand at sth."
+      examples:
+        - de: "Sie versuchte sich an einem Roman."
+          ru: "Она пробовала свои силы в романе."
+          en: "She tried her hand at a novel."
+      sources:
+        - "duden"
+
+verteilen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "раздавать что-л. кому-л."
+        en: "to hand sth. out to sb., to distribute sth. to sb."
+      examples:
+        - de: "Sie verteilte das Geld an die Armen."
+          ru: "Она раздала деньги бедным."
+          en: "She distributed the money to the poor."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "кому раздаёшь — получатели"
+        en: "who you hand it out to — the recipients"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "распределять что-л. по чему-л."
+        en: "to spread sth. across sth., to divide sth. among sth."
+      examples:
+        - de: "Die Flüchtlinge wurden auf drei Unterkünfte verteilt."
+          ru: "Беженцев распределили по трём общежитиям."
+          en: "The refugees were distributed across three shelters."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "по чему распределяешь — места или доли, а не люди-получатели"
+        en: "what you spread it across — places or shares, not human recipients"
+
+vertiefen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "погружаться во что-л., углубляться во что-л."
+        en: "to immerse oneself in sth."
+      examples:
+        - de: "Sie vertieft sich in das Buch."
+          ru: "Она погружается в книгу."
+          en: "She immerses herself in the book."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Vertrauen:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "доверие к кому-л."
+        en: "trust in sb."
+      examples:
+        - de: "Ich habe Vertrauen zu meinem Arzt."
+          ru: "У меня есть доверие к своему врачу."
+          en: "I have trust in my doctor."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "к кому испытываешь доверие — личное отношение, в отличие от «auf», где полагаются на что-л."
+        en: "whom you trust — a personal relationship, unlike 'auf', which is relying on sth."
+    - prep: "auf"
+      case: "akk"
+      slugSuffix: 2
+      gloss:
+        ru: "доверие к чему-л., упование на что-л."
+        en: "trust in sth., reliance on sth."
+      examples:
+        - de: "Vertrauen auf Gott."
+          ru: "Упование на Бога."
+          en: "Trust in God."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на что полагаешься — доверие как опора, а не отношение к человеку"
+        en: "what you rely on — trust as reliance, not a relationship with a person"
 
 vertrauen:
   pos: "verb"
@@ -239,6 +917,199 @@ vertrauen:
       sources:
         - "seed"
 
+vertraut:
+  pos: "adj"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "хорошо знакомый с чем-л."
+        en: "familiar with sth."
+      examples:
+        - de: "Sie ist mit der Materie gut vertraut."
+          ru: "Она хорошо знакома с этим предметом."
+          en: "She is well familiar with the subject."
+      sources:
+        - "duden"
+
+Vertrautheit:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "знакомство с чем-л., осведомлённость в чём-л."
+        en: "familiarity with sth."
+      examples:
+        - de: "Meine Vertrautheit mit diesem Land half mir sehr."
+          ru: "Моё знакомство с этой страной очень мне помогло."
+          en: "My familiarity with this country helped me a lot."
+      sources:
+        - "duden"
+
+verwahren:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "решительно возражать против чего-л., протестовать против чего-л."
+        en: "to protest against sth., to object strongly to sth."
+      examples:
+        - de: "Er verwahrt sich gegen diese Anschuldigung."
+          ru: "Он решительно возражает против этого обвинения."
+          en: "He protests strongly against this accusation."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Verwahrung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "протест, возражение против чего-л. (офиц.)"
+        en: "a formal protest/objection against sth."
+      tags:
+        - "formal"
+      examples:
+        - de: "Der Anwalt legte Verwahrung gegen das Urteil ein."
+          ru: "Адвокат заявил официальный протест против приговора."
+          en: "The lawyer lodged a formal protest against the verdict."
+      sources:
+        - "duden"
+
+verwandeln:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "превращать что-л. во что-л."
+        en: "to turn/transform sth. into sth."
+      examples:
+        - de: "Er verwandelt die Niederlage in einen Sieg."
+          ru: "Он превращает поражение в победу."
+          en: "He turns the defeat into a victory."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+verwechseln:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "путать кого-л. / что-л. с кем-л. / чем-л."
+        en: "to confuse sb. / sth. with sb. / sth."
+      examples:
+        - de: "Sie hat mich mit meinem Bruder verwechselt."
+          ru: "Она перепутала меня с моим братом."
+          en: "She confused me with my brother."
+      sources:
+        - "duden"
+
+verweisen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "указывать на что-л., отсылать к чему-л."
+        en: "to refer/point to sth."
+      examples:
+        - de: "Das Schild verweist auf die Einfahrt."
+          ru: "Табличка указывает на въезд."
+          en: "The sign points to the entrance."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+verwenden:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "использовать что-л. для чего-л."
+        en: "to use sth. for sth."
+      examples:
+        - de: "Für die Salatsoße verwende ich Olivenöl."
+          ru: "Для заправки я использую оливковое масло."
+          en: "For the salad dressing I use olive oil."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "для чего используешь — назначение, цель применения"
+        en: "what you use it for — the purpose it serves"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "тратить время, силы на что-л."
+        en: "to devote time, effort to sth."
+      examples:
+        - de: "Sie verwendet viel Mühe auf diese Arbeit."
+          ru: "Она тратит много усилий на эту работу."
+          en: "She devotes a lot of effort to this work."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на что тратишь — то, во что вкладываешь время и силы, а не назначение вещи"
+        en: "what you expend it on — where time and effort go, not what an object is for"
+
+Verwendung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "применение чего-л. для чего-л."
+        en: "a use for sth."
+      examples:
+        - de: "Ich habe keine Verwendung für diesen alten Drucker."
+          ru: "У меня нет применения для этого старого принтера."
+          en: "I have no use for this old printer."
+      sources:
+        - "duden"
+
+verwickeln:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "запутываться в чём-л. (в противоречиях, в истории)"
+        en: "to get entangled in sth. (contradictions, an affair)"
+      examples:
+        - de: "Sie verwickelt sich in Widersprüche."
+          ru: "Она запутывается в противоречиях."
+          en: "She is getting entangled in contradictions."
+      sources:
+        - "duden"
+
+Verzicht:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "отказ от чего-л."
+        en: "renunciation of sth., waiver of sth."
+      examples:
+        - de: "Sein Verzicht auf das Erbe überraschte alle."
+          ru: "Его отказ от наследства всех удивил."
+          en: "His renunciation of the inheritance surprised everyone."
+      sources:
+        - "duden"
+
 verzichten:
   pos: "verb"
   patterns:
@@ -254,6 +1125,23 @@ verzichten:
           en: "He is doing without dessert."
       sources:
         - "seed"
+
+verzweifeln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "отчаиваться из-за чего-л."
+        en: "to despair of sth."
+      examples:
+        - de: "Er verzweifelt an der Situation."
+          ru: "Он отчаивается из-за ситуации."
+          en: "He despairs of the situation."
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
 
 vorbereiten:
   pos: "verb"
@@ -287,3 +1175,100 @@ Vorbereitung:
           en: "The preparation for the exam takes a long time."
       sources:
         - "prototype"
+
+vorgehen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "принимать меры против кого-л. / чего-л."
+        en: "to take action against sb. / sth."
+      examples:
+        - de: "Die Polizei geht entschieden gegen die Randalierer vor."
+          ru: "Полиция принимает решительные меры против дебоширов."
+          en: "The police take decisive action against the rioters."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+vorhaben:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "иметь планы, намерения в отношении кого-л."
+        en: "to have plans/intentions regarding sb."
+      examples:
+        - de: "Er hat Großes mit ihm vor."
+          ru: "У него большие планы на его счёт."
+          en: "He has great plans for him."
+      sources:
+        - "duden"
+
+Vorliebe:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "пристрастие к чему-л."
+        en: "preference/fondness for sth."
+      examples:
+        - de: "Er hat eine Vorliebe für scharfes Essen."
+          ru: "У него пристрастие к острой еде."
+          en: "He has a fondness for spicy food."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+vorliebnehmen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "довольствоваться чем-л., мириться с тем, что есть"
+        en: "to make do with sth."
+      examples:
+        - de: "Wir müssen mit dem, was da ist, vorliebnehmen."
+          ru: "Нам приходится довольствоваться тем, что есть."
+          en: "We have to make do with what is there."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+vorsprechen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "являться лично к кому-л. (в учреждение)"
+        en: "to call in person on sb., to apply in person at a place"
+      examples:
+        - de: "Er spricht persönlich beim Amt vor."
+          ru: "Он лично является в учреждение."
+          en: "He calls in person at the office."
+          lemmaForm: spricht
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+vorstellen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "представляться где-л., приходить на собеседование"
+        en: "to introduce oneself somewhere, to go for an interview"
+      examples:
+        - de: "Sie stellt sich bei der Personalleiterin vor."
+          ru: "Она представляется начальнице отдела кадров."
+          en: "She is introducing herself to the head of HR."
+      sources:
+        - "duden"

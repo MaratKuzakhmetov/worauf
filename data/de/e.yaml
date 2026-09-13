@@ -32,6 +32,107 @@ eignen:
         - "seed"
       reflexive: "akk"
 
+Eignung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "пригодность для чего-л."
+        en: "suitability for sth."
+      examples:
+        - de: "Seine Eignung für den Posten ist unbestritten."
+          ru: "Его пригодность для этой должности не оспаривается."
+          en: "His suitability for the post is undisputed."
+      sources:
+        - "duden"
+
+ein Hühnchen zu rupfen haben:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "иметь счёты с кем-л., иметь претензии к кому-л. (разг.)"
+        en: "to have a bone to pick with sb. (colloquial, idiom)"
+      examples:
+        - de: "Ich habe noch ein Hühnchen mit dir zu rupfen."
+          ru: "У меня с тобой ещё есть счёты."
+          en: "I still have a bone to pick with you."
+          lemmaForm: habe
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einbeziehen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "включать что-л. во что-л., учитывать что-л."
+        en: "to include sth. in sth., to factor sth. into sth."
+      examples:
+        - de: "Wir beziehen diesen Umstand in unsere Überlegungen ein."
+          ru: "Мы включаем это обстоятельство в наши размышления."
+          en: "We are factoring this circumstance into our considerations."
+      sources:
+        - "duden"
+
+einbringen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "вносить вклад во что-л., включаться во что-л."
+        en: "to contribute to sth., to get involved in sth."
+      examples:
+        - de: "Du kannst dich gerne in diese Debatte einbringen."
+          ru: "Ты можешь смело включиться в эту дискуссию."
+          en: "You are welcome to get involved in this debate."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einen guten Draht haben:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "иметь хорошие отношения с кем-л. (идиома)"
+        en: "to have a good rapport with sb. (idiom)"
+      examples:
+        - de: "Sie hat einen guten Draht zu ihrem Chef."
+          ru: "У неё хорошие отношения с начальником."
+          en: "She has a good rapport with her boss."
+          lemmaForm: hat
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einfallen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "вторгаться в какую-л. страну"
+        en: "to invade a country"
+      examples:
+        - de: "Die Truppen fielen in das Nachbarland ein."
+          ru: "Войска вторглись в соседнюю страну."
+          en: "The troops invaded the neighbouring country."
+          lemmaForm: fielen
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Einfluss:
   pos: "noun"
   article: "der"
@@ -47,6 +148,140 @@ Einfluss:
           en: "That has a great influence on the prices."
       sources:
         - "prototype"
+
+einfühlen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "вчувствоваться во что-л., поставить себя на чьё-л. место"
+        en: "to empathize with sb./sth., to put oneself in sb.'s shoes"
+      examples:
+        - de: "Ihr müsst euch in die Person einfühlen."
+          ru: "Вам нужно вчувствоваться в этого человека."
+          en: "You have to put yourselves in this person's shoes."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+eingehen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "реагировать на что-л., откликаться на что-л."
+        en: "to respond to sth., to address sth. (a question, a plan)"
+      examples:
+        - de: "Der Lehrer geht auf die Frage ein."
+          ru: "Учитель отвечает на вопрос."
+          en: "The teacher responds to the question."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что реагируешь — вопрос или план, к которому обращаешься"
+        en: "what you respond to — a question or plan you address"
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "войти во что-л. (в историю), стать частью чего-л."
+        en: "to go down in sth. (history), to become part of sth."
+      examples:
+        - de: "Der Tag ist in die Geschichte eingegangen."
+          ru: "Этот день вошёл в историю."
+          en: "The day went down in history."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "во что входишь — куда навсегда становишься частью, а не на что отвечаешь"
+        en: "what you become part of — something you permanently enter, not something you respond to"
+
+eingreifen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "вмешиваться во что-л."
+        en: "to intervene in sth."
+      examples:
+        - de: "Die Polizei greift in den Streit ein."
+          ru: "Полиция вмешивается в конфликт."
+          en: "The police intervene in the dispute."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einhämmern:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "наносить удары по кому-л. (перен. тж. о критике)"
+        en: "to hammer blows on sb., to pound sb. (figuratively also of criticism)"
+      examples:
+        - de: "Der Boxer hämmerte auf seinen Gegner ein."
+          ru: "Боксёр обрушивал удары на своего противника."
+          en: "The boxer hammered blows on his opponent."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einhergehen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "сопровождаться чем-л., идти рука об руку с чем-л."
+        en: "to be accompanied by sth., to go hand in hand with sth."
+      examples:
+        - de: "Die Krankheit geht mit Fieber einher."
+          ru: "Болезнь сопровождается температурой."
+          en: "The illness is accompanied by fever."
+          lemmaForm: geht
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einigen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "договариваться о чём-л."
+        en: "to agree on sth."
+      examples:
+        - de: "Sie einigen sich auf einen Preis."
+          ru: "Они договариваются о цене."
+          en: "They agree on a price."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einkaufen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "приобретать долю участия в чём-л. (напр., в фирме)"
+        en: "to buy into sth. (e.g. a company)"
+      examples:
+        - de: "Er hat sich in die Firma eingekauft."
+          ru: "Он купил долю в фирме."
+          en: "He bought into the company."
+          lemmaForm: eingekauft
+      sources:
+        - "duden"
 
 einladen:
   pos: "verb"
@@ -79,6 +314,60 @@ Einladung:
       sources:
         - "prototype"
 
+einlassen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "решаться на что-л., ввязываться во что-л."
+        en: "to get involved in sth., to agree to sth. (a risk)"
+      examples:
+        - de: "Sie lässt sich auf ein Abenteuer ein."
+          ru: "Она решается на приключение."
+          en: "She gets involved in an adventure."
+          lemmaForm: lässt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что решаешься — риск или предложение, которое принимаешь"
+        en: "what you agree to — a risk or offer you accept"
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "вступать во что-л. (разговор)"
+        en: "to get into sth. (a conversation)"
+      examples:
+        - de: "Er lässt sich in ein Gespräch ein."
+          ru: "Он вступает в разговор."
+          en: "He gets into a conversation."
+          lemmaForm: lässt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "во что вступаешь — конкретное взаимодействие, а не риск вообще"
+        en: "what you get into — a specific interaction, not a general risk"
+
+einmarschieren:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "вторгаться в страну (с войсками)"
+        en: "to march into/invade a country (with troops)"
+      examples:
+        - de: "Die Armee marschierte in das Nachbarland ein."
+          ru: "Армия вторглась в соседнюю страну."
+          en: "The army marched into the neighbouring country."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 einmischen:
   pos: "verb"
   patterns:
@@ -94,6 +383,138 @@ einmischen:
           en: "Do not interfere in my affairs!"
       sources:
         - "prototype"
+
+einreichen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "подавать что-л. куда-л. (заявление, жалобу)"
+        en: "to submit sth. to an authority (a complaint, an application)"
+      examples:
+        - de: "Sie hat die Klage bei Gericht eingereicht."
+          ru: "Она подала иск в суд."
+          en: "She submitted the complaint to the court."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einreisen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "въезжать в страну (с артиклем женского рода или во множественном числе)"
+        en: "to enter a country (one with a feminine or plural name)"
+      examples:
+        - de: "Sie reist in die Schweiz ein."
+          ru: "Она въезжает в Швейцарию."
+          en: "She is entering Switzerland."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "у стран женского рода и стран во множественном числе — «in»"
+        en: "for countries with a feminine or plural name — 'in'"
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "въезжать в страну (с большинством других названий стран)"
+        en: "to enter a country (most other country names)"
+      examples:
+        - de: "Er reist nach Frankreich ein."
+          ru: "Он въезжает во Францию."
+          en: "He is entering France."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "у большинства других названий стран (без артикля) — «nach»"
+        en: "for most other country names (used without an article) — 'nach'"
+
+einrichten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "готовиться к чему-л., настраиваться на что-л."
+        en: "to prepare for sth., to get ready for sth."
+      examples:
+        - de: "Wir richten uns auf eine lange Wartezeit ein."
+          ru: "Мы готовимся к долгому ожиданию."
+          en: "We are preparing for a long wait."
+      sources:
+        - "duden"
+
+einschalten:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "вмешиваться во что-л., подключаться к чему-л."
+        en: "to get involved in sth., to intervene in sth."
+      examples:
+        - de: "Ich habe mich in die Diskussion eingeschaltet."
+          ru: "Я подключился к дискуссии."
+          en: "I got involved in the discussion."
+          lemmaForm: eingeschaltet
+      sources:
+        - "duden"
+
+einschießen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "фокусироваться на ком-л. с критикой, делать кого-л. постоянной мишенью"
+        en: "to fixate on sb. with criticism, to make sb. a repeated target"
+      examples:
+        - de: "Die Medien hatten sich auf den Minister eingeschossen."
+          ru: "Медиа сделали министра постоянной мишенью критики."
+          en: "The media had fixated on the minister as their target."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einschlagen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "наносить удары по кому-л."
+        en: "to strike at sb. repeatedly"
+      examples:
+        - de: "Wie von Sinnen schlug er auf ihn ein."
+          ru: "Он словно обезумев, бил по нему."
+          en: "As if out of his mind, he struck at him repeatedly."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einschwören:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "настраивать, сплачивать вокруг чего-л."
+        en: "to commit/pledge sb. to sth."
+      examples:
+        - de: "Die Partei schwor sich auf den Kandidaten ein."
+          ru: "Партия сплотилась вокруг кандидата."
+          en: "The party pledged itself to the candidate."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 einsetzen:
   pos: "verb"
@@ -111,6 +532,106 @@ einsetzen:
       sources:
         - "prototype"
 
+einspringen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "подменять кого-л., выручать кого-л."
+        en: "to fill in for sb., to step in for sb."
+      examples:
+        - de: "Er ist für seinen kranken Kollegen eingesprungen."
+          ru: "Он подменил своего заболевшего коллегу."
+          en: "He filled in for his sick colleague."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einsteigen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "садиться в транспорт"
+        en: "to get on/into a vehicle"
+      examples:
+        - de: "Er steigt in den Bus ein."
+          ru: "Он садится в автобус."
+          en: "He is getting on the bus."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+einstellen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "настраиваться на что-л., приспосабливаться к чему-л."
+        en: "to adapt to sth., to prepare oneself for sth."
+      examples:
+        - de: "Sie stellt sich auf die neue Situation ein."
+          ru: "Она приспосабливается к новой ситуации."
+          en: "She is adapting to the new situation."
+      sources:
+        - "duden"
+
+Einstellung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "отношение к кому-л. / чему-л."
+        en: "attitude towards sb. / sth."
+      examples:
+        - de: "Sie hat eine kritische Einstellung zu den neuen Regeln."
+          ru: "У неё критическое отношение к новым правилам."
+          en: "She has a critical attitude towards the new rules."
+      sources:
+        - "duden"
+
+eintreten:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "вступать во что-л. (в клуб, партию)"
+        en: "to join sth. (a club, a party)"
+      examples:
+        - de: "Er tritt in den Verein ein."
+          ru: "Он вступает в клуб."
+          en: "He is joining the club."
+          lemmaForm: tritt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "во что вступаешь — организация, а не дело, за которое борешься"
+        en: "what you join — an organisation, not a cause you fight for"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "выступать за что-л., отстаивать что-л."
+        en: "to advocate for sth., to stand up for sth."
+      examples:
+        - de: "Sie tritt für ihre Rechte ein."
+          ru: "Она выступает за свои права."
+          en: "She is standing up for her rights."
+          lemmaForm: tritt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за что выступаешь — дело, которое отстаиваешь, а не организация, в которую вступаешь"
+        en: "what you stand up for — a cause you defend, not an organisation you join"
+
 einverstanden:
   pos: "adj"
   patterns:
@@ -125,6 +646,101 @@ einverstanden:
           en: "I am in agreement with the plan."
       sources:
         - "prototype"
+
+Einverständnis:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "согласие с кем-л."
+        en: "agreement with sb."
+      examples:
+        - de: "Er handelte im Einverständnis mit seinen Eltern."
+          ru: "Он действовал с согласия своих родителей."
+          en: "He acted in agreement with his parents."
+      sources:
+        - "duden"
+
+einwilligen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "соглашаться на что-л., давать согласие на что-л."
+        en: "to consent to sth."
+      examples:
+        - de: "Sie willigt in die Operation ein."
+          ru: "Она соглашается на операцию."
+          en: "She consents to the operation."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Einwilligung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "согласие на что-л."
+        en: "consent to sth."
+      examples:
+        - de: "Der Patient gab seine Einwilligung zu der Operation."
+          ru: "Пациент дал своё согласие на операцию."
+          en: "The patient gave his consent to the operation."
+      sources:
+        - "duden"
+
+einzahlen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "вносить деньги на счёт, вкладывать на что-л."
+        en: "to pay into sth., to deposit into sth. (an account)"
+      examples:
+        - de: "Sie zahlt das Geld auf ihr Konto ein."
+          ru: "Она вносит деньги на свой счёт."
+          en: "She deposits the money into her account."
+      sources:
+        - "duden"
+
+einziehen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "въезжать во что-л. (о жилье)"
+        en: "to move into sth. (a dwelling)"
+      examples:
+        - de: "Die Familie zieht in ein neues Haus ein."
+          ru: "Семья въезжает в новый дом."
+          en: "The family is moving into a new house."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Ekel:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "отвращение к чему-л."
+        en: "disgust at sth."
+      examples:
+        - de: "Sie empfand Ekel vor fettem Fleisch."
+          ru: "Она испытывала отвращение к жирному мясу."
+          en: "She felt disgust at fatty meat."
+      sources:
+        - "duden"
 
 ekeln:
   pos: "verb"
@@ -142,6 +758,52 @@ ekeln:
           lemmaForm: "ekle"
       sources:
         - "prototype"
+
+empfänglich:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "восприимчивый к чему-л."
+        en: "receptive to sth., susceptible to sth."
+      examples:
+        - de: "Er ist empfänglich für Schmeicheleien."
+          ru: "Он восприимчив к лести."
+          en: "He is receptive to flattery."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+enden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "заканчиваться чем-л."
+        en: "to end with sth."
+      examples:
+        - de: "Der Vortrag endete mit einem Zitat."
+          ru: "Доклад закончился цитатой."
+          en: "The talk ended with a quotation."
+      sources:
+        - "duden"
+
+entlassen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "выпускать, освобождать кого-л. откуда-л. / от чего-л."
+        en: "to release sb. from sth., to discharge sb. from sth."
+      examples:
+        - de: "Der Arzt entlässt ihn aus dem Krankenhaus."
+          ru: "Врач выписывает его из больницы."
+          en: "The doctor is discharging him from the hospital."
+      sources:
+        - "duden"
 
 entscheiden:
   pos: "verb"
@@ -179,6 +841,22 @@ entscheiden:
         - "seed"
       reflexive: "akk"
 
+Entscheidung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "решение в пользу кого-л. / чего-л."
+        en: "decision in favor of sb. / sth."
+      examples:
+        - de: "Die Entscheidung für diesen Kandidaten fiel spät."
+          ru: "Решение в пользу этого кандидата было принято поздно."
+          en: "The decision in favor of this candidate came late."
+      sources:
+        - "duden"
+
 entschließen:
   pos: "verb"
   patterns:
@@ -194,6 +872,22 @@ entschließen:
           en: "He resolves on a move."
       sources:
         - "prototype"
+
+Entschluss:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "решение о чём-л."
+        en: "decision on sth."
+      examples:
+        - de: "Sie fasste den Entschluss zu einer Reise."
+          ru: "Она приняла решение о путешествии."
+          en: "She made the decision to go on a trip."
+      sources:
+        - "duden"
 
 entschuldigen:
   pos: "verb"
@@ -231,6 +925,70 @@ entschuldigen:
         - "seed"
       reflexive: "akk"
 
+enttäuscht:
+  pos: "adj"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "разочарованный кем-л. / чем-л."
+        en: "disappointed by/in sb. / sth."
+      examples:
+        - de: "Ich bin schwer enttäuscht von ihr."
+          ru: "Я сильно разочарован в ней."
+          en: "I am deeply disappointed in her."
+      sources:
+        - "duden"
+
+entwickeln:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "развиваться из чего-л."
+        en: "to develop out of sth."
+      examples:
+        - de: "Aus der Raupe entwickelt sich der Schmetterling."
+          ru: "Из гусеницы развивается бабочка."
+          en: "The butterfly develops out of the caterpillar."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "из чего развивается — исходная форма"
+        en: "what it develops out of — the starting form"
+    - prep: "zu"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "превращаться во что-л., вырастать во что-л."
+        en: "to develop into sth."
+      examples:
+        - de: "Japan hat sich zu einer Industriemacht entwickelt."
+          ru: "Япония превратилась в промышленную державу."
+          en: "Japan has developed into an industrial power."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "во что развивается — конечная форма, а не исходная"
+        en: "what it develops into — the resulting form, not the starting one"
+
+erfüllen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "наполнять кого-л. каким-л. чувством"
+        en: "to fill sb. with a feeling"
+      examples:
+        - de: "Ihr Verhalten erfüllt mich mit Sorge."
+          ru: "Её поведение наполняет меня тревогой."
+          en: "Her behaviour fills me with worry."
+      sources:
+        - "duden"
+
 ergeben:
   pos: "verb"
   patterns:
@@ -247,6 +1005,60 @@ ergeben:
           lemmaForm: ergibt
       sources:
         - "prototype"
+
+ergehen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      reflexive: "akk"
+      tags:
+        - "dated"
+      gloss:
+        ru: "пространно рассуждать о чём-л., распространяться на тему чего-л. (часто неодобр.)"
+        en: "to dwell at length on sth., to go on and on about sth. (often disapproving)"
+      examples:
+        - de: "Er ergeht sich gern in langen Reden."
+          ru: "Он любит распространяться в длинных речах."
+          en: "He likes to go on and on in long speeches."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "многословно и с осуждением — не про содержание, а про манеру говорить"
+        en: "wordy and disapproving — about the manner of speaking, not the content"
+
+erhöhen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "повышать что-л. до какого-л. уровня"
+        en: "to raise sth. to a level"
+      examples:
+        - de: "Die Stadt erhöht die Miete auf den doppelten Betrag."
+          ru: "Город повышает арендную плату до двойной суммы."
+          en: "The city is raising the rent to double the amount."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "до какого уровня — новое итоговое значение"
+        en: "to what level — the new resulting figure"
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "повышать что-л. на какую-л. величину"
+        en: "to raise sth. by an amount"
+      examples:
+        - de: "Der Betrieb erhöht die Löhne um einen kleinen Betrag."
+          ru: "Предприятие повышает зарплаты на небольшую сумму."
+          en: "The company is raising wages by a small amount."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на какую величину — размер прибавки, а не итог"
+        en: "by what amount — the size of the increase, not the result"
 
 erholen:
   pos: "verb"
@@ -316,6 +1128,37 @@ erkennen:
       sources:
         - "prototype"
 
+erklären:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "объявлять кого-л. кем-л. (официально)"
+        en: "to declare sb. sth. (officially)"
+      examples:
+        - de: "Er wurde zum Sieger erklärt."
+          ru: "Его объявили победителем."
+          en: "He was declared the winner."
+      sources:
+        - "duden"
+
+Erklärung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "объяснение чего-л."
+        en: "an explanation for sth."
+      examples:
+        - de: "Er hat für sein Verhalten keine Erklärung."
+          ru: "У него нет объяснения своему поведению."
+          en: "He has no explanation for his behavior."
+      sources:
+        - "duden"
+
 erkundigen:
   pos: "verb"
   patterns:
@@ -351,6 +1194,86 @@ erkundigen:
         ru: "о чём справляешься — предмет вопроса"
         en: "what you enquire about — the subject"
 
+Erkundigung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "справка о ком-л. / чём-л."
+        en: "inquiry about sb. / sth."
+      examples:
+        - de: "Die Polizei zieht Erkundigungen über den Verdächtigen ein."
+          ru: "Полиция наводит справки о подозреваемом."
+          en: "The police are gathering information about the suspect."
+      sources:
+        - "duden"
+
+ernähren:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "питаться чем-л."
+        en: "to live on sth., to feed on sth."
+      examples:
+        - de: "Pandas ernähren sich von Bambus."
+          ru: "Панды питаются бамбуком."
+          en: "Pandas feed on bamboo."
+      sources:
+        - "duden"
+
+erschrecken:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "пугаться кого-л. / чего-л."
+        en: "to be startled by sb. / sth., to be frightened of sb. / sth."
+      examples:
+        - de: "Ich erschrak vor ihr."
+          ru: "Я испугался её."
+          en: "I was startled by her."
+          lemmaForm: erschrak
+      sources:
+        - "duden"
+
+ersehen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "делать вывод из чего-л., усматривать из чего-л."
+        en: "to gather from sth., to infer from sth."
+      examples:
+        - de: "Aus den Akten ist nichts zu ersehen."
+          ru: "Из документов ничего нельзя понять."
+          en: "Nothing can be inferred from the files."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+erwachen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "пробуждаться к чему-л. (перен.)"
+        en: "to awaken to sth. (figuratively)"
+      examples:
+        - de: "Im Frühling erwacht die Natur zu neuem Leben."
+          ru: "Весной природа пробуждается к новой жизни."
+          en: "In spring, nature awakens to new life."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 erzählen:
   pos: "verb"
   patterns:
@@ -384,3 +1307,18 @@ erzählen:
           en: "She tells us about her holiday."
       sources:
         - "seed"
+
+erziehen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "воспитывать в ком-л. какое-л. качество"
+        en: "to bring sb. up to be sth., to raise sb. to sth."
+      examples:
+        - de: "Sie erzieht ihre Kinder zur Selbstständigkeit."
+          ru: "Она воспитывает в своих детях самостоятельность."
+          en: "She is bringing her children up to be independent."
+      sources:
+        - "duden"

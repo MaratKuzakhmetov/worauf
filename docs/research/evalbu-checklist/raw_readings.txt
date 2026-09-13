@@ -1,0 +1,1100 @@
+abfahren 4
+abgeben 6
+abgeben 1
+abgeben 4
+abgeben 5
+abgeben 9
+abgeben 8
+abgeben 7
+abhängen I 2
+abhängen I 1
+abhängen II 2
+abhängen II 1
+abheben 5
+abheben 6
+abheben 4
+abheben 3
+abheben 1
+abheben, sich 1
+ableiten 3
+ableiten 2
+ableiten, sich 2
+ableiten, sich 1
+abmachen 1
+abmelden 2
+abmelden 4
+abmelden 1
+abmelden 3
+abnehmen 13
+abschließen 6
+abschließen 7
+abschließen 3
+abschließen 2
+abstimmen 3
+abstimmen 1
+abstimmen 2
+abstimmen 4
+abtrocknen II 1
+abzielen 1
+abzielen 2
+achten 1
+achten 6
+achten 5
+achten 4
+amüsieren, sich 3
+amüsieren, sich 2
+analysieren 3
+anbieten 4
+ändern 4
+ändern, sich 3
+anfangen 1
+anfangen 4
+anfangen 6
+anfangen 7
+anfangen 5
+angehen 4
+angehen 6
+ankommen 3
+ankommen 4
+ankommen, es 2
+ankommen, es 1
+anmachen 6
+anmelden 6
+anmelden 5
+anmelden 4
+anmelden 3
+anmelden 2
+anmelden 1
+annehmen 10
+annehmen 11
+anrufen 4
+anrufen 3
+ansehen 3
+anstrengen 3
+anstrengen, sich 3
+antworten 2
+antworten 1
+antworten 3
+arbeiten 2
+arbeiten 4
+arbeiten 5
+arbeiten 6
+arbeiten 7
+ärgern, sich 1
+auffordern 2
+auffordern 1
+aufheben 6
+aufhören 1
+aufhören 4
+aufhören 5
+aufmachen 8
+aufpassen 1
+aufpassen 2
+aufräumen 4
+aufräumen 3
+aufregen, sich 1
+aufstehen 3
+aufwachen 1
+aus sein 4
+aus sein 5
+ausgeben 1
+ausgeben 2
+ausgeben 3
+ausgehen 9
+ausgehen 8
+ausgehen 7
+ausgehen 6
+ausmachen 3
+auspacken 3
+auspacken 5
+ausreichen 1
+ausruhen, (sich) 1
+ausschließen 3
+ausschließen 4
+aussehen 3
+aussehen, es 3
+aussehen, es 2
+aussteigen 2
+ausstellen 1
+aussuchen, (sich) 1
+ausziehen I 2
+ausziehen I 3
+baden 5
+baden 3
+baden 1
+basieren I 1
+basieren II 1
+bauen 5
+bauen 6
+bauen 4
+bauen 2
+beantragen 1
+bedanken, sich 1
+bedeuten 3
+bedeuten 4
+bedeuten 5
+bedienen 4
+bedienen 3
+beeilen, sich 1
+beeinflussen 2
+befassen 1
+befassen, sich 1
+befinden 1
+befinden, sich 3
+beginnen 8
+beginnen 7
+beginnen 6
+beginnen 2
+beginnen 1
+begründen 5
+begründen 1
+behindern 1
+behindern 2
+bekommen II 4
+bekommen II 3
+bekommen II 13
+bekommen II 14
+bekommen II 18
+beleidigen 1
+bemerken 2
+bemühen, sich 3
+bemühen, sich 4
+bemühen, sich 1
+bemühen, sich 2
+beobachten 1
+beraten 2
+beraten 1
+berichten 2
+beruhen 1
+beruhen 2
+beschäftigen 4
+beschäftigen, sich 4
+beschäftigen, sich 1
+beschäftigen, sich 2
+beschäftigen, sich 3
+beschließen 2
+beschließen 5
+beschreiben 4
+beschweren, sich 1
+besorgen 1
+bestätigen 7
+bestehen 3
+bestehen 6
+bestehen 5
+bestehen 4
+bestellen 5
+bestellen 2
+bestellen 1
+bestimmen 9
+bestimmen 10
+bestimmen 8
+bestimmen 7
+bestimmen 3
+bestimmen 2
+bestrafen 1
+bestrafen 2
+beten 3
+beten 1
+betrügen 2
+betrügen 3
+bewegen I 1
+bewegen, sich 7
+bewerben, sich 1
+bewerben, sich 5
+bewerben, sich 6
+bewerben, sich 4
+bewerben, sich 2
+bezahlen 4
+bezahlen 2
+bezahlen 3
+bezeichnen 4
+bezeichnen 2
+beziehen, sich 2
+beziehen, sich 1
+beziehen, sich 3
+bieten 2
+bieten 3
+bilden 7
+bilden 6
+bilden, sich 1
+bitten 4
+bitten 2
+bitten 1
+bleiben 4
+bleiben 6
+bleiben 7
+bleiben 9
+bluten 3
+brechen 7
+brechen 9
+bremsen 4
+brennen 9
+brennen 8
+brennen 6
+bringen 12
+bringen 11
+bringen 10
+bringen 8
+bringen 7
+bringen 6
+bringen 9
+buchen 1
+bürsten 5
+da sein 5
+danken 1
+denken 7
+denken 9
+denken 6
+denken 5
+denken 4
+denken 3
+dienen 2
+differenzieren 3
+differenzieren 2
+differenzieren 1
+differenzieren, sich 3
+differenzieren, sich 1
+differenzieren, sich 2
+diskutieren 1
+drehen 11
+drehen 10
+drehen 8
+drehen, sich 3
+drehen, sich 1
+drücken 1
+drücken 5
+drücken 11
+drücken 10
+drücken 13
+drücken, sich 1
+ehren 1
+eignen, sich 2
+eignen, sich 1
+einbeziehen 2
+einbeziehen 1
+einfallen 5
+einfallen 2
+eingehen 6
+eingehen 5
+eingehen 4
+eingehen 3
+eingehen 7
+einkaufen 2
+einladen 2
+einladen 3
+einladen 1
+einpacken 3
+einpacken 1
+einrichten 2
+einrichten 5
+einschalten 2
+einschließen 3
+einsetzen 3
+einsetzen 4
+einsteigen 3
+einsteigen 4
+einsteigen 5
+einstellen 5
+einstellen 6
+einzahlen 1
+einziehen 2
+empfehlen 2
+enden 3
+enden 7
+enden 4
+entdecken 4
+entdecken 3
+entlassen 2
+entlassen 1
+entlassen 4
+entscheiden 2
+entscheiden 4
+entscheiden, sich 1
+entschließen, sich 1
+entschuldigen 3
+entschuldigen 4
+entschuldigen, sich 1
+entsprechen 2
+entstehen 3
+entstehen 2
+enttäuschen 1
+entwickeln 8
+entwickeln 6
+entwickeln 7
+entwickeln, sich 3
+entwickeln, sich 4
+erfahren 6
+erfahren 4
+erfahren 1
+erfüllen 9
+erfüllen 8
+erfüllen, sich 2
+erhalten 8
+erhalten 14
+erhalten 9
+erhalten 2
+erhalten 1
+erhöhen 5
+erholen, sich 3
+erholen, sich 2
+erholen, sich 1
+erinnern 3
+erinnern 2
+erinnern 1
+erinnern, sich 1
+erkennen 2
+erkennen 4
+erkennen 6
+erklären 5
+erklären 6
+erklären 4
+erkundigen, sich 1
+ernähren 2
+ernähren 1
+ernähren, sich 1
+eröffnen 2
+eröffnen 6
+erörtern 2
+erreichen 2
+erschrecken I 1
+erwarten 4
+erzählen 5
+erzählen 1
+erzählen 4
+erziehen 2
+existieren 3
+fallen 10
+fallen 5
+fallen 8
+fallen 7
+fallen 6
+fallen 9
+fallen 11
+fallen 12
+fehlen 5
+fehlen, es 1
+festhalten, sich / fest halten, sich 1
+finden 6
+finden 7
+finden 10
+fliegen 5
+fliegen 4
+fliegen 6
+fliegen 7
+fliehen 2
+fließen 2
+fließen 3
+folgen 2
+folgen 3
+folgen 5
+folgern 1
+fordern 8
+fordern 7
+fordern 6
+fordern 5
+fordern 2
+fordern 1
+fragen 5
+fragen 3
+fragen 4
+fragen 2
+fragen, sich 1
+fressen 5
+freuen, sich 2
+freuen, sich 3
+freuen, sich 1
+frieren 1
+frisieren 5
+frisieren 4
+frühstücken 2
+fühlen 5
+fühlen 4
+führen 3
+führen 12
+fürchten 4
+fürchten, sich 1
+fußen 1
+fußen 2
+geben 15
+geben 14
+geben, es 6
+geben, es 7
+geben, es 5
+gehen 3
+gehen 21
+gehen 22
+gehen 23
+gehen 24
+gehen 25
+gehen 26
+gehen 27
+gehen 28
+gehen 29
+gehen 30
+gehen 31
+gehen 32
+gehen 33
+gehen 34
+gehen, es 4
+gehen, es 2
+gehen, es 6
+gehen, es 7
+gehen, es 5
+gehören 4
+gehören 2
+gehören 3
+gelingen 3
+gelten 2
+gelten 1
+geschehen 4
+geschehen 3
+gewinnen 2
+gewinnen 8
+gewinnen 9
+gewinnen 10
+gewinnen 13
+gewinnen 1
+gewöhnen 1
+gewöhnen 2
+gewöhnen, sich 2
+gewöhnen, sich 1
+glauben 6
+glauben 3
+glauben 7
+gliedern 1
+gliedern 2
+gliedern, sich 1
+gratulieren 1
+gründen 2
+gründen 3
+grüßen 2
+haben 15
+haben 14
+halten 5
+halten 13
+halten 24
+halten 25
+halten, sich 5
+halten, sich 6
+halten, sich 4
+halten, sich 1
+handeln 9
+handeln 8
+handeln 7
+handeln 6
+handeln 5
+handeln 1
+handeln, sich es 1
+hängen I 4
+hängen I 5
+hängen II 3
+heißen 2
+heißen 6
+heißen 4
+heißen, es 1
+helfen 2
+helfen 3
+helfen 5
+helfen 1
+herrschen 2
+herstellen 1
+hindern 1
+hindern 2
+hindern 3
+hindern 4
+hoffen 2
+holen 5
+hören 3
+hören 5
+hören 6
+hören 7
+hören 8
+hören 9
+hören 4
+informieren 3
+informieren 4
+informieren 2
+informieren 1
+informieren, sich 1
+interessieren 2
+interessieren, sich 2
+interessieren, sich 1
+irren, sich 2
+irren, sich 1
+kämmen 2
+kämpfen 9
+kämpfen 1
+kämpfen 2
+kämpfen 3
+kämpfen 4
+kämpfen 13
+kämpfen 12
+kämpfen 11
+kämpfen 10
+kämpfen 8
+kämpfen 7
+kämpfen 6
+kämpfen 5
+kaufen 1
+kennen lernen/kennenlernen 3
+klagen 1
+klagen 2
+klagen 3
+kleben 7
+kleben 5
+kleben 6
+klingeln 3
+klingeln 4
+klingeln, es 2
+kochen 7
+kochen 6
+kommen 13
+kommen 31
+kommen 30
+kommen 29
+kommen 28
+kommen 27
+kommen 26
+kommen 25
+kommen 24
+kommen 23
+kommen 22
+kommen 32
+kommen 2
+kommen 3
+kommen 15
+kommen 16
+kommen 17
+kommen 18
+kommen 19
+kommen 20
+kommen 21
+kommen, es 1
+konzentrieren, sich 1
+konzentrieren, sich 3
+kosten 4
+kriegen 15
+kriegen 14
+kriegen 4
+kriegen 1
+kriegen 19
+kümmern, sich 1
+kümmern, sich 2
+lächeln 1
+lachen 1
+lassen 8
+laufen 12
+laufen 13
+laufen 11
+laufen 10
+laufen 9
+laufen 8
+leben 7
+leben 6
+leben 9
+leben 8
+leben 2
+leiden 4
+leiden 1
+leiden 5
+leiden 2
+leihen 1
+leihen, (sich) 1
+lernen 2
+lernen 3
+lesen 5
+lesen 10
+liefern 1
+liefern 5
+liegen 8
+liegen 7
+liegen 10
+liegen 11
+liegen 18
+liegen 9
+liegen 1
+loben 2
+lohnen, (sich) 1
+lösen 6
+lösen 8
+lösen 7
+lösen, sich 5
+lösen, sich 1
+lösen, sich 8
+lösen, sich 7
+lösen, sich 6
+losfahren 3
+losfahren 2
+machen 13
+machen 14
+machen 15
+machen 16
+machen 17
+markieren 4
+meinen 1
+meinen 6
+meinen 5
+meinen 2
+melden 4
+melden 5
+melden 2
+melden, sich 3
+melden, sich 1
+messen 2
+mieten 1
+mitfahren 1
+mitfahren 2
+münden 2
+nachdenken 1
+nachdenken 2
+nachschlagen 1
+nehmen 7
+nehmen 12
+nehmen 13
+nehmen 14
+nehmen 15
+nennen 5
+öffnen 4
+öffnen 5
+operieren 1
+operieren 4
+ordnen 4
+ordnen 5
+packen 6
+packen 7
+passen 5
+passen 6
+passen 7
+passen 8
+passen 9
+passieren 3
+passieren 4
+planen 2
+probieren 3
+produzieren 1
+protestieren 1
+prüfen 3
+prüfen 4
+putzen 7
+raten 3
+reagieren 1
+reagieren 3
+reagieren 2
+rechnen 2
+rechnen 9
+rechnen 4
+rechnen 5
+rechnen 7
+rechnen 8
+reden 10
+reden 11
+reden 9
+reden 8
+reden 7
+reden 6
+reden 5
+reden 1
+regeln 3
+regieren 1
+reinigen 1
+reisen 2
+reservieren 1
+reservieren 2
+resultieren 2
+resultieren 1
+retten 1
+riechen 2
+riechen 4
+riechen, es 1
+rufen 5
+rufen 13
+rufen 12
+rufen 11
+rufen 6
+sagen 3
+sagen 9
+sagen 10
+sammeln 3
+sauber machen 3
+schalten 1
+schalten 4
+schalten 5
+schalten 7
+schauen 6
+schauen 5
+schauen 4
+schauen 3
+scheiden 4
+scheiden 5
+scheiden 3
+scheiden 1
+scheiden 6
+schicken 4
+schicken 3
+schieben 3
+schieben 2
+schieben 5
+schimpfen 2
+schimpfen 1
+schlafen 4
+schlagen I 3
+schlagen I 2
+schlagen II 14
+schlagen II 16
+schlagen II 12
+schlagen II 17
+schlagen II 13
+schließen 16
+schließen 15
+schließen 12
+schließen 11
+schließen 6
+schließen 10
+schließen 5
+schlussfolgern 1
+schmecken 5
+schmecken 6
+schneiden 2
+schneiden 7
+schneiden 6
+schneiden, sich 1
+schreiben 5
+schreiben 6
+schreiben 7
+schreiben 11
+schreiben 12
+schreiben 2
+schreien 7
+schreien 5
+schreien 2
+schreien 6
+schützen 1
+schützen 3
+schweigen 6
+schweigen 2
+schweigen 5
+schweigen 7
+schwimmen 5
+schwimmen 6
+schwimmen 4
+schwitzen 4
+sehen 12
+sehen 8
+sehen 6
+sein 3
+sein 12
+sein 17
+sein 4
+sein 10
+sein 11
+setzen 8
+setzen 9
+sichern 1
+singen 5
+singen 6
+sinken 5
+sitzen 4
+sorgen 1
+sorgen 4
+sorgen 3
+sorgen 2
+sparen 2
+sparen 5
+sparen 4
+sparen 3
+spielen 13
+spielen 14
+spielen 15
+spielen 16
+spielen 17
+spielen 12
+spielen 18
+spielen 6
+spielen 4
+spielen 11
+sprechen 4
+sprechen 5
+sprechen 9
+sprechen 10
+sprechen 11
+sprechen 14
+sprechen 15
+sprechen 16
+sprechen 17
+sprechen 18
+sprechen 19
+sprechen 20
+sprechen 21
+sprechen 22
+springen 8
+springen 3
+springen 7
+starten 4
+starten 3
+starten 5
+stecken 4
+stecken 9
+stecken 8
+stecken 10
+stecken 7
+stecken 5
+stehen 11
+stehen 10
+stehen 13
+stehen 14
+stehen 15
+stehen 16
+stehen 17
+stehen 12
+stehen 9
+stehen 3
+stellen 1
+stellen 7
+stellen 6
+stellen 5
+sterben 4
+sterben 1
+sterben 3
+stimmen 5
+stimmen 2
+stören 5
+stören 4
+stören 2
+streiken 1
+streiken 3
+streiten 1
+streiten 2
+streiten, (sich) 2
+streiten, (sich) 1
+studieren 4
+stürzen 3
+stürzen 2
+suchen 5
+suchen 2
+suchen 1
+teilen 6
+teilen 3
+teilen 4
+teilen 1
+teilen 2
+teilen 5
+teilen, (sich) 1
+teilnehmen 1
+teilnehmen 3
+teilnehmen 4
+teilnehmen 2
+telefonieren 1
+telefonieren 3
+trainieren 6
+trainieren 1
+trainieren 4
+trainieren 3
+trainieren 5
+träumen 3
+träumen 2
+treffen, sich 2
+treffen, sich 1
+treiben II 7
+treiben II 6
+treiben II 2
+trennen 2
+trennen 6
+trennen 1
+trennen 5
+trennen 4
+trennen 3
+trennen, sich 2
+trennen, sich 3
+trennen, sich 1
+treten I 3
+treten I 4
+treten I 5
+treten I 2
+treten II 5
+treten II 4
+treten II 2
+trinken 3
+turnen 1
+turnen 3
+überholen 2
+übernehmen 5
+übernehmen 7
+übernehmen 6
+überraschen 3
+überraschen 4
+überreden 1
+übersetzen 2
+übersetzen 1
+übersetzen 3
+überweisen 2
+überweisen 3
+überweisen 1
+überzeugen 1
+überzeugen 2
+überzeugen 3
+umsteigen 2
+umtauschen 3
+umtauschen 1
+umtauschen 2
+unterhalten, sich 1
+unterrichten 2
+unterrichten 3
+unterscheiden 5
+unterscheiden 6
+unterscheiden 4
+unterscheiden 3
+unterscheiden 2
+unterscheiden, sich 1
+unterscheiden, sich 2
+unterscheiden, sich 3
+unterschreiben 1
+unterschreiben 3
+unterstützen 2
+untersuchen 4
+untersuchen 3
+verabreden, sich 1
+verabschieden, sich 3
+verabschieden, sich 1
+verabschieden, sich 4
+verändern 5
+verbinden 3
+verbinden 9
+verbinden 8
+verbinden 7
+verbinden 6
+verbinden 5
+verbinden 4
+verbinden 2
+verbringen 3
+verdienen 4
+vergleichen 3
+vergleichen 2
+verhalten, sich 2
+verhalten, sich 1
+verkaufen 1
+verlangen 4
+verlangen 3
+verlangen 2
+verlangen 1
+verlangen 5
+verlangen 7
+verlangen 6
+verlassen, sich 1
+verletzen 4
+verletzen 6
+verletzen, sich 1
+verlieben, sich 1
+verlieben, sich 2
+verlieren 7
+verlieren 8
+verlieren 10
+verlieren 3
+vermieten 1
+vermuten 2
+vermuten 3
+versichern 1
+versichern 2
+versprechen, sich 2
+verstehen 4
+verstehen 6
+verstehen, sich 1
+verstehen, sich 2
+verstehen, sich 3
+versuchen 3
+verteilen 1
+verteilen 2
+verteilen 3
+verteilen 4
+vertreten 3
+vertreten 2
+verwechseln 2
+verwechseln 1
+verwechseln 3
+verwenden 3
+verwenden 2
+verwickeln 1
+verwickeln 2
+verwickeln, sich 3
+verwickeln, sich 2
+vorbereiten 2
+vorbereiten 4
+vorhaben 2
+vorkommen 2
+vorschlagen 2
+vorstellen 4
+vorstellen, sich 2
+wachsen 5
+wachsen 6
+wachsen 7
+wählen 3
+wählen 4
+wählen 5
+warnen 1
+warten 3
+warten 4
+warten 2
+warten 5
+wechseln II 8
+wechseln II 9
+wechseln II 7
+wechseln II 10
+wechseln II 3
+wechseln II 2
+wecken 1
+wecken 3
+wecken 2
+wehtun, sich 1
+weinen 3
+weinen 4
+weinen 2
+weinen 1
+wenden, sich 3
+wenden, sich 1
+wenden, sich 2
+werden 4
+werden 5
+werden, es 1
+werfen 4
+werfen 2
+winken 7
+winken 4
+winken 6
+wirken 5
+wirken 4
+wirken 3
+wirken 2
+wissen 4
+wissen 3
+wundern, sich 1
+wünschen, sich 1
+zahlen 1
+zahlen 3
+zahlen 2
+zählen 8
+zählen 7
+zählen 6
+zeichnen 6
+zeichnen 11
+ziehen II 11
+ziehen II 4
+ziehen II 3
+ziehen II 16
+ziehen II 14
+ziehen II 13
+ziehen II 12
+zuhören 1
+zumachen 7
+zunehmen 2
+zurückfahren 2
+zusammenfassen 2
+zusammenkommen 1
+zusammenkommen 4
+zusammenkommen 5
+zusammenlegen 3
+zusammenlegen 2
+zuschauen 2
+zuschauen 1
+zweifeln 1
+zwingen 5
+zwingen 2
+zwingen 1

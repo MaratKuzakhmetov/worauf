@@ -49,6 +49,9 @@ export function WordList({ lang, words, selectedWord, selectedPrep }: Props) {
             ? word.patterns.find((p) => p.prep === selectedPrep)
             : undefined;
           const muted = selectedPrep !== null && forPrep === undefined;
+          // Lit is the other half of the same selection: muted words are dimmed to
+          // `--ink-2`, lit ones take the marker swipe (docs/DESIGN.md §14.4).
+          const lit = selectedPrep !== null && forPrep !== undefined;
           const shown = forPrep ?? (word.patterns.length === 1 ? word.patterns[0] : undefined);
 
           // Always the word. Word and preposition are never selected together: each side
@@ -65,6 +68,7 @@ export function WordList({ lang, words, selectedWord, selectedPrep }: Props) {
                 className={[
                   styles.row,
                   muted ? styles.muted : '',
+                  lit ? styles.lit : '',
                   word.slug === selectedWord ? styles.on : '',
                 ]
                   .filter(Boolean)

@@ -1,5 +1,13 @@
-// basePath is empty on a custom domain and '/worauf' on github.io — set by CI.
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+/*
+ * There is deliberately no `basePath` here.
+ *
+ * It used to read `NEXT_PUBLIC_BASE_PATH`, from when the project was going to github.io.
+ * ADR 0004 moved it to a subdomain served from the root, which removed the need — and
+ * ADR 0006 turned the leftover variable into a hazard: a service worker's scope is its own
+ * path, so a non-empty base path would quietly narrow it and disable offline on part of the
+ * site. Nothing set the variable (CI passes only `SITE_ORIGIN`), so removing it changes no
+ * behaviour and closes the trap.
+ */
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -19,7 +27,6 @@ const isDev = process.env.NODE_ENV === 'development';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
-  basePath,
   images: { unoptimized: true },
   reactStrictMode: true,
   ...(isDev

@@ -9,8 +9,13 @@ export function WordPage({ word, lang }: { word: WordEntry; lang: Locale }) {
   return (
     <div className={styles.wrap}>
       <h1 className={styles.title}>{headword(word)}</h1>
+      {/*
+        Every form present, not just the primary one: `vertrauen` is a verb AND a noun at
+        one slug, and naming only the verb would make the noun's cards below look like a
+        mistake. Reads "verb · noun · 3 patterns".
+      */}
       <p className={styles.meta}>
-        {t.pos[word.pos]} · {t.patterns(word.patterns.length)}
+        {word.forms.map((form) => t.pos[form]).join(' · ')} · {t.patterns(word.patterns.length)}
       </p>
 
       <div className={styles.cards}>

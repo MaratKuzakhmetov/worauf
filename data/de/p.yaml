@@ -1,5 +1,20 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+packen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "хватать кого-л. за что-л."
+        en: "to grab sb. by sth."
+      examples:
+        - de: "Er packt ihn am Arm."
+          ru: "Он хватает его за руку."
+          en: "He grabs him by the arm."
+      sources:
+        - "duden"
+
 passen:
   pos: "verb"
   patterns:
@@ -14,6 +29,107 @@ passen:
           en: "The shoes go with the dress."
       sources:
         - "prototype"
+
+pfeifen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "плевать на что-л. (разг.)"
+        en: "to not care about sth. (colloquial)"
+      examples:
+        - de: "Ich pfeife auf den Chef."
+          ru: "Мне плевать на начальника."
+          en: "I don't care about the boss."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+
+plädieren:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "выступать за что-л."
+        en: "to plead for sth., to advocate for sth."
+      examples:
+        - de: "Der Anwalt plädiert für einen Freispruch."
+          ru: "Адвокат выступает за оправдательный приговор."
+          en: "The lawyer is pleading for an acquittal."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "за что выступаешь — позиция или причина вообще"
+        en: "what you advocate for — a general position or cause"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "требовать определённого вердикта (юр.)"
+        en: "to plead for a specific verdict (legal, e.g. guilty/not guilty)"
+      examples:
+        - de: "Die Staatsanwaltschaft plädiert auf schuldig."
+          ru: "Обвинение настаивает на признании виновным."
+          en: "The prosecution pleads for a guilty verdict."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на какой вердикт настаиваешь — формальная юридическая формула, а не позиция вообще"
+        en: "which verdict you plead for — a formal legal term, not a general position"
+
+Plädoyer:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "выступление в защиту чего-л., призыв к чему-л."
+        en: "a plea/case for sth."
+      examples:
+        - de: "Die Rednerin hielt ein leidenschaftliches Plädoyer für soziale Gerechtigkeit."
+          ru: "Докладчица произнесла страстную речь в защиту социальной справедливости."
+          en: "The speaker gave a passionate plea for social justice."
+      sources:
+        - "duden"
+
+pochen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "настаивать на чём-л."
+        en: "to insist on sth."
+      examples:
+        - de: "Er pocht auf seinen Anspruch."
+          ru: "Он настаивает на своём притязании."
+          en: "He insists on his claim."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+prellen:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "надувать кого-л. на что-л. (обманом лишать)"
+        en: "to cheat sb. out of sth."
+      examples:
+        - de: "Er hat seinen Geschäftspartner um die Belohnung geprellt."
+          ru: "Он надул своего партнёра, лишив его вознаграждения."
+          en: "He cheated his business partner out of the reward."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 profitieren:
   pos: "verb"
@@ -30,6 +146,22 @@ profitieren:
       sources:
         - "prototype"
 
+Protest:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "протест против чего-л."
+        en: "protest against sth."
+      examples:
+        - de: "Ihr Protest gegen das Gesetz war laut."
+          ru: "Их протест против закона был громким."
+          en: "Their protest against the law was loud."
+      sources:
+        - "duden"
+
 protestieren:
   pos: "verb"
   patterns:
@@ -45,3 +177,18 @@ protestieren:
           en: "They are protesting against the construction."
       sources:
         - "seed"
+
+prüfen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "проверять что-л. / кого-л. на что-л."
+        en: "to test sth. for sth., to check sb. for sth."
+      examples:
+        - de: "Der Arzt prüft den Patienten auf einen Infekt."
+          ru: "Врач проверяет пациента на инфекцию."
+          en: "The doctor checks the patient for an infection."
+      sources:
+        - "duden"

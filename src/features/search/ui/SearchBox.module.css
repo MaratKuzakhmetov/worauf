@@ -25,8 +25,9 @@
   font: inherit;
   font-size: var(--step-2);
   color: var(--ink);
-  background: var(--paper);
-  border: 1px solid var(--rule);
+  background: var(--card);
+  border: 2px solid var(--ink);
+  box-shadow: 2px 2px 0 0 var(--ink-3);
   border-radius: 0;
   appearance: none;
 }
@@ -54,7 +55,7 @@
 }
 
 .hint {
-  border: 1px solid var(--rule);
+  border: 1px solid var(--ink-3);
 }
 
 .clear {
@@ -84,12 +85,13 @@
   padding: 0;
   list-style: none;
   background: var(--card);
-  border: 1px solid var(--ink);
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 12%, transparent);
+  border: 2px solid var(--ink);
+  /* Hard offset, no blur — the same drawn edge as the cards (§14.4). */
+  box-shadow: 4px 5px 0 0 var(--ink-3);
 }
 
 .result + .result {
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--ink-3);
 }
 
 .hit {
@@ -161,7 +163,7 @@
   font-weight: 500;
   font-size: var(--step-2);
   color: var(--ink);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--ink-3);
 }
 
 .suggestion:hover {
@@ -186,5 +188,5 @@
   text-transform: uppercase;
   color: var(--ink-2);
   background: var(--paper);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--ink-3);
 }

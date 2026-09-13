@@ -17,7 +17,7 @@
 
 .count {
   margin: 0;
-  font-family: var(--font-cond), Arial, sans-serif;
+  font-family: var(--font-marker), 'Comic Sans MS', cursive;
   font-weight: 600;
   font-size: var(--step-6);
   line-height: 1;
@@ -33,11 +33,28 @@
   margin-top: var(--space-5);
   padding: 0.8125rem 1.625rem;
   cursor: pointer;
-  font-family: var(--font-cond), Arial, sans-serif;
-  font-weight: 600;
+  font-family: var(--font-marker), 'Comic Sans MS', cursive;
+  font-weight: 700;
   font-size: var(--step-3);
   color: var(--paper);
   background: var(--ink);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 5px 0 0 var(--ink-3);
+}
+
+/*
+ * Housekeeping, set below a hairline so it reads as subordinate to the one real action on
+ * this screen. Wraps because both controls answer inline — an import refusal is a sentence,
+ * not a word, and it must not push the buttons out of the column.
+ */
+.transfer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--ink-3);
 }
 
 .status {
@@ -45,8 +62,8 @@
   align-items: center;
   height: 2.25rem;
   padding: 0 var(--space-4);
-  background: var(--card);
-  border-top: 1px solid var(--rule);
+  background: var(--panel);
+  border-top: 2px solid var(--ink);
   font-family: var(--font-mono), monospace;
   font-size: var(--step-0);
   color: var(--ink-2);

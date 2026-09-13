@@ -1,0 +1,19 @@
+# Cloudflare Pages headers (ADR 0004, ADR 0006).
+#
+# These live here rather than in `next.config.mjs` because `output: 'export'` drops the
+# `headers()` config entirely — Next's own static-export guide says headers move to the
+# proxy. Copied verbatim into `out/_headers` at build time, which is where Pages reads it.
+
+# The worker must never be served from the HTTP cache. Without this a browser can hand back
+# yesterday's worker for up to a day, and the update prompt stops working exactly when it
+# matters most — the deploy that fixes a wrong case. `updateViaCache: 'none'` at
+# registration covers the same ground from the client side; both, because either alone is
+# one setting away from silently not applying.
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/javascript; charset=utf-8
+
+# Content-hashed names: a given URL's bytes never change, so this is safe to keep forever
+# and is what makes a repeat visit free.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable

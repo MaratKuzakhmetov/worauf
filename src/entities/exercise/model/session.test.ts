@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { rektionen } from '@/entities/rektion';
-import { isFinished, planItems, reduce, score, startSession, RETRY_GAP } from './session';
+import {
+  isFinished,
+  orderCandidates,
+  planItems,
+  reduce,
+  score,
+  startSession,
+  RETRY_GAP,
+} from './session';
 import type { Session } from './session';
 
 const config = { length: 12 };
@@ -18,18 +26,32 @@ function source(seed = 1): () => number {
   };
 }
 
+/**
+ * The old single-stream call shape, kept for these tests: shuffle the dataset, then build
+ * every item from one shared stream. Production uses a stream per pattern (see `run.ts`).
+ */
+function start(seed = 1) {
+  const random = source(seed);
+  return startSession(rektionen, config, random, () => random);
+}
+
+function plan(seed = 1) {
+  const random = source(seed);
+  return planItems(orderCandidates(rektionen, random), rektionen, config, () => random);
+}
+
 function answer(session: Session, given: string): Session {
   return reduce(reduce(session, { type: 'answer', given }), { type: 'next' });
 }
 
 describe('planning', () => {
   it('fills a full session from the real dataset', () => {
-    expect(planItems(rektionen, config, source())).toHaveLength(12);
+    expect(plan()).toHaveLength(12);
   });
 
   it('never puts two patterns of one lemma in the same session', () => {
     for (let seed = 1; seed <= 20; seed += 1) {
-      const lemmas = planItems(rektionen, config, source(seed / 21)).map((i) => i.pattern.lemma);
+      const lemmas = plan(seed / 21).map((i) => i.pattern.lemma);
       expect(new Set(lemmas).size).toBe(lemmas.length);
     }
   });
@@ -37,7 +59,7 @@ describe('planning', () => {
   it('reaches every kind of item across a run of sessions', () => {
     const kinds = new Set<string>();
     for (let seed = 1; seed <= 20; seed += 1) {
-      for (const item of planItems(rektionen, config, source(seed / 21))) kinds.add(item.kind);
+      for (const item of plan(seed / 21)) kinds.add(item.kind);
     }
     expect([...kinds].sort()).toEqual(['article', 'case', 'preposition']);
   });
@@ -45,7 +67,7 @@ describe('planning', () => {
 
 describe('a session played to the end', () => {
   it('completes twelve items when every answer is right', () => {
-    let session = startSession(rektionen, config, source());
+    let session = start();
     let guard = 0;
     while (!isFinished(session) && guard < 50) {
       session = answer(session, session.current?.answer ?? '');
@@ -56,7 +78,7 @@ describe('a session played to the end', () => {
   });
 
   it('completes when every answer is wrong, and asks each missed item once more', () => {
-    let session = startSession(rektionen, config, source(0.7));
+    let session = start(0.7);
     let served = 0;
     let guard = 0;
     while (!isFinished(session) && guard < 80) {
@@ -73,7 +95,7 @@ describe('a session played to the end', () => {
 
 describe('the missed queue', () => {
   it('brings a missed item back after intervening items, not immediately', () => {
-    const session = startSession(rektionen, config, source());
+    const session = start();
     const missed = session.current;
     const after = reduce(session, { type: 'answer', given: 'wrong' });
     expect(after.queue[RETRY_GAP]?.id).toBe(missed?.id);
@@ -81,7 +103,7 @@ describe('the missed queue', () => {
   });
 
   it('does not count a retry as a new item', () => {
-    let session = startSession(rektionen, config, source());
+    let session = start();
     const first = session.asked;
     session = answer(session, 'wrong');
     for (let i = 0; i < RETRY_GAP; i += 1) session = answer(session, session.current?.answer ?? '');
@@ -90,7 +112,7 @@ describe('the missed queue', () => {
   });
 
   it('scores the first answer, never the retry that finally lands', () => {
-    let session = startSession(rektionen, config, source());
+    let session = start();
     const missed = session.current;
     session = answer(session, 'wrong');
     for (let i = 0; i < RETRY_GAP; i += 1) session = answer(session, session.current?.answer ?? '');
@@ -102,7 +124,7 @@ describe('the missed queue', () => {
 
 describe('the reducer', () => {
   it('ignores a second answer to the same item', () => {
-    const session = startSession(rektionen, config, source());
+    const session = start();
     const once = reduce(session, { type: 'answer', given: 'wrong' });
     const twice = reduce(once, { type: 'answer', given: once.current?.answer ?? '' });
     expect(twice.results).toHaveLength(1);
@@ -111,7 +133,7 @@ describe('the reducer', () => {
 
 describe('finishing early', () => {
   it('ends the session immediately — isFinished is true with items still unasked', () => {
-    const session = startSession(rektionen, config, source());
+    const session = start();
     expect(isFinished(session)).toBe(false);
     const finished = reduce(session, { type: 'finish' });
     expect(isFinished(finished)).toBe(true);
@@ -119,7 +141,7 @@ describe('finishing early', () => {
   });
 
   it('keeps whatever was already answered in the score', () => {
-    let session = startSession(rektionen, config, source());
+    let session = start();
     session = answer(session, session.current?.answer ?? '');
     session = answer(session, 'wrong');
     const finished = reduce(session, { type: 'finish' });
@@ -127,7 +149,7 @@ describe('finishing early', () => {
   });
 
   it('drops the item on screen when it was never answered', () => {
-    let session = startSession(rektionen, config, source());
+    let session = start();
     session = answer(session, session.current?.answer ?? '');
     // The next item is now current but unanswered — finishing must not force a verdict on it.
     const totalBefore = score(session).total;
@@ -136,14 +158,14 @@ describe('finishing early', () => {
   });
 
   it('still counts an answer given right before finishing, even if Next was never pressed', () => {
-    const session = startSession(rektionen, config, source());
+    const session = start();
     const answered = reduce(session, { type: 'answer', given: 'wrong' });
     const finished = reduce(answered, { type: 'finish' });
     expect(score(finished)).toEqual({ right: 0, total: 1 });
   });
 
   it('does nothing further once already finished', () => {
-    const session = startSession(rektionen, config, source());
+    const session = start();
     const finished = reduce(session, { type: 'finish' });
     const again = reduce(finished, { type: 'finish' });
     expect(again).toEqual(finished);

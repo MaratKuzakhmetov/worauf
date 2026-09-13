@@ -1,5 +1,107 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+geben:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "придавать значение чему-л., считаться с чем-л."
+        en: "to set store by sth., to attach importance to sth."
+      examples:
+        - de: "Er gibt viel auf seinen guten Ruf."
+          ru: "Он придаёт большое значение своей хорошей репутации."
+          en: "He sets great store by his good reputation."
+          lemmaForm: gibt
+      sources:
+        - "duden"
+      senseNote:
+        ru: "только в обороте с viel / wenig / nichts: «viel auf etwas geben». Это не общее управление глагола «давать»"
+        en: "only in the fixed frame with viel / wenig / nichts: 'viel auf etwas geben'. Not a general government of 'to give'"
+
+Gebet:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "молитва за кого-л. / что-л."
+        en: "a prayer for sb. / sth."
+      examples:
+        - de: "Sie sprachen ein Gebet für die Toten."
+          ru: "Они прочитали молитву за усопших."
+          en: "They said a prayer for the dead."
+      sources:
+        - "duden"
+
+Gedanke:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "мысль о ком-л. / чём-л."
+        en: "thought of sb. / sth."
+      examples:
+        - de: "Der Gedanke an sie ließ ihn nicht los."
+          ru: "Мысль о ней не отпускала его."
+          en: "The thought of her would not let him go."
+      sources:
+        - "duden"
+
+Gedenken:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "память о ком-л. / чём-л., поминовение кого-л."
+        en: "remembrance of sb. / sth."
+      examples:
+        - de: "Das Gedenken an die Opfer bewegte alle."
+          ru: "Память о жертвах тронула всех."
+          en: "The remembrance of the victims moved everyone."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+geeignet:
+  pos: "adj"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "подходящий для чего-л."
+        en: "suitable for sth."
+      examples:
+        - de: "Sie ist für diese Tätigkeit gut geeignet."
+          ru: "Она хорошо подходит для этой работы."
+          en: "She is well suited for this job."
+      sources:
+        - "duden"
+
+gehen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "быть на счету у кого-л. (об оплате), быть чьим-л. угощением"
+        en: "to be on sb. (as in paying), to be sb.'s treat"
+      examples:
+        - de: "Das Essen geht auf mich."
+          ru: "Ужин за мой счёт."
+          en: "The meal is on me."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "кто платит — устойчивая идиома, а не буквальное «идти» или направление"
+        en: "who's paying — a fixed idiom, not the literal 'go' or a direction"
+
 gehören:
   pos: "verb"
   patterns:
@@ -16,6 +118,23 @@ gehören:
       sources:
         - "seed"
 
+gelten:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "действовать для кого-л. / чего-л., распространяться на кого-л."
+        en: "to apply to sb. / sth., to be valid for sb. / sth."
+      examples:
+        - de: "Das Gesetz gilt für alle."
+          ru: "Закон действует для всех."
+          en: "The law applies to everyone."
+          lemmaForm: gilt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 geraten:
   pos: "verb"
   patterns:
@@ -30,6 +149,102 @@ geraten:
           en: "We got into a traffic jam."
       sources:
         - "prototype"
+      senseNote:
+        ru: "во что попадаешь — ситуация или состояние"
+        en: "what you get into — a situation or a state"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "случайно оказываться на чём-л. / где-л."
+        en: "to end up on sth. (by accident)"
+      examples:
+        - de: "Das Auto gerät auf die Gegenfahrbahn."
+          ru: "Машина выезжает на встречную полосу."
+          en: "The car ends up in the oncoming lane."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "куда попадаешь — место, случайно и нежелательно"
+        en: "where you end up — a place, unintentionally"
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "быть похожим на кого-л. (о родственнике)"
+        en: "to take after sb. (a relative)"
+      examples:
+        - de: "Sie gerät ganz nach ihrem Vater."
+          ru: "Она вся в отца."
+          en: "She takes entirely after her father."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на кого похож — черта, унаследованная от родителя"
+        en: "who you take after — a trait inherited from a parent"
+    - prep: "unter"
+      case: "akk"
+      gloss:
+        ru: "попадать под чьё-л. влияние"
+        en: "to fall under sth. (an influence)"
+      examples:
+        - de: "Er gerät unter schlechten Einfluss."
+          ru: "Он попадает под плохое влияние."
+          en: "He falls under a bad influence."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "под что попадаешь — воздействие извне, а не своё собственное состояние"
+        en: "what you fall under — an outside influence, not your own state"
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "случайно связаться с кем-л. (обычно неприятным человеком)"
+        en: "to end up dealing with sb. (usually unpleasant), to fall into sb.'s hands"
+      examples:
+        - de: "Wie bist du an diesen Betrüger geraten?"
+          ru: "Как ты связался с этим мошенником?"
+          en: "How did you end up dealing with this fraudster?"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на кого нарвался — человек, а не место или состояние"
+        en: "who you end up dealing with — a person, not a place or a state"
+
+Geruch:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "запах чего-л."
+        en: "a smell of sth."
+      examples:
+        - de: "Im Treppenhaus hing ein Geruch nach Verbranntem."
+          ru: "В подъезде стоял запах гари."
+          en: "There was a smell of something burnt in the stairwell."
+      sources:
+        - "duden"
+
+geschehen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "происходить с кем-л. / чем-л., становиться с кем-л. / чем-л."
+        en: "to happen to sb. / sth., to become of sb. / sth."
+      examples:
+        - de: "Was geschieht mit den alten Zeitungen?"
+          ru: "Что происходит со старыми газетами?"
+          en: "What happens to the old newspapers?"
+          lemmaForm: geschieht
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 gespannt:
   pos: "adj"
@@ -47,6 +262,72 @@ gespannt:
       sources:
         - "seed"
 
+Gespräch:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "разговор с кем-л."
+        en: "a conversation with sb."
+      examples:
+        - de: "Ich hatte ein langes Gespräch mit meinem Chef."
+          ru: "У меня был долгий разговор с моим начальником."
+          en: "I had a long conversation with my boss."
+      sources:
+        - "duden"
+
+Gewalt:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "власть, контроль над кем-л. / чем-л."
+        en: "power/control over sb. / sth."
+      examples:
+        - de: "Er verliert die Gewalt über sein Fahrzeug."
+          ru: "Он теряет контроль над своим автомобилем."
+          en: "He loses control over his vehicle."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "власть над чем-л. — контроль, способность управлять"
+        en: "power over sth. — control, the ability to manage it"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "насилие в отношении кого-л. / чего-л."
+        en: "violence against sb. / sth."
+      examples:
+        - de: "Die Kampagne richtet sich gegen Gewalt gegen Frauen."
+          ru: "Кампания направлена против насилия в отношении женщин."
+          en: "The campaign is directed against violence against women."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "насилие, направленное на кого-л. — действие, а не власть"
+        en: "violence directed at sb. — an act, not power"
+
+gewinnen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "прибавлять в чём-л., набирать что-л. (значение, высоту, скорость)"
+        en: "to gain in sth. (importance, altitude, speed)"
+      examples:
+        - de: "Das Thema gewinnt an Bedeutung."
+          ru: "Тема приобретает всё большее значение."
+          en: "The topic is gaining in importance."
+      sources:
+        - "duden"
+
 gewöhnen:
   pos: "verb"
   patterns:
@@ -62,6 +343,38 @@ gewöhnen:
           en: "I have got used to the climate."
       sources:
         - "prototype"
+
+gewöhnt:
+  pos: "adj"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "привыкший к чему-л."
+        en: "used to sth."
+      examples:
+        - de: "Ich bin an diese Arbeit gewöhnt."
+          ru: "Я привык к этой работе."
+          en: "I am used to this work."
+      sources:
+        - "duden"
+
+Glaube:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "вера в кого-л. / что-л."
+        en: "belief in sb. / sth."
+      examples:
+        - de: "Ihr Glaube an die Zukunft ist stark."
+          ru: "Её вера в будущее сильна."
+          en: "Her belief in the future is strong."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 glauben:
   pos: "verb"
@@ -94,6 +407,22 @@ glücklich:
       sources:
         - "prototype"
 
+Glückwunsch:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "поздравление с чем-л."
+        en: "congratulations on sth."
+      examples:
+        - de: "Herzlichen Glückwunsch zum Geburtstag!"
+          ru: "Сердечно поздравляю с днём рождения!"
+          en: "Congratulations on your birthday!"
+      sources:
+        - "duden"
+
 gratulieren:
   pos: "verb"
   patterns:
@@ -109,6 +438,39 @@ gratulieren:
       sources:
         - "prototype"
 
+grauen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "бояться чего-л., испытывать ужас перед чем-л."
+        en: "to dread sth."
+      examples:
+        - de: "Er graut sich vor der Prüfung."
+          ru: "Он боится экзамена."
+          en: "He dreads the exam."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+grenzen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "граничить с чем-л."
+        en: "to border on sth."
+      examples:
+        - de: "Deutschland grenzt an den Bodensee."
+          ru: "Германия граничит с Боденским озером."
+          en: "Germany borders on Lake Constance."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Grund:
   pos: "noun"
   article: "der"
@@ -118,9 +480,43 @@ Grund:
       gloss:
         ru: "причина чего-л."
         en: "reason for sth."
+      senseNote:
+        ru: "причина конкретного факта или события"
+        en: "the cause of a concrete fact or event"
       examples:
         - de: "Der Grund für die Verspätung ist unklar."
           ru: "Причина опоздания неясна."
           en: "The reason for the delay is unclear."
       sources:
         - "prototype"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "повод для чего-л. (обычно перед отглагольным существительным)"
+        en: "grounds for sth. (usually before a deverbal noun)"
+      senseNote:
+        ru: "повод для реакции или поступка, а не причина факта — «Grund zur Aufregung», «Grund zum Klagen»"
+        en: "grounds for a reaction or an action, not the cause of a fact — 'Grund zur Aufregung', 'Grund zum Klagen'"
+      examples:
+        - de: "Es besteht kein Grund zur Aufregung."
+          ru: "Нет повода для беспокойства."
+          en: "There is no reason for concern."
+      sources:
+        - "duden"
+
+gründen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "основываться на чём-л."
+        en: "to be based on sth."
+      examples:
+        - de: "Der Verdacht gründet sich auf einer Aussage."
+          ru: "Подозрение основывается на показании."
+          en: "The suspicion is based on a statement."
+      sources:
+        - "en.wiktionary"
+        - "duden"

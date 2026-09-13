@@ -15,6 +15,38 @@ basieren:
       sources:
         - "prototype"
 
+basteln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "мастерить что-л., трудиться над чем-л."
+        en: "to tinker with sth., to work on sth."
+      examples:
+        - de: "Er bastelt an seinem alten Auto."
+          ru: "Он возится со своей старой машиной."
+          en: "He is tinkering with his old car."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+bauen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "рассчитывать на кого-л. / что-л."
+        en: "to rely on sb. / sth., to count on sb. / sth."
+      examples:
+        - de: "Ich baue auf deinen Rat."
+          ru: "Я рассчитываю на твой совет."
+          en: "I am counting on your advice."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 bedanken:
   pos: "verb"
   patterns:
@@ -50,6 +82,124 @@ bedanken:
         ru: "за что благодаришь — повод. Оба вместе: Ich bedanke mich bei dir für die Hilfe"
         en: "what you thank for — the reason. Both at once: Ich bedanke mich bei dir für die Hilfe"
 
+beeilen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "торопиться с чем-л."
+        en: "to hurry with sth., to get a move on with sth."
+      examples:
+        - de: "Ich beeile mich mit der Abrechnung."
+          ru: "Я тороплюсь с отчётом."
+          en: "I am hurrying with the invoice."
+      sources:
+        - "duden"
+
+befassen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "заниматься чем-л., рассматривать что-л."
+        en: "to deal with sth., to occupy oneself with sth."
+      examples:
+        - de: "Der Ausschuss befasst sich mit diesem Problem."
+          ru: "Комиссия занимается этой проблемой."
+          en: "The committee is dealing with this problem."
+      sources:
+        - "duden"
+
+befinden:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "выносить решение о чём-л. (офиц.)"
+        en: "to rule on sth., to decide on sth. (formal)"
+      examples:
+        - de: "Über die Zahl der Teilnehmer befindet der Ausschuss."
+          ru: "О числе участников решает комитет."
+          en: "The committee rules on the number of participants."
+      sources:
+        - "duden"
+
+befreunden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "подружиться с кем-л."
+        en: "to become friends with sb."
+      examples:
+        - de: "Sie hat sich mit ihrer Nachbarin befreundet."
+          ru: "Она подружилась со своей соседкой."
+          en: "She became friends with her neighbor."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+begeistern:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "увлекаться чем-л., загораться чем-л."
+        en: "to get enthusiastic about sth."
+      examples:
+        - de: "Sie begeistert sich für die Malerei."
+          ru: "Она увлекается живописью."
+          en: "She is enthusiastic about painting."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+begeistert:
+  pos: "adj"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "в восторге от кого-л. / чего-л."
+        en: "delighted by sb. / sth., impressed by sb. / sth."
+      examples:
+        - de: "Ich bin begeistert von ihrem Gesang."
+          ru: "Я в восторге от её пения."
+          en: "I am delighted by her singing."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "восторг от уже случившегося впечатления — не то же самое, что «begeistern für», где увлекаешься делом"
+        en: "delight at an impression already received — not the same as 'begeistern für', where you get enthusiastic about doing sth."
+
+Begeisterung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "восторг по поводу кого-л. / чего-л."
+        en: "enthusiasm about sb. / sth."
+      examples:
+        - de: "Er zeigte seine Begeisterung über den Sieg."
+          ru: "Он выразил свой восторг по поводу победы."
+          en: "He showed his enthusiasm about the victory."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "существительное к «begeistert von» — тот же восторг от впечатления, другое падежное оформление"
+        en: "the noun form of 'begeistert von' — the same delight at an impression, a different case frame"
+
 beginnen:
   pos: "verb"
   patterns:
@@ -65,6 +215,57 @@ beginnen:
           en: "The course begins with a test."
       sources:
         - "seed"
+
+begnügen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "довольствоваться чем-л."
+        en: "to content oneself with sth., to make do with sth."
+      examples:
+        - de: "Er begnügt sich mit dem, was er hat."
+          ru: "Он довольствуется тем, что у него есть."
+          en: "He makes do with what he has."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+behängen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "увешивать себя чем-л."
+        en: "to festoon oneself with sth., to hang sth. all over oneself"
+      examples:
+        - de: "Sie behängt sich gern mit Strass."
+          ru: "Она любит увешивать себя стразами."
+          en: "She likes to festoon herself with rhinestones."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+beharren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "настаивать на чём-л."
+        en: "to insist on sth."
+      examples:
+        - de: "Sie beharrt auf ihrem Standpunkt."
+          ru: "Она настаивает на своей точке зрения."
+          en: "She insists on her point of view."
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
 
 beitragen:
   pos: "verb"
@@ -95,6 +296,40 @@ bekannt:
           en: "The city is known for its cathedral."
       sources:
         - "prototype"
+      senseNote:
+        ru: "чем известен — слава, репутация"
+        en: "what sth. is known for — fame, reputation"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "знакомый с кем-л. / чем-л."
+        en: "acquainted with sb. / sth."
+      examples:
+        - de: "Ich bin mit seinem Problem seit Langem bekannt."
+          ru: "Я давно знаком с его проблемой."
+          en: "I have long been acquainted with his problem."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "с кем/чем знаком — личная осведомлённость, а не слава"
+        en: "who or what sb. is acquainted with — personal familiarity, not fame"
+
+bekennen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "признавать что-л., открыто заявлять о своей приверженности чему-л."
+        en: "to profess/admit to sth., to own up to sth."
+      examples:
+        - de: "Er bekennt sich zu seinen Fehlern."
+          ru: "Он признаёт свои ошибки."
+          en: "He owns up to his mistakes."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 beklagen:
   pos: "verb"
@@ -131,6 +366,24 @@ beklagen:
       sources:
         - "seed"
       reflexive: "akk"
+
+belaufen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "составлять какую-л. сумму"
+        en: "to amount to sth."
+      examples:
+        - de: "Der Schaden beläuft sich auf etwa 650 Euro."
+          ru: "Ущерб составляет около 650 евро."
+          en: "The damage amounts to about 650 euros."
+          lemmaForm: beläuft
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 beneiden:
   pos: "verb"
@@ -213,6 +466,23 @@ berichten:
       sources:
         - "seed"
 
+berufen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "ссылаться на кого-л. / что-л."
+        en: "to invoke/cite sth. as justification"
+      examples:
+        - de: "Ich berufe mich auf dich als Zeugen."
+          ru: "Я ссылаюсь на тебя как на свидетеля."
+          en: "I am invoking you as a witness."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 beruhen:
   pos: "verb"
   patterns:
@@ -243,6 +513,101 @@ beschäftigen:
           en: "He occupies himself with history."
       sources:
         - "prototype"
+
+Beschäftigung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "занятие чем-л."
+        en: "engagement with sth., dealing with sth."
+      examples:
+        - de: "Die Beschäftigung mit Fragen der Politik interessiert ihn."
+          ru: "Его интересуют занятия политическими вопросами."
+          en: "He is interested in engaging with political questions."
+      sources:
+        - "duden"
+
+beschließen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "принимать решение по какому-л. вопросу (голосованием)"
+        en: "to decide on sth., to vote on sth."
+      examples:
+        - de: "Das Parlament beschließt über den neuen Haushalt."
+          ru: "Парламент принимает решение по новому бюджету."
+          en: "Parliament is voting on the new budget."
+      sources:
+        - "duden"
+
+beschränken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "ограничивать(ся) чем-л."
+        en: "to limit oneself/sth. to sth."
+      examples:
+        - de: "Er beschränkt sich auf das Wesentliche."
+          ru: "Он ограничивается самым необходимым."
+          en: "He limits himself to the essentials."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Beschwerde:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "жалоба на кого-л."
+        en: "complaint against sb."
+      examples:
+        - de: "Er reicht eine Beschwerde gegen den Nachbarn ein."
+          ru: "Он подаёт жалобу на соседа."
+          en: "He files a complaint against his neighbor."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на кого жалоба — против конкретного человека"
+        en: "who the complaint is against — a specific person"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "жалоба на что-л."
+        en: "complaint about sth."
+      examples:
+        - de: "Er reicht eine Beschwerde über den Lärm ein."
+          ru: "Он подаёт жалобу на шум."
+          en: "He files a complaint about the noise."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "на что жалоба — предмет или обстоятельство, а не человек"
+        en: "what the complaint is about — a matter or circumstance, not a person"
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "жалоба кому-л. (в какую инстанцию подана)"
+        en: "complaint filed with sb./sth. (the authority it goes to)"
+      examples:
+        - de: "Ich werde bei Ihrem Vorgesetzten Beschwerde einlegen."
+          ru: "Я подам жалобу вашему начальнику."
+          en: "I will file a complaint with your supervisor."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "кому подана жалоба — инстанция или лицо, рассматривающее её, а не виновник и не предмет"
+        en: "who the complaint is filed with — the authority handling it, not the target or the subject"
 
 beschweren:
   pos: "verb"
@@ -277,6 +642,87 @@ beschweren:
       senseNote:
         ru: "на что жалуешься — предмет жалобы"
         en: "what you complain about — the subject of the complaint"
+
+besinnen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "обращаться мыслями к чему-л., вспоминать о чём-л."
+        en: "to recall sth., to reconnect with sth."
+      examples:
+        - de: "Er besinnt sich auf seine Wurzeln."
+          ru: "Он обращается мыслями к своим корням."
+          en: "He is reconnecting with his roots."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Besinnung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "возврат к чему-л., сосредоточение на главном"
+        en: "a return to sth., a refocusing on sth. (the essentials)"
+      examples:
+        - de: "Nach der Krise kam es zu einer Besinnung auf das Wesentliche."
+          ru: "После кризиса произошёл возврат к главному."
+          en: "After the crisis there was a return to the essentials."
+      sources:
+        - "duden"
+
+besorgt:
+  pos: "adj"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "обеспокоенный за кого-л. / чем-л."
+        en: "worried about sb. / sth."
+      examples:
+        - de: "Er ist sehr besorgt um ihre Gesundheit."
+          ru: "Он очень обеспокоен её здоровьем."
+          en: "He is very worried about her health."
+      sources:
+        - "duden"
+
+beständig:
+  pos: "adj"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "устойчивый к чему-л."
+        en: "resistant to sth."
+      examples:
+        - de: "Dieses Material ist beständig gegen Hitze."
+          ru: "Этот материал устойчив к жаре."
+          en: "This material is resistant to heat."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Bestehen:
+  pos: "noun"
+  article: "das"
+  slugSuffix: 2
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "упорное настаивание на чём-л."
+        en: "dogged insistence on sth."
+      examples:
+        - de: "Sein trotziges Bestehen auf vermeintlichen Rechten verärgerte alle."
+          ru: "Его упрямое настаивание на мнимых правах разозлило всех."
+          en: "His stubborn insistence on supposed rights annoyed everyone."
+      sources:
+        - "duden"
 
 bestehen:
   pos: "verb"
@@ -335,6 +781,36 @@ bestehen:
       sources:
         - "seed"
 
+bestellen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "вызывать кого-л. куда-л. (к определённому времени/месту)"
+        en: "to summon sb. to appear (at a place/time)"
+      examples:
+        - de: "Der Chef bestellt mich zu sich."
+          ru: "Начальник вызывает меня к себе."
+          en: "The boss summons me to his office."
+      sources:
+        - "duden"
+
+bestimmen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "распоряжаться чем-л., решать за кого-л. / что-л."
+        en: "to have control over sth., to decide about sth."
+      examples:
+        - de: "Sie kann frei über ihr Geld bestimmen."
+          ru: "Она может свободно распоряжаться своими деньгами."
+          en: "She can freely decide about her money."
+      sources:
+        - "duden"
+
 beteiligen:
   pos: "verb"
   patterns:
@@ -351,6 +827,84 @@ beteiligen:
       sources:
         - "seed"
       reflexive: "akk"
+
+Beteiligung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "участие в чём-л."
+        en: "participation in sth."
+      examples:
+        - de: "Die Beteiligung an der Versammlung war gering."
+          ru: "Участие в собрании было небольшим."
+          en: "Participation in the meeting was low."
+      sources:
+        - "duden"
+
+beten:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "молиться за кого-л. / что-л."
+        en: "to pray for sb. / sth."
+      examples:
+        - de: "Sie betet für den Frieden."
+          ru: "Она молится за мир."
+          en: "She prays for peace."
+      sources:
+        - "duden"
+
+betrauen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "поручать кому-л. что-л., доверять кому-л. задачу"
+        en: "to entrust sb. with sth."
+      examples:
+        - de: "Man betraut ihn mit der Leitung des Projekts."
+          ru: "Ему поручают руководство проектом."
+          en: "He is entrusted with the project's management."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+betrügen:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "обманом лишать кого-л. чего-л."
+        en: "to cheat sb. out of sth."
+      examples:
+        - de: "Er betrügt sie um ihr Erbe."
+          ru: "Он обманом лишает её наследства."
+          en: "He is cheating her out of her inheritance."
+      sources:
+        - "duden"
+
+bewegen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "склонять, побуждать кого-л. к чему-л."
+        en: "to induce sb. to do sth., to prompt sb. into sth."
+      examples:
+        - de: "Ihre Mahnung bewog ihn zum Verzicht."
+          ru: "Её увещевание побудило его отказаться."
+          en: "Her warning prompted him to give it up."
+          lemmaForm: bewog
+      sources:
+        - "duden"
 
 bewerben:
   pos: "verb"
@@ -390,6 +944,54 @@ bewerben:
         - "seed"
       reflexive: "akk"
 
+Bewerbung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "заявка на что-л."
+        en: "application for sth."
+      examples:
+        - de: "Seine Bewerbung um diesen Posten hatte Erfolg."
+          ru: "Его заявка на эту должность увенчалась успехом."
+          en: "His application for this position was successful."
+      sources:
+        - "duden"
+
+bewerfen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "закидывать чем-л."
+        en: "to pelt sb./sth. with sth."
+      examples:
+        - de: "Die Kinder bewerfen sich mit Schneebällen."
+          ru: "Дети закидывают друг друга снежками."
+          en: "The children are pelting each other with snowballs."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+bezahlen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "платить за что-л."
+        en: "to pay for sth."
+      examples:
+        - de: "Ich bezahle für den Kaffee."
+          ru: "Я плачу за кофе."
+          en: "I am paying for the coffee."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 beziehen:
   pos: "verb"
   patterns:
@@ -405,6 +1007,23 @@ beziehen:
           en: "I am referring to your letter."
       sources:
         - "prototype"
+
+Beziehung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "отношения с кем-л., связь с кем-л."
+        en: "relationship with sb."
+      examples:
+        - de: "Sie hat eine gute Beziehung zu ihrem Chef."
+          ru: "У неё хорошие отношения с начальником."
+          en: "She has a good relationship with her boss."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 Bitte:
   pos: "noun"
@@ -457,6 +1076,25 @@ bleiben:
       sources:
         - "prototype"
 
+Bock:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "желание, охота на что-л. (разг.)"
+        en: "desire for sth., motivation for sth. (colloquial)"
+      examples:
+        - de: "Ich habe keinen Bock auf diese Party."
+          ru: "У меня нет желания идти на эту вечеринку."
+          en: "I have no desire to go to this party."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 böse:
   pos: "adj"
   patterns:
@@ -471,3 +1109,69 @@ böse:
           en: "She is angry with her brother."
       sources:
         - "prototype"
+
+brechen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "порывать с чем-л. (с привычкой, с прошлым)"
+        en: "to break with sth. (a habit, the past)"
+      examples:
+        - de: "Er bricht mit einer alten Gewohnheit."
+          ru: "Он порывает со старой привычкой."
+          en: "He is breaking with an old habit."
+          lemmaForm: bricht
+      sources:
+        - "duden"
+
+bremsen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "быть экономным в чём-л., сдерживать что-л. (перен., о расходах)"
+        en: "to curb sth., to cut back on sth. (figurative, of spending)"
+      senseNote:
+        ru: "переносное значение — не о торможении транспорта"
+        en: "figurative sense — not about braking a vehicle"
+      examples:
+        - de: "Wir müssen mit den Ausgaben bremsen."
+          ru: "Нам нужно быть экономнее в расходах."
+          en: "We need to curb our spending."
+      sources:
+        - "duden"
+
+brennen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "сгорать от нетерпения в ожидании чего-л., жаждать чего-л."
+        en: "to be burning for sth., to be dying for sth."
+      examples:
+        - de: "Er brennt auf den Wettkampf."
+          ru: "Он сгорает от нетерпения перед соревнованием."
+          en: "He is burning for the competition."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "чего жаждешь — то, чего нетерпеливо ждёшь"
+        en: "what you are burning for — the thing you impatiently want"
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "гореть от какого-л. чувства"
+        en: "to burn with an emotion"
+      examples:
+        - de: "Sie brennt vor Neugier."
+          ru: "Она сгорает от любопытства."
+          en: "She is burning with curiosity."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "от какого чувства горишь — причина состояния, а не его цель"
+        en: "which emotion consumes you — the cause of the state, not its target"

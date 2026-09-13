@@ -1,5 +1,166 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+üben:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "упражняться в чём-л., развивать в себе что-л."
+        en: "to practise sth. (a virtue, a skill)"
+      examples:
+        - de: "Er übt sich in Geduld."
+          ru: "Он упражняется в терпении."
+          en: "He is practising patience."
+          lemmaForm: übt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+überraschen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "удивлять, радовать кого-л. чем-л."
+        en: "to surprise sb. with sth."
+      examples:
+        - de: "Er überraschte sie mit einem Geschenk."
+          ru: "Он удивил её подарком."
+          en: "He surprised her with a present."
+      sources:
+        - "duden"
+
+überrascht:
+  pos: "adj"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "удивлённый чем-л."
+        en: "surprised about sth."
+      examples:
+        - de: "Wir waren über den herzlichen Empfang überrascht."
+          ru: "Мы были удивлены сердечным приёмом."
+          en: "We were surprised about the warm welcome."
+      sources:
+        - "duden"
+
+überreden:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "уговаривать кого-л. на что-л."
+        en: "to talk sb. into sth., to persuade sb. to do sth."
+      examples:
+        - de: "Sie hat ihn zu einem Kauf überredet."
+          ru: "Она уговорила его на покупку."
+          en: "She talked him into a purchase."
+      sources:
+        - "duden"
+
+überschäumen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "бить через край от чего-л. (перен.)"
+        en: "to brim over with sth. (figuratively)"
+      examples:
+        - de: "Sie überschäumt vor Begeisterung."
+          ru: "Она бьёт через край от восторга."
+          en: "She is brimming over with enthusiasm."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+übersetzen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "переводить на какой-л. язык"
+        en: "to translate into a language"
+      examples:
+        - de: "Sie übersetzt den Roman ins Englische."
+          ru: "Она переводит роман на английский."
+          en: "She is translating the novel into English."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на какой язык переводишь — язык назначения"
+        en: "what language you translate into — the target language"
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "переводить с какого-л. языка"
+        en: "to translate from a language"
+      examples:
+        - de: "Sie übersetzt den Roman aus dem Englischen."
+          ru: "Она переводит роман с английского."
+          en: "She is translating the novel from English."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с какого языка переводишь — язык-источник"
+        en: "what language you translate from — the source language"
+
+Übersetzung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "перевод на какой-л. язык"
+        en: "translation into a language"
+      examples:
+        - de: "Für die Übersetzung des Vertrags ins Deutsche hat er drei Stunden gebraucht."
+          ru: "На перевод договора на немецкий у него ушло три часа."
+          en: "He needed three hours for the translation of the contract into German."
+      sources:
+        - "duden"
+
+überweisen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "переводить деньги на счёт"
+        en: "to transfer money to an account"
+      examples:
+        - de: "Der Betrieb überweist das Gehalt auf ein Konto."
+          ru: "Предприятие переводит зарплату на счёт."
+          en: "The company transfers the salary to an account."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "куда переводят деньги — счёт"
+        en: "where the money goes — the account"
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "направлять кого-л. / что-л. к кому-л. (к врачу, в инстанцию)"
+        en: "to refer sb. / sth. to sb. (a specialist, an authority)"
+      examples:
+        - de: "Der Hausarzt überweist sie an einen Facharzt."
+          ru: "Терапевт направляет её к специалисту."
+          en: "The GP refers her to a specialist."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "к кому направляют — адресат направления, а не счёт для денег"
+        en: "who someone is referred to — the addressee, not an account for money"
+
 überzeugen:
   pos: "verb"
   patterns:
@@ -29,6 +190,56 @@
           en: "I am convinced of the idea."
       sources:
         - "prototype"
+
+umschauen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "присматривать что-л., искать что-л."
+        en: "to look around for sth."
+      examples:
+        - de: "Sie schaut sich nach einer neuen Wohnung um."
+          ru: "Она присматривает новую квартиру."
+          en: "She is looking around for a new apartment."
+          lemmaForm: schaut
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+umsteigen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "переходить на что-л. другое (перен.)"
+        en: "to switch over to sth. else"
+      examples:
+        - de: "Er steigt auf öffentliche Verkehrsmittel um."
+          ru: "Он переходит на общественный транспорт."
+          en: "He is switching to public transport."
+          lemmaForm: steigt
+      sources:
+        - "duden"
+
+umtauschen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "обменивать что-л. на что-л. (замена)"
+        en: "to exchange sth. for sth. (a replacement)"
+      examples:
+        - de: "Der Arbeitgeber muss das Zwischenzeugnis gegen ein endgültiges Zeugnis umtauschen."
+          ru: "Работодатель должен обменять промежуточную справку на окончательную."
+          en: "The employer must exchange the interim certificate for a final one."
+      sources:
+        - "duden"
+        - "de.wiktionary"
 
 unterhalten:
   pos: "verb"
@@ -67,6 +278,87 @@ unterhalten:
         - "seed"
       reflexive: "akk"
 
+Unterhaltung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "беседа с кем-л."
+        en: "a conversation with sb."
+      examples:
+        - de: "Er führte eine lange Unterhaltung mit dem Gast."
+          ru: "Он вёл долгую беседу с гостем."
+          en: "He had a long conversation with the guest."
+      sources:
+        - "duden"
+
+unterrichten:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      gloss:
+        ru: "преподавать что-л., обучать кого-л. чему-л."
+        en: "to teach sth., to instruct sb. in sth."
+      examples:
+        - de: "Sie unterrichtet ihre Kinder im Malen."
+          ru: "Она обучает своих детей рисованию."
+          en: "She instructs her children in painting."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "какому предмету обучаешь — школьная сторона глагола"
+        en: "what subject you teach — the classroom side of the verb"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "осведомлять кого-л. о чём-л."
+        en: "to inform sb. about sth."
+      examples:
+        - de: "Der Bote unterrichtet den König über die Lage."
+          ru: "Гонец осведомляет короля о положении дел."
+          en: "The messenger informs the king about the situation."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "о чём осведомляешь — передача сведений, а не преподавание. Так же ведёт себя informieren über"
+        en: "what you inform about — passing on news, not teaching. informieren über behaves the same way"
+
+unterscheiden:
+  pos: "verb"
+  patterns:
+    - prep: "zwischen"
+      case: "dat"
+      gloss:
+        ru: "различать между чем-л. и чем-л."
+        en: "to distinguish between sth. and sth."
+      examples:
+        - de: "Man unterscheidet zwischen dem alten und dem neuen Modell."
+          ru: "Различают между старой и новой моделью."
+          en: "A distinction is made between the old and the new model."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "между чем различаешь — две вещи, которые сам разводишь"
+        en: "between what you distinguish — two things you tell apart"
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "отличаться от кого-л. / чего-л."
+        en: "to differ from sb. / sth."
+      examples:
+        - de: "Sie unterscheidet sich deutlich von ihrer Schwester."
+          ru: "Она заметно отличается от своей сестры."
+          en: "She differs markedly from her sister."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "от кого отличаешься — то, с чем сравнивают тебя самого"
+        en: "what you differ from — the thing you yourself are compared against"
+
 Unterschied:
   pos: "noun"
   article: "der"
@@ -82,3 +374,84 @@ Unterschied:
           en: "The difference between the two is small."
       sources:
         - "prototype"
+      senseNote:
+        ru: "между кем/чем разница — два сопоставляемых объекта в одной фразе"
+        en: "between what the difference lies — two things compared side by side"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "отличие от кого-л. / чего-л. (обычно «im Unterschied zu»)"
+        en: "difference from sb. / sth. (usually 'im Unterschied zu')"
+      examples:
+        - de: "Im Unterschied zu ihm interessiert sie das überhaupt nicht."
+          ru: "В отличие от него, её это совершенно не интересует."
+          en: "Unlike him, she is not interested in that at all."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "от чего/кого отличие — единственный ориентир для сравнения, а не пара из «zwischen»"
+        en: "what it differs from — a single reference point, not the pair used with 'zwischen'"
+
+untersuchen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "проверять, обследовать на предмет чего-л."
+        en: "to examine sth. for sth., to test sth. for sth."
+      examples:
+        - de: "Der Arzt untersucht das Blut auf einen Erreger."
+          ru: "Врач проверяет кровь на возбудителя."
+          en: "The doctor is testing the blood for a pathogen."
+      sources:
+        - "duden"
+
+Untersuchung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "исследование чего-л."
+        en: "a study of sth., research on sth."
+      examples:
+        - de: "Die Wissenschaftler veröffentlichten eine Untersuchung über die Umweltschäden."
+          ru: "Учёные опубликовали исследование об экологическом ущербе."
+          en: "The scientists published a study on the environmental damage."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "научное исследование предмета — академический смысл"
+        en: "an academic study of a subject"
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "расследование против кого-л."
+        en: "an investigation against sb."
+      examples:
+        - de: "Die Polizei leitete eine Untersuchung gegen den Verdächtigen ein."
+          ru: "Полиция начала расследование против подозреваемого."
+          en: "The police opened an investigation against the suspect."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "официальное (полицейское/дисциплинарное) расследование против кого-л."
+        en: "a formal (police/disciplinary) investigation against sb."
+
+unwohl:
+  pos: "adj"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "неуютно от чего-л., тревожно при чём-л."
+        en: "uneasy about sth."
+      examples:
+        - de: "Mir ist unwohl bei dem Gedanken, dass er trotzdem kommt."
+          ru: "Мне неуютно от мысли, что он всё равно придёт."
+          en: "I feel uneasy about the thought that he is coming anyway."
+      sources:
+        - "en.wiktionary"
+        - "duden"

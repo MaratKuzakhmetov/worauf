@@ -916,6 +916,82 @@ came from. This costs nothing, satisfies both CC BY-SA and CC BY, makes the conf
 auditable, and — since no comparable open dataset exists — makes the result something worth
 publishing on its own.
 
+### Duden — the source the plan did not have
+
+**Added 2026-09-10, after the dataset was built. Everything above this heading was written before
+the growth phase; this section records what actually happened, which is not the same thing.**
+
+Measured on the compiled dataset at 721 patterns / 593 words:
+
+| `sources` value | Patterns citing it |
+|---|---|
+| `duden` | **518** |
+| `en.wiktionary` | 315 |
+| `prototype` | 118 |
+| `seed` | 85 |
+| `de.wiktionary` | 15 |
+
+**Duden is the largest source in this dataset, and it is named nowhere above.** It was not a planned
+source: the plan had example sentences coming from Tatoeba with sentence IDs retained, and that
+plan was never executed. Duden became the working dictionary of the entire growth phase instead —
+Layer 1's per-candidate verification (batches 1–23), Layer 2's noun and adjective derivations
+(checkpoints 1–6), and Layer 3's E-VALBU-checklist sweep (checkpoints 1–12) all ran through it.
+
+This matters because the exclusion list two paragraphs down rejects **DWDS** (§ 44b UrhG) and
+**E-VALBU** (all rights reserved) on licence grounds — and Duden is likewise all rights reserved.
+Stated plainly: the project's declared sourcing policy and its actual practice were out of step,
+and nothing recorded it until Phase 7 went looking.
+
+**What was taken, and what was not.** Each pattern's Duden entry was opened and read in a browser.
+From it came the government facts — which preposition, which case — and a usage example. Definitions
+did not: every gloss, sense note and translation in the dataset was written for this project, in
+both English and Russian.
+
+**The reasoning for keeping the material.** Government facts are facts about German, not authored
+expression, and facts are not protected by copyright — the same reasoning already applied in open
+question 3 above. The glosses and translations are the project's own work. The example sentences are
+short factual illustrations of usage, each individually de minimis.
+
+**The residual risk, stated without minimising it.** Several hundred example sentences drawn
+systematically from a single all-rights-reserved dictionary is a judgement call, not a clearance. The
+de minimis argument is strongest per sentence and weakest in aggregate, and aggregate is what this
+dataset is: 518 patterns, each carrying an example traceable to a Duden entry. Nobody has cleared
+this, no permission was sought, and the EU sui generis database right discussed in open question 3
+cuts against the project here rather than for it. It is recorded as an accepted risk with a known
+price, not as a settled question.
+
+**The fallback, if it is ever challenged.** Re-source the examples to **Tatoeba** (CC BY 2.0 FR,
+sentence IDs retained per example) — which is what this document planned in the first place — or
+replace them with sentences written for the project. This is a work item of known shape, not a
+redesign: the patterns, glosses, cases and invariants all survive it untouched, because only the
+`examples` field would change. Coverage would be partial, since Tatoeba will not have a sentence for
+every one of 721 patterns, and the gaps would need hand-written German.
+
+### The two-source rule, as actually applied
+
+**Recorded 2026-09-10.** The rule is two independent sources per pattern. Measured against the
+finished dataset, that holds for **321 of 721 patterns (44.5%)**. The rest rest on one source:
+
+| Single-source group | Patterns | Share | Status |
+|---|---|---|---|
+| Duden-only **verbs** (Layer 3) | 138 | 19.1% | **Exception recorded retroactively, below** |
+| Duden-only nouns + adjectives (Layer 2) | 59 | 8.2% | Covered by the relaxation Layer 2 recorded deliberately |
+| `prototype` + `seed` (Phase 1) | 203 | 28.2% | Never verified against any external dictionary |
+
+**The 138 verbs.** Layer 3 worked from the E-VALBU completeness checklist, verifying each candidate
+against Duden and corroborating with Wiktionary *where an entry existed*. Where neither Wiktionary
+edition had the reading, the pattern went in on Duden alone. This was the practice throughout, but
+unlike Layer 2's relaxation — which was argued and written down in its checkpoint 1 — it was never
+stated as a decision. It is now: **Layer 3 accepted a single authoritative source where no second
+open source existed.** Each such pattern was individually opened, read, and recorded with a quoted
+example from the entry; none was inferred or bulk-imported. No `confidence` field was added to the
+schema — that is a data-model decision, not a documentation fix — so the share is made visible here
+rather than machine-readable.
+
+**The 203 Phase-1 patterns** are a separate and older gap, already flagged when Phase 1 closed: the
+two-source pass was deferred to the growth phase, and the growth phase spent itself on new patterns.
+They remain the project's own uncorroborated assertions.
+
 **Excluded on licence grounds:** DWDS (§ 44b UrhG TDM reservation), E-VALBU/grammis (all rights
 reserved, written permission required), Leipzig Wortschatz (CC BY-NC — incompatible with CC BY-SA),
 Goethe-Institut word lists (Goethe-Institut copyright), `German_EO_verbs` and

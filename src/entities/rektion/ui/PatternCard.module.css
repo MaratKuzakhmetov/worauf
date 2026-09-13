@@ -1,6 +1,9 @@
+/* Pen border (docs/DESIGN.md §14.4): 2px of ink and a hard offset shadow. No blur — a
+   drawn edge, not a lifted surface. */
 .card {
   background: var(--card);
-  border: 1px solid var(--rule);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 5px 0 0 var(--ink-3);
   padding: 1rem 1.25rem 0.9rem;
 }
 
@@ -52,7 +55,7 @@
 
 .example {
   margin: 0.8rem 0 0;
-  font-family: var(--font-serif), Georgia, serif;
+  font-family: var(--font-sans), 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.125rem;
   line-height: 1.35;
 }
@@ -78,7 +81,7 @@
   font-family: var(--font-mono), monospace;
   font-size: 0.6875rem;
   color: var(--ink-2);
-  border: 1px solid var(--rule);
+  border: 1px solid var(--ink-3);
   padding: 0.2rem 0.44rem;
 }
 

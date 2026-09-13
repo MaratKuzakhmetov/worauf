@@ -1,5 +1,60 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+laben:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      tags:
+        - "dated"
+      gloss:
+        ru: "наслаждаться чем-л., лакомиться чем-л. (устар., книжн.)"
+        en: "to delight in sth., to indulge in sth. (dated, literary)"
+      examples:
+        - de: "Die Gäste labten sich am Champagner."
+          ru: "Гости наслаждались шампанским."
+          en: "The guests delighted in the champagne."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чем именно лакомишься — конкретное лакомство"
+        en: "the specific treat being savoured"
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      tags:
+        - "dated"
+      gloss:
+        ru: "подкрепляться чем-л. (устар., книжн.)"
+        en: "to refresh/refuel oneself with sth. (dated, literary)"
+      examples:
+        - de: "Sie labten sich mit Kaffee und Kuchen."
+          ru: "Они подкреплялись кофе с пирожными."
+          en: "They refreshed themselves with coffee and cake."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "чем подкрепляешься — угощение в целом, не одно конкретное лакомство"
+        en: "what you refresh yourself with — refreshments in general, not one specific treat"
+
+lächeln:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "усмехаться над кем-л. / чем-л."
+        en: "to smile at sb. / sth., to smile indulgently about sth."
+      examples:
+        - de: "Jeder lächelt über seine Marotte."
+          ru: "Все усмехаются над его причудой."
+          en: "Everyone smiles at his quirk."
+      sources:
+        - "duden"
+
 lachen:
   pos: "verb"
   patterns:
@@ -15,6 +70,22 @@ lachen:
           en: "Everyone laughs at the joke."
       sources:
         - "seed"
+
+lästern:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "злословить о ком-л. / чём-л., сплетничать о ком-л."
+        en: "to gossip about sb. / sth., to badmouth sb."
+      examples:
+        - de: "Die Kollegen lästern über den Chef."
+          ru: "Коллеги злословят о начальнике."
+          en: "The colleagues are badmouthing the boss."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 leben:
   pos: "verb"
@@ -47,6 +118,21 @@ leben:
       senseNote:
         ru: "на что живёшь — средства"
         en: "what you live on — the means"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "мириться с чем-л., справляться с чем-л."
+        en: "to live with sth., to cope with sth."
+      examples:
+        - de: "Sie muss mit den Konsequenzen leben."
+          ru: "Ей приходится мириться с последствиями."
+          en: "She has to live with the consequences."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с чем миришься — тяготы или обстоятельства, а не цель или средства"
+        en: "what you come to terms with — a hardship or circumstance, not a purpose or means"
 
 leiden:
   pos: "verb"
@@ -82,6 +168,86 @@ leiden:
       sources:
         - "seed"
 
+leihen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "брать взаймы у кого-л."
+        en: "to borrow sth. from sb."
+      examples:
+        - de: "Er leiht das Geld von seinem Bruder."
+          ru: "Он берёт деньги взаймы у своего брата."
+          en: "He borrows the money from his brother."
+      sources:
+        - "duden"
+
+lernen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "учиться на чём-л., извлекать урок из чего-л."
+        en: "to learn from sth."
+      examples:
+        - de: "Man lernt aus seinen Fehlern."
+          ru: "На своих ошибках учатся."
+          en: "One learns from one's mistakes."
+      sources:
+        - "duden"
+
+lesen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      gloss:
+        ru: "читать в чём-л. (не всю книгу целиком, а листать, читать местами)"
+        en: "to read in sth. (browsing, not the whole book at once)"
+      senseNote:
+        ru: "партитивное «in» — читать частями, в отличие от «ein Buch lesen» (прочитать книгу целиком)"
+        en: "partitive 'in' — reading part of sth., unlike 'ein Buch lesen' (to read a whole book)"
+      examples:
+        - de: "Sie liest gern in diesem Buch."
+          ru: "Она любит читать эту книгу по частям."
+          en: "She likes to read in this book."
+          lemmaForm: liest
+      sources:
+        - "duden"
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "усматривать что-л. в чём-л., делать вывод из чего-л. (перен.)"
+        en: "to infer sth. from sth., to read sth. into sth. (figurative)"
+      examples:
+        - de: "Ich las aus seinen Worten eine Enttäuschung."
+          ru: "Я усмотрел в его словах разочарование."
+          en: "I read disappointment into his words."
+          lemmaForm: las
+      sources:
+        - "duden"
+      senseNote:
+        ru: "переносное «aus» — делать вывод из чего-л., а не читать частично"
+        en: "figurative 'aus' — inferring sth. from sth., not partial reading"
+
+liebäugeln:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "подумывать о чём-л., присматриваться к чему-л."
+        en: "to toy with sth., to have one's eye on sth."
+      examples:
+        - de: "Ich liebäugele mit einem neuen Auto."
+          ru: "Я подумываю о новой машине."
+          en: "I am toying with the idea of a new car."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Liebe:
   pos: "noun"
   article: "die"
@@ -98,6 +264,21 @@ Liebe:
       sources:
         - "prototype"
 
+liefern:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "поставлять что-л. кому-л."
+        en: "to deliver/supply sth. to sb."
+      examples:
+        - de: "Wir liefern auch an Privatpersonen."
+          ru: "Мы поставляем товар и частным лицам."
+          en: "We also deliver to private individuals."
+      sources:
+        - "duden"
+
 liegen:
   pos: "verb"
   patterns:
@@ -113,6 +294,121 @@ liegen:
       sources:
         - "prototype"
 
+limitieren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "ограничивать что-л. чем-л."
+        en: "to limit sth. to sth."
+      examples:
+        - de: "Der Verlag limitiert die Auflage auf dreihundert Exemplare."
+          ru: "Издательство ограничивает тираж тремястами экземплярами."
+          en: "The publisher limits the print run to three hundred copies."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Lob:
+  pos: "noun"
+  article: "das"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "похвала за что-л."
+        en: "praise for sth."
+      examples:
+        - de: "Sie verdient ein Lob für ihren Fleiß."
+          ru: "Она заслуживает похвалы за своё усердие."
+          en: "She deserves praise for her diligence."
+      sources:
+        - "duden"
+
+loben:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "хвалить кого-л. за что-л."
+        en: "to praise sb. for sth."
+      examples:
+        - de: "Der Lehrer lobt den Schüler für den guten Aufsatz."
+          ru: "Учитель хвалит ученика за хорошее сочинение."
+          en: "The teacher praises the pupil for the good essay."
+      sources:
+        - "duden"
+
+lösen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "освобождаться, отрываться от чего-л. / кого-л."
+        en: "to free oneself from sth. / sb., to break away from sth."
+      examples:
+        - de: "Er löst sich von seinen Vorurteilen."
+          ru: "Он освобождается от своих предрассудков."
+          en: "He is freeing himself from his prejudices."
+      sources:
+        - "duden"
+
+losfahren:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "набрасываться на кого-л. (словесно), огрызаться на кого-л."
+        en: "to lash out at sb., to snap at sb. (figurative)"
+      senseNote:
+        ru: "переносное значение — не о начале движения транспорта"
+        en: "figurative sense — not about a vehicle setting off"
+      examples:
+        - de: "Er fuhr gegen seinen Kollegen los."
+          ru: "Он набросился на своего коллегу."
+          en: "He snapped at his colleague."
+          lemmaForm: fuhr
+      sources:
+        - "duden"
+
+losreißen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "отрываться от чего-л., вырываться из чего-л."
+        en: "to tear oneself away from sth."
+      examples:
+        - de: "Er kann sich von dem Anblick nicht losreißen."
+          ru: "Он не может оторваться от этого зрелища."
+          en: "He cannot tear himself away from the sight."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Lösung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "решение чего-л. (проблемы)"
+        en: "a solution for sth. (a problem)"
+      examples:
+        - de: "Die Regierung entwickelte eine Lösung für die Betroffenen."
+          ru: "Правительство разработало решение для пострадавших."
+          en: "The government developed a solution for those affected."
+      sources:
+        - "duden"
+
 Lust:
   pos: "noun"
   article: "die"
@@ -120,11 +416,46 @@ Lust:
     - prep: "auf"
       case: "akk"
       gloss:
-        ru: "желание чего-л."
-        en: "desire for sth."
+        ru: "желание чего-л. конкретного"
+        en: "desire for sth. specific"
+      senseNote:
+        ru: "чего конкретно хочется прямо сейчас — не общее удовольствие от занятия"
+        en: "what you specifically feel like right now — not general enjoyment of an activity"
       examples:
         - de: "Ich habe Lust auf einen Kaffee."
           ru: "Мне хочется кофе."
           en: "I have a desire for a coffee."
       sources:
         - "prototype"
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "удовольствие от чего-л."
+        en: "pleasure in sth."
+      senseNote:
+        ru: "постоянное удовольствие или увлечённость чем-л. — не сиюминутное желание"
+        en: "ongoing pleasure or delight in sth. — not a momentary craving"
+      examples:
+        - de: "Er tat es aus purer Lust am Bösen."
+          ru: "Он делал это из чистого удовольствия от зла."
+          en: "He did it out of sheer delight in wickedness."
+      sources:
+        - "duden"
+
+lustig machen:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "насмехаться над кем-л. / чем-л."
+        en: "to make fun of sb. / sth."
+      examples:
+        - de: "Er macht sich über seinen Bruder lustig."
+          ru: "Он насмехается над своим братом."
+          en: "He is making fun of his brother."
+          lemmaForm: macht
+      sources:
+        - "en.wiktionary"
+        - "duden"

@@ -1,4 +1,4 @@
-import { Fira_Mono, Fira_Sans, Fira_Sans_Condensed, Source_Serif_4 } from 'next/font/google';
+import { Fira_Mono, Fira_Sans, Fira_Sans_Condensed, Shantell_Sans } from 'next/font/google';
 
 // Self-hosted at build time: the app makes no network request at runtime.
 const sans = Fira_Sans({
@@ -19,11 +19,24 @@ const mono = Fira_Mono({
   variable: '--font-mono',
   display: 'swap',
 });
-const serif = Source_Serif_4({
+/*
+ * The apparatus voice (docs/DESIGN.md §14.3): headings, pane labels, buttons, counts.
+ *
+ * It never touches German. A marker face rounds off exactly the strokes that separate `n`
+ * from `m`, and `auf den` vs `auf dem` is the entire product — the measurement is in
+ * `design/sketchbook/Legibility.dc.html`. Cyrillic is loaded because the RU interface
+ * chrome needs it; the German material stays on Fira either way.
+ *
+ * Source Serif 4 was dropped here rather than kept alongside: §14.3 replaces the
+ * grotesk/antiqua split with a marker/grotesk one, and a third family earned nothing.
+ */
+const marker = Shantell_Sans({
   subsets: ['latin', 'cyrillic'],
-  weight: ['400', '600'],
-  variable: '--font-serif',
+  weight: ['400', '600', '700'],
+  variable: '--font-marker',
   display: 'swap',
 });
 
-export const fontVariables = [sans, condensed, mono, serif].map((font) => font.variable).join(' ');
+export const fontVariables = [sans, condensed, mono, marker]
+  .map((font) => font.variable)
+  .join(' ');

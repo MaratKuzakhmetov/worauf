@@ -1,5 +1,75 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+machen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "строить из себя кого-л., изображать что-л."
+        en: "to act/play at being sth."
+      examples:
+        - de: "Er macht auf cool."
+          ru: "Он строит из себя крутого."
+          en: "He is acting cool."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "разговорная идиома изображения роли, не буквальное «делать на что-л.»"
+        en: "a colloquial idiom about playing a role, not literal 'doing onto sth.'"
+    - prep: "an"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "приниматься за что-л."
+        en: "to get down to sth., to set about sth."
+      examples:
+        - de: "Sie macht sich an die Arbeit."
+          ru: "Она принимается за работу."
+          en: "She gets down to work."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "с чего начинаешь — устойчивое возвратное выражение"
+        en: "what you set about — a fixed reflexive expression"
+
+mäkeln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "придираться к чему-л."
+        en: "to nitpick about sth., to carp at sth."
+      examples:
+        - de: "Sie mäkelt ständig an dem Essen."
+          ru: "Она постоянно придирается к еде."
+          en: "She is constantly nitpicking about the food."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Mangel:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "нехватка чего-л."
+        en: "lack of sth., shortage of sth."
+      examples:
+        - de: "Es besteht ein Mangel an diesem Rohstoff."
+          ru: "Ощущается нехватка этого сырья."
+          en: "There is a shortage of this raw material."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Meinung:
   pos: "noun"
   article: "die"
@@ -32,3 +102,107 @@ Meinung:
       senseNote:
         ru: "мнение по конкретному вопросу, вынесенному на обсуждение"
         en: "an opinion on a specific matter that is up for discussion"
+
+melden:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "записываться на что-л."
+        en: "to sign up for sth."
+      examples:
+        - de: "Sie hat sich zur Prüfung gemeldet."
+          ru: "Она записалась на экзамен."
+          en: "She signed up for the exam."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+messen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "оценивать что-л. по какому-л. мерилу"
+        en: "to measure sth. against sth., to judge sth. by sth."
+      examples:
+        - de: "Man misst eine Leistung am Erfolg."
+          ru: "Достижение оценивают по успеху."
+          en: "A performance is measured against its success."
+          lemmaForm: misst
+      sources:
+        - "duden"
+      senseNote:
+        ru: "по какому мерилу оценивают — критерий, а не соперник"
+        en: "the yardstick you judge by — a criterion, not a rival"
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "меряться силами с кем-л."
+        en: "to pit oneself against sb., to compete with sb."
+      examples:
+        - de: "Er misst sich mit dem besten Läufer."
+          ru: "Он меряется силами с лучшим бегуном."
+          en: "He pits himself against the best runner."
+          lemmaForm: misst
+      sources:
+        - "duden"
+      senseNote:
+        ru: "с кем меряешься — соперник, а не критерий оценки"
+        en: "whom you pit yourself against — a rival, not a criterion"
+
+mitfahren:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "ехать с кем-л. (в его машине), подсаживаться к кому-л."
+        en: "to ride along with sb., to carpool with sb."
+      examples:
+        - de: "Lass uns doch bei Lukas mitfahren!"
+          ru: "Давай поедем с Лукасом!"
+          en: "Let's ride along with Lukas!"
+      sources:
+        - "duden"
+        - "de.wiktionary"
+
+münden:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "впадать во что-л. (о реке), приводить к чему-л."
+        en: "to flow into sth. (a river), to culminate in sth."
+      examples:
+        - de: "Der Fluss mündet ins Meer."
+          ru: "Река впадает в море."
+          en: "The river flows into the sea."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+münzen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "быть направленным против кого-л. / чего-л., метить в кого-л."
+        en: "to be aimed at sb. / sth., to be directed at sb. / sth."
+      examples:
+        - de: "Diese Bemerkung war auf ihn gemünzt."
+          ru: "Это замечание было направлено против него."
+          en: "This remark was aimed at him."
+          lemmaForm: gemünzt
+      senseNote:
+        ru: "почти всегда употребляется в форме причастия «gemünzt sein», а не как обычный активный глагол"
+        en: "almost always used as the participle 'gemünzt sein', not as an ordinary active verb"
+      sources:
+        - "en.wiktionary"
+        - "duden"

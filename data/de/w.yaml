@@ -1,5 +1,85 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+wachsen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "расти, взрослеть благодаря чему-л. (о человеке)"
+        en: "to grow through sth., to be strengthened by sth."
+      examples:
+        - de: "Er ist an seinen Aufgaben gewachsen."
+          ru: "Он вырос благодаря своим задачам."
+          en: "He has grown through his responsibilities."
+      sources:
+        - "duden"
+
+Wahl:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "избрание на какую-л. должность"
+        en: "election to sth. (an office, a position)"
+      examples:
+        - de: "Die Wahl zum neuen Landtag findet im Herbst statt."
+          ru: "Выборы в новый ландтаг пройдут осенью."
+          en: "The election to the new state parliament will take place in autumn."
+      sources:
+        - "duden"
+
+wählen:
+  pos: "verb"
+  patterns:
+    - prep: "zwischen"
+      case: "dat"
+      gloss:
+        ru: "выбирать между чем-л."
+        en: "to choose between sth."
+      examples:
+        - de: "Sie wählt zwischen dem Auto und dem Fahrrad."
+          ru: "Она выбирает между машиной и велосипедом."
+          en: "She is choosing between the car and the bicycle."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "между чем выбираешь — сами варианты"
+        en: "what you choose between — the options themselves"
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "избирать кого-л. кем-л."
+        en: "to elect sb. as sth."
+      examples:
+        - de: "Sie wurde zur Vorsitzenden gewählt."
+          ru: "Её избрали председателем."
+          en: "She was elected chairwoman."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "кем избирают — должность, а не набор вариантов"
+        en: "what someone is elected as — the office, not a set of options"
+
+wappnen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "готовиться к чему-л. (заранее, к трудностям)"
+        en: "to brace oneself for sth."
+      examples:
+        - de: "Sie wappnet sich für die Prüfung."
+          ru: "Она готовится к экзамену."
+          en: "She braces herself for the exam."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 warnen:
   pos: "verb"
   patterns:
@@ -14,6 +94,22 @@ warnen:
           en: "The police warn of the fraudsters."
       sources:
         - "prototype"
+
+Warnung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "предупреждение о чём-л."
+        en: "warning of sth."
+      examples:
+        - de: "Eine Warnung vor dem Sturm wurde ausgegeben."
+          ru: "Было выпущено предупреждение о буре."
+          en: "A warning of the storm was issued."
+      sources:
+        - "duden"
 
 warten:
   pos: "verb"
@@ -35,6 +131,104 @@ warten:
       sources:
         - "seed"
 
+wechseln:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "переходить к кому-л. / чему-л. (к другому оператору, работодателю)"
+        en: "to switch to sth. / sb. (a provider, an employer)"
+      examples:
+        - de: "Er wechselt zu einem anderen Anbieter."
+          ru: "Он переходит к другому провайдеру."
+          en: "He is switching to a different provider."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "куда переходишь — новое место, новый поставщик"
+        en: "what you switch to — the new place or provider"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "обмениваться чем-л. с кем-л. (письмами, взглядами)"
+        en: "to exchange sth. with sb. (letters, glances)"
+      examples:
+        - de: "Sie wechselt mit ihrem Nachbarn nur wenige Worte."
+          ru: "Она обменивается с соседом лишь парой слов."
+          en: "She exchanges only a few words with her neighbour."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "с кем обмениваешься — партнёр по обмену, а не место, куда переходишь"
+        en: "whom you exchange with — the other party, not a place you switch to"
+
+wecken:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      gloss:
+        ru: "пробуждать что-л. в ком-л. (чувство, желание)"
+        en: "to arouse sth. in sb. (a feeling, a desire)"
+      examples:
+        - de: "Diese Begegnung weckte in ihm alte Erinnerungen."
+          ru: "Эта встреча пробудила в нём старые воспоминания."
+          en: "This encounter aroused old memories in him."
+      sources:
+        - "duden"
+
+weglaufen:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "убегать от кого-л. / чего-л."
+        en: "to run away from sb. / sth."
+      examples:
+        - de: "Der Hund läuft vor dem Gewitter weg."
+          ru: "Собака убегает от грозы."
+          en: "The dog runs away from the thunderstorm."
+          lemmaForm: läuft
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+wegziehen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "переезжать, уезжать из какого-л. места (обычно с названием места)"
+        en: "to move away from a place (usually with a named place)"
+      examples:
+        - de: "Er ist letztes Jahr aus Hamburg weggezogen."
+          ru: "В прошлом году он уехал из Гамбурга."
+          en: "He moved away from Hamburg last year."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "обычно с названием места"
+        en: "usually with a named place"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "переезжать, уезжать откуда-л. (обычно с наречием места)"
+        en: "to move away from somewhere (usually with a locative adverb)"
+      examples:
+        - de: "Er ist letztes Jahr von hier weggezogen."
+          ru: "В прошлом году он уехал отсюда."
+          en: "He moved away from here last year."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "обычно с наречием места (hier, dort), а не с названием"
+        en: "usually with a locative adverb (here, there), not a named place"
+
 wehren:
   pos: "verb"
   patterns:
@@ -50,6 +244,38 @@ wehren:
           en: "He defends himself against the accusations."
       sources:
         - "prototype"
+
+weinen:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "оплакивать кого-л."
+        en: "to weep for sb., to mourn sb."
+      examples:
+        - de: "Sie weint um ihren Vater."
+          ru: "Она оплакивает отца."
+          en: "She is weeping for her father."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "кого оплакиваешь — тот, кого потерял"
+        en: "whom you weep for — the one you have lost"
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "плакать от какого-л. чувства"
+        en: "to cry with an emotion"
+      examples:
+        - de: "Sie weint vor Freude."
+          ru: "Она плачет от радости."
+          en: "She is crying with joy."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "от какого чувства плачешь — причина слёз, а не тот, кого оплакивают"
+        en: "which emotion makes you cry — the cause of the tears, not the person mourned"
 
 wenden:
   pos: "verb"
@@ -86,6 +312,154 @@ wenden:
         ru: "против чего выступаешь — то, что отвергаешь"
         en: "what you come out against — what you reject"
 
+werden:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "становиться кем-л. / чем-л."
+        en: "to become sth., to turn into sth."
+      examples:
+        - de: "Das Kind wird zum Mann."
+          ru: "Ребёнок становится мужчиной."
+          en: "The child is becoming a man."
+          lemmaForm: wird
+      sources:
+        - "de.wiktionary"
+        - "duden"
+
+werfen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "бросаться, кидаться чем-л."
+        en: "to throw sth., to pelt with sth."
+      examples:
+        - de: "Die Kinder werfen mit Schneebällen."
+          ru: "Дети бросаются снежками."
+          en: "The children are throwing snowballs."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "чем бросаешь — сам снаряд, а не тот, в кого целишься"
+        en: "what you throw — the projectile itself, not who you aim at"
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "бросать в кого-л. / что-л. (целясь)"
+        en: "to throw at sb. / sth."
+      examples:
+        - de: "Er wirft mit Steinen nach dem Hund."
+          ru: "Он бросает камнями в собаку."
+          en: "He is throwing stones at the dog."
+          lemmaForm: wirft
+      sources:
+        - "duden"
+      senseNote:
+        ru: "в кого целишься — мишень, а не снаряд"
+        en: "who you aim at — the target, not the projectile"
+
+Wertschätzung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "признательность за что-л., уважение к кому-л. / чему-л."
+        en: "appreciation for sth."
+      examples:
+        - de: "Wir versichern Ihnen unsere Wertschätzung für Ihren Einsatz."
+          ru: "Мы выражаем вам нашу признательность за ваши усилия."
+          en: "We assure you of our appreciation for your efforts."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Widerstand:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "сопротивление кому-л. / чему-л."
+        en: "resistance against sb. / sth."
+      examples:
+        - de: "Der Widerstand gegen den Diktator wuchs von Jahr zu Jahr."
+          ru: "Сопротивление диктатору росло из года в год."
+          en: "Resistance against the dictator grew year by year."
+      sources:
+        - "duden"
+
+winken:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "махать чем-л."
+        en: "to wave sth., to wave with sth."
+      examples:
+        - de: "Sie winkt mit einem Taschentuch."
+          ru: "Она машет платком."
+          en: "She is waving a handkerchief."
+      sources:
+        - "duden"
+
+wirken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "производить впечатление на кого-л."
+        en: "to have an effect on sb., to come across to sb."
+      examples:
+        - de: "Der Vortrag wirkt auf den Zuschauer."
+          ru: "Доклад производит впечатление на зрителя."
+          en: "The talk makes an impression on the viewer."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Wirkung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "воздействие на кого-л. / что-л."
+        en: "effect on sb. / sth."
+      examples:
+        - de: "Die Wirkung von Farben auf den Menschen ist bekannt."
+          ru: "Воздействие цветов на человека хорошо известно."
+          en: "The effect of colours on people is well known."
+      sources:
+        - "duden"
+
+wuchern:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      tags:
+        - "dated"
+      gloss:
+        ru: "не упускать случая показать что-л., щеголять чем-л. (перен.)"
+        en: "to flaunt sth., to make the most of sth. (figuratively)"
+      examples:
+        - de: "Er wuchert mit seinen Talenten."
+          ru: "Он не упускает случая показать свои таланты."
+          en: "He makes the most of his talents."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 wundern:
   pos: "verb"
   patterns:
@@ -118,6 +492,38 @@ Wunsch:
           en: "The wish for security is strong."
       sources:
         - "prototype"
+
+würgen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "с трудом жевать/глотать что-л. (тж. перен.)"
+        en: "to struggle to chew/swallow sth. (also figuratively)"
+      examples:
+        - de: "Das Kind würgt an seinem Essen."
+          ru: "Ребёнок с трудом жуёт свою еду."
+          en: "The child is struggling to eat its food."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Wut:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "злость на кого-л."
+        en: "anger at sb."
+      examples:
+        - de: "Er hat große Wut auf seinen Bruder."
+          ru: "Он очень злится на своего брата."
+          en: "He has great anger at his brother."
+      sources:
+        - "duden"
 
 wütend:
   pos: "adj"

@@ -1,5 +1,21 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+Dank:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "благодарность за что-л."
+        en: "thanks for sth."
+      examples:
+        - de: "Er sprach seinen Dank für den Empfang aus."
+          ru: "Он выразил благодарность за приём."
+          en: "He expressed his thanks for the reception."
+      sources:
+        - "duden"
+
 dankbar:
   pos: "adj"
   patterns:
@@ -69,6 +85,86 @@ denken:
       sources:
         - "seed"
 
+deuten:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "указывать на что-л. (о признаках)"
+        en: "to point to sth. (of signs, indications)"
+      examples:
+        - de: "Die Zeichen deuten auf einen Wandel."
+          ru: "Признаки указывают на перемену."
+          en: "The signs point to a change."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+die Weichen stellen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "определять направление развития чего-л."
+        en: "to set the course for sth."
+      examples:
+        - de: "Das Kabinett hat die Weichen für die Steuerreform gestellt."
+          ru: "Кабинет министров определил направление налоговой реформы."
+          en: "The cabinet set the course for the tax reform."
+          lemmaForm: gestellt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+dienen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "служить у кого-л."
+        en: "to serve under sb."
+      examples:
+        - de: "Er hat drei Jahre bei diesem General gedient."
+          ru: "Он три года служил у этого генерала."
+          en: "He served under this general for three years."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+differenzieren:
+  pos: "verb"
+  patterns:
+    - prep: "zwischen"
+      case: "dat"
+      gloss:
+        ru: "различать, проводить различие между чем-л."
+        en: "to differentiate between sth."
+      examples:
+        - de: "Man muss zwischen diesen beiden Erscheinungen differenzieren."
+          ru: "Нужно различать эти два явления."
+          en: "One has to differentiate between these two phenomena."
+      sources:
+        - "duden"
+
+Diskussion:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "дискуссия о чём-л."
+        en: "discussion about sth."
+      examples:
+        - de: "Die Diskussion über den Vorschlag hält an."
+          ru: "Дискуссия о предложении продолжается."
+          en: "The discussion about the proposal continues."
+      sources:
+        - "duden"
+
 diskutieren:
   pos: "verb"
   patterns:
@@ -101,3 +197,138 @@ diskutieren:
       senseNote:
         ru: "что обсуждаешь — тема"
         en: "what you discuss — the topic"
+
+Drang:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "стремление к чему-л. (внутреннее, неудержимое)"
+        en: "urge for sth., drive for sth."
+      examples:
+        - de: "Er verspürt einen starken Drang nach Freiheit."
+          ru: "Он испытывает сильное стремление к свободе."
+          en: "He feels a strong urge for freedom."
+      sources:
+        - "duden"
+
+drehen:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "речь идёт о чём-л. (перен.)"
+        en: "to be about sth., to concern sth. (figuratively)"
+      examples:
+        - de: "Das Gespräch dreht sich um Politik."
+          ru: "Разговор идёт о политике."
+          en: "The conversation is about politics."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+dringen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "настаивать на чём-л., требовать чего-л."
+        en: "to press for sth., to insist on sth."
+      examples:
+        - de: "Die Firma dringt auf einen schnellen Abschluss."
+          ru: "Фирма настаивает на быстром завершении."
+          en: "The company is pressing for a quick conclusion."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+drohen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "угрожать чем-л."
+        en: "to threaten sb. with sth."
+      examples:
+        - de: "Er droht mir mit einer Anzeige."
+          ru: "Он угрожает мне заявлением в полицию."
+          en: "He is threatening me with a police report."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+drücken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "нажимать на что-л."
+        en: "to press sth."
+      senseNote:
+        ru: "буквально нажимаешь на предмет — не о том, что избегаешь"
+        en: "a literal press on an object — not about avoiding something"
+      examples:
+        - de: "Sie drückt auf den Knopf."
+          ru: "Она нажимает на кнопку."
+          en: "She presses the button."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+    - prep: "vor"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "уклоняться от чего-л."
+        en: "to shirk sth., to dodge sth."
+      senseNote:
+        ru: "переносное — избегаешь дела, а не нажимаешь на предмет"
+        en: "figurative — you avoid a task, not literally press on something"
+      examples:
+        - de: "Du drückst dich gern vor der Arbeit."
+          ru: "Ты любишь уклоняться от работы."
+          en: "You like to dodge work."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+durchessen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "объедать кого-л., жить за чей-л. счёт (о еде)"
+        en: "to eat at sb.'s expense repeatedly"
+      examples:
+        - de: "Er isst sich ungeniert bei all seinen Bekannten durch."
+          ru: "Он беззастенчиво объедает всех своих знакомых."
+          en: "He shamelessly eats at the expense of all his acquaintances."
+          lemmaForm: isst
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+durchfallen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "провалить что-л. (экзамен, голосование)"
+        en: "to fail sth. (an exam, a vote)"
+      examples:
+        - de: "Er ist bei der Prüfung durchgefallen."
+          ru: "Он провалил экзамен."
+          en: "He failed the exam."
+          lemmaForm: durchgefallen
+      sources:
+        - "en.wiktionary"
+        - "duden"

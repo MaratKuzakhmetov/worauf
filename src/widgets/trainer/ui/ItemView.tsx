@@ -63,6 +63,14 @@ export function ItemView({
       <Prompt item={item} reveal={answered} />
       <p className={styles.gloss}>{item.pattern.gloss[lang]}</p>
 
+      {/* Focus moves to "Next" on answer, whose own name says nothing about the verdict —
+          the visible colour/border change reaches a sighted reader but no one else. */}
+      <p role="status" aria-live="polite" className={styles.srOnly}>
+        {answered
+          ? t.answerAnnouncement(right, item.answer, caseLabel(item.pattern.case))
+          : ''}
+      </p>
+
       <ol className={styles.options}>
         {item.options.map((option, i) => {
           const chosen = answered && given === option.label;

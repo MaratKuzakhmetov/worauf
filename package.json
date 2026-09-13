@@ -4,12 +4,14 @@
   "private": true,
   "type": "module",
   "description": "Which preposition goes with which German verb, adjective or noun — and in which case.",
+  "license": "MIT",
   "engines": {
     "node": ">=22.0.0"
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run build:sw",
+    "build:sw": "tsx tools/service-worker/build-sw.ts",
     "build:data": "tsx tools/data-build/build.ts",
     "data:check": "tsx tools/data-build/build.ts --check",
     "data:list": "tsx tools/data-build/list.ts",

@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600;700&family=Fira+Sans:wght@400;500;600&family=Fira+Sans+Condensed:wght@600&family=Fira+Mono&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #1a202c; } a:hover { color: #3182ce; }
+    .row { display: flex; align-items: center; padding: 0 16px; height: 34px; font-size: 15px; }
+
+    /* Theme lives in a real stylesheet, so the switch is one class, not a dozen holes.
+       Dark is the navy blueprint from markgp.com; light is cool graph paper. */
+    .t-light {
+      --paper: #fbfcfe; --card: #ffffff; --panel: #eef2f7;
+      --ink: #1a202c; --ink-2: #6b7688; --ink-3: rgba(26,32,44,.22);
+      --hair: rgba(26,32,44,.1); --grid: rgba(26,32,44,.055); --mark: #ffe08a;
+      --akk: #1f3fcb; --dat: #b26205;
+      --en-bg: #1a202c; --en-fg: #fbfcfe; --ru-bg: transparent; --ru-fg: #1a202c;
+    }
+    .t-dark {
+      --paper: #151a26; --card: #1e2433; --panel: #232b3d;
+      --ink: #f7fafc; --ink-2: #9aa7bd; --ink-3: rgba(247,250,252,.24);
+      --hair: rgba(247,250,252,.12); --grid: rgba(247,250,252,.05); --mark: rgba(255,224,138,.3);
+      --akk: #7c93ff; --dat: #e9a13b;
+      --en-bg: #f7fafc; --en-fg: #151a26; --ru-bg: transparent; --ru-fg: #f7fafc;
+    }
+  </style>
+</helmet>
+
+<!--
+  The sketchbook carries the CHROME only: paper, grid, pen rules, sketch borders and
+  Shantell labels. Every German word and gloss stays in Fira Sans, and colour still
+  means case and nothing else — no decorative accent joins Akk / Dat / Gen.
+-->
+<div class="{{themeClass}}" style="
+  width: 1440px; height: 900px; overflow: hidden;
+  display: flex; flex-direction: column;
+  font-family: 'Fira Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+">
+
+  <!-- header -->
+  <div style="display: flex; align-items: center; gap: 18px; padding: 0 22px; height: 64px; flex-shrink: 0; border-bottom: 2px solid var(--ink);">
+    <!-- no gap here on purpose: worauf is one word -->
+    <div style="font-family: 'Shantell Sans', cursive; font-weight: 700; font-size: 21px;">
+      <span style="color: var(--akk);">wo</span><span>rauf?</span>
+    </div>
+
+    <div style="
+      flex: 1; max-width: 430px; margin-left: 14px;
+      background: var(--card); border: 2px solid var(--ink); border-radius: 4px;
+      box-shadow: 2px 2px 0 0 var(--ink-3);
+      display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+    ">
+      <span style="font-size: 15px; color: var(--ink-2);">{{t.searchPlaceholder}}</span>
+      <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 11px; border: 1px solid var(--ink-3); border-radius: 3px; padding: 1px 5px;">/</span>
+    </div>
+
+    <div style="display: flex; gap: 6px; margin-left: auto; align-items: center;">
+      <div style="font-family: 'Shantell Sans', cursive; font-weight: 700; font-size: 14px; background: var(--ink); color: var(--paper); border: 2px solid var(--ink); border-radius: 4px; padding: 6px 15px;">{{t.browse}}</div>
+      <div style="font-family: 'Shantell Sans', cursive; font-weight: 700; font-size: 14px; border: 2px solid transparent; padding: 6px 15px;">{{t.practice}}</div>
+      <div style="width: 1px; height: 22px; background: var(--ink-3); margin: 0 8px;"></div>
+      <div style="font-family: 'Fira Mono', monospace; font-size: 12px; background: var(--en-bg); color: var(--en-fg); border-radius: 3px; padding: 4px 8px;">EN</div>
+      <div style="font-family: 'Fira Mono', monospace; font-size: 12px; background: var(--ru-bg); color: var(--ru-fg); border-radius: 3px; padding: 4px 8px;">RU</div>
+    </div>
+  </div>
+
+  <!-- three panes -->
+  <div style="display: flex; flex: 1; min-height: 0;">
+
+    <!-- words -->
+    <div style="flex: 0 0 336px; display: flex; flex-direction: column; border-right: 2px solid var(--ink); background: var(--card);">
+      <div style="display: flex; align-items: center; padding: 9px 16px; border-bottom: 2px solid var(--ink); background: var(--panel);">
+        <span style="font-family: 'Shantell Sans', cursive; font-weight: 700; font-size: 13px; letter-spacing: .04em;">{{t.words}}</span>
+        <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 12px;">593</span>
+      </div>
+      <div style="flex: 1; overflow: hidden;">
+        <sc-for list="{{words}}" as="w" hint-placeholder-count="10">
+          <div class="row" style="border-bottom: 1px solid var(--hair);">
+            <span lang="de">{{w.lemma}}</span>
+            <span style="margin-left: auto; color: {{w.colour}};" lang="de">{{w.prep}}
+              <span style="font-family: 'Fira Mono', monospace; font-size: 10px;">{{w.kase}}</span>
+            </span>
+          </div>
+        </sc-for>
+        <!-- selected: ink/paper inversion, never a fourth colour -->
+        <div class="row" style="background: var(--ink); color: var(--paper);">
+          <span style="font-weight: 500;" lang="de">schreiben</span>
+          <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 10px; border: 1px solid var(--ink-3); border-radius: 3px; padding: 0 4px;">3</span>
+        </div>
+        <sc-for list="{{wordsAfter}}" as="w" hint-placeholder-count="4">
+          <div class="row" style="border-bottom: 1px solid var(--hair);">
+            <span lang="de">{{w.lemma}}</span>
+            <span style="margin-left: auto; color: {{w.colour}};" lang="de">{{w.prep}}
+              <span style="font-family: 'Fira Mono', monospace; font-size: 10px;">{{w.kase}}</span>
+            </span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- prepositions -->
+    <div style="flex: 0 0 210px; display: flex; flex-direction: column; border-right: 2px solid var(--ink); background: var(--card);">
+      <div style="display: flex; align-items: center; padding: 9px 16px; border-bottom: 2px solid var(--ink); background: var(--panel);">
+        <span style="font-family: 'Shantell Sans', cursive; font-weight: 700; font-size: 13px; letter-spacing: .04em;">{{t.prepositions}}</span>
+        <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 12px;">16</span>
+      </div>
+      <div style="flex: 1; overflow: hidden;">
+        <sc-for list="{{preps}}" as="p" hint-placeholder-count="16">
+          <div class="row" style="border-bottom: 1px solid var(--hair); background: {{p.bg}};">
+            <span style="font-size: 16px; font-weight: {{p.weight}}; box-shadow: {{p.underline}};" lang="de">{{p.name}}</span>
+            <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 12px; color: {{p.countColour}};">{{p.count}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- detail -->
+    <div style="flex: 1; min-width: 0; padding: 24px 34px; overflow: hidden;">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <span style="font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-weight: 600; font-size: 34px;" lang="de">schreiben</span>
+        <span style="font-family: 'Shantell Sans', cursive; font-weight: 600; font-size: 14px; color: var(--ink-2);">{{t.threePatterns}}</span>
+        <div style="flex: 1; height: 2px; background: var(--ink-3); border-radius: 2px;"></div>
+      </div>
+
+      <!-- pattern 1 -->
+      <div style="background: var(--card); border: 2px solid var(--ink); border-radius: 5px; box-shadow: 4px 5px 0 0 var(--ink-3); padding: 18px 20px; margin-top: 20px;">
+        <div style="display: flex; align-items: baseline; gap: 10px;">
+          <span style="font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-weight: 600; font-size: 23px;" lang="de">schreiben</span>
+          <span style="font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-weight: 600; font-size: 23px; color: var(--akk);" lang="de">an</span>
+          <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 10px; letter-spacing: .1em; color: var(--akk);">AKKUSATIV · 4. FALL</span>
+        </div>
+        <div style="font-size: 17px; margin-top: 10px;">{{t.writeToGloss}}</div>
+        <div style="font-size: 14px; color: var(--ink-2); margin-top: 3px;">{{t.writeToNote}}</div>
+        <div style="font-size: 18px; margin-top: 12px;" lang="de">
+          Ich schreibe <span style="color: var(--akk); font-weight: 500;">an den</span> Verlag.
+        </div>
+        <div style="font-size: 14px; color: var(--ink-2); margin-top: 3px;">{{t.writeToTrans}}</div>
+        <div style="display: flex; gap: 8px; margin-top: 14px;">
+          <span style="font-family: 'Fira Mono', monospace; font-size: 11px; border: 1.5px solid var(--ink-3); border-radius: 3px; padding: 3px 8px;" lang="de">an wen?</span>
+          <span style="font-family: 'Fira Mono', monospace; font-size: 11px; border: 1.5px solid var(--ink-3); border-radius: 3px; padding: 3px 8px;" lang="de">daran</span>
+        </div>
+      </div>
+
+      <!-- the contrast mark -->
+      <div style="display: flex; align-items: center; gap: 12px; margin: 14px 0 0 4px;">
+        <span style="font-family: 'Shantell Sans', cursive; font-weight: 700; font-size: 22px; color: var(--ink-2);">≠</span>
+        <span style="font-family: 'Shantell Sans', cursive; font-weight: 600; font-size: 14px; color: var(--ink-2);">{{t.samePrep}}</span>
+      </div>
+
+      <!-- pattern 2 -->
+      <div style="background: var(--card); border: 2px solid var(--ink); border-radius: 5px; box-shadow: 4px 5px 0 0 var(--ink-3); padding: 18px 20px; margin-top: 12px;">
+        <div style="display: flex; align-items: baseline; gap: 10px;">
+          <span style="font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-weight: 600; font-size: 23px;" lang="de">schreiben</span>
+          <span style="font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-weight: 600; font-size: 23px; color: var(--dat);" lang="de">an</span>
+          <span style="margin-left: auto; font-family: 'Fira Mono', monospace; font-size: 10px; letter-spacing: .1em; color: var(--dat);">DATIV · 3. FALL</span>
+        </div>
+        <div style="font-size: 17px; margin-top: 10px;">{{t.workOnGloss}}</div>
+        <div style="font-size: 14px; color: var(--ink-2); margin-top: 3px;">{{t.workOnNote}}</div>
+        <div style="font-size: 18px; margin-top: 12px;" lang="de">
+          Er schreibt <span style="color: var(--dat); font-weight: 500;">an dem</span> Roman.
+        </div>
+        <div style="font-size: 14px; color: var(--ink-2); margin-top: 3px;">{{t.workOnTrans}}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- status bar -->
+  <div style="display: flex; align-items: center; padding: 0 22px; height: 34px; flex-shrink: 0; border-top: 2px solid var(--ink); background: var(--panel); font-family: 'Fira Mono', monospace; font-size: 12px;">
+    <span>{{t.status}}</span>
+    <span style="margin-left: auto;">{{t.keys}}</span>
+  </div>
+
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{
+  "dark": {"editor": "boolean", "default": false, "section": "Theme"},
+  "locale": {"editor": "enum", "options": ["en", "ru"], "default": "en", "section": "Theme"},
+  "$preview": {"width": 1440, "height": 900}
+}'>
+class Component extends DCLogic {
+  renderVals() {
+    const dark = this.props.dark ?? false;
+    const locale = this.props.locale ?? 'en';
+
+    const themeClass = dark ? 't-dark' : 't-light';
+
+    /* Real rows from the dataset. German never switches locale — only the
+       explanation layer does, so these carry no translated text at all. */
+    const mk = (lemma, prep, kase) => ({
+      lemma, prep, kase: kase === 'akk' ? 'Akk' : 'Dat',
+      colour: kase === 'akk' ? 'var(--akk)' : 'var(--dat)',
+    });
+    const words = [
+      mk('abfahren', 'auf', 'akk'), mk('abfärben', 'auf', 'akk'),
+      mk('sich abfinden', 'mit', 'dat'), mk('abgleiten', 'von', 'dat'),
+      mk('abhängen', 'von', 'dat'), mk('abhängig', 'von', 'dat'),
+      mk('die Abhängigkeit', 'von', 'dat'), mk('sich abhärten', 'gegen', 'akk'),
+      mk('sich abheben', 'von', 'dat'), mk('abrechnen', 'mit', 'dat'),
+    ];
+    const wordsAfter = [
+      mk('schreien', 'nach', 'dat'), mk('schweigen', 'über', 'akk'),
+      mk('sich sehnen', 'nach', 'dat'), mk('sorgen', 'für', 'akk'),
+      mk('der Stolz', 'auf', 'akk'),
+    ];
+
+    /* schreiben governs an twice and über once, so those three light up. The lit
+       state is a highlighter swipe plus weight — not a colour, which means case. */
+    const lit = { an: true, 'über': true };
+    const preps = [
+      ['auf', 130], ['an', 91], ['über', 58], ['mit', 84], ['für', 54], ['von', 40],
+      ['zu', 47], ['in', 45], ['nach', 32], ['gegen', 32], ['um', 29], ['vor', 26],
+      ['aus', 23], ['bei', 22], ['zwischen', 4], ['unter', 3],
+    ].map(([name, count]) => ({
+      name, count,
+      bg: lit[name] ? 'var(--mark)' : 'transparent',
+      weight: lit[name] ? '600' : '400',
+      underline: lit[name] ? 'inset 0 -6px 0 0 var(--mark)' : 'none',
+      countColour: lit[name] ? 'var(--ink)' : 'var(--ink-2)',
+    }));
+
+    const en = {
+      searchPlaceholder: 'Word, preposition or meaning',
+      browse: 'Browse', practice: 'Practice',
+      words: 'WORDS', prepositions: 'PREPOSITIONS',
+      threePatterns: 'three patterns, two cases',
+      writeToGloss: 'to write to sb.', writeToNote: 'the addressee — a person you send it to',
+      writeToTrans: "I'm writing to the publisher.",
+      workOnGloss: 'to be working on sth.', workOnNote: 'the work in progress — not a recipient',
+      workOnTrans: 'He is working on the novel.',
+      samePrep: 'same preposition, other case',
+      status: '721 patterns · 593 words · 16 prepositions',
+      keys: '/ search · ↑↓←→ move · Space random · Esc clear',
+    };
+
+    const ru = {
+      searchPlaceholder: 'Слово, предлог или значение',
+      browse: 'Справочник', practice: 'Тренажёр',
+      words: 'СЛОВА', prepositions: 'ПРЕДЛОГИ',
+      threePatterns: 'три связки, два падежа',
+      writeToGloss: 'писать кому-л.', writeToNote: 'адресат — тот, кому пишут',
+      writeToTrans: 'Я пишу в издательство.',
+      workOnGloss: 'работать над чем-л.', workOnNote: 'то, над чем работают, а не адресат',
+      workOnTrans: 'Он работает над романом.',
+      samePrep: 'тот же предлог, другой падеж',
+      status: '721 связка · 593 слова · 16 предлогов',
+      keys: '/ поиск · ↑↓←→ переход · Пробел случайная · Esc сброс',
+    };
+
+    return { themeClass, words, wordsAfter, preps, t: locale === 'ru' ? ru : en };
+  }
+}
+</script>
+</body>
+</html>

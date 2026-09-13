@@ -15,6 +15,56 @@ fähig:
       sources:
         - "prototype"
 
+fahren:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "ехать на чём-л. (о транспорте)"
+        en: "to go by sth. (a means of transport)"
+      examples:
+        - de: "Wir fahren mit dem Zug nach Berlin."
+          ru: "Мы едем в Берлин на поезде."
+          en: "We are going to Berlin by train."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+fallen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "выпадать на какой-л. день"
+        en: "to fall on a day (a date, a holiday)"
+      examples:
+        - de: "Weihnachten fällt auf einen Sonntag."
+          ru: "Рождество выпадает на воскресенье."
+          en: "Christmas falls on a Sunday."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "на что выпадает — календарная дата, а не категория"
+        en: "what date it falls on — a calendar date, not a category"
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "относиться к чему-л. (компетенции, категории)"
+        en: "to fall within sth. (a jurisdiction, a category)"
+      examples:
+        - de: "Das fällt nicht in die Zuständigkeit der Gemeinde."
+          ru: "Это не относится к компетенции общины."
+          en: "That doesn't fall within the municipality's jurisdiction."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "в какую категорию попадает — сфера ответственности, а не дата"
+        en: "what category it falls into — an area of responsibility, not a date"
+
 fehlen:
   pos: "verb"
   patterns:
@@ -30,6 +80,38 @@ fehlen:
       sources:
         - "prototype"
 
+feilen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "оттачивать что-л., дорабатывать что-л. (перен.)"
+        en: "to polish sth., to work on refining sth. (figuratively)"
+      examples:
+        - de: "Sie feilt an ihrem Vortrag."
+          ru: "Она дорабатывает свой доклад."
+          en: "She is polishing her presentation."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+feilschen:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "торговаться за что-л., торговаться о чём-л."
+        en: "to haggle over sth."
+      examples:
+        - de: "Sie feilscht um den Preis."
+          ru: "Она торгуется за цену."
+          en: "She is haggling over the price."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 fertig:
   pos: "adj"
   patterns:
@@ -44,6 +126,108 @@ fertig:
           en: "Are you finished with the work?"
       sources:
         - "prototype"
+      senseNote:
+        ru: "с чем закончил — задача уже выполнена"
+        en: "what you are finished with — a task already completed"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "готовый к чему-л."
+        en: "ready for sth."
+      examples:
+        - de: "Er ist fertig für den Wettkampf."
+          ru: "Он готов к соревнованию."
+          en: "He is ready for the competition."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "к чему готов — предстоящее событие, а не завершённая задача"
+        en: "what you are ready for — something ahead of you, not a finished task"
+
+fertigwerden:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "справляться с кем-л. / чем-л."
+        en: "to cope with sb. / sth."
+      examples:
+        - de: "Sie wird mit dem Stress nicht fertig."
+          ru: "Она не справляется со стрессом."
+          en: "She cannot cope with the stress."
+          lemmaForm: wird
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+festbeißen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "зацикливаться на чём-л. (перен.)"
+        en: "to fixate on sth. (figuratively)"
+      examples:
+        - de: "Sie hat sich an diesem Fall festgebissen."
+          ru: "Она зациклилась на этом деле."
+          en: "She has fixated on this case."
+          lemmaForm: festgebissen
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+festhalten:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "твёрдо держаться чего-л. (мнения, традиции)"
+        en: "to stick to sth. (an opinion, a tradition)"
+      examples:
+        - de: "Sie hält an ihrer Meinung fest."
+          ru: "Она твёрдо держится своего мнения."
+          en: "She sticks to her opinion."
+          lemmaForm: hält
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+festmachen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "связывать что-л. с чем-л., объяснять что-л. чем-л. (перен.)"
+        en: "to attribute sth. to sth., to pin sth. down to sth. (figuratively)"
+      examples:
+        - de: "Man kann das Problem nicht allein an einer Ursache festmachen."
+          ru: "Нельзя объяснить проблему одной-единственной причиной."
+          en: "One cannot attribute the problem solely to one cause."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+festnageln:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "припирать кого-л. к стенке, ловить кого-л. на слове"
+        en: "to pin sb. down to sth. (a statement, a promise)"
+      examples:
+        - de: "Sie ließ sich nicht auf eine Aussage festnageln."
+          ru: "Она не позволила поймать себя на слове."
+          en: "She would not let herself be pinned down to a statement."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 fliehen:
   pos: "verb"
@@ -60,6 +244,41 @@ fliehen:
       sources:
         - "prototype"
 
+flüchten:
+  pos: "verb"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "спасаться бегством от чего-л."
+        en: "to flee from sth., to escape sth."
+      examples:
+        - de: "Die Menschen flüchten vor der Verfolgung."
+          ru: "Люди спасаются бегством от преследования."
+          en: "People are fleeing from persecution."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "от чего бежишь — источник опасности"
+        en: "what you flee from — the source of danger"
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "укрыться, спастись бегством куда-л."
+        en: "to take refuge in sth. (a place)"
+      examples:
+        - de: "Sie flüchten sich in eine Hütte."
+          ru: "Они укрываются в хижине."
+          en: "They take refuge in a hut."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "куда укрываешься — пункт назначения, а не источник опасности"
+        en: "where you take refuge — the destination, not the danger"
+
 folgen:
   pos: "verb"
   patterns:
@@ -74,6 +293,38 @@ folgen:
           en: "What follows from this result?"
       sources:
         - "prototype"
+
+folgern:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "делать вывод из чего-л., заключать из чего-л."
+        en: "to conclude from sth., to infer from sth."
+      examples:
+        - de: "Man kann aus seinem Schweigen folgern, dass er zustimmt."
+          ru: "Из его молчания можно заключить, что он согласен."
+          en: "One can conclude from his silence that he agrees."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Folgerung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "вывод из чего-л."
+        en: "a conclusion drawn from sth."
+      examples:
+        - de: "Er zog eine wichtige Folgerung aus den Testergebnissen."
+          ru: "Он сделал важный вывод из результатов теста."
+          en: "He drew an important conclusion from the test results."
+      sources:
+        - "duden"
 
 Frage:
   pos: "noun"
@@ -93,6 +344,21 @@ Frage:
       senseNote:
         ru: "о чём вопрос — та вещь, которую хотят узнать"
         en: "what the question is about — the thing you want to find out"
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "вопрос к кому-л."
+        en: "question for sb."
+      examples:
+        - de: "Ich habe eine Frage an den Lehrer."
+          ru: "У меня вопрос к учителю."
+          en: "I have a question for the teacher."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "кому вопрос адресован — собеседник, а не тема"
+        en: "who the question is addressed to — the person, not the topic"
     - prep: "zu"
       case: "dat"
       gloss:
@@ -123,6 +389,25 @@ fragen:
           en: "He asks the way."
       sources:
         - "seed"
+
+fressen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "разъедать что-л., точить кого-л. (перен., о тревоге, ржавчине)"
+        en: "to eat away at sth., to gnaw at sb. (figurative, of worry, corrosion)"
+      senseNote:
+        ru: "переносное значение — не о еде животных"
+        en: "figurative sense — not about an animal eating"
+      examples:
+        - de: "Säure frisst am Metall."
+          ru: "Кислота разъедает металл."
+          en: "Acid eats away at the metal."
+          lemmaForm: frisst
+      sources:
+        - "duden"
 
 Freude:
   pos: "noun"
@@ -200,6 +485,22 @@ freuen:
       sources:
         - "seed"
       reflexive: "akk"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "радоваться за кого-л."
+        en: "to be happy for sb."
+      senseNote:
+        ru: "радость не своя, а чужая — радуешься за другого"
+        en: "the joy is not your own — you are glad on someone else's behalf"
+      examples:
+        - de: "Ich freue mich für dich."
+          ru: "Я рад за тебя."
+          en: "I am happy for you."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      reflexive: "akk"
 
 freundlich:
   pos: "adj"
@@ -216,6 +517,22 @@ freundlich:
       sources:
         - "prototype"
 
+froh:
+  pos: "adj"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "радостный из-за чего-л., довольный чем-л."
+        en: "glad about sth."
+      examples:
+        - de: "Ich bin froh über den Erfolg."
+          ru: "Я рад успеху."
+          en: "I am glad about the success."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 führen:
   pos: "verb"
   patterns:
@@ -230,6 +547,22 @@ führen:
           en: "That leads to a conflict."
       sources:
         - "prototype"
+
+Furcht:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "страх перед кем-л. / чем-л."
+        en: "fear of sb. / sth."
+      examples:
+        - de: "Die Furcht vor dem Tod begleitete ihn sein Leben lang."
+          ru: "Страх перед смертью сопровождал его всю жизнь."
+          en: "The fear of death accompanied him his whole life."
+      sources:
+        - "duden"
 
 fürchten:
   pos: "verb"
@@ -246,3 +579,18 @@ fürchten:
           en: "He is afraid of the dark."
       sources:
         - "prototype"
+
+fußen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "основываться на чём-л., опираться на что-л."
+        en: "to be based on sth., to rest on sth."
+      examples:
+        - de: "Die Entscheidung fußt auf einem Vertrag."
+          ru: "Решение основывается на договоре."
+          en: "The decision is based on a contract."
+      sources:
+        - "duden"

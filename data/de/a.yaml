@@ -1,5 +1,39 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+abfahren:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "быть без ума от кого-л. / чего-л. (разг.)"
+        en: "to be crazy about sb. / sth. (colloquial)"
+      examples:
+        - de: "Er fährt total auf diese Band ab."
+          ru: "Он без ума от этой группы."
+          en: "He is totally into this band."
+          lemmaForm: fährt
+      sources:
+        - "duden"
+
+abfärben:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "линять, пачкая что-л. цветом (о ткани)"
+        en: "to bleed color onto sth. (of fabric)"
+      examples:
+        - de: "Der blaue Pyjama färbt beim Waschen auf die andere Wäsche ab."
+          ru: "Синяя пижама при стирке линяет на остальное бельё."
+          en: "The blue pajamas bleed color onto the other laundry when washed."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 abfinden:
   pos: "verb"
   patterns:
@@ -15,6 +49,22 @@ abfinden:
           en: "He is coming to terms with the situation."
       sources:
         - "prototype"
+
+abgleiten:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "соскальзывать с чего-л."
+        en: "to slide off sth."
+      examples:
+        - de: "Er ließ sich vom Pferd abgleiten."
+          ru: "Он соскользнул с лошади."
+          en: "He slid off the horse."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 abhängen:
   pos: "verb"
@@ -47,6 +97,241 @@ abhängig:
       sources:
         - "prototype"
 
+Abhängigkeit:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "зависимость от кого-л. / чего-л."
+        en: "dependence on sb. / sth."
+      examples:
+        - de: "Seine Abhängigkeit von dieser Person wächst."
+          ru: "Его зависимость от этого человека растёт."
+          en: "His dependence on this person is growing."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+abhärten:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "закаляться против чего-л."
+        en: "to harden oneself against sth."
+      examples:
+        - de: "Er härtet sich gegen Erkältungen ab."
+          ru: "Он закаляется против простуд."
+          en: "He is hardening himself against colds."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+abheben:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "выделяться на фоне чего-л., отличаться от чего-л."
+        en: "to stand out from sth., to distinguish oneself from sth."
+      examples:
+        - de: "Der Roman hebt sich deutlich von anderen Büchern ab."
+          ru: "Роман заметно выделяется на фоне других книг."
+          en: "The novel clearly stands out from other books."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+ableiten:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "происходить от чего-л., выводиться из чего-л."
+        en: "to be derived from sth."
+      examples:
+        - de: "Das Wort leitet sich aus dem Griechischen ab."
+          ru: "Слово происходит из греческого языка."
+          en: "The word derives from Greek."
+      sources:
+        - "duden"
+
+abrechnen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "сводить счёты с кем-л. (перен.)"
+        en: "to settle scores with sb. (figuratively)"
+      examples:
+        - de: "Er rechnet mit seinem ehemaligen Chef ab."
+          ru: "Он сводит счёты со своим бывшим начальником."
+          en: "He settles scores with his former boss."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+abreisen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "уезжать, отправляться куда-л."
+        en: "to depart for (a destination)"
+      examples:
+        - de: "Wir reisen in aller Frühe nach München ab."
+          ru: "Мы отправляемся в Мюнхен рано утром."
+          en: "We depart for Munich very early in the morning."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Abschied:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "прощание с кем-л."
+        en: "farewell to sb."
+      examples:
+        - de: "Der Abschied von den Kollegen fiel ihr schwer."
+          ru: "Прощание с коллегами далось ей тяжело."
+          en: "The farewell to her colleagues was hard for her."
+      sources:
+        - "duden"
+
+absehen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "воздерживаться от чего-л."
+        en: "to refrain from sth."
+      examples:
+        - de: "Der Richter sieht von einer Strafe ab."
+          ru: "Судья воздерживается от наказания."
+          en: "The judge refrains from a punishment."
+          lemmaForm: sieht
+      sources:
+        - "en.wiktionary"
+        - "de.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "от чего воздерживаешься — сознательный отказ"
+        en: "what you refrain from — a deliberate decision not to"
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "иметь виды на кого-л. / что-л. (идиома «es abgesehen haben»)"
+        en: "to be after sb. / sth. (idiom 'es abgesehen haben')"
+      examples:
+        - de: "Er hat es auf mein Geld abgesehen."
+          ru: "Он имеет виды на мои деньги."
+          en: "He is after my money."
+          lemmaForm: abgesehen
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "фиксированная идиома с «es» — не общая конструкция"
+        en: "a fixed idiom with 'es' — not a general construction"
+
+abstellen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "ориентировать что-л. на что-л. (перен.)"
+        en: "to align sth. with sth., to gear sth. towards sth. (figuratively)"
+      examples:
+        - de: "Sie stellen die Produktion auf den Publikumsgeschmack ab."
+          ru: "Они ориентируют производство на вкус публики."
+          en: "They gear production towards the audience's taste."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+abstimmen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "согласовывать (действия) с кем-л."
+        en: "to coordinate with sb."
+      senseNote:
+        ru: "с кем согласовываешь действия — не тема голосования"
+        en: "whom you coordinate with — not the subject being voted on"
+      examples:
+        - de: "Wir müssen uns mit den Kollegen abstimmen."
+          ru: "Нам нужно согласовать это с коллегами."
+          en: "We need to coordinate with our colleagues."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "голосовать по чему-л."
+        en: "to vote on sth."
+      senseNote:
+        ru: "о чём голосуют — предмет голосования"
+        en: "what is being voted on — the subject of the vote"
+      examples:
+        - de: "Der Ausschuss stimmt über den Antrag ab."
+          ru: "Комитет голосует по этому предложению."
+          en: "The committee votes on the motion."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+abstoßen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "отталкиваться от чего-л."
+        en: "to push off from sth."
+      examples:
+        - de: "Er stößt sich mit den Füßen vom Boden ab."
+          ru: "Он отталкивается ногами от земли."
+          en: "He pushes off from the ground with his feet."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+abzielen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "быть направленным на что-л., иметь целью что-л."
+        en: "to aim at sth., to be directed at sth."
+      examples:
+        - de: "Ihre Worte zielen auf das Mitgefühl der Zuhörer ab."
+          ru: "Её слова направлены на сочувствие слушателей."
+          en: "Her words aim at the audience's compassion."
+      sources:
+        - "duden"
+
 achten:
   pos: "verb"
   patterns:
@@ -63,6 +348,152 @@ achten:
       sources:
         - "seed"
 
+achtgeben:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "обращать внимание на кого-л. / что-л., быть осторожным с чем-л."
+        en: "to pay attention to sb. / sth., to watch out for sth."
+      examples:
+        - de: "Du musst auf deine Gesundheit achtgeben."
+          ru: "Ты должен беречь своё здоровье."
+          en: "You must watch your health."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+achthaben:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "следить за кем-л. / чем-л., быть внимательным к чему-л."
+        en: "to keep an eye on sb. / sth., to pay heed to sth."
+      examples:
+        - de: "Du musst gut auf den Verkehr achthaben."
+          ru: "Ты должен внимательно следить за движением."
+          en: "You must keep a close eye on the traffic."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Achtung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "vor"
+      case: "dat"
+      gloss:
+        ru: "уважение к кому-л. / чему-л."
+        en: "respect for sb. / sth."
+      examples:
+        - de: "Er hat Achtung vor seinen Eltern."
+          ru: "Он уважает своих родителей."
+          en: "He has respect for his parents."
+      sources:
+        - "duden"
+
+Allergie:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "аллергия на что-л."
+        en: "an allergy to sth."
+      examples:
+        - de: "Sie hat eine Allergie gegen Birkenpollen."
+          ru: "У неё аллергия на пыльцу берёзы."
+          en: "She has an allergy to birch pollen."
+      sources:
+        - "duden"
+
+allergisch:
+  pos: "adj"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "аллергичный на что-л."
+        en: "allergic to sth."
+      examples:
+        - de: "Ich bin allergisch gegen Katzenhaare."
+          ru: "У меня аллергия на кошачью шерсть."
+          en: "I am allergic to cat hair."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+amüsieren:
+  pos: "verb"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "потешаться над кем-л. / чем-л."
+        en: "to be amused by sb. / sth., to make fun of sb. / sth."
+      examples:
+        - de: "Die Leute amüsieren sich über ihn."
+          ru: "Люди потешаются над ним."
+          en: "People are amused by him."
+      sources:
+        - "duden"
+
+ändern:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "менять что-л. на что-л. (заменять одно другим)"
+        en: "to change sth. into sth. else"
+      examples:
+        - de: "Er ändert seinen Namen in einen anderen Namen."
+          ru: "Он меняет своё имя на другое."
+          en: "He is changing his name to a different one."
+      sources:
+        - "duden"
+
+anecken:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "задевать, цепляться за что-л. (физически)"
+        en: "to bump against sth., to scrape against sth. (literally)"
+      senseNote:
+        ru: "физическое столкновение с препятствием"
+        en: "a literal physical collision with an obstacle"
+      examples:
+        - de: "Er eckt mit dem Rad am Bordstein an."
+          ru: "Он задевает колесом бордюр."
+          en: "He bumps the wheel against the curb."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+    - prep: "bei"
+      case: "dat"
+      gloss:
+        ru: "вызывать недовольство у кого-л., задевать чьи-л. чувства"
+        en: "to rub sb. the wrong way, to cause offence with sb."
+      senseNote:
+        ru: "переносное — портишь отношения с человеком, а не сталкиваешься физически"
+        en: "figurative — you rub a person the wrong way, not a physical collision"
+      examples:
+        - de: "Er ist bei seinem Lehrer angeeckt."
+          ru: "Он вызвал недовольство своего учителя."
+          en: "He rubbed his teacher the wrong way."
+          lemmaForm: angeeckt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 anfangen:
   pos: "verb"
   patterns:
@@ -78,6 +509,74 @@ anfangen:
           en: "We are starting with the first chapter."
       sources:
         - "seed"
+      senseNote:
+        ru: "с чего начинаешь — первый шаг, а не тема разговора"
+        en: "what you start with — the first step, not a topic you bring up"
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "снова заводить разговор о чём-л. (разг.)"
+        en: "to keep bringing sth. up (colloquial)"
+      examples:
+        - de: "Er fängt immer wieder von der Politik an."
+          ru: "Он снова и снова заводит разговор о политике."
+          en: "He keeps bringing up politics again and again."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+      senseNote:
+        ru: "о какой теме заводишь разговор — не первый шаг дела, а навязчивое упоминание"
+        en: "what topic you keep bringing up — not a first step, a nagging mention"
+
+angehen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "бороться против чего-л., выступать против чего-л."
+        en: "to take action against sth., to combat sth."
+      examples:
+        - de: "Die Stadt geht gegen die Umweltverschmutzung an."
+          ru: "Город борется против загрязнения окружающей среды."
+          en: "The city is taking action against pollution."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "против чего борешься — то, что хочешь устранить"
+        en: "what you take action against — what you want to stop"
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "обращаться к кому-л. с просьбой о чём-л."
+        en: "to approach sb. for sth., to petition sb. for sth."
+      examples:
+        - de: "Er geht sie um ein Darlehen an."
+          ru: "Он обращается к ней с просьбой о займе."
+          en: "He approaches her for a loan."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "о чём просишь — предмет просьбы, а не противник"
+        en: "what you ask for — the thing requested, not an opponent"
+
+angewiesen:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "зависимый от кого-л. / чего-л. (нуждающийся)"
+        en: "dependent on sb. / sth., reliant on sb. / sth."
+      examples:
+        - de: "Er ist auf seinen Bruder angewiesen."
+          ru: "Он зависит от своего брата."
+          en: "He is dependent on his brother."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 Angst:
   pos: "noun"
@@ -145,6 +644,276 @@ ankommen:
       sources:
         - "prototype"
 
+anlaufen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "выступать, действовать против чего-л."
+        en: "to campaign against sth., to push back against sth."
+      examples:
+        - de: "Die Initiative läuft gegen Vorurteile an."
+          ru: "Инициатива выступает против предрассудков."
+          en: "The initiative is pushing back against prejudice."
+          lemmaForm: läuft
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anlegen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "затевать ссору с кем-л."
+        en: "to pick a fight with sb."
+      examples:
+        - de: "Er will sich nicht mit seinem Chef anlegen."
+          ru: "Он не хочет затевать ссору со своим начальником."
+          en: "He doesn't want to pick a fight with his boss."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anlehnen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "прислоняться к чему-л."
+        en: "to lean against sth."
+      examples:
+        - de: "Sie lehnt sich an die Wand an."
+          ru: "Она прислоняется к стене."
+          en: "She leans against the wall."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Anlehnung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "akk"
+      gloss:
+        ru: "по образцу чего-л., ориентируясь на что-л."
+        en: "modeled on sth., in line with sth."
+      examples:
+        - de: "Der Architekt entwarf das Gebäude in Anlehnung an den alten Bahnhof."
+          ru: "Архитектор спроектировал здание по образцу старого вокзала."
+          en: "The architect designed the building modeled on the old train station."
+      sources:
+        - "duden"
+
+anreisen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "приезжать откуда-л."
+        en: "to arrive from (a place)"
+      examples:
+        - de: "Sie reisen aus Hamburg an."
+          ru: "Они приезжают из Гамбурга."
+          en: "They are arriving from Hamburg."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anrennen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "врезаться, наталкиваться на что-л. (с разбегу)"
+        en: "to run into sth., to crash into sth."
+      examples:
+        - de: "Er rennt mit dem Ellbogen gegen die Fensterecke an."
+          ru: "Он врезается локтем в угол окна."
+          en: "He runs his elbow into the corner of the window."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anrufen:
+  pos: "verb"
+  patterns:
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "взывать к кому-л. с просьбой о чём-л. (офиц.)"
+        en: "to appeal to sb. for sth. (formal)"
+      senseNote:
+        ru: "не «звонить по телефону» — официальное обращение к инстанции или лицу с просьбой о содействии"
+        en: "not the everyday 'to phone sb.' — a formal appeal to an authority or person for help"
+      examples:
+        - de: "Er rief Gott um Gnade an."
+          ru: "Он взывал к Богу о милости."
+          en: "He appealed to God for mercy."
+          lemmaForm: rief
+      sources:
+        - "duden"
+
+ansetzen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "приставить кого-л. следить, охотиться за кем-л."
+        en: "to put sb. onto sb. else (to track or mark them)"
+      senseNote:
+        ru: "кого приставляют следить — цель слежки"
+        en: "who someone is assigned to track — the target of the tracking"
+      examples:
+        - de: "Der Trainer hat gleich zwei Spieler auf den Torjäger angesetzt."
+          ru: "Тренер сразу приставил двух игроков к бомбардиру."
+          en: "The coach put two players on the top scorer right away."
+          lemmaForm: angesetzt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "назначать что-л. на какое-л. время"
+        en: "to schedule sth. for (a time)"
+      senseNote:
+        ru: "на какое время назначено мероприятие"
+        en: "when an event is scheduled for"
+      examples:
+        - de: "Die Aufführung ist für den 1. Mai angesetzt."
+          ru: "Спектакль назначен на 1 мая."
+          en: "The performance is scheduled for May 1st."
+          lemmaForm: angesetzt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anspielen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "намекать на кого-л. / что-л."
+        en: "to allude to sb. / sth."
+      examples:
+        - de: "Er spielt auf den Minister an."
+          ru: "Он намекает на министра."
+          en: "He is alluding to the minister."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+ansprechen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "реагировать на что-л. (о лечении, приборе)"
+        en: "to respond to sth. (treatment, an instrument)"
+      examples:
+        - de: "Der Patient spricht auf die Behandlung an."
+          ru: "Пациент реагирует на лечение."
+          en: "The patient responds to the treatment."
+          lemmaForm: spricht
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anspringen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      tags:
+        - "colloquial"
+      gloss:
+        ru: "клюнуть на что-л., живо откликнуться на что-л. (разг.)"
+        en: "to respond positively to sth., to go for sth. (colloquial)"
+      examples:
+        - de: "Er springt sofort auf das Angebot an."
+          ru: "Он сразу же клюёт на это предложение."
+          en: "He immediately goes for the offer."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anstecken:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "заражать кого-л. чем-л."
+        en: "to infect sb. with sth."
+      examples:
+        - de: "Er steckt uns alle mit seiner Erkältung an."
+          ru: "Он заражает нас всех своей простудой."
+          en: "He infects all of us with his cold."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+anstiften:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "подстрекать кого-л. к чему-л."
+        en: "to incite sb. to sth."
+      examples:
+        - de: "Er stiftet die Kinder zum Streich an."
+          ru: "Он подстрекает детей к шалости."
+          en: "He incites the children to a prank."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Anstiftung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "подстрекательство к чему-л."
+        en: "incitement to sth."
+      examples:
+        - de: "Er wurde wegen Anstiftung zum Mord verurteilt."
+          ru: "Его осудили за подстрекательство к убийству."
+          en: "He was convicted of incitement to murder."
+      sources:
+        - "duden"
+
+Anteil nehmen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "принимать участие в чём-л., проявлять сочувствие к чему-л."
+        en: "to take an interest in sth., to show sympathy for sth."
+      examples:
+        - de: "Sie nimmt Anteil an der Diskussion."
+          ru: "Она принимает участие в дискуссии."
+          en: "She takes part in the discussion."
+          lemmaForm: "nimmt"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 Antwort:
   pos: "noun"
   article: "die"
@@ -177,6 +946,38 @@ antworten:
       sources:
         - "seed"
 
+anwendbar:
+  pos: "adj"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "применимый к чему-л."
+        en: "applicable to sth."
+      examples:
+        - de: "Die Theorie ist nur bedingt auf die Praxis anwendbar."
+          ru: "Теория лишь отчасти применима к практике."
+          en: "The theory is only partly applicable to practice."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Anwendung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "применение к чему-л."
+        en: "application to sth."
+      examples:
+        - de: "Die Anwendung dieser Regel auf den vorliegenden Fall ist umstritten."
+          ru: "Применение этого правила к данному случаю спорно."
+          en: "Applying this rule to the present case is disputed."
+      sources:
+        - "duden"
+
 arbeiten:
   pos: "verb"
   patterns:
@@ -192,6 +993,39 @@ arbeiten:
           en: "She is working on a new project."
       sources:
         - "seed"
+
+Ärger:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "злость из-за чего-л., досада на что-л."
+        en: "anger about sth., annoyance at sth."
+      examples:
+        - de: "Sein Ärger über die Entscheidung war groß."
+          ru: "Его злость из-за этого решения была велика."
+          en: "His anger about the decision was great."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "из-за чего злишься — сама эмоция, а не источник неприятностей"
+        en: "what makes you angry — the emotion itself, not the source of trouble"
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "неприятности с кем-л. / чем-л."
+        en: "trouble with sb. / sth."
+      examples:
+        - de: "Ich hatte heute viel Ärger mit den Kunden."
+          ru: "У меня сегодня было много неприятностей с клиентами."
+          en: "I had a lot of trouble with customers today."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "с кем/из-за чего неприятности — источник хлопот, а не сама эмоция"
+        en: "who or what the trouble is with — the source of hassle, not the emotion"
 
 ärgern:
   pos: "verb"
@@ -210,6 +1044,104 @@ arbeiten:
         - "seed"
       reflexive: "akk"
 
+Art:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "нечто вроде чего-л."
+        en: "a kind of sth."
+      examples:
+        - de: "Das ist eine Art von grobem Schotter."
+          ru: "Это что-то вроде грубого щебня."
+          en: "That's a kind of coarse gravel."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+arten:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "быть похожим на кого-л. (по характеру, внешности)"
+        en: "to take after sb."
+      tags:
+        - "formal"
+      examples:
+        - de: "Er artet nach seinem Vater."
+          ru: "Он пошёл в отца."
+          en: "He takes after his father."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+aufbauen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "dat"
+      gloss:
+        ru: "основываться на чём-л., базироваться на чём-л."
+        en: "to be based on sth."
+      examples:
+        - de: "Die Theorie baut auf einer Annahme auf."
+          ru: "Теория основывается на одном предположении."
+          en: "The theory is based on an assumption."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auffordern:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "призывать кого-л. к чему-л., приглашать кого-л. на что-л."
+        en: "to call on sb. to do sth., to invite sb. to sth."
+      examples:
+        - de: "Der Richter fordert ihn zur Aussage auf."
+          ru: "Судья призывает его дать показания."
+          en: "The judge calls on him to testify."
+      sources:
+        - "duden"
+
+Aufforderung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "призыв к чему-л."
+        en: "call for sth."
+      examples:
+        - de: "Sie folgte der Aufforderung zu einem Gespräch."
+          ru: "Она откликнулась на призыв к разговору."
+          en: "She responded to the call for a conversation."
+      sources:
+        - "duden"
+
+aufgehen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      gloss:
+        ru: "полностью отдаваться чему-л., растворяться в чём-л. (перен.)"
+        en: "to be completely absorbed in sth. (figuratively)"
+      examples:
+        - de: "Er geht ganz in seinem Beruf auf."
+          ru: "Он полностью отдаётся своей профессии."
+          en: "He is completely absorbed in his profession."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
 aufhören:
   pos: "verb"
   patterns:
@@ -225,6 +1157,72 @@ aufhören:
           en: "Stop that noise!"
       sources:
         - "seed"
+
+aufkommen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "нести ответственность за что-л., покрывать расходы"
+        en: "to bear/cover the costs of sth., to be liable for sth."
+      examples:
+        - de: "Die Versicherung kommt für den Schaden auf."
+          ru: "Страховая компания покрывает ущерб."
+          en: "The insurance covers the damage."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auflehnen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "восставать против кого-л. / чего-л."
+        en: "to rebel against sb. / sth."
+      examples:
+        - de: "Die Sklaven lehnen sich gegen ihren Besitzer auf."
+          ru: "Рабы восстают против своего хозяина."
+          en: "The slaves rebel against their owner."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Auflehnung:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "протест, бунт против кого-л. / чего-л."
+        en: "rebellion/defiance against sb. / sth."
+      examples:
+        - de: "Ihre Auflehnung gegen die Behörden blieb nicht ohne Folgen."
+          ru: "Их бунт против властей не остался без последствий."
+          en: "Their defiance against the authorities did not go without consequences."
+      sources:
+        - "duden"
+
+aufmerksam machen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "обращать чьё-л. внимание на кого-л. / что-л."
+        en: "to draw sb.'s attention to sb. / sth."
+      examples:
+        - de: "Sie macht ihn auf den Fehler aufmerksam."
+          ru: "Она обращает его внимание на ошибку."
+          en: "She draws his attention to the mistake."
+          lemmaForm: macht
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 aufpassen:
   pos: "verb"
@@ -242,6 +1240,21 @@ aufpassen:
       sources:
         - "seed"
 
+aufräumen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "покончить с чем-л., искоренить что-л."
+        en: "to put an end to sth., to do away with sth."
+      examples:
+        - de: "Der Vortrag räumt mit alten Vorurteilen auf."
+          ru: "Доклад развенчивает старые предрассудки."
+          en: "The talk does away with old prejudices."
+      sources:
+        - "duden"
+
 aufregen:
   pos: "verb"
   patterns:
@@ -258,3 +1271,364 @@ aufregen:
       sources:
         - "seed"
       reflexive: "akk"
+
+aufrufen:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "призывать к чему-л."
+        en: "to call for sth., to call upon people to do sth."
+      examples:
+        - de: "Die Gewerkschaft ruft zum Streik auf."
+          ru: "Профсоюз призывает к забастовке."
+          en: "The union calls for a strike."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+aufstacheln:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "подстрекать к чему-л."
+        en: "to incite sb. to sth."
+      examples:
+        - de: "Er stachelt die Schüler zu größerem Eifer auf."
+          ru: "Он подстрекает учеников к большему рвению."
+          en: "He incites the students to greater effort."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+aufstehen:
+  pos: "verb"
+  patterns:
+    - prep: "gegen"
+      case: "akk"
+      gloss:
+        ru: "восставать против кого-л. / чего-л."
+        en: "to rise up against sb. / sth."
+      examples:
+        - de: "Das Volk steht gegen die Unterdrücker auf."
+          ru: "Народ восстаёт против угнетателей."
+          en: "The people rise up against their oppressors."
+      sources:
+        - "duden"
+
+ausgehen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "исходить из чего-л., предполагать что-л."
+        en: "to assume sth., to proceed from sth."
+      examples:
+        - de: "Wir gehen von einem guten Ergebnis aus."
+          ru: "Мы исходим из хорошего результата."
+          en: "We are assuming a good outcome."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auskennen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "ориентироваться в чём-л., хорошо знать что-л."
+        en: "to know one's way around sth., to be well versed in sth."
+      examples:
+        - de: "Ich kenne mich in dieser Stadt gut aus."
+          ru: "Я хорошо ориентируюсь в этом городе."
+          en: "I know my way around this city well."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auskommen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "ладить с кем-л., обходиться чем-л."
+        en: "to get along with sb., to get by with sth."
+      examples:
+        - de: "Ich komme gut mit meinen Kollegen aus."
+          ru: "Я хорошо лажу со своими коллегами."
+          en: "I get along well with my colleagues."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auskotzen:
+  pos: "verb"
+  patterns:
+    - prep: "bei"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "выговориться кому-л. (разг.)"
+        en: "to vent to sb. (colloquial)"
+      examples:
+        - de: "Ich habe mich bei ihm ausgekotzt."
+          ru: "Я выговорился ему."
+          en: "I vented to him."
+      tags:
+        - "colloquial"
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auslassen:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "срывать что-л. (гнев) на ком-л."
+        en: "to take sth. (anger) out on sb."
+      senseNote:
+        ru: "на ком срываешь гнев — жертва, а не тема"
+        en: "who you take your anger out on — the target, not the topic"
+      examples:
+        - de: "Er lässt seinen Ärger an den Untergebenen aus."
+          ru: "Он срывает злость на подчинённых."
+          en: "He takes his anger out on his subordinates."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+    - prep: "über"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "подробно высказываться о чём-л."
+        en: "to hold forth about sth., to talk at length about sth."
+      senseNote:
+        ru: "о чём подробно рассуждаешь — тема разговора"
+        en: "what you talk at length about — the topic"
+      examples:
+        - de: "Er lässt sich eingehend über ihr Missgeschick aus."
+          ru: "Он подробно рассуждает об её неудаче."
+          en: "He holds forth at length about her misfortune."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+ausmachen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "договариваться о чём-л. с кем-л."
+        en: "to arrange/agree on sth. with sb."
+      examples:
+        - de: "Wir machen das Treffen mit ihm aus."
+          ru: "Мы договариваемся о встрече с ним."
+          en: "We are arranging the meeting with him."
+      sources:
+        - "duden"
+
+ausreichen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "хватать на что-л., быть достаточным для чего-л."
+        en: "to be sufficient for sth., to be enough for sth."
+      examples:
+        - de: "Das Geld reicht für den Urlaub nicht aus."
+          ru: "Денег не хватает на отпуск."
+          en: "The money isn't enough for the vacation."
+      sources:
+        - "duden"
+
+ausruhen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "отдыхать от чего-л., восстанавливаться после чего-л."
+        en: "to rest from sth., to recover from sth."
+      examples:
+        - de: "Sie ruht sich von den Strapazen der Reise aus."
+          ru: "Она отдыхает от тягот поездки."
+          en: "She is resting from the hardships of the trip."
+      sources:
+        - "duden"
+
+ausschließen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "исключать кого-л. из чего-л., не допускать к чему-л."
+        en: "to exclude sb. from sth."
+      examples:
+        - de: "Man schloss ihn von einer Feier aus."
+          ru: "Его не допустили на праздник."
+          en: "They excluded him from a celebration."
+          lemmaForm: schloss
+      sources:
+        - "duden"
+
+aussehen:
+  pos: "verb"
+  patterns:
+    - prep: "nach"
+      case: "dat"
+      gloss:
+        ru: "выглядеть похожим на что-л. (о погоде, ситуации)"
+        en: "to look like sth. is coming, to seem like sth."
+      examples:
+        - de: "Es sieht nach Regen aus."
+          ru: "Похоже, будет дождь."
+          en: "It looks like rain."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+aussöhnen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "мириться с кем-л."
+        en: "to reconcile with sb."
+      examples:
+        - de: "Er söhnt sich endlich mit seinem Bruder aus."
+          ru: "Он наконец мирится со своим братом."
+          en: "He is finally reconciling with his brother."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+aussprechen:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "высказываться за что-л."
+        en: "to speak out in favor of sth."
+      examples:
+        - de: "Sie spricht sich für die Bewerberin aus."
+          ru: "Она высказывается за эту кандидатку."
+          en: "She speaks out in favor of the candidate."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+aussteigen:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "выходить из чего-л. (тж. перен. — выходить из проекта, договора)"
+        en: "to get out of sth. (also fig. — to back out of a project, a contract)"
+      examples:
+        - de: "Er steigt aus dem Vertrag aus."
+          ru: "Он выходит из договора."
+          en: "He is backing out of the contract."
+      sources:
+        - "duden"
+
+austreten:
+  pos: "verb"
+  patterns:
+    - prep: "aus"
+      case: "dat"
+      gloss:
+        ru: "выходить из чего-л. (организации)"
+        en: "to withdraw from sth. (an organization)"
+      examples:
+        - de: "Er tritt aus der Kirche aus."
+          ru: "Он выходит из церкви."
+          en: "He is leaving the Church."
+          lemmaForm: tritt
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+Auswahl:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "выбор, ассортимент чего-л."
+        en: "a selection of sth., a range of sth."
+      examples:
+        - de: "Der Laden hat eine große Auswahl an Büchern."
+          ru: "В магазине большой выбор книг."
+          en: "The shop has a large selection of books."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+ausweichen:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "переходить на что-л. другое (как на альтернативу)"
+        en: "to switch to sth. else (as an alternative)"
+      examples:
+        - de: "Der Läufer weicht auf die andere Spur aus."
+          ru: "Бегун переходит на другую дорожку."
+          en: "The runner switches to the other lane."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+auswirken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "сказываться на чём-л."
+        en: "to have an effect on sth., to impact sth."
+      examples:
+        - de: "Der Streik wirkt sich verhängnisvoll auf die Wirtschaft aus."
+          ru: "Забастовка пагубно сказывается на экономике."
+          en: "The strike has a disastrous impact on the economy."
+      sources:
+        - "en.wiktionary"
+        - "duden"
+
+avancieren:
+  pos: "verb"
+  patterns:
+    - prep: "zu"
+      case: "dat"
+      gloss:
+        ru: "выдвинуться в кого-л., дослужиться до чего-л."
+        en: "to advance to become sth., to be promoted to sth."
+      examples:
+        - de: "Er avanciert zum besten Spieler der Mannschaft."
+          ru: "Он выдвигается в лучшие игроки команды."
+          en: "He advances to become the team's best player."
+      sources:
+        - "en.wiktionary"
+        - "duden"

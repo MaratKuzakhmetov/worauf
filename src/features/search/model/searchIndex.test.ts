@@ -3,8 +3,8 @@ import { rektionen } from '@/entities/rektion';
 import { indexFor, search } from './searchIndex';
 
 /** Real records, never invented German (CLAUDE.md). */
-function find(query: string, locale: 'en' | 'ru' = 'en'): readonly string[] {
-  return search(indexFor(locale), query).patterns.map((p) => `${p.lemma} ${p.prep}`);
+function find(query: string, locale: 'en' | 'ru' = 'en', limit?: number): readonly string[] {
+  return search(indexFor(locale), query, limit).patterns.map((p) => `${p.lemma} ${p.prep}`);
 }
 
 function isApproximate(query: string, locale: 'en' | 'ru' = 'en'): boolean {
@@ -17,7 +17,9 @@ describe('search', () => {
   });
 
   it('finds a word from a prefix, because people type while thinking', () => {
-    expect(find('bes').join(' | ')).toContain('bestehen');
+    // A generous limit: as the dataset grows, other "bes-" lemmas (Beschwerde, beschweren,
+    // beständig…) can fill the default UI-sized limit before reaching "bestehen" alphabetically.
+    expect(find('bes', 'en', 40).join(' | ')).toContain('bestehen');
   });
 
   it('finds an umlaut word typed without an umlaut, both ways', () => {
@@ -27,7 +29,10 @@ describe('search', () => {
   });
 
   it('finds words by the preposition they govern', () => {
-    expect(find('aus')).toContain('bestehen aus');
+    // A generous limit: as the dataset grows, words whose LEMMA starts with "aus" (ausgehen,
+    // auskennen, aussöhnen…) rank above a pure preposition match by design (headword first —
+    // see search()'s doc comment) and can fill the default UI-sized limit on their own.
+    expect(find('aus', 'en', 40)).toContain('bestehen aus');
   });
 
   it('returns one row per pattern, so a minimal pair arrives as a pair', () => {

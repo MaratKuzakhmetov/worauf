@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { UpdatePrompt } from '@/features/app-update';
 import { ThemeBootScript } from '@/features/theme-toggle';
 import { RektionBrowser } from '@/widgets/rektion-browser';
 import { isLocale, locales, strings } from '@/shared/i18n';
@@ -29,6 +30,14 @@ export async function generateMetadata({
     // Only the default for pages that do not set their own; every route below overrides it
     // with its own path, because hreflang is a claim about a specific URL.
     alternates: alternatesFor(`/${lang}/`),
+    /*
+     * Declared rather than left to convention: with no `rel="icon"` in the HTML a browser
+     * falls back to probing `/favicon.ico`, which this project does not serve — a 404 on
+     * every first load. The file stays in `public/` at a stable `/icon.svg` because
+     * `app/manifest.ts` names that exact path; the `app/icon.svg` convention would move it
+     * to a hashed URL and break the manifest's reference to it.
+     */
+    icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }] },
   };
 }
 
@@ -53,6 +62,8 @@ export default async function LocaleLayout({
       <body>
         <ThemeBootScript />
         {children}
+        {/* Registers the worker and stays invisible until a newer one is waiting (ADR 0006). */}
+        <UpdatePrompt lang={lang} />
       </body>
     </html>
   );

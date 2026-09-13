@@ -44,12 +44,24 @@ export type Strings = {
   readonly why: string;
   readonly yourAnswer: string;
   readonly correctAnswer: string;
+  /** Screen-reader-only: the visible verdict is colour and border, which announces nothing. */
+  readonly answerAnnouncement: (correct: boolean, answer: string, kase: string) => string;
   readonly openInBrowser: string;
   readonly sessionOver: string;
   readonly again: string;
   readonly reviewMissed: string;
   readonly trainerKeys: string;
   readonly distractorNote: string;
+  readonly exportProgress: string;
+  readonly importProgress: string;
+  readonly nothingToExport: string;
+  readonly importMerged: (n: number) => string;
+  readonly importTooNew: string;
+  readonly importUnreadable: string;
+  readonly progressNotSaved: string;
+  readonly updateReady: string;
+  readonly updateReload: string;
+  readonly buildLabel: (version: string) => string;
   readonly kind: {
     readonly article: string;
     readonly preposition: string;
@@ -102,6 +114,8 @@ export const strings: Record<Locale, Strings> = {
     why: 'Why',
     yourAnswer: 'your answer',
     correctAnswer: 'correct',
+    answerAnnouncement: (correct, answer, kase) =>
+      correct ? 'Correct.' : `Wrong. Correct answer: ${answer}, ${kase}.`,
     openInBrowser: 'Open in the browser',
     sessionOver: 'Session over',
     again: 'Again',
@@ -118,6 +132,17 @@ export const strings: Record<Locale, Strings> = {
     whyFixed: (prep, kase) =>
       `${prep} always takes ${kase}, wherever it appears — the case is not the hard part here, the preposition is.`,
     scoreLine: (right, total) => `${right} of ${total} right`,
+    exportProgress: 'Export progress',
+    importProgress: 'Import progress',
+    nothingToExport: 'Nothing practised yet.',
+    importMerged: (n) => `Merged ${n} ${pluralEn(n, 'pattern', 'patterns')}.`,
+    importTooNew: 'That file comes from a newer version of worauf. Nothing was changed.',
+    importUnreadable: 'That file could not be read. Nothing was changed.',
+    progressNotSaved:
+      'This browser would not let worauf save your progress. Export it to a file to keep it.',
+    updateReady: 'A new version is ready.',
+    updateReload: 'Reload',
+    buildLabel: (version) => `data ${version}`,
     pos: { verb: 'verb', adj: 'adjective', noun: 'noun' },
   },
   ru: {
@@ -161,6 +186,8 @@ export const strings: Record<Locale, Strings> = {
     why: 'Почему',
     yourAnswer: 'ваш ответ',
     correctAnswer: 'верно',
+    answerAnnouncement: (correct, answer, kase) =>
+      correct ? 'Правильно.' : `Неверно. Правильный ответ: ${answer}, ${kase}.`,
     openInBrowser: 'Открыть в справочнике',
     sessionOver: 'Сессия закончена',
     again: 'Ещё раз',
@@ -177,6 +204,17 @@ export const strings: Record<Locale, Strings> = {
     whyFixed: (prep, kase) =>
       `${prep} везде требует ${kase} — падеж здесь не самое трудное, трудное здесь предлог.`,
     scoreLine: (right, total) => `${right} из ${total} верно`,
+    exportProgress: 'Выгрузить прогресс',
+    importProgress: 'Загрузить прогресс',
+    nothingToExport: 'Пока ничего не пройдено.',
+    importMerged: (n) => `Добавлено ${n} ${pluralRu(n, 'связка', 'связки', 'связок')}.`,
+    importTooNew: 'Файл из более новой версии worauf. Ничего не изменено.',
+    importUnreadable: 'Файл не удалось прочитать. Ничего не изменено.',
+    progressNotSaved:
+      'Браузер не дал сохранить прогресс. Выгрузите его файлом, чтобы не потерять.',
+    updateReady: 'Готова новая версия.',
+    updateReload: 'Обновить',
+    buildLabel: (version) => `данные ${version}`,
     pos: { verb: 'глагол', adj: 'прилагательное', noun: 'существительное' },
   },
 };

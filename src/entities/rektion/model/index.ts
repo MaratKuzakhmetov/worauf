@@ -24,7 +24,7 @@ export type {
   Bilingual,
   Example,
 } from './schema';
-export { rektionen } from './dataset.generated';
+export { rektionen, datasetVersion } from './dataset.generated';
 export { findPreposition, checkCaseAgreement, counterpartDeterminer, tokenize } from './german';
 export type { PrepositionSighting, CaseCheck } from './german';
 export { caseNumber, caseTag, caseLabel, findRektion, patternHeadword } from './selectors';

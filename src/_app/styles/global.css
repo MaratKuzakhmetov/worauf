@@ -8,9 +8,20 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/*
+ * The paper itself (docs/DESIGN.md §14.4): two 24px rules in `--grid` over `--paper`.
+ *
+ * It lives on the body and nowhere else, so the grid is one continuous sheet the panes and
+ * cards sit ON rather than a texture each of them repeats. Anything that wants the sheet to
+ * show through simply declares no background of its own.
+ */
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--ink);
   font-family: var(--font-sans), 'Helvetica Neue', Arial, sans-serif;
   font-size: var(--step-2);

@@ -72,6 +72,39 @@ describe('slugs (ADR 0002)', () => {
       expect(r.slug.word).not.toMatch(/^sich-/);
     }
   });
+
+  /*
+   * Invariant 12 checks that no two PATTERNS claim one `/word/prep/`. This checks one level
+   * up, where nothing was looking: what may share a `/word/`.
+   *
+   * Sharing ACROSS parts of speech is allowed and expected — `Vertrauen` (noun) and
+   * `vertrauen` (verb) fold to one slug, and `/en/vertrauen/` shows both, three patterns on
+   * one page. That is a decision, not an accident: a single URL cannot answer for two words,
+   * so the word index groups by slug alone and renders every form (`words.ts`).
+   *
+   * Sharing WITHIN one part of speech is still broken, and this is what the check defends.
+   * Two distinct nouns folding to one slug merge into a single entry whose headword and
+   * article are then taken from whichever pattern the primary-form filter happens to reach
+   * first — so a `der` word could be titled `die`, and the page would state a wrong fact
+   * with no sign anything was lost. Same class of failure as a pattern-slug collision:
+   * silent, and invisible in the diff.
+   */
+  it('let a word slug be shared only across parts of speech, never within one', () => {
+    const byForm = new Map<string, Set<string>>();
+    for (const r of rektionen) {
+      const key = `${r.slug.word}|${r.pos}`;
+      byForm.set(key, new Set([...(byForm.get(key) ?? []), r.lemma]));
+    }
+
+    const merged = [...byForm.entries()]
+      .filter(([, lemmas]) => lemmas.size > 1)
+      .map(([key, lemmas]) => {
+        const [slug, pos] = key.split('|');
+        return `/${slug}/ would merge two ${pos}s into one entry: ${[...lemmas].join(' and ')}`;
+      });
+
+    expect(merged).toEqual([]);
+  });
 });
 
 describe('identity', () => {

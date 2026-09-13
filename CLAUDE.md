@@ -64,17 +64,21 @@ Locked in `docs/research/STACK.md`. Do not propose alternatives without a critic
 
 Sources, coverage and the full strategy: `docs/research/DATA_SOURCES.md`.
 
-| Layer | Source | Use |
-|---|---|---|
-| Seed | en.wiktionary via kaikki/wiktextract (`+obj` template) | Automated import, CC BY-SA 4.0 |
-| Seed | de.wiktionary raw wikitext (`Prä=` / `Kas=`) | Automated import, CC BY-SA 4.0 |
-| Enrichment | UD_German-HDT | Frequency ranking only; publish counts, not text |
-| Enrichment | Tatoeba | Example sentences, CC BY, keep sentence IDs |
-| Validation | E-VALBU, DWDS, IDS VmP A1/A2 lists | **Read-only reference. Import nothing.** |
+| Layer | Source | Use | In the dataset |
+|---|---|---|---|
+| **Verification** | **Duden** (`duden.de`, read per entry in a browser) | **Government facts + a usage example per pattern. All rights reserved — see the caveat below.** | **518 patterns — the largest source** |
+| Seed | en.wiktionary via kaikki/wiktextract (`+obj` template) | Automated import, CC BY-SA 4.0 | 315 patterns |
+| Seed | de.wiktionary raw wikitext (`Prä=` / `Kas=`) | Automated import, CC BY-SA 4.0 | 15 patterns |
+| Own work | `prototype`, `seed` | This project's earlier hand-written records (Phase 1) | 203 patterns, none externally verified |
+| Enrichment | UD_German-HDT | Frequency ranking only; publish counts, not text | **Never used** |
+| Enrichment | Tatoeba | Example sentences, CC BY, keep sentence IDs | **Never used** — remains the Duden fallback |
+| Validation | E-VALBU, DWDS, IDS VmP A1/A2 lists | **Read-only reference. Import nothing.** | E-VALBU: bare lemma list used as a completeness checklist only |
 
 - **Dataset licence: CC BY-SA 4.0.** Share-alike comes from Wiktionary and is not negotiable.
 - **Code licence: MIT.** Share-alike does not reach application code.
 - `ATTRIBUTION.md` is mandatory, and every pattern record carries a `sources` field.
+- **Duden is all rights reserved, and it is the dataset's largest source.** The owner decided (2026-09-10) to credit it, keep the examples, and record the reasoning and the residual risk rather than quietly relying on it. Facts of government are not copyrightable and the glosses are the project's own; the **example sentences** are the exposed part, and several hundred of them drawn from one closed dictionary is a judgement call, not a clearance. Full reasoning, risk and fallback: `docs/research/DATA_SOURCES.md`, "Duden — the source the plan did not have". **Do not add new Duden-derived examples without re-reading that section.**
+- **The two-source rule holds for 44.5% of the dataset, not all of it.** Two independent sources per pattern remains the rule for new work. As actually applied: **138 verb patterns (19.1%) rest on Duden alone** — Layer 3 accepted a single authoritative source where no second open source existed, recorded retroactively on 2026-09-10; 59 Duden-only nouns/adjectives are covered by the relaxation Layer 2 recorded deliberately for derivation; and the 203 Phase-1 `prototype`/`seed` patterns were never verified externally at all. Each single-source pattern was individually read with a quoted example — none inferred. There is deliberately **no `confidence` field** in the schema; the share is documented, not machine-readable.
 - **Excluded on licence grounds:** DWDS (§ 44b UrhG TDM reservation), E-VALBU / grammis (all rights reserved), Leipzig Wortschatz (CC BY-NC, incompatible), Goethe-Institut word lists.
 
 ---

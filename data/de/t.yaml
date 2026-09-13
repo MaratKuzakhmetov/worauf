@@ -1,5 +1,38 @@
 # yaml-language-server: $schema=../../schema/rektion.schema.json
 
+teilen:
+  pos: "verb"
+  patterns:
+    - prep: "mit"
+      case: "dat"
+      gloss:
+        ru: "делить что-л. с кем-л."
+        en: "to share sth. with sb."
+      examples:
+        - de: "Sie teilt das Zimmer mit ihrer Schwester."
+          ru: "Она делит комнату со своей сестрой."
+          en: "She shares the room with her sister."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "с кем делишь — второй участник"
+        en: "whom you share with — the other party"
+    - prep: "in"
+      case: "akk"
+      reflexive: "akk"
+      gloss:
+        ru: "делить между собой что-л. (выигрыш, имущество)"
+        en: "to split sth. between themselves (a prize, property)"
+      examples:
+        - de: "Wir teilen uns in den Gewinn."
+          ru: "Мы делим выигрыш между собой."
+          en: "We are splitting the winnings between us."
+      sources:
+        - "duden"
+      senseNote:
+        ru: "что делят между собой — сам предмет дележа, а не партнёр"
+        en: "what gets divided up — the thing itself, not the partner"
+
 Teilnahme:
   pos: "noun"
   article: "die"
@@ -48,6 +81,70 @@ telefonieren:
       sources:
         - "seed"
 
+trainieren:
+  pos: "verb"
+  patterns:
+    - prep: "für"
+      case: "akk"
+      gloss:
+        ru: "тренироваться к чему-л."
+        en: "to train for sth."
+      examples:
+        - de: "Er trainiert hart für die nächsten Spiele."
+          ru: "Он усердно тренируется к следующим играм."
+          en: "He is training hard for the next games."
+      sources:
+        - "duden"
+
+Trauer:
+  pos: "noun"
+  article: "die"
+  patterns:
+    - prep: "über"
+      case: "akk"
+      gloss:
+        ru: "печаль из-за чего-л."
+        en: "grief over sth."
+      senseNote:
+        ru: "печаль из-за события или потери в целом"
+        en: "grief over an event or a loss in general"
+      examples:
+        - de: "Die Trauer über den Verlust war groß."
+          ru: "Печаль из-за потери была велика."
+          en: "The grief over the loss was great."
+      sources:
+        - "duden"
+    - prep: "um"
+      case: "akk"
+      gloss:
+        ru: "скорбь по кому-л. (об умершем)"
+        en: "mourning for sb. (the deceased)"
+      senseNote:
+        ru: "скорбь по конкретному умершему человеку"
+        en: "mourning for a specific person who died"
+      examples:
+        - de: "Die Trauer um ihren Vater dauert an."
+          ru: "Скорбь по отцу не утихает."
+          en: "The mourning for her father continues."
+      sources:
+        - "duden"
+
+Traum:
+  pos: "noun"
+  article: "der"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      gloss:
+        ru: "мечта о чём-л."
+        en: "dream of sth."
+      examples:
+        - de: "Der Traum vom Glück begleitet ihn."
+          ru: "Мечта о счастье сопровождает его."
+          en: "The dream of happiness accompanies him."
+      sources:
+        - "duden"
+
 träumen:
   pos: "verb"
   patterns:
@@ -94,6 +191,53 @@ treffen:
           en: "I am meeting with the friends."
       sources:
         - "prototype"
+
+trennen:
+  pos: "verb"
+  patterns:
+    - prep: "von"
+      case: "dat"
+      reflexive: "akk"
+      gloss:
+        ru: "расставаться с кем-л. / чем-л."
+        en: "to part with sb. / sth."
+      examples:
+        - de: "Die Firma hat sich von diesem Mitarbeiter getrennt."
+          ru: "Фирма рассталась с этим сотрудником."
+          en: "The company parted with this employee."
+      sources:
+        - "duden"
+
+trinken:
+  pos: "verb"
+  patterns:
+    - prep: "auf"
+      case: "akk"
+      gloss:
+        ru: "пить за кого-л. / что-л. (произносить тост)"
+        en: "to drink to sb. / sth., to toast sb. / sth."
+      examples:
+        - de: "Wir trinken auf einen guten Ausgang."
+          ru: "Мы пьём за благополучный исход."
+          en: "We are drinking to a good outcome."
+      sources:
+        - "duden"
+
+tüfteln:
+  pos: "verb"
+  patterns:
+    - prep: "an"
+      case: "dat"
+      gloss:
+        ru: "корпеть над чем-л., возиться с чем-л."
+        en: "to tinker with sth."
+      examples:
+        - de: "Er tüftelt an der Maschine."
+          ru: "Он корпит над машиной."
+          en: "He is tinkering with the machine."
+      sources:
+        - "en.wiktionary"
+        - "duden"
 
 typisch:
   pos: "adj"

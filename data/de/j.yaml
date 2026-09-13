@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schema/rektion.schema.json
+
+jagen:
+  pos: "verb"
+  patterns:
+    - prep: "in"
+      case: "akk"
+      gloss:
+        ru: "вгонять, вонзать что-л. во что-л."
+        en: "to drive/thrust sth. into sth."
+      examples:
+        - de: "Er jagte dem Tier eine Kugel in den Kopf."
+          ru: "Он всадил пулю зверю в голову."
+          en: "He drove a bullet into the animal's head."
+      sources:
+        - "en.wiktionary"
+        - "duden"
