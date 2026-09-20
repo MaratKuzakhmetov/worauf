@@ -3,7 +3,7 @@
   flex-direction: column;
   min-height: 0;
   background: var(--card);
-  border-right: 2px solid var(--ink);
+  border-right: 1px solid var(--ink-3);
 }
 
 .head {
@@ -20,7 +20,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   background: var(--panel);
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink-3);
 }
 
 .head b {

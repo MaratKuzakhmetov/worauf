@@ -1,50 +1,58 @@
 /*
- * Design tokens — docs/DESIGN.md §14.2 («чертёжная бумага»), which supersedes the §3 table.
+ * Design tokens — docs/DESIGN.md §15 («Охра» / Ocker, 2026-09-20), which supersedes the §14.2
+ * palette and §14.3 typography this file used to carry. §15.9 (owner ratification) keeps the
+ * column composition and cross-highlight model exactly as implemented — this is a re-skin:
+ * only values change here, not the components that consume them.
  *
- * Rule, unchanged and now stricter: colour means case, and nothing else. The chrome has no
- * accent colour of its own — pen strokes, rules and borders are drawn in ink — so the only
- * colour on any screen is grammatical case. Selection and focus are ink/paper inversion,
- * never a fourth colour. Do not add a colour here without changing that doc.
+ * Rule, unchanged and still not up for review here: colour means case, and nothing else. The
+ * chrome has no accent colour of its own — §15.2.2 measured and rejected the mockup's ninth
+ * attempt to introduce one — so the only colour on any screen is grammatical case. Selection
+ * and focus are ink/paper inversion, never a fourth colour. Do not add a colour here without
+ * changing that doc.
  *
  * `--mark` is the one addition to the palette and is deliberately NOT a text colour: it is
- * a highlighter swipe behind letters. Material, not meaning.
+ * a highlighter swipe behind letters. Material, not meaning (§15.2.2 keeps this reading).
+ *
+ * `--akk-soft` / `--dat-soft` / `--gen-soft` are new in §15.2: the fill behind the case badge
+ * (`PatternCard.kase`) and behind the revealed answer in the trainer's prompt gap — never a
+ * row or card background. §15.4.3 confirms these are solid/alpha fills, not `opacity`.
  */
 
 :root {
   color-scheme: light;
 
-  /* Near-white on purpose: a grey ground reads as a dimmed screen, not as paper. */
-  --paper: #fbfcfe;
-  --card: #ffffff;
+  /* Warm, near-cream paper — §15.1's deliberate reversal of §14.1's cold-paper argument. */
+  --paper: #f6f3ea;
+  --card: #fffdf6;
   /* The only surface that keeps a tint — column headers, status bar. */
-  --panel: #eef2f7;
+  --panel: #f0ece0;
 
-  --ink: #1a202c;
+  --ink: #262318;
+  --ink-2: #5f5a49;
   /*
-   * Measured, not eyeballed. The value first written into §14.2 (#6b7688) came off a mockup
-   * where it only ever sat on white; against the two other grounds it failed AA — 4.47:1 on
-   * --paper and 4.09:1 on --panel — and left no headroom for a muted state derived from it.
-   * #5a6474 keeps the old token's darkness and takes its hue toward the navy of this
-   * direction: 5.98:1 on --card, 5.83:1 on --paper, 5.32:1 on --panel.
+   * Hairline borders only. §14's `--ink-3` was an alpha ink that also tinted the offset "pen"
+   * shadow; §15.4 drops that shadow entirely, so this is now a solid colour with one job: the
+   * 1px hairline around a card, plus the 3px case-coloured stripe's neighbouring three sides.
    */
-  --ink-2: #5a6474;
-  /* Hairlines, borders and the offset "pen" shadow: one ink at low alpha, so a rule laid
-     over the paper grid lets the grid through instead of covering it. Replaces --rule. */
-  --ink-3: rgba(26, 32, 44, 0.22);
+  --ink-3: #e3ddcc;
 
-  --grid: rgba(26, 32, 44, 0.055);
-  --mark: #ffe08a;
+  /* Paper grid, step 28px — §15.4: confined to the detail panel only, never `body`. */
+  --grid: #ebe6d8;
+  --mark: #f1e7c8;
 
-  --akk: #1f3fcb;
+  /* Akkusativ and Dativ swap hues from §14: rust-ochre / slate-blue, §15.2.1. */
+  --akk: #8a5510;
+  --akk-soft: #f6e6d2;
+  --dat: #2f5f6b;
+  --dat-soft: #dce9ed;
   /*
-   * Darkened from #b26205. That value was the marginal one in the whole palette: 4.52:1 on
-   * --card (passing by 0.02), 4.41:1 on --paper and 4.02:1 on --panel — so the Dativ label,
-   * the smallest and most load-bearing text in the app, failed AA on two of the three
-   * grounds. #9c5504 is the same ochre a step darker: 5.65 / 5.51 / 5.03. The hue is
-   * unchanged, so the blue/orange pair §3 relies on for deuteranopia is unaffected.
+   * Not in the source mockup — the dataset it was built from has zero Genitiv patterns.
+   * Derived, not inherited from §14.2's #a81e63: same lightness/saturation family as the new
+   * --akk/--dat pair rather than the old palette's brighter, colder purple (§15.2.3). Ratified
+   * by the owner 2026-09-20 (§15.9) over the alternative of keeping the literal §14.2 value.
    */
-  --dat: #9c5504;
-  --gen: #a81e63;
+  --gen: #8a1f52;
+  --gen-soft: #f1dae6;
 
   --step-0: 0.75rem;
   --step-1: 0.8125rem;
@@ -64,49 +72,75 @@
   --header-height: 4rem;
   --row-height: 2.125rem;
   --touch-target: 2.75rem;
+
+  /*
+   * Typography (§15.3): two families, split by role rather than by "apparatus vs material" —
+   * apparatus AND the dense WORDS list share one grotesk; expanded reading (headlines,
+   * examples, the PREPOSITIONS list, which can afford serifs at 2-4 letters) gets the other.
+   *
+   * `--font-sans` now names Atkinson Hyperlegible rather than Fira Sans, and `--font-cond`,
+   * `--font-mono` and `--font-marker` are kept as aliases to it rather than renamed: §14 wired
+   * 34 references across 14 files to these four names for three different old families
+   * (condensed grotesk for dense lists, mono for case data/counts, a marker face for
+   * apparatus), and none of those three roles keeps a distinct family under §15 — Atkinson has
+   * no condensed cut, and the mockup carries no separate mono treatment for case numbers or
+   * counts (verified against its own templates, not assumed). Aliasing avoids a rename cascade
+   * through files that did not otherwise change. `--font-serif` is new: it did the same job for
+   * Source Serif 4 before §14 dropped it, and Literata now returns to exactly that name.
+   */
+  --font-sans: var(--font-atkinson), 'Helvetica Neue', Arial, sans-serif;
+  --font-cond: var(--font-sans);
+  --font-mono: var(--font-sans);
+  --font-marker: var(--font-sans);
+  --font-serif: var(--font-literata), Georgia, serif;
 }
 
 /*
- * Dark is a navy blueprint rather than a neutral grey: the values come from the owner's own
- * site (markgp.com) — #1a202c body, #171923 deeper, #f7fafc ink — so the two properties read
- * as one hand. Case colours keep their existing dark variants untouched.
+ * Dark is a warm, near-black chocolate-brown canvas rather than §14's navy blueprint —
+ * §15.1/§15.2. Case colours keep their §15.2.1 dark variants.
  */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     color-scheme: dark;
 
-    --paper: #151a26;
-    --card: #1e2433;
-    --panel: #232b3d;
+    --paper: #191710;
+    --card: #211e15;
+    --panel: #15130d;
 
-    --ink: #f7fafc;
-    --ink-2: #9aa7bd;
-    --ink-3: rgba(247, 250, 252, 0.24);
+    --ink: #e9e5d8;
+    --ink-2: #a8a28d;
+    --ink-3: #453d24;
 
-    --grid: rgba(247, 250, 252, 0.05);
-    --mark: rgba(255, 224, 138, 0.3);
+    --grid: #221f16;
+    --mark: rgba(220, 193, 114, 0.3);
 
-    --akk: #7c93ff;
-    --dat: #e9a13b;
-    --gen: #f06ba8;
+    --akk: #e0a86a;
+    --akk-soft: rgba(57, 38, 20, 0.25);
+    --dat: #8fc2cf;
+    --dat-soft: rgba(28, 46, 52, 0.25);
+    --gen: #e08fb5;
+    --gen-soft: rgba(59, 22, 41, 0.25);
   }
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
 
-  --paper: #151a26;
-  --card: #1e2433;
-  --panel: #232b3d;
+  --paper: #191710;
+  --card: #211e15;
+  --panel: #15130d;
 
-  --ink: #f7fafc;
-  --ink-2: #9aa7bd;
-  --ink-3: rgba(247, 250, 252, 0.24);
+  --ink: #e9e5d8;
+  --ink-2: #a8a28d;
+  --ink-3: #453d24;
 
-  --grid: rgba(247, 250, 252, 0.05);
-  --mark: rgba(255, 224, 138, 0.3);
+  --grid: #221f16;
+  --mark: rgba(220, 193, 114, 0.3);
 
-  --akk: #7c93ff;
-  --dat: #e9a13b;
-  --gen: #f06ba8;
+  --akk: #e0a86a;
+  --akk-soft: rgba(57, 38, 20, 0.25);
+  --dat: #8fc2cf;
+  --dat-soft: rgba(28, 46, 52, 0.25);
+  --gen: #e08fb5;
+  --gen-soft: rgba(59, 22, 41, 0.25);
 }

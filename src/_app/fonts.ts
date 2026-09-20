@@ -1,42 +1,45 @@
-import { Fira_Mono, Fira_Sans, Fira_Sans_Condensed, Shantell_Sans } from 'next/font/google';
+import { Atkinson_Hyperlegible, Literata } from 'next/font/google';
 
-// Self-hosted at build time: the app makes no network request at runtime.
-const sans = Fira_Sans({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500'],
-  variable: '--font-sans',
-  display: 'swap',
-});
-const condensed = Fira_Sans_Condensed({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['500', '600', '700'],
-  variable: '--font-cond',
-  display: 'swap',
-});
-const mono = Fira_Mono({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500'],
-  variable: '--font-mono',
-  display: 'swap',
-});
 /*
- * The apparatus voice (docs/DESIGN.md §14.3): headings, pane labels, buttons, counts.
+ * §15.3: two families, not four. Self-hosted at build time (no runtime network request) —
+ * loaded here as `--font-atkinson`/`--font-literata`, aliased in tokens.css to the public
+ * `--font-sans`/`--font-cond`/`--font-mono`/`--font-marker`/`--font-serif` names the .module.css
+ * files already reference, so this file only says which two families exist and at which
+ * weights, not which component uses which.
  *
- * It never touches German. A marker face rounds off exactly the strokes that separate `n`
- * from `m`, and `auf den` vs `auf dem` is the entire product — the measurement is in
- * `design/sketchbook/Legibility.dc.html`. Cyrillic is loaded because the RU interface
- * chrome needs it; the German material stays on Fira either way.
- *
- * Source Serif 4 was dropped here rather than kept alongside: §14.3 replaces the
- * grotesk/antiqua split with a marker/grotesk one, and a third family earned nothing.
+ * Atkinson Hyperlegible carries the apparatus voice AND the dense WORDS column: it replaces
+ * both Shantell Sans (apparatus) and Fira Sans Condensed (the WORDS list) from §14.3, and it
+ * is designed by the Braille Institute specifically to keep confusable letterforms apart —
+ * exactly the `n`/`m` problem §14.1 raised against a handwritten face, closed with a font
+ * whose stated purpose is the opposite. Weights 400/700 match what the source mockup's own
+ * `@font-face` rules carry (§15.3) — no 500/600 cut exists for this family, so the handful of
+ * selectors that ask CSS for those weights fall back to the nearest loaded one (400) under
+ * ordinary font matching; nothing fails to render.
  */
-const marker = Shantell_Sans({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '600', '700'],
-  variable: '--font-marker',
+const sans = Atkinson_Hyperlegible({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-atkinson',
   display: 'swap',
 });
 
-export const fontVariables = [sans, condensed, mono, marker]
-  .map((font) => font.variable)
-  .join(' ');
+/*
+ * Literata carries expanded reading: the `worauf?` logo, a word/preposition page headline,
+ * example sentences, the PREPOSITIONS column (short enough not to need a condensed cut), the
+ * search dropdown's matched lemma, and the trainer's prompt/answer text (§15.3, confirmed
+ * against the mockup's own templates rather than assumed from the apparatus/material split).
+ * A screen antiqua (TypeTogether, built for reading on screens), not a script face — its
+ * serifs are structural, which is what let §15.3 re-close the §14.1 `n`/`m` objection a second
+ * way, on this family's own terms rather than by inheriting Atkinson's answer to it. Weight
+ * 600 only, no 700, again matching what the mockup's own font-face rules carry.
+ */
+const serif = Literata({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-literata',
+  display: 'swap',
+});
+
+export const fontVariables = [sans, serif].map((font) => font.variable).join(' ');

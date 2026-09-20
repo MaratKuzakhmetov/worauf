@@ -18,17 +18,17 @@
   white-space: nowrap;
 }
 
+/* A search row is a control, not a card: hairline border, full pill, no shadow (§15.4). */
 .input {
   width: 100%;
   height: 2.25rem;
-  padding: 0 2rem 0 0.75rem;
+  padding: 0 2rem 0 0.875rem;
   font: inherit;
   font-size: var(--step-2);
   color: var(--ink);
   background: var(--card);
-  border: 2px solid var(--ink);
-  box-shadow: 2px 2px 0 0 var(--ink-3);
-  border-radius: 0;
+  border: 1px solid var(--ink-3);
+  border-radius: 999px;
   appearance: none;
 }
 
@@ -80,14 +80,14 @@
   right: 0;
   z-index: 20;
   max-height: 24rem;
+  overflow-x: hidden;
   overflow-y: auto;
   margin: 0;
   padding: 0;
   list-style: none;
   background: var(--card);
-  border: 2px solid var(--ink);
-  /* Hard offset, no blur — the same drawn edge as the cards (§14.4). */
-  box-shadow: 4px 5px 0 0 var(--ink-3);
+  border: 1px solid var(--ink-3);
+  border-radius: 12px;
 }
 
 .result + .result {
@@ -108,8 +108,9 @@
   color: var(--paper);
 }
 
+/* Literata: a matched lemma in the dropdown is reading, not a dense scrolling list (§15.3). */
 .lemma {
-  font-family: var(--font-cond), Arial, sans-serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-weight: 500;
   font-size: var(--step-3);
   white-space: nowrap;
@@ -159,7 +160,7 @@
 
 .suggestion {
   cursor: pointer;
-  font-family: var(--font-cond), Arial, sans-serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-weight: 500;
   font-size: var(--step-2);
   color: var(--ink);

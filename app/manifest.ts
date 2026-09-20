@@ -31,8 +31,8 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: '/en/',
     scope: '/',
     display: 'standalone',
-    background_color: '#eeefea',
-    theme_color: '#16191c',
+    background_color: '#f6f3ea',
+    theme_color: '#262318',
     /*
      * One SVG rather than the usual pair of PNGs: there is no image tooling in this
      * repository, and a hand-written SVG is honest where a fabricated PNG would not be.

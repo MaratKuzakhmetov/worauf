@@ -74,7 +74,8 @@
   font-size: var(--step-0);
   color: var(--ink-2);
   background: transparent;
-  border: 2px solid var(--ink-3);
+  border: 1px solid var(--ink-3);
+  border-radius: 999px;
   white-space: nowrap;
 }
 
@@ -105,13 +106,13 @@
 }
 
 /*
- * The material is set in the grotesk and the apparatus in the marker (§14.3). This line is
- * German, so it stays on Fira Sans Condensed: it is the one string in the session whose
- * `n`/`m` must not be softened.
+ * Literata — expanded reading, the same role as a word/preposition page headline, matched
+ * against the mockup's own prompt template (`qBefore`, Literata 25px) rather than assumed
+ * (docs/DESIGN.md §15.3).
  */
 .prompt {
   margin: var(--space-3) 0 0;
-  font-family: var(--font-cond), Arial, sans-serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-weight: 600;
   font-size: var(--step-5);
   line-height: 1.25;
@@ -123,6 +124,26 @@
   border-bottom: 2px solid var(--ink-2);
   vertical-align: baseline;
 }
+
+/*
+ * The revealed answer in the prompt's gap gets the same soft-fill badge treatment as
+ * `PatternCard.kase` and the mockup's own `blankStyle` (border-radius, padding, `-soft`
+ * background) — it is naming the pattern's case the way the rest of the app always does,
+ * not a correctness signal, so it does not revisit §15.5.2/§9's ban on colouring the
+ * trainer's right/wrong verdict. Scoped to `.prompt` so the plain `.akk`/`.dat`/`.gen` text
+ * colour used in `.verdict` below is untouched.
+ */
+.prompt .akk,
+.prompt .dat,
+.prompt .gen {
+  display: inline-block;
+  padding: 0.125rem 0.75rem;
+  border-radius: 6px;
+}
+
+.prompt .akk { background: var(--akk-soft); }
+.prompt .dat { background: var(--dat-soft); }
+.prompt .gen { background: var(--gen-soft); }
 
 .gloss {
   margin: var(--space-2) 0 0;
@@ -139,6 +160,8 @@
   list-style: none;
 }
 
+/* "карточка-связка, вариант в тренажёре" — 12px radius (docs/DESIGN.md §15.4). `.right` and
+   `.wrong` below still override the border width/colour/style; only the base changes here. */
 .option {
   display: flex;
   align-items: center;
@@ -149,7 +172,8 @@
   text-align: left;
   cursor: pointer;
   background: var(--card);
-  border: 2px solid var(--ink-3);
+  border: 1px solid var(--ink-3);
+  border-radius: 12px;
 }
 
 .option:hover:enabled {
@@ -173,8 +197,9 @@
   color: var(--ink-2);
 }
 
+/* Literata: matches the mockup's own answer-option template (Literata 19px) — docs/DESIGN.md §15.3. */
 .value {
-  font-family: var(--font-cond), Arial, sans-serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-weight: 600;
   font-size: var(--step-4);
 }
@@ -255,6 +280,7 @@
   margin-top: var(--space-5);
 }
 
+/* Primary action — filled, no border, full pill, no shadow (docs/DESIGN.md §15.4). */
 .button {
   display: inline-flex;
   align-items: center;
@@ -266,8 +292,8 @@
   font-size: var(--step-3);
   color: var(--paper);
   background: var(--ink);
-  border: 2px solid var(--ink);
-  box-shadow: 4px 5px 0 0 var(--ink-3);
+  border: none;
+  border-radius: 999px;
 }
 
 .link {

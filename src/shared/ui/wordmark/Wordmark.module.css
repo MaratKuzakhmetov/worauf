@@ -1,6 +1,7 @@
+/* Literata 600 — the logo, docs/DESIGN.md §15.3 (Literata carries no 700 cut). */
 .mark {
-  font-family: var(--font-cond), 'Arial Narrow', Arial, sans-serif;
-  font-weight: 700;
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 600;
   font-size: var(--step-4);
   letter-spacing: -0.01em;
   line-height: 1;

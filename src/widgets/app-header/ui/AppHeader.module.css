@@ -5,8 +5,9 @@
   gap: var(--space-3);
   min-height: var(--header-height);
   padding: var(--space-2) var(--space-4);
-  /* No fill: the sheet drawn on the body runs up through the header (§14.4). */
-  border-bottom: 2px solid var(--ink);
+  /* No fill of its own — plain --paper shows through (docs/DESIGN.md §15.4: the grid no
+     longer runs under the body, only under the detail panel). */
+  border-bottom: 1px solid var(--ink-3);
 }
 
 .brand {
@@ -35,9 +36,14 @@
   }
 }
 
+/*
+ * No container border: each tab is its own pill (docs/DESIGN.md §15.4's control radius,
+ * verified against the mockup's own `tab()` style function, which floats two independent
+ * pills rather than boxing them in a shared frame).
+ */
 .modes {
   display: flex;
-  border: 2px solid var(--ink);
+  gap: 0.375rem;
 }
 
 .mode {
@@ -46,6 +52,7 @@
   font-weight: 700;
   font-size: var(--step-1);
   color: var(--ink-2);
+  border-radius: 999px;
 }
 
 /* Selection is ink/paper inversion, like every other selected thing (docs/DESIGN.md §3). */

@@ -1,6 +1,9 @@
+/* A segmented control — hairline border, full pill, clipped (docs/DESIGN.md §15.4). */
 .languages {
   display: flex;
-  border: 2px solid var(--ink);
+  border: 1px solid var(--ink-3);
+  border-radius: 999px;
+  overflow: hidden;
 }
 
 .language {

@@ -9,21 +9,16 @@ html {
 }
 
 /*
- * The paper itself (docs/DESIGN.md §14.4): two 24px rules in `--grid` over `--paper`.
- *
- * It lives on the body and nowhere else, so the grid is one continuous sheet the panes and
- * cards sit ON rather than a texture each of them repeats. Anything that wants the sheet to
- * show through simply declares no background of its own.
+ * Flat paper (docs/DESIGN.md §15.4). §14.4's paper grid lived here, on the body, as one
+ * continuous sheet the panes and cards sat on; §15.4 narrows the grid to the detail panel
+ * only (`RektionBrowser.module.css` `.detail`) and drops it from the body, the side columns
+ * and under cards entirely — so the body is just the paper colour, nothing painted on it.
  */
 body {
   margin: 0;
   background-color: var(--paper);
-  background-image:
-    linear-gradient(to right, var(--grid) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
-  background-size: 24px 24px;
   color: var(--ink);
-  font-family: var(--font-sans), 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: var(--step-2);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;

@@ -20,13 +20,20 @@
   display: grid;
   grid-template-columns: 1fr 7.5rem;
   min-height: 0;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink-3);
 }
 
-/* No background of its own: this is where the sheet shows (global.css draws the grid). */
+/*
+ * The one place the paper grid shows (docs/DESIGN.md §15.4): a 28px rule in `--grid`, solid
+ * colour, confined to this panel — not the body, not the side columns, not under cards.
+ */
 .detail {
   min-height: 0;
   overflow-y: auto;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
 .status {
@@ -36,7 +43,7 @@
   height: 2.25rem;
   padding: 0 var(--space-4);
   background: var(--panel);
-  border-top: 2px solid var(--ink);
+  border-top: 1px solid var(--ink-3);
   font-family: var(--font-mono), monospace;
   font-size: var(--step-0);
   color: var(--ink-2);
