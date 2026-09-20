@@ -33,11 +33,19 @@ export async function generateMetadata({
     /*
      * Declared rather than left to convention: with no `rel="icon"` in the HTML a browser
      * falls back to probing `/favicon.ico`, which this project does not serve — a 404 on
-     * every first load. The file stays in `public/` at a stable `/icon.svg` because
-     * `app/manifest.ts` names that exact path; the `app/icon.svg` convention would move it
-     * to a hashed URL and break the manifest's reference to it.
+     * every first load. The files stay in `public/` at stable paths because `app/manifest.ts`
+     * names `/icon.svg` directly; the `app/icon.svg` convention would move it to a hashed URL
+     * and break that reference. The sized PNGs are a fallback for browsers that do not honour
+     * an SVG favicon — the SVG, listed first, wins everywhere that reads one.
      */
-    icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }] },
+    icons: {
+      icon: [
+        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/icon-48.png', sizes: '48x48', type: 'image/png' },
+        { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/icon-16.png', sizes: '16x16', type: 'image/png' },
+      ],
+    },
   };
 }
 

@@ -1,5 +1,4 @@
 import type { GrammaticalCase, Rektion } from './schema';
-import { rektionen } from './dataset.generated';
 
 /**
  * The case is shown as a short tag — Akk / Dat / Gen — everywhere it has to fit in a row.
@@ -30,10 +29,6 @@ export function caseTag(value: GrammaticalCase): string {
 /** German in both locales: that is how the learner will meet it in a textbook. */
 export function caseLabel(value: GrammaticalCase): string {
   return CASE_LABEL[value];
-}
-
-export function findRektion(id: string): Rektion | undefined {
-  return rektionen.find((r) => r.id === id);
 }
 
 /** `die Angst`, `sich freuen`, `warten` — for one pattern, whose reflexivity is its own. */

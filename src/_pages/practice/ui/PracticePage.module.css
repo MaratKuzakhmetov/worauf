@@ -17,7 +17,7 @@
 
 .count {
   margin: 0;
-  font-family: var(--font-marker), 'Comic Sans MS', cursive;
+  font-family: var(--font-marker);
   font-weight: 600;
   font-size: var(--step-6);
   line-height: 1;
@@ -34,7 +34,7 @@
   margin-top: var(--space-5);
   padding: 0.8125rem 1.625rem;
   cursor: pointer;
-  font-family: var(--font-marker), 'Comic Sans MS', cursive;
+  font-family: var(--font-marker);
   font-weight: 700;
   font-size: var(--step-3);
   color: var(--paper);

@@ -10,7 +10,6 @@ export type {
   Card,
   ProgressExport,
   ProgressFile,
-  ReviewEntry,
   ReviewRating,
 } from './schema';
 export { DAY_MS, MIN_EASE, newCard, nextEase, nextInterval, reviewCard } from './sm2';

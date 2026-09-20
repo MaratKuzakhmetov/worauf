@@ -37,12 +37,6 @@
   line-height: 1.2;
 }
 
-.sup {
-  font-family: var(--font-mono), monospace;
-  font-size: 0.8125rem;
-  vertical-align: super;
-}
-
 /*
  * The case badge — "Akkusativ · 4. Fall" — gets the soft fill §15.2.1 introduced `--akk-soft`
  * / `--dat-soft` / `--gen-soft` for, matching the mockup's own badge exactly (background,

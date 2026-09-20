@@ -2,9 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!--
+      A static export has no server to issue a real 30x, so this page is the redirect —
+      `app/manifest.ts` explains why `start_url` is `/en/` and not this file. `location.replace`
+      runs during head parsing, before the browser has anything of its own to paint, so a
+      JS-enabled browser never shows this page's body at all; `meta http-equiv="refresh"` and
+      the `<a>` below are the no-JS fallback, not the primary path.
+
+      Found 2026-09-20: with only the meta-refresh (no script), the browser still has to paint
+      one frame of this page before acting on it — an unstyled white flash of "Continue to
+      worauf" on every first load. The script fixes the flash for everyone who has JS; the
+      styling below is for the no-JS/slow-JS remainder, so even that fallback frame reads as
+      this app's own paper, not a broken page.
+    -->
+    <script>location.replace('./en/');</script>
     <meta http-equiv="refresh" content="0; url=./en/" />
     <link rel="canonical" href="./en/" />
     <title>worauf</title>
+    <!-- Literal light/dark pair, same reason and same values as public/icon.svg (§15.2). -->
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: #f6f3ea;
+        color: #262318;
+        font: 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+      a { color: inherit; }
+      @media (prefers-color-scheme: dark) {
+        body { background: #191710; color: #e9e5d8; }
+      }
+    </style>
   </head>
   <body>
     <a href="./en/">Continue to worauf</a>

@@ -26,7 +26,6 @@ export const reviewEntry = z.object({
   ts: z.number().int().nonnegative(),
   rating: reviewRating,
 });
-export type ReviewEntry = z.infer<typeof reviewEntry>;
 
 export const card = z.object({
   /** `Rektion.id` — `warten-auf-akk`. The case is part of it, and ADR 0005 depends on that. */

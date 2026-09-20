@@ -27,7 +27,7 @@ export type {
 export { rektionen, datasetVersion } from './dataset.generated';
 export { findPreposition, checkCaseAgreement, counterpartDeterminer, tokenize } from './german';
 export type { PrepositionSighting, CaseCheck } from './german';
-export { caseNumber, caseTag, caseLabel, findRektion, patternHeadword } from './selectors';
+export { caseNumber, caseTag, caseLabel, patternHeadword } from './selectors';
 export {
   words,
   findWord,
